@@ -2,40 +2,111 @@
   "max_age_days": 7,
   "max_items": 300,
   "sites": [
-    {"name": "Ynet", "feeds": [
-      "https://www.ynet.co.il/Integration/StoryRss2.xml",
-      "https://www.ynet.co.il/Integration/StoryRss185.xml",
-      "https://www.ynet.co.il/Integration/StoryRss1854.xml"
-    ]},
-    {"name": "N12", "feeds": [
-      "https://rcs.mako.co.il/rss/news-politics.xml",
-      "https://rcs.mako.co.il/rss/news-israel.xml",
-      "https://rcs.mako.co.il/rss/31750a2610f26110VgnVCM1000005201000aRCRD.xml"
-    ]},
-    {"name": "וואלה", "feeds": [
-      "https://rss.walla.co.il/feed/2686",
-      "https://rss.walla.co.il/feed/1?type=main",
-      "https://rss.walla.co.il/feed/22"
-    ]},
-    {"name": "הארץ", "feeds": [
-      "https://www.haaretz.co.il/srv/rss---feedly",
-      "https://www.haaretz.co.il/srv/htz---all-articles"
-    ]}
+    {
+      "name": "Ynet",
+      "feeds": [
+        "https://www.ynet.co.il/Integration/StoryRss2.xml",
+        "https://www.ynet.co.il/Integration/StoryRss185.xml",
+        "https://www.ynet.co.il/Integration/StoryRss1854.xml"
+      ]
+    },
+    {
+      "name": "N12",
+      "feeds": [
+        "https://rcs.mako.co.il/rss/news-israel.xml",
+        "https://rcs.mako.co.il/rss/31750a2610f26110VgnVCM1000005201000aRCRD.xml",
+        "https://rcs.mako.co.il/rss/news-israel-elections.xml",
+        "https://rcs.mako.co.il/rss/news-military.xml",
+        "https://rcs.mako.co.il/rss/news-law.xml",
+        "https://rcs.mako.co.il/rss/MainSliderRss.xml",
+        "https://rcs.mako.co.il/rss/news-channel12.xml",
+        "https://rcs.mako.co.il/rss/news-politics-q4_2026.xml",
+        "https://www.mako.co.il/rss/news-politics.xml"
+      ]
+    },
+    {
+      "name": "וואלה",
+      "feeds": [
+        "https://rss.walla.co.il/feed/2686",
+        "https://rss.walla.co.il/feed/1?type=main"
+      ]
+    },
+    {
+      "name": "הארץ",
+      "feeds": [
+        "https://www.haaretz.co.il/srv/rss---feedly",
+        "https://www.haaretz.co.il/srv/htz---all-articles"
+      ]
+    }
   ],
   "categories": [
     {
       "name": "חדשות",
-      "sites": ["Ynet", "N12", "וואלה", "הארץ"],
+      "sites": [
+        "Ynet",
+        "N12",
+        "וואלה",
+        "הארץ"
+      ],
       "subcategories": [
         {
           "name": "פוליטיקה",
           "keywords": [
-            {"name": "בחירות", "match": ["בחירות"]},
-            {"name": "כנסת", "match": ["כנסת"]},
-            {"name": "מפלגת ישר", "match": ["ישר!", "מפלגת ישר", "סיעת ישר", "רשימת ישר", "יו\"ר ישר", "ישר של איזנקוט"]},
-            {"name": "מפלגת ביחד", "match": ["מפלגת ביחד", "סיעת ביחד", "רשימת ביחד", "יו\"ר ביחד", "ראשי ביחד", "ביחד של בנט", "\"ביחד\""]},
-            {"name": "קואליציה", "match": ["קואליציה", "קואליציית", "קואליציות", "קואליציוני", "קואליציונית", "קואליציוניים"]},
-            {"name": "אופוזיציה", "match": ["אופוזיציה", "אופוזיציית", "אופוזיציוני", "אופוזיציונית"]}
+            {
+              "name": "בחירות",
+              "match": [
+                "בחירות"
+              ]
+            },
+            {
+              "name": "כנסת",
+              "match": [
+                "כנסת"
+              ]
+            },
+            {
+              "name": "מפלגת ישר",
+              "match": [
+                "ישר!",
+                "מפלגת ישר",
+                "סיעת ישר",
+                "רשימת ישר",
+                "יו\"ר ישר",
+                "ישר של איזנקוט"
+              ]
+            },
+            {
+              "name": "מפלגת ביחד",
+              "match": [
+                "מפלגת ביחד",
+                "סיעת ביחד",
+                "רשימת ביחד",
+                "יו\"ר ביחד",
+                "ראשי ביחד",
+                "ביחד של בנט",
+                "\"ביחד\""
+              ]
+            },
+            {
+              "name": "קואליציה",
+              "match": [
+                "קואליציה",
+                "קואליציית",
+                "קואליציות",
+                "קואליציוני",
+                "קואליציונית",
+                "קואליציוניים"
+              ]
+            },
+            {
+              "name": "אופוזיציה",
+              "match": [
+                "אופוזיציה",
+                "אופוזיציית",
+                "אופוזיציוני",
+                "אופוזיציונית"
+              ]
+            }
           ]
         }
       ]

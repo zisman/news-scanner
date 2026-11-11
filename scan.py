@@ -93,6 +93,8 @@ def parse_feed(raw):
             m = IMG_RE.search(" ".join(blob))
             if m:
                 f["image"] = html.unescape(m.group(0))
+        if re.search(r"defau?l", f["image"], re.I):       # site placeholder, not a real photo
+            f["image"] = ""
         if f["title"] and f["link"]:
             out.append(f)
     return out
