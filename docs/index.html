@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>סורק חדשות</title>
+<style>
+  :root{
+    --bg:#f4f5f7; --card:#ffffff; --ink:#15181d; --muted:#667080; --line:#e2e5ea;
+    --accent:#0b5fff; --chip:#eef3ff; --ph1:#dfe4ec; --ph2:#c9d0db;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#101216; --card:#1a1d23; --ink:#eef0f3; --muted:#98a1b0; --line:#2a2e36;
+      --accent:#7aa7ff; --chip:#1f2a44; --ph1:#262b34; --ph2:#323946; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"Segoe UI",Arial,"Noto Sans Hebrew",sans-serif;line-height:1.5}
+  header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:14px 16px 10px}
+  h1{margin:0;font-size:1.15rem}
+  .sub{color:var(--muted);font-size:.8rem;margin-top:2px}
+  .crumbs{margin-top:10px;font-size:.85rem;color:var(--muted)}
+  .crumbs b{color:var(--ink)}
+  .filters{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:0 0 auto;border:1px solid var(--line);background:transparent;color:var(--ink);
+    padding:6px 14px;border-radius:999px;font:inherit;font-size:.85rem;cursor:pointer}
+  .filters button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  main{max-width:720px;margin:0 auto;padding:14px 12px 40px;display:grid;gap:14px}
+  .note{background:var(--chip);border-radius:12px;padding:10px 14px;font-size:.82rem;color:var(--ink)}
+  article{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .img img{width:100%;height:100%;object-fit:cover;display:block}
+  details{font-size:.8rem;color:var(--muted)} details li{direction:ltr;text-align:left;word-break:break-all;margin-bottom:4px}
+  .img{aspect-ratio:16/9;background:linear-gradient(135deg,var(--ph1),var(--ph2));
+    display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem}
+  .body{padding:12px 14px 14px}
+  .meta{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted);margin-bottom:6px}
+  .site{font-weight:700;color:var(--accent)}
+  h2{margin:0 0 6px;font-size:1.05rem;line-height:1.35}
+  p{margin:0 0 10px;font-size:.92rem;color:var(--ink)}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .tags span{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:.75rem}
+  a.more{display:inline-block;color:var(--accent);font-weight:600;font-size:.9rem;text-decoration:none}
+  a.more:hover{text-decoration:underline}
+  .empty{text-align:center;color:var(--muted);padding:30px 0}
+</style>
+</head>
+<body>
+<header>
+  <h1>סורק חדשות</h1>
+  <div class="sub" id="updated">טוען…</div>
+  <div class="crumbs" id="crumbs"></div>
+  <div class="filters" id="filters"></div>
+  <div class="filters" id="kwfilters"></div>
+</header>
+<main id="feed"></main>
+
+<script>
+let DATA={items:[],feeds:[]}, site="הכול", kw="הכול";
+const $=id=>document.getElementById(id);
+function el(tag, cls, text){ const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+function ago(iso){
+  const m=Math.round((Date.now()-new Date(iso))/60000);
+  if(m<1) return "עכשיו"; if(m<60) return "לפני "+m+" דק'";
+  const h=Math.round(m/60); if(h<24) return "לפני "+h+" שע'";
+  return new Date(iso).toLocaleDateString("he-IL",{day:"numeric",month:"numeric"});
+}
+function chips(box, values, cur, set){
+  box.replaceChildren(...values.map(v=>{
+    const b=el("button",null,v); b.type="button"; b.setAttribute("aria-pressed",String(v===cur));
+    b.onclick=()=>{set(v);render();}; return b;
+  }));
+}
+function render(){
+  const items=DATA.items;
+  chips($("filters"), ["הכול",...new Set(items.map(i=>i.site))], site, v=>site=v);
+  chips($("kwfilters"), ["הכול",...new Set(items.flatMap(i=>i.keywords))], kw, v=>kw=v);
+  const t=(DATA.taxonomy||[])[0];
+  $("crumbs").replaceChildren(document.createTextNode(t? t.name+" › ":""), el("b",null,t? t.subcategories.join(" · "):""));
+  $("updated").textContent = DATA.updated ? "סריקה אחרונה: "+ago(DATA.updated)+" · "+items.length+" ידיעות" : "";
+  const list=items.filter(i=>(site==="הכול"||i.site===site)&&(kw==="הכול"||i.keywords.includes(kw)));
+  const cards=list.map(i=>{
+    const a=el("article");
+    if(i.image){
+      const box=el("div","img"), im=el("img");
+      im.src=i.image; im.alt=""; im.loading="lazy"; im.referrerPolicy="no-referrer";
+      im.onerror=()=>box.remove(); box.append(im); a.append(box);
+    }
+    const b=el("div","body");
+    const m=el("div","meta"); m.append(el("span","site",i.site), el("span",null,ago(i.published)));
+    const tg=el("div","tags"); i.keywords.forEach(x=>tg.append(el("span",null,x)));
+    const l=el("a","more","לקריאה המלאה ←"); l.href=i.link; l.target="_blank"; l.rel="noopener noreferrer";
+    b.append(m, el("h2",null,i.title)); if(i.summary) b.append(el("p",null,i.summary));
+    b.append(tg,l); a.append(b); return a;
+  });
+  const det=el("details"); det.append(el("summary",null,"מצב המקורות"));
+  const ul=el("ul");
+  (DATA.feeds||[]).forEach(f=>ul.append(el("li",null,(f.ok?"✓ ":"✗ ")+f.site+" — "+f.url+" — "+(f.ok? f.found+" items, "+f.matched+" matched": f.error))));
+  det.append(ul);
+  $("feed").replaceChildren(...(cards.length?cards:[el("div","empty","אין כרגע ידיעות מתאימות")]), det);
+}
+async function load(){
+  try{
+    const r=await fetch("data.json?t="+Date.now(),{cache:"no-store"});
+    DATA=await r.json();
+  }catch(e){ $("updated").textContent="לא הצלחתי לטעון נתונים"; }
+  render();
+}
+load(); setInterval(load, 5*60*1000);
+</script>
+</body>
+</html>
