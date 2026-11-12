@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-12T19:20:36+00:00",
+ "updated": "2026-11-12T19:28:13+00:00",
  "feeds": [
   {
    "site": "Ynet",
    "url": "https://www.ynet.co.il/Integration/StoryRss2.xml",
    "ok": true,
    "found": 30,
-   "matched": 6,
+   "matched": 10,
    "error": ""
   },
   {
@@ -14,7 +14,7 @@
    "url": "https://www.ynet.co.il/Integration/StoryRss185.xml",
    "ok": true,
    "found": 30,
-   "matched": 9,
+   "matched": 14,
    "error": ""
   },
   {
@@ -23,6 +23,14 @@
    "ok": true,
    "found": 30,
    "matched": 1,
+   "error": ""
+  },
+  {
+   "site": "Ynet",
+   "url": "https://www.ynet.co.il/Integration/StoryRss3.xml",
+   "ok": true,
+   "found": 30,
+   "matched": 12,
    "error": ""
   },
   {
@@ -38,7 +46,7 @@
    "url": "https://rcs.mako.co.il/rss/31750a2610f26110VgnVCM1000005201000aRCRD.xml",
    "ok": true,
    "found": 20,
-   "matched": 0,
+   "matched": 1,
    "error": ""
   },
   {
@@ -54,7 +62,7 @@
    "url": "https://rcs.mako.co.il/rss/news-law.xml",
    "ok": true,
    "found": 20,
-   "matched": 1,
+   "matched": 2,
    "error": ""
   },
   {
@@ -63,6 +71,38 @@
    "ok": true,
    "found": 3,
    "matched": 0,
+   "error": ""
+  },
+  {
+   "site": "N12",
+   "url": "https://rcs.mako.co.il/rss/Sports.xml",
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "site": "N12",
+   "url": "https://rcs.mako.co.il/rss/sports.xml",
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "site": "N12",
+   "url": "https://rcs.mako.co.il/rss/news-sport.xml",
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "site": "N12",
+   "url": "https://rcs.mako.co.il/rss/Sports-football-il.xml",
+   "ok": true,
+   "found": 20,
+   "matched": 1,
    "error": ""
   },
   {
@@ -78,7 +118,23 @@
    "url": "https://rss.walla.co.il/feed/1?type=main",
    "ok": true,
    "found": 13,
-   "matched": 0,
+   "matched": 1,
+   "error": ""
+  },
+  {
+   "site": "וואלה",
+   "url": "https://rss.walla.co.il/feed/3",
+   "ok": true,
+   "found": 30,
+   "matched": 1,
+   "error": ""
+  },
+  {
+   "site": "וואלה",
+   "url": "https://rss.walla.co.il/feed/3?type=main",
+   "ok": true,
+   "found": 30,
+   "matched": 8,
    "error": ""
   },
   {
@@ -94,8 +150,24 @@
    "url": "https://www.haaretz.co.il/srv/htz---all-articles",
    "ok": true,
    "found": 100,
-   "matched": 8,
+   "matched": 11,
    "error": ""
+  },
+  {
+   "site": "הארץ",
+   "url": "https://www.haaretz.co.il/srv/rss-sport",
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "site": "הארץ",
+   "url": "https://www.haaretz.co.il/srv/ספורט---rss",
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 404: Not Found"
   }
  ],
  "taxonomy": [
@@ -112,7 +184,40 @@
   {
    "name": "ספורט",
    "icon": "⚽",
-   "subcategories": []
+   "subcategories": [
+    {
+     "name": "יורוליג",
+     "icon": "🇪🇺"
+    },
+    {
+     "name": "הפרמייר ליג",
+     "icon": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    {
+     "name": "ליגת האלופות",
+     "icon": "🏆"
+    },
+    {
+     "name": "ליגת ווינר בכדורגל",
+     "icon": "⚽"
+    },
+    {
+     "name": "ליגת ווינר בכדורסל",
+     "icon": "🏀"
+    },
+    {
+     "name": "לה ליגה",
+     "icon": "🇪🇸"
+    },
+    {
+     "name": "NBA",
+     "icon": "🇺🇸"
+    },
+    {
+     "name": "נבחרות ישראל",
+     "icon": "🇮🇱"
+    }
+   ]
   },
   {
    "name": "כלכלה",
@@ -132,6 +237,64 @@
  ],
  "items": [
   {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "מכבי תל אביב - הפועל תל אביב 21:25 (רבע 2)",
+   "summary": "אחרי הקאמבק המדהים בגמר גביע ווינר, הצהובים רוצים עוד ניצחון - הפעם ביורוליג. החבורה של קטש כבר עלתה ליתרון של 10, לפני שהאדומים התקרבו.",
+   "link": "https://sports.walla.co.il/item/3876025",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/8/4118808-46.jpg",
+   "published": "2026-11-12T22:05:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "דני אבדיה",
+    "פורטלנד טרייל בלייזרס"
+   ],
+   "title": "מכה לגולדן סטייט: סטף קרי סובל מקרע בשריר הבטן",
+   "summary": "אחרי שמונה ניצחונות רצופים, הווריירס נכנעו ליוסטון ואיבדו את הכוכב הגדול שלהם. האם הוא יחזור היישר למפגש עם אבדיה ופורטלנד בסוף החודש?",
+   "link": "https://sports.walla.co.il/item/3876056",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/8/4118770-46.jpg",
+   "published": "2026-11-12T20:13:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "ענן חלאילי",
+    "פרמייר ליג"
+   ],
+   "title": "השפיל את ענאן חלאילי וזכה בפרס מיוחד בפרמיירליג",
+   "summary": "לוקה וויליאמס-בארנט בן ה-18 הרשים בבכורה שלו בליגה במדי טוטנהאם עם דריבל על חשבון הישראלי. האוהדים והמומחים בחרו בו למצטיין החודש",
+   "link": "https://sports.walla.co.il/item/3876050",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/8/4118760-46.jpg",
+   "published": "2026-11-12T19:13:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "חי, רבע ראשון: מכבי ת\"א - הפועל ת\"א 16:23",
+   "summary": "אחרי הקאמבק הענק והזכייה בגביע ווינר, הצהובים רוצים להשלים ניצחון נוסף על היריבה העירונית, הפעם בלימסול - בדרבי הראשון העונה ביורוליג. אפרת עמורבן, שליחת ynet ו\"ידיעות אחרונות\", מדווחת מקפריסין",
+   "link": "https://www.ynet.co.il/sport/israelibasketball/article/bndhnkifj",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/09/rJKMNnhyRMe/rJKMNnhyRMe_0_186_3000_1689_0_medium.jpg",
+   "published": "2026-11-12T19:08:29+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
    "site": "הארץ",
    "category": "פוליטיקה",
    "subcategory": "כללי",
@@ -147,6 +310,35 @@
    "first_seen": "2026-11-12T19:20:36+00:00"
   },
   {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "לה ליגה",
+   "keywords": [
+    "אלצ'ה",
+    "רוי רביבו"
+   ],
+   "title": "רביבו ישנה את התוכניות? השאלות הגדולות בהרכב נבחרת ישראל",
+   "summary": "פציעתו של רוי רביבו בשריר התאומים, תאלץ את רן בן שמעון להקדיש עוד מחשבה על עמדה נוספת אחרי שקו ההגנה של נבחרת ישראל היה כבר סגור עם שלושה בלמים, ליאל עבדה בצד ימין ורוי רביבו בצד שמאל. אם מגן אלצ'ה לא יוכל לפתוח ואולי אף לא יהיה בסגל למשחק מול קוסובו בשבת (16:00), אמור עבדה…",
+   "link": "https://sports.walla.co.il/item/3876043",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/7/4117956-46.jpeg",
+   "published": "2026-11-12T18:15:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "לראשונה מאז המלחמה: ההחלטה של באסקוניה לקראת הפועל תל אביב",
+   "summary": "לראשונה מאז טבח 7 באוקטובר ופרוץ המלחמה, קבוצה ישראלית תתארח למשחק עם קהל בוויטוריה מול באסקוניה. זה יקרה במשחק ביום שלישי, בו תארח באסקוניה בבואסה ארנה את הפועל תל אביב במסגרת המחזור ה-12 ביורוליג.",
+   "link": "https://sports.walla.co.il/item/3876042",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/3/4113310-46.jpg",
+   "published": "2026-11-12T18:00:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
    "site": "הארץ",
    "category": "פוליטיקה",
    "subcategory": "כללי",
@@ -160,6 +352,35 @@
    "image": "https://img.haarets.co.il/bs/000001a1-d0bd-d1ce-a9a3-f0bfda850001/7c/5b/5fff21aa46d983933b0985c27e30/bardugo-promotion01.jpg?width=108&height=81",
    "published": "2026-11-12T17:47:56+00:00",
    "first_seen": "2026-11-12T18:09:20+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "פוליטיקה",
+   "subcategory": "כללי",
+   "keywords": [
+    "כנסת",
+    "קואליציה"
+   ],
+   "title": "גוש השינוי שוקל הצעה לחרדים: הקפאת אכיפת גיוס ומעצרים עד שנה",
+   "summary": "האתגר: איך להקים ממשלה עם חרדים מבלי אפשרות להעביר קודם מהלך ממשי. הפתרון שנבחן: הבטחה פומבית להקפאת מעצרים ואכיפת גיוס חרדים לתקופה של עד שנה בהחלטת ממשלה כדי לקדם הסדר מקיף לגיוס.",
+   "link": "https://www.ynet.co.il/news/article/byaws7xage",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/09/HkukWnyCfg/HkukWnyCfg_0_0_850_479_0_medium.jpg",
+   "published": "2026-11-12T17:35:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "מכה לגולדן סטייט: סטף קרי סובל מקרע בשריר הבטן",
+   "summary": "כוכב הווריורס ייבדק מחדש בעוד שבועיים, לאחר שעבר MRI לאחר הפציעה בהפסד ליוסטון. בקבוצה עדיין לא יודעים להעריך כמה זמן ייעדר, וסטיב קר הודה: \"אני מאוד מודאג\"",
+   "link": "https://www.ynet.co.il/sport/worldbasketball/article/byyhbuxcge",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/r1h54d7CMg/r1h54d7CMg_575_73_2003_1128_0_medium.jpg",
+   "published": "2026-11-12T17:25:54+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
   },
   {
    "site": "וואלה",
@@ -180,6 +401,7 @@
    "category": "פוליטיקה",
    "subcategory": "כללי",
    "keywords": [
+    "בחירות",
     "מפלגת ישר"
    ],
    "title": "נתניהו ואיזנקוט נועדו שעתיים \"על האתגרים הביטחוניים והמדיניים\"",
@@ -218,6 +440,34 @@
    "first_seen": "2026-11-12T16:50:13+00:00"
   },
   {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "אמיר קופי: \"עוד לא הראיתי הרבה ממה שאני יכול להציע\"",
+   "summary": "אחרי ההפסד למכבי ת\"א בגמר גביע ווינר (\"נפלנו, צריכים לשכוח מזה\"), שחקן הפועל ת\"א אמיר קופי בריאיון לוואלה ספורט - על חלקו בקאמבק הגדול ב-NBA, העומס ביורוליג (\"ליגה איכותית\"), מה צריך לעשות בדרבי היורוליג והשאיפות: \"לקבוצה הזאת יש מטרות גדולות העונה\"",
+   "link": "https://sports.walla.co.il/item/3875979",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/5/4115423-46.jpg",
+   "published": "2026-11-12T16:00:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "אמיר קופי: \"עוד לא הראיתי הרבה ממה שאני יכול להציע\"",
+   "summary": "אחרי ההפסד למכבי ת\"א בגמר גביע ווינר (\"נפלנו, צריכים לשכוח מזה\"), שחקן הפועל ת\"א אמיר קופי בריאיון לוואלה ספורט - על חלקו בקאמבק הגדול ב-NBA, העומס ביורוליג (\"ליגה איכותית\"), מה צריך לעשות בדרבי היורוליג והשאיפות: \"לקבוצה הזאת יש מטרות גדולות העונה\"",
+   "link": "https://sports.walla.co.il/item/3875979",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/5/4115423-46.jpg",
+   "published": "2026-11-12T16:00:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
    "site": "Ynet",
    "category": "פוליטיקה",
    "subcategory": "כללי",
@@ -230,6 +480,34 @@
    "image": "https://www.ynet.co.il/images/big_defual_image_1024_new.png",
    "published": "2026-11-12T15:57:58+00:00",
    "first_seen": "2026-11-12T16:50:13+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "פרמייר ליג"
+   ],
+   "title": "הפארסה נמשכת: המחיר המטורף של כישלונות מנצ'סטר יונייטד",
+   "summary": "מנצ'סטר יונייטד הודיעה היום (חמישי) רשמית על פיטוריו של מייקל קאריק, והפכה אותו לעוד שם ברשימה ארוכה של מאמנים שלא הצליחו לשרוד באולד טראפורד מאז פרישת אלכס פרגוסון ב-2013. אלא שמעבר לכישלון המקצועי המתמשך, התחלופה הבלתי פוסקת גובה מהמועדון מחיר כלכלי עצום: על פי \"דיילי…",
+   "link": "https://sports.walla.co.il/item/3876026",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/8/4118729-46.jpg",
+   "published": "2026-11-12T15:44:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "ענן חלאילי"
+   ],
+   "title": "המאמן של ענאן חלאילי פוטר, ויש כבר מועמד מוביל לתפקיד",
+   "summary": "פייר סאז', שהגיע מלאנס וצירף את הישראלי למועדון, סיים את דרכו אחרי חמישה חודשים. אקס טוטנהאם וברנטפורד מסתמן כמחליפו",
+   "link": "https://sports.walla.co.il/item/3875624",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/7/4117984-46.jpg",
+   "published": "2026-11-12T15:29:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
   },
   {
    "site": "Ynet",
@@ -247,6 +525,20 @@
   },
   {
    "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "ברוקלין נטס"
+   ],
+   "title": "8 הרוגים בקריסת בניין בניו יורק, אישה בהיריון חולצה מההריסות: \"יש עוד נעדרים\"",
+   "summary": "אסון בברוקלין: בניין מגורים בן 96 שנה קרס לתוך אתר בנייה סמוך שבו בוצעו עבודות חפירה. מאות כבאים פועלים בין ההריסות בחיפוש אחר לכודים, בהם ילדים.",
+   "link": "https://www.ynet.co.il/news/article/r1zao4qcgx",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/r1NF7fr7Azl/r1NF7fr7Azl_1_313_3000_1689_0_medium.jpg",
+   "published": "2026-11-12T13:59:25+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
    "category": "פוליטיקה",
    "subcategory": "כללי",
    "keywords": [
@@ -258,6 +550,21 @@
    "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/HJELdV7Afe/HJELdV7Afe_0_0_850_479_0_medium.jpg",
    "published": "2026-11-12T13:01:41+00:00",
    "first_seen": "2026-11-12T16:50:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "ענן חלאילי",
+    "קריסטל פאלאס"
+   ],
+   "title": "רשמית: מאמנו של ענאן חלאילי פוטר מקריסטל פאלאס",
+   "summary": "אחרי מייקל קאריק, הצרפתי הפך רשמית למאמן השני שפוטר העונה בליגה האנגלית בעקבות פתיחת העונה המאכזבת. תומאס פרנק, אקס טוטנהאם וברנטפורד, נמצא על פי דיווחים במגעים מתקדמים להחליפו",
+   "link": "https://www.ynet.co.il/sport/worldsoccer/article/2yehebius",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/09/r111GUaCazg/r111GUaCazg_0_13_800_451_0_medium.jpg",
+   "published": "2026-11-12T12:40:31+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
   },
   {
    "site": "הארץ",
@@ -305,6 +612,104 @@
    "first_seen": "2026-11-12T16:50:13+00:00"
   },
   {
+   "site": "Ynet",
+   "category": "פוליטיקה",
+   "subcategory": "כללי",
+   "keywords": [
+    "בחירות"
+   ],
+   "title": "הפערים העמוקים בין דרישות החרדים לגוש השינוי | אלה הרבנים שיכריעו במו\"מ",
+   "summary": "המנהיגים של החברה החרדית מאוכזבים מאוד מנתניהו ומאושרים מהנכונות של גוש השינוי להתפשר. אבל כבר עכשיו ברור לנציגים של איזנקוט ויהדות התורה, שבין הצדדים פער עצום בנושאים הבוערים של דת ומדינה, ובמיוחד בסוגיית הגיוס.",
+   "link": "https://www.ynet.co.il/news/article/yokra14955821",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/B17NjQX0ze/B17NjQX0ze_0_0_850_479_0_medium.jpg",
+   "published": "2026-11-12T12:17:02+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "N12",
+   "category": "ספורט",
+   "subcategory": "לה ליגה",
+   "keywords": [
+    "רוי רביבו"
+   ],
+   "title": "מכה לנבחרת: רוי רביבו לא צפוי לשחק בקוסובו",
+   "summary": "המגן התלונן על רגישות והצטרף לרשימת הפצועים. דסה ועבדה תורגלו כמגנים",
+   "link": "https://www.mako.co.il/Sports-football-il/israeli-league-q4_2026/Article-c738f98db7ec1a1027.htm",
+   "image": "https://img.mako.co.il/2026/11/12/sportFive_1803431_A.jpg",
+   "published": "2026-11-12T12:12:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "לידיי: \"הייתי על סף פרישה, לא רציתי לשחק כדורסל\"",
+   "summary": "רגע לפני הדרבי הגודל בלימסול, זאק לידיי פותח הכל בריאיון בלעדי: על הקשיים שכמעט הובילו לפרישה, השאיפות של הפועל ת\"א (\"יכולה להשיג כל מטרה\"), הסגל העמוס בכוכבים (\"קבוצות אחרות היו רוצות שתהיה להן הבעיה הזאת\") והחזית מול הצהובים הערב (\"ננצח\") | אפרת עמורבן, שליחת ynet ו\"ידיעות…",
+   "link": "https://www.ynet.co.il/sport/article/h1yvjxmrgl",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/Hy000lmXCMx/Hy000lmXCMx_0_0_850_479_0_medium.jpg",
+   "published": "2026-11-12T12:00:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "הארץ",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "פרמייר ליג"
+   ],
+   "title": "מנצ'סטר יונייטד פיטרה את מייקל קאריק. מאוריציו פוצ'טינו צפוי להחליפו",
+   "summary": "קשר העבר, שחתם במאי על חוזה עד קיץ 2028, סיים את דרכו במועדון אחרי פתיחת העונה הגרועה ביותר של יונייטד בתולדות הפרמייר ליג. לפי דייויד אורנשטיין מהאתלטיק, מי שיחליפו יהיה מאמן נבחרת ארה\"ב",
+   "link": "https://www.haaretz.co.il/sport/world-soccer/2026-11-12/ty-article/000001a1-cf2f-d1ce-a9a3-ef3f2d6a0000",
+   "image": "https://img.haarets.co.il/bs/000001a1-cf95-ddc9-abb7-cfd77e380000/00/35/f26101f44ef89bedba5ff4026cbe/099399.jpg?width=108&height=81",
+   "published": "2026-11-12T11:50:11+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "פרמייר ליג"
+   ],
+   "title": "מנצ'סטר יונייטד אישרה: מייקל קאריק פוטר, פוצ'טינו סיכם",
+   "summary": "השדים האדומים נפרדו מהמאמן אחרי פתיחת העונה החלשה. על פי דיווחיםו, המאמן הארגנטיני - שנמצא תחת חוזה בנבחרת ארה\"ב, קרוב לתפוס את מקומו",
+   "link": "https://www.ynet.co.il/sport/worldsoccer/article/ddhbb1wl3",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/10/22/r1vVGfP2fx/r1vVGfP2fx_0_33_1024_577_0_medium.jpg",
+   "published": "2026-11-12T11:03:42+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "לקראת הדרבי: נאסר על אוהדי הפועל להכניס ציוד עידוד לאולם | דיווח מיוחד",
+   "summary": "האדומים טוענים כי בניגוד לאוהדי מכבי ת\"א, להם נאסר להכניס תופים, דגלים ושלטים לאולם: \"הגענו במיוחד עם כל הציוד בטיסה, אנחנו רק רוצים לעודד את הקבוצה שלנו. זה ממש לא בסדר\".",
+   "link": "https://www.ynet.co.il/sport/israelibasketball/article/bky11vzqcfl",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/HJZAvGXAGg/HJZAvGXAGg_0_272_3000_1689_0_medium.jpg",
+   "published": "2026-11-12T10:45:22+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "קניון MYMALL בלימסול יעניק חסות למכבי תל אביב ביורוליג",
+   "summary": "הקניון, שבשליטת ארי נדל\"ן ודורסל, ילווה את משחקי הבית של הצהובים בקפריסין ויעניק הטבות והנחות לאוהדים. המהלך ייצא לדרך הערב בדרבי מול הפועל תל אביב",
+   "link": "https://finance.walla.co.il/item/3875960",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/8/4118648-46.jpeg",
+   "published": "2026-11-12T10:35:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
    "site": "הארץ",
    "category": "פוליטיקה",
    "subcategory": "כללי",
@@ -333,6 +738,77 @@
    "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/B1EDFWmRGg/B1EDFWmRGg_374_20_1830_1030_0_medium.jpg",
    "published": "2026-11-12T10:16:56+00:00",
    "first_seen": "2026-11-12T16:50:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "פוליטיקה",
+   "subcategory": "כללי",
+   "keywords": [
+    "בחירות"
+   ],
+   "title": "טנגו עם מכונת הרעל",
+   "summary": "הרצון לאזן אינו מחייב להציב צלם בהיכל העיתונות. הטנגו העדין והמסוכן עם מכונת הרעל עלול להעניק לה את האמינות שאנחנו מרוויחים בעבודה קשה.",
+   "link": "https://www.ynet.co.il/news/article/bky5fb7cfx",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/10/ryeawMKeRMe/ryeawMKeRMe_0_87_1280_721_0_medium.jpg",
+   "published": "2026-11-12T09:52:05+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "דני אבדיה",
+    "פורטלנד טרייל בלייזרס"
+   ],
+   "title": "אחרי הניצחון על אוקלהומה - בארה\"ב מהללים את אבדיה: \"הוא אולסטאר\"",
+   "summary": "הישראלי רשם שיא עונתי של 28 נקודות והיה שותף לניצחון שני בתוך יומיים של פורטלנד על אוקלהומה סיטי. ברשתות החברתיות התלהבו: \"דני אבדיה ודמיאן לילארד השתלטו כשהיה הכי חשוב\".",
+   "link": "https://www.ynet.co.il/sport/worldbasketball/article/eowjcnc1p",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/BJb00w11mAze/BJb00w11mAze_0_97_3000_1689_0_medium.jpg",
+   "published": "2026-11-12T09:40:09+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "הארץ",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "נבחרת ישראל בכדורסל"
+   ],
+   "title": "ננו גינזבורג מונה למאמן נבחרת ישראל בכדורסל ויחליף את אריאל בית הלחמי",
+   "summary": "המאמן בן ה-63, שעמד על הקווים של נבחרת צ'כיה מ-2013 עד 2023, ייחל את עבודתו בקיץ הקרוב, בעוד בית הלחמי ידריך את ישראל עד אז. \"אימון הנבחרת היא פיסגת השאיפות שלי מאז שהתחלתי בקריירה כמאמן\", אמר גינזבורג",
+   "link": "https://www.haaretz.co.il/sport/basketball/2026-11-12/ty-article/000001a1-cf04-ddc9-abb7-cfc685c50000",
+   "image": "https://img.haarets.co.il/bs/000001a1-cf09-da30-a7fb-dfbdfcbd0000/aa/30/0c4d901f4a8d80a15f1321b3d1e3/796541.jpg?width=108&height=81",
+   "published": "2026-11-12T09:16:14+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "ווסטהאם"
+   ],
+   "title": "שלושה בלמים, טוקלומטי בחוד, סולומון בחוץ: התכניות של בן שמעון לקוסובו",
+   "summary": "המאמן הלאומי קיבל החלטה עקרונית שלא לשלב עוד בין שחקן ווסטהאם לאוסקר גלוך, שיפתח ב-11. לחלוץ שארלוט יש יתרון על פני דור תורג'מן בעמדת החלוץ לקראת המשחק בשבת בפרישטינה בליגת האומות",
+   "link": "https://www.ynet.co.il/sport/israelisoccer/article/hyvh6azame",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2023/09/17/SJCg6C4kT/SJCg6C4kT_584_199_1535_865_0_medium.jpg",
+   "published": "2026-11-12T09:15:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "ווסטהאם"
+   ],
+   "title": "קריסה גם באנגליה וגם בנבחרת: מה עובר על מנור סולומון?",
+   "summary": "נדחק לספסל בווסטהאם, סופג ביקורות קשות בצ'מפיונשיפ ונעלם כמעט לגמרי במדים הלאומיים. איך הפך מי שסומן כיורש של איל ברקוביץ' ויוסי בניון לשחקן שאפילו לא בטוח בהרכב הנבחרת, ולמה הדריבלים – הנשק העיקרי שלו – כבר לא מתורגמים למספרים.",
+   "link": "https://www.ynet.co.il/sport/israelisoccer/article/hjsn2ufagl",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2025/10/08/HkFFolRQ6gx/HkFFolRQ6gx_120_71_1333_751_0_medium.jpg",
+   "published": "2026-11-12T08:45:02+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
   },
   {
    "site": "הארץ",
@@ -380,6 +856,39 @@
    "first_seen": "2026-11-12T09:41:57+00:00"
   },
   {
+   "site": "הארץ",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "ברוקלין נטס",
+    "דני אבדיה",
+    "דני וולף",
+    "פורטלנד טרייל בלייזרס"
+   ],
+   "title": "דני אבדיה הוביל את פורטלנד לניצחון נוסף על אוקלהומה; דני וולף השיג דאבל-דאבל בניצחון ברוקלין",
+   "summary": "דני אבדיה קלע 28 נקודות לצד 6 אסיסטים, 4 חטיפות ו-2 חסימות, ופורטלנד התעלתה בדקות ההכרעה וניצחה את אוקלהומה סיטי 108:118. דני וולף פתח אצל ברוקלין בפעם השלישית ברציפות וסיפק 10 נקודות, 11 ריבאונדים ו-4 אסיסטים ב-111:145 על ניו אורלינס",
+   "link": "https://www.haaretz.co.il/sport/nba/2026-11-12/ty-article/000001a1-ce1f-da30-a7fb-debfea800000",
+   "image": "https://img.haarets.co.il/bs/000001a1-ce2c-d2c2-abe5-fe3e53b40000/da/c4/5dc2136a4fa0870b6363db519636/137510.jpg?width=108&height=81",
+   "published": "2026-11-12T05:45:46+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "דני אבדיה",
+    "פורטלנד טרייל בלייזרס"
+   ],
+   "title": "28 נקודות לדני אבדיה, פורטלנד שוב ניצחה את אוקלהומה סיטי",
+   "summary": "'וי' כפול על אחת מהקבוצות הטובות ב-NBA בתוך 24 שעות: הפורוורד הישראלי הוסיף שישה אסיסטים, ארבע חטיפות ושלושה ריבאונדים ב-108:118 המרשים על הת'אנדר. 31 של גילג'ס-אלכסנדר לא הספיקו מהעבר השני.",
+   "link": "https://www.ynet.co.il/sport/worldbasketball/article/h1wf3tzrfe",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/H12Be6zRMl/H12Be6zRMl_0_128_2261_1273_0_medium.jpg",
+   "published": "2026-11-12T05:31:44+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
    "site": "Ynet",
    "category": "פוליטיקה",
    "subcategory": "כללי",
@@ -406,6 +915,48 @@
    "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/10/ByXNGMZAGg/ByXNGMZAGg_0_0_850_479_0_medium.jpg",
    "published": "2026-11-12T04:55:22+00:00",
    "first_seen": "2026-11-12T09:41:57+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "מצאה בית חדש: המהלך שיציל למכבי ת\"א את עונת היורוליג?",
+   "summary": "אחרי שלוש שנים בבלגרד, מכבי ת\"א חונכת הערב (21.05) בית אירופי חדש בקפריסין - ודווקא בדרבי הלוהט מול הפועל. מהמהלכים המדיניים והסירובים ליריבות, דרך שינוע הסלים מישראל באונייה, ועד הטיסה הקצרה שתאפשר לשחקנים לישון בבית ותחזיר את אלפי האוהדים ליציע.",
+   "link": "https://www.ynet.co.il/sport/israelibasketball/article/h1vw58grfx",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/11/Bk9olGfRGl/Bk9olGfRGl_0_301_961_541_0_medium.jpg",
+   "published": "2026-11-12T04:30:22+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "סטף קרי תקף את כוכבי ה-NBA לשעבר - בגלל נשיקה של אשתו",
+   "summary": "כוכב גולדן סטייט הגיב בחריפות לביקורת שספגה אשתו איישה מגילברט ארינאס וניק יאנג בעקבות סצנת נשיקה בסרט החדש שבו היא מככבת: \"זה מעיד על הדרך שבה אתם רואים נשים בעולם\"",
+   "link": "https://www.ynet.co.il/sport/worldbasketball/article/h1em1jgcgx",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/rkQqlsGCMx/rkQqlsGCMx_211_19_639_360_0_medium.jpg",
+   "published": "2026-11-12T04:30:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "פוליטיקה",
+   "subcategory": "כללי",
+   "keywords": [
+    "בחירות"
+   ],
+   "title": "\"התקדמות\" בערוץ הדיסקרטי בין איזנקוט לחרדים: \"יש עוד דרך ארוכה\"",
+   "summary": "למרות שבכיר בגוש השינוי מאשר ש\"יש תזוזה\" במו\"מ, איש אינו מוכן לחשוף את הפשרות שהוצעו. ליברמן סבור שאם יהדות התורה תגיע גם ש\"ס תצטרף, אך בגוש השינוי מעריכים שבכל מקרה יידרשו לוותר על חלק מהאג'נדה בנושאי דת ומדינה",
+   "link": "https://www.ynet.co.il/news/article/yokra14956329",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/09/BJYW8nJ0Me/BJYW8nJ0Me_0_0_850_479_0_medium.jpg",
+   "published": "2026-11-12T04:28:31+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
   },
   {
    "site": "הארץ",
@@ -482,6 +1033,22 @@
    "category": "פוליטיקה",
    "subcategory": "כללי",
    "keywords": [
+    "בחירות",
+    "כנסת"
+   ],
+   "title": "\"קמפיין שלם משרתי המילואים סמכו עליכם. אל תבגדו בנו\"",
+   "summary": "א' התנדב לשירות סדיר והמשיך למילואים - גם אחרי שאיבד את אחיו בעזה. ד\"ר פנינה בת ה-50 התגייסה לראשונה במלחמה.",
+   "link": "https://www.ynet.co.il/news/article/sja6zmgrfl",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/11/S1kL3QG0Gl/S1kL3QG0Gl_0_0_850_479_0_medium.jpg",
+   "published": "2026-11-11T20:50:40+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "פוליטיקה",
+   "subcategory": "כללי",
+   "keywords": [
+    "מפלגת ישר",
     "קואליציה"
    ],
    "title": "המסר מסביבת נתניהו לאיזנקוט: \"לא נתעקש על בן גביר בממשלת אחדות\"",
@@ -575,6 +1142,20 @@
    "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/11/rJ3YuWG0zg/rJ3YuWG0zg_0_0_850_479_0_medium.jpg",
    "published": "2026-11-11T16:38:53+00:00",
    "first_seen": "2026-11-11T19:43:47+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "פוליטיקה",
+   "subcategory": "כללי",
+   "keywords": [
+    "כנסת"
+   ],
+   "title": "גוש איזנקוט צלח את המבחנים הראשונים, מהומה בוועדה: השפלות וצרחות, גוטליב הורחקה",
+   "summary": "הרכבי הוועדה המסדרת וועדות חוץ וביטחון וכספים אושרו בתמיכת הח\"כים הערבים. בדיון הראשון קראו ח\"כים זה לזה \"גנב אמל\"ח\" ו\"תרנגולת\", גוטליב הוצאה לקריאות \"ברא, ברא\".",
+   "link": "https://www.ynet.co.il/news/article/skunlc11cfg",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/11/Sk4QYDlGRGx/Sk4QYDlGRGx_0_25_1280_721_0_medium.jpg",
+   "published": "2026-11-11T15:31:27+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
   },
   {
    "site": "Ynet",
@@ -1188,6 +1769,20 @@
    "first_seen": "2026-11-11T19:43:47+00:00"
   },
   {
+   "site": "N12",
+   "category": "ספורט",
+   "subcategory": "לה ליגה",
+   "keywords": [
+    "רוי רביבו"
+   ],
+   "title": "\"ערב מתוח ומסוכן\": עימותים אמש בין יהודים וערבים בלוד, העבריין המורשע מרדכי דוד זומן לחקירה אחרי הפרובוקציה",
+   "summary": "ראש עיריית לוד יאיר רביבו שיתף ש\"חבורה קיצונית הגיעה לעיר והובילה תהלוכה מתריסה בשכונות המעורבות\" • העימותים הקשים שהתפתחו במקום הסתיימו בפצועים ועצורים • אחד ממנהיגי ההתקהלות - העבריין המורשע מרדכי דוד",
+   "link": "https://www.mako.co.il/news-law/2026_q4/Article-322a619cd0fb1a1026.htm",
+   "image": "https://img.mako.co.il/2026/11/09/david_091126_i_autoOrient_a.jpg",
+   "published": "2026-11-09T13:23:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
+  },
+  {
    "site": "הארץ",
    "category": "פוליטיקה",
    "subcategory": "כללי",
@@ -1372,6 +1967,20 @@
    "image": "https://img.mako.co.il/2026/11/06/n20-0311-trumpbb-ibud-1-1A_autoOrient_a.jpg",
    "published": "2026-11-06T15:20:00+00:00",
    "first_seen": "2026-11-11T19:44:57+00:00"
+  },
+  {
+   "site": "N12",
+   "category": "ספורט",
+   "subcategory": "לה ליגה",
+   "keywords": [
+    "רוי רביבו"
+   ],
+   "title": "\"חרפה\": הפנדל שלא נשרק לרוי רביבו",
+   "summary": "מגן אלצ`ה הופל ברחבה. מהביקורת בספרד (\"חרפה\") ועד התגובה הרשמית של המועדון",
+   "link": "https://www.mako.co.il/news-sport/world_soccer-2026_q4/Article-34efc92118a41a1027.htm",
+   "image": "https://img.mako.co.il/2026/10/18/sportFive_1789956_A.jpg",
+   "published": "2026-10-17T21:47:00+00:00",
+   "first_seen": "2026-11-12T19:28:13+00:00"
   },
   {
    "site": "וואלה",
