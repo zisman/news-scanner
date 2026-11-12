@@ -133,7 +133,10 @@ def main():
     for cat in cfg["categories"]:
         for sub in cat["subcategories"]:
             kws = [(k["name"], [term_regex(t) for t in k["match"]]) for k in sub["keywords"]]
-            rules.append((cat["name"], sub["name"], set(cat["sites"]), kws))
+            sites = set(cat.get("sites") or [s["name"] for s in cfg["sites"]])
+            rules.append((cat["name"], sub["name"], sites, kws))
+    valid = {(r[0], r[1]) for r in rules}
+    old = {k: v for k, v in old.items() if (v.get("category"), v.get("subcategory")) in valid}
 
     items, status = dict(old), []
     for site in cfg["sites"]:
@@ -180,7 +183,9 @@ def main():
             i["image"] = og_image(i["link"])
 
     data = {"updated": now.isoformat(timespec="seconds"), "feeds": status,
-            "taxonomy": [{"name": c["name"], "subcategories": [s["name"] for s in c["subcategories"]]}
+            "taxonomy": [{"name": c["name"], "icon": c.get("icon", ""),
+                          "subcategories": [{"name": s["name"], "icon": s.get("icon", "")}
+                                            for s in c["subcategories"]]}
                          for c in cfg["categories"]],
             "items": keep}
     OUT.parent.mkdir(exist_ok=True)
