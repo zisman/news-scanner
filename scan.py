@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """News scanner: reads RSS feeds, keeps items that match the keywords in config.json,
 and writes docs/data.json for the web page. Standard library only."""
-import html, json, re, sys, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+import concurrent.futures, html, json, re, sys, urllib.parse, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -21,7 +21,7 @@ def fetch(url, limit=3_000_000):
     req = urllib.request.Request(url, headers={
         "User-Agent": UA, "Accept": "application/rss+xml, application/xml, text/xml, text/html, */*",
         "Accept-Language": "he-IL,he;q=0.9,en;q=0.8"})
-    with urllib.request.urlopen(req, timeout=25) as r:
+    with urllib.request.urlopen(req, timeout=12) as r:
         return r.read(limit)
 
 
@@ -41,6 +41,8 @@ def term_regex(term):
     """Whole-word match that tolerates Hebrew prefix letters (ה/ב/ל/ו/מ/ש/כ)."""
     t = re.escape(norm(term))
     lead = rf"(?<![{HEB}])[ובהלמשכ]{{0,3}}" if re.match(rf"[{HEB}]", term) else ""
+    if not lead:                                         # Latin term: whole word, any letter case
+        return re.compile(r"(?<![A-Za-z])" + t + r"(?![A-Za-z])", re.I)
     return re.compile(lead + t + rf"(?![{HEB}])")
 
 
@@ -136,30 +138,44 @@ def main():
     rules = []          # (category, subcategory, sites, [(keyword name, [regex])])
     for cat in cfg["categories"]:
         for sub in cat["subcategories"]:
-            kws = [(k["name"], [term_regex(t) for t in k["match"]]) for k in sub["keywords"]]
+            kws = [(k["name"], [term_regex(t) for t in k["match"]],
+                    [term_regex(t) for t in k.get("context", [])],
+                    [term_regex(t) for t in k.get("exclude", [])]) for k in sub["keywords"]]
             sites = set(cat.get("sites") or [s["name"] for s in cfg["sites"]])
             rules.append((cat["name"], sub["name"], sites, kws))
     valid = {(r[0], r[1]) for r in rules}
     old = {k: v for k, v in old.items() if (v.get("category"), v.get("subcategory")) in valid}
 
     items, status = dict(old), []
+
+    def grab(u):                                         # download all feeds in parallel
+        try:
+            return parse_feed(fetch(u)), ""
+        except Exception as e:
+            return None, f"{type(e).__name__}: {e}"[:160]
+    urls = [f if isinstance(f, str) else f["url"] for s in cfg["sites"] for f in s["feeds"]]
+    with concurrent.futures.ThreadPoolExecutor(10) as ex:
+        fetched = dict(zip(urls, ex.map(grab, urls)))
     for site in cfg["sites"]:
         for feed in site["feeds"]:
             url, only = (feed, None) if isinstance(feed, str) else (feed["url"], feed.get("categories"))
             st = {"site": site["name"], "url": url, "ok": False, "found": 0, "matched": 0, "error": ""}
-            try:
-                entries = parse_feed(fetch(url))
-                st["ok"], st["found"] = True, len(entries)
-            except Exception as e:
-                st["error"] = f"{type(e).__name__}: {e}"[:160]
+            entries, st["error"] = fetched[url]
+            if entries is None:
                 entries = []
+            else:
+                st["ok"], st["found"] = True, len(entries)
             for e in entries:
                 hay = norm(e["title"] + " \n " + clean(e["desc"]) + " \n " + e["tags"])
                 counted = False
                 for cat, sub, sites, kws in rules:
                     if site["name"] not in sites or (only and cat not in only):
                         continue
-                    hits = [name for name, rxs in kws if any(r.search(hay) for r in rxs)]
+                    wide = hay + " \n " + urllib.parse.unquote(e["link"])
+                    hits = [name for name, rxs, ctx, exc in kws
+                            if any(r.search(hay) for r in rxs)
+                            and (not ctx or any(r.search(wide) for r in ctx))
+                            and not any(r.search(wide) for r in exc)]
                     if not hits:
                         continue
                     st["matched"] += 0 if counted else 1
@@ -182,7 +198,13 @@ def main():
     cutoff = (now - timedelta(days=cfg.get("max_age_days", 7))).isoformat()
     keep = [i for i in items.values() if i["published"] >= cutoff or i["first_seen"] >= cutoff]
     keep.sort(key=lambda i: i["published"], reverse=True)
-    keep = keep[: cfg.get("max_items", 300)]
+    cap, per, capped = cfg.get("max_per_subcategory", 150), {}, []
+    for i in keep:                                       # newest first, so the cap drops the oldest
+        k = (i["category"], i["subcategory"])
+        per[k] = per.get(k, 0) + 1
+        if per[k] <= cap:
+            capped.append(i)
+    keep = capped
     budget, seen = 25, {}                                # page fetches per run for missing images
     for i in keep:
         if not i["image"] and i["link"] in seen:
