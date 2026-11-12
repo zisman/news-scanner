@@ -1,13 +1,19 @@
 {
   "max_age_days": 7,
-  "max_items": 300,
+  "max_items": 600,
   "sites": [
     {
       "name": "Ynet",
       "feeds": [
         "https://www.ynet.co.il/Integration/StoryRss2.xml",
         "https://www.ynet.co.il/Integration/StoryRss185.xml",
-        "https://www.ynet.co.il/Integration/StoryRss1854.xml"
+        "https://www.ynet.co.il/Integration/StoryRss1854.xml",
+        {
+          "url": "https://www.ynet.co.il/Integration/StoryRss3.xml",
+          "categories": [
+            "ספורט"
+          ]
+        }
       ]
     },
     {
@@ -17,21 +23,69 @@
         "https://rcs.mako.co.il/rss/31750a2610f26110VgnVCM1000005201000aRCRD.xml",
         "https://rcs.mako.co.il/rss/news-military.xml",
         "https://rcs.mako.co.il/rss/news-law.xml",
-        "https://rcs.mako.co.il/rss/MainSliderRss.xml"
+        "https://rcs.mako.co.il/rss/MainSliderRss.xml",
+        {
+          "url": "https://rcs.mako.co.il/rss/Sports.xml",
+          "categories": [
+            "ספורט"
+          ]
+        },
+        {
+          "url": "https://rcs.mako.co.il/rss/sports.xml",
+          "categories": [
+            "ספורט"
+          ]
+        },
+        {
+          "url": "https://rcs.mako.co.il/rss/news-sport.xml",
+          "categories": [
+            "ספורט"
+          ]
+        },
+        {
+          "url": "https://rcs.mako.co.il/rss/Sports-football-il.xml",
+          "categories": [
+            "ספורט"
+          ]
+        }
       ]
     },
     {
       "name": "וואלה",
       "feeds": [
         "https://rss.walla.co.il/feed/2686",
-        "https://rss.walla.co.il/feed/1?type=main"
+        "https://rss.walla.co.il/feed/1?type=main",
+        {
+          "url": "https://rss.walla.co.il/feed/3",
+          "categories": [
+            "ספורט"
+          ]
+        },
+        {
+          "url": "https://rss.walla.co.il/feed/3?type=main",
+          "categories": [
+            "ספורט"
+          ]
+        }
       ]
     },
     {
       "name": "הארץ",
       "feeds": [
         "https://www.haaretz.co.il/srv/rss---feedly",
-        "https://www.haaretz.co.il/srv/htz---all-articles"
+        "https://www.haaretz.co.il/srv/htz---all-articles",
+        {
+          "url": "https://www.haaretz.co.il/srv/rss-sport",
+          "categories": [
+            "ספורט"
+          ]
+        },
+        {
+          "url": "https://www.haaretz.co.il/srv/ספורט---rss",
+          "categories": [
+            "ספורט"
+          ]
+        }
       ]
     }
   ],
@@ -106,7 +160,196 @@
     {
       "name": "ספורט",
       "icon": "⚽",
-      "subcategories": []
+      "subcategories": [
+        {
+          "name": "יורוליג",
+          "icon": "🇪🇺",
+          "keywords": [
+            {
+              "name": "יורוליג",
+              "match": [
+                "יורוליג"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "הפרמייר ליג",
+          "icon": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "keywords": [
+            {
+              "name": "פרמייר ליג",
+              "match": [
+                "פרמייר ליג",
+                "פרמיירליג",
+                "פרמיר ליג",
+                "הליגה האנגלית"
+              ]
+            },
+            {
+              "name": "קריסטל פאלאס",
+              "match": [
+                "קריסטל פאלאס",
+                "קריסטל פלאס",
+                "פאלאס"
+              ]
+            },
+            {
+              "name": "ענן חלאילי",
+              "match": [
+                "חלאילי",
+                "חיילאילי",
+                "ח'לאילי",
+                "חלאיילי"
+              ]
+            },
+            {
+              "name": "ווסטהאם",
+              "match": [
+                "ווסטהאם",
+                "ווסט האם",
+                "וסטהאם"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ליגת האלופות",
+          "icon": "🏆",
+          "keywords": [
+            {
+              "name": "ליגת האלופות",
+              "match": [
+                "ליגת האלופות",
+                "צ'מפיונס ליג",
+                "צ'מפיונס"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ליגת ווינר בכדורגל",
+          "icon": "⚽",
+          "keywords": [
+            {
+              "name": "ליגת העל בכדורגל",
+              "match": [
+                "ליגת העל בכדורגל",
+                "ליגת ווינר בכדורגל",
+                "ליגת העל הישראלית"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ליגת ווינר בכדורסל",
+          "icon": "🏀",
+          "keywords": [
+            {
+              "name": "ליגת העל בכדורסל",
+              "match": [
+                "ליגת העל בכדורסל",
+                "ליגת ווינר סל",
+                "ווינר סל",
+                "ליגת ווינר בכדורסל"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "לה ליגה",
+          "icon": "🇪🇸",
+          "keywords": [
+            {
+              "name": "לה ליגה",
+              "match": [
+                "לה ליגה",
+                "הליגה הספרדית"
+              ]
+            },
+            {
+              "name": "אלצ'ה",
+              "match": [
+                "אלצ'ה",
+                "אלצה"
+              ]
+            },
+            {
+              "name": "רוי רביבו",
+              "match": [
+                "רביבו"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NBA",
+          "icon": "🇺🇸",
+          "keywords": [
+            {
+              "name": "NBA",
+              "match": [
+                "NBA",
+                "אן.בי.איי",
+                "אן בי איי"
+              ]
+            },
+            {
+              "name": "פורטלנד טרייל בלייזרס",
+              "match": [
+                "פורטלנד",
+                "בלייזרס"
+              ]
+            },
+            {
+              "name": "דני אבדיה",
+              "match": [
+                "אבדיה"
+              ]
+            },
+            {
+              "name": "ברוקלין נטס",
+              "match": [
+                "ברוקלין נטס",
+                "ברוקלין",
+                "הנטס"
+              ]
+            },
+            {
+              "name": "בן שרף",
+              "match": [
+                "בן שרף"
+              ]
+            },
+            {
+              "name": "דני וולף",
+              "match": [
+                "דני וולף"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "נבחרות ישראל",
+          "icon": "🇮🇱",
+          "keywords": [
+            {
+              "name": "נבחרת ישראל בכדורגל",
+              "match": [
+                "נבחרת ישראל בכדורגל",
+                "נבחרת הכדורגל"
+              ]
+            },
+            {
+              "name": "נבחרת ישראל בכדורסל",
+              "match": [
+                "נבחרת ישראל בכדורסל",
+                "נבחרת הכדורסל"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "כלכלה",

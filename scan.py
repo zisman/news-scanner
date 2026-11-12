@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """News scanner: reads RSS feeds, keeps items that match the keywords in config.json,
 and writes docs/data.json for the web page. Standard library only."""
-import html, json, re, sys, urllib.request, xml.etree.ElementTree as ET
+import html, json, re, sys, urllib.parse, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -17,6 +17,7 @@ HEB = "א-ת"
 def fetch(url, limit=3_000_000):
     if not url.startswith("http"):                      # local file, used in tests
         return Path(url).read_bytes()
+    url = urllib.parse.quote(url, safe=":/?&=%#+,;@~")
     req = urllib.request.Request(url, headers={
         "User-Agent": UA, "Accept": "application/rss+xml, application/xml, text/xml, text/html, */*",
         "Accept-Language": "he-IL,he;q=0.9,en;q=0.8"})
@@ -69,7 +70,7 @@ def parse_feed(raw):
     for it in root.iter():
         if local(it.tag) not in ("item", "entry"):
             continue
-        f = {"title": "", "link": "", "desc": "", "date": "", "image": ""}
+        f = {"title": "", "link": "", "desc": "", "date": "", "image": "", "tags": ""}
         blob = []
         for c in it.iter():
             if c is it:
@@ -82,6 +83,8 @@ def parse_feed(raw):
                 f["link"] = text or c.attrib.get("href", "")
             elif name in ("description", "summary") and not f["desc"]:
                 f["desc"] = text
+            elif name in ("category", "tags", "keywords"):
+                f["tags"] += " , " + clean(text)
             elif name in ("pubdate", "published", "updated", "date") and not f["date"]:
                 f["date"] = text
             elif name in ("enclosure", "content", "thumbnail") and not f["image"]:
@@ -125,7 +128,8 @@ def main():
     old = {}
     if OUT.exists():
         try:
-            old = {i["link"]: i for i in json.loads(OUT.read_text("utf-8")).get("items", [])}
+            old = {f'{i["category"]}|{i["subcategory"]}|{i["link"]}': i
+                   for i in json.loads(OUT.read_text("utf-8")).get("items", [])}
         except Exception:
             old = {}
 
@@ -140,7 +144,8 @@ def main():
 
     items, status = dict(old), []
     for site in cfg["sites"]:
-        for url in site["feeds"]:
+        for feed in site["feeds"]:
+            url, only = (feed, None) if isinstance(feed, str) else (feed["url"], feed.get("categories"))
             st = {"site": site["name"], "url": url, "ok": False, "found": 0, "matched": 0, "error": ""}
             try:
                 entries = parse_feed(fetch(url))
@@ -149,18 +154,21 @@ def main():
                 st["error"] = f"{type(e).__name__}: {e}"[:160]
                 entries = []
             for e in entries:
-                hay = norm(e["title"] + " \n " + clean(e["desc"]))
+                hay = norm(e["title"] + " \n " + clean(e["desc"]) + " \n " + e["tags"])
+                counted = False
                 for cat, sub, sites, kws in rules:
-                    if site["name"] not in sites:
+                    if site["name"] not in sites or (only and cat not in only):
                         continue
                     hits = [name for name, rxs in kws if any(r.search(hay) for r in rxs)]
                     if not hits:
                         continue
-                    st["matched"] += 1
+                    st["matched"] += 0 if counted else 1
+                    counted = True
                     link = e["link"].strip()
-                    prev = items.get(link, {})
+                    key = f"{cat}|{sub}|{link}"
+                    prev = items.get(key, {})
                     d = parse_date(e["date"])
-                    items[link] = {
+                    items[key] = {
                         "site": site["name"], "category": cat, "subcategory": sub,
                         "keywords": sorted(set(hits) | set(prev.get("keywords", []))),
                         "title": e["title"], "summary": two_sentences(e["desc"], e["title"]),
@@ -168,7 +176,6 @@ def main():
                         "published": (d or now).isoformat(timespec="seconds") if (d or not prev) else prev["published"],
                         "first_seen": prev.get("first_seen", now.isoformat(timespec="seconds")),
                     }
-                    break
             status.append(st)
             print(("OK  " if st["ok"] else "FAIL"), site["name"], url, st["found"], st["matched"], st["error"])
 
@@ -176,11 +183,13 @@ def main():
     keep = [i for i in items.values() if i["published"] >= cutoff or i["first_seen"] >= cutoff]
     keep.sort(key=lambda i: i["published"], reverse=True)
     keep = keep[: cfg.get("max_items", 300)]
-    budget = 25                                          # page fetches per run for missing images
+    budget, seen = 25, {}                                # page fetches per run for missing images
     for i in keep:
-        if not i["image"] and budget:
+        if not i["image"] and i["link"] in seen:
+            i["image"] = seen[i["link"]]
+        elif not i["image"] and budget:
             budget -= 1
-            i["image"] = og_image(i["link"])
+            i["image"] = seen[i["link"]] = og_image(i["link"])
 
     data = {"updated": now.isoformat(timespec="seconds"), "feeds": status,
             "taxonomy": [{"name": c["name"], "icon": c.get("icon", ""),
