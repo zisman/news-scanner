@@ -154,6 +154,7 @@ def main():
         except Exception as e:
             return None, f"{type(e).__name__}: {e}"[:160]
     urls = [f if isinstance(f, str) else f["url"] for s in cfg["sites"] for f in s["feeds"]]
+    google = {f["url"] for s in cfg["sites"] for f in s["feeds"] if isinstance(f, dict) and f.get("google")}
     with concurrent.futures.ThreadPoolExecutor(10) as ex:
         fetched = dict(zip(urls, ex.map(grab, urls)))
     for site in cfg["sites"]:
@@ -166,6 +167,9 @@ def main():
             else:
                 st["ok"], st["found"] = True, len(entries)
             for e in entries:
+                if url in google:                        # Google News listing: headline and link only
+                    e["title"] = e["title"].rsplit(" - ", 1)[0]
+                    e["desc"] = e["image"] = ""
                 hay = norm(e["title"] + " \n " + clean(e["desc"]) + " \n " + e["tags"])
                 counted = False
                 for cat, sub, sites, kws in rules:
@@ -209,7 +213,7 @@ def main():
     for i in keep:
         if not i["image"] and i["link"] in seen:
             i["image"] = seen[i["link"]]
-        elif not i["image"] and budget:
+        elif not i["image"] and budget and "news.google.com" not in i["link"]:
             budget -= 1
             i["image"] = seen[i["link"]] = og_image(i["link"])
 
