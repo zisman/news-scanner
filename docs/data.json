@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T03:30:26+00:00",
+ "updated": "2026-11-13T04:00:28+00:00",
  "feeds": [
   {
    "site": "Ynet",
@@ -100,10 +100,10 @@
   {
    "site": "וואלה",
    "url": "https://rss.walla.co.il/feed/1?type=main",
-   "ok": true,
-   "found": 13,
-   "matched": 1,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "site": "וואלה",
@@ -238,7 +238,7 @@
    "url": "https://sports.yahoo.com/rss/",
    "ok": true,
    "found": 50,
-   "matched": 4,
+   "matched": 8,
    "error": ""
   },
   {
@@ -301,8 +301,8 @@
    "site": "ספורט 5",
    "url": "https://news.google.com/rss/search?q=site%3Asport5.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 99,
-   "matched": 16,
+   "found": 100,
+   "matched": 15,
    "error": ""
   },
   {
@@ -325,7 +325,7 @@
    "site": "כאן",
    "url": "https://news.google.com/rss/search?q=site%3Akan.org.il%20%D7%A1%D7%A4%D7%95%D7%A8%D7%98%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 73,
+   "found": 72,
    "matched": 1,
    "error": ""
   },
@@ -349,7 +349,7 @@
    "site": "The Times of Israel",
    "url": "https://news.google.com/rss/search?q=site%3Atimesofisrael.com%20sports%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 23,
+   "found": 21,
    "matched": 1,
    "error": ""
   },
@@ -374,23 +374,23 @@
    "url": "https://news.google.com/rss/search?q=site%3Anba.com/news%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 21,
-   "matched": 11,
+   "matched": 10,
    "error": ""
   },
   {
    "site": "UEFA.com",
    "url": "https://news.google.com/rss/search?q=site%3Auefa.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 29,
-   "matched": 26,
+   "found": 32,
+   "matched": 29,
    "error": ""
   },
   {
    "site": "EuroLeague",
    "url": "https://news.google.com/rss/search?q=site%3Aeuroleaguebasketball.net%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 54,
-   "matched": 23,
+   "found": 53,
+   "matched": 21,
    "error": ""
   },
   {
@@ -405,8 +405,8 @@
    "site": "BasketNews",
    "url": "https://news.google.com/rss/search?q=site%3Abasketnews.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 65,
-   "matched": 31,
+   "found": 63,
+   "matched": 30,
    "error": ""
   },
   {
@@ -430,23 +430,23 @@
    "url": "https://news.google.com/rss/search?q=site%3Ableacherreport.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 12,
+   "matched": 11,
    "error": ""
   },
   {
    "site": "Fox Sports",
    "url": "https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30",
-   "ok": false,
-   "found": 0,
-   "matched": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "ok": true,
+   "found": 15,
+   "matched": 1,
+   "error": ""
   },
   {
    "site": "NBC Sports",
    "url": "https://news.google.com/rss/search?q=site%3Anbcsports.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 9,
+   "matched": 8,
    "error": ""
   },
   {
@@ -641,8 +641,36 @@
    "summary": "Follow our live coverage of the latest news, injury fallout and more.",
    "link": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/",
    "image": "https://theathletic-media-production.s3-us-west-2.amazonaws.com/3O8C8RgzvHTs_TKrZsGr3jQN2_1440x960.jpg",
-   "published": "2026-11-13T03:30:22+00:00",
+   "published": "2026-11-13T03:57:50+00:00",
    "first_seen": "2026-11-12T19:38:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Recap: OKC Blue can't get stops in 128-115 loss to Memphis Hustle",
+   "summary": "Recap: OKC Blue can't get stops in 128-115 loss to Memphis Hustle.",
+   "link": "https://sports.yahoo.com/articles/recap-okc-blue-cant-stops-034704552.html",
+   "image": "https://media.zenfs.com/en/thunder_wire_usa_today_sports_articles_686/120b546d106379759752f06c01d57d20.jpg",
+   "published": "2026-11-13T03:47:04+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "פוליטיקה",
+   "subcategory": "כללי",
+   "keywords": [
+    "כנסת"
+   ],
+   "title": "ערביי ישראל הם אזרחים ונבחרים שווי זכויות",
+   "summary": "לאחר שנים רבות עקובות מדם, הצלחנו לעשות שלום עם מדינות ערב, מצרים וירדן. הגיעה העת לעשות שלום גם עם ערביי ישראל, ובמידה מסוימת גם עם עצמנו",
+   "link": "https://www.ynet.co.il/news/article/h1fc11qcfx",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/10/rJcnSteRfl/rJcnSteRfl_0_0_3000_1689_0_medium.jpg",
+   "published": "2026-11-13T03:47:00+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -655,8 +683,137 @@
    "summary": "A new Blazers season brings a new starting lineup, a new coach, a new ownership group and a new set of expectations.",
    "link": "https://sports.yahoo.com/articles/dame-time-back-portland-blazers-132904797.html",
    "image": "https://media.zenfs.com/en/oregonlive_com_articles_764/c2f5e81b9b4b1aae21ced493d7211144.jpg",
-   "published": "2026-11-13T03:20:42+00:00",
+   "published": "2026-11-13T03:40:37+00:00",
    "first_seen": "2026-11-12T19:38:28+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "פוליטיקה",
+   "subcategory": "כללי",
+   "keywords": [
+    "בחירות"
+   ],
+   "title": "לא לאחדות שמוחקת אחריות",
+   "summary": "מי שנתן את קולו, ביודעין, לפירוק הממלכתיות, להפקרת הסולידריות, לרמיסת האמת ולביזוי הצדק; מי שהעניק לכל אלה הכשר, הן בתמיכתו בזמן אמת והן בהצבעתו בבחירות האחרונות, איבד את הזכות לדרוש ממי שהוקיעו את העוולות, המחדלים והכשלים לשכוח, לסלוח או להתאחד איתו",
+   "link": "https://www.ynet.co.il/news/article/rj0bkemrze",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/10/Syxxw3heCfl/Syxxw3heCfl_0_95_1280_721_0_medium.jpg",
+   "published": "2026-11-13T03:35:00+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "אולסטאר",
+    "בוסטון סלטיקס",
+    "לברון ג'יימס"
+   ],
+   "title": "‘The Weakest Link,’ ‘He’s a Liability’ — Sports Analyst Tears Into LeBron James, Claims 22-Time All-Star Would Get ‘No Credit’ if 76ers Win NBA Title",
+   "summary": "Rob Parker didn’t hold back in his assessment of LeBron James’ historic 24th NBA season, questioning how much the 41-year-old is actually contributing to the Philadelphia 76ers’ strong start. Through his first 10 games, James has struggled with his offensive efficiency,…",
+   "link": "https://sports.yahoo.com/articles/weakest-liability-sports-analyst-tears-033232754.html",
+   "image": "https://media.zenfs.com/en/pro_football_network_512/007787371d2378f7e392852ec2410329.jpg",
+   "published": "2026-11-13T03:32:32+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "גולדן סטייט"
+   ],
+   "title": "Friday's Time Schedule",
+   "summary": "13 NBAMilwaukee at Orlando, 7 p.Golden State at San Antonio, 9:30 p.",
+   "link": "https://sports.yahoo.com/articles/fridays-time-schedule-033045432.html",
+   "image": "",
+   "published": "2026-11-13T03:30:45+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "ליגת האלופות",
+   "keywords": [
+    "באיירן מינכן"
+   ],
+   "title": "Bayern Munich’s Michael Olise inching closer to Nike deal",
+   "summary": "The FC Bayern star could be close to a big endorsement deal.",
+   "link": "https://sports.yahoo.com/articles/bayern-munich-michael-olise-inching-033000421.html",
+   "image": "https://media.zenfs.com/en/sb_nation_articles_115/ba4875d3409865ce06646c33a981f113.jpg",
+   "published": "2026-11-13T03:30:00+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Joel Embiid bumped knees, went down, terrified 76ers fans",
+   "summary": "76ers fans crashed back to reality when Joel Embiid went down against the Raptors.",
+   "link": "https://sports.yahoo.com/articles/joel-embiid-bumped-knees-went-032818230.html",
+   "image": "https://s.yimg.com/lo/mysterio/api/77ce119cd7f077f92ab2533ecaecaa42ac8dd6c4b27a815cf0b0aff5c27d1914/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_big_lead_articles_114%2F0202a3c87b54ba5e4c5e3f6411ee2e6d.jpg",
+   "published": "2026-11-13T03:28:18+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Cade Cunningham drops career-high 52 points in double OT win against Wizards",
+   "summary": "",
+   "link": "https://sports.yahoo.com/articles/cade-cunningham-drops-career-high-032759790.html",
+   "image": "https://s.yimg.com/lo/mysterio/api/6c79ef2aea74d30280c5ae7d5c52860fa83de828c7f54b7e8c6b2e808d70cb74/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhoops_hype_usa_today_sports_articles_974%2F9d4a81e06f2eed5b6b60be94ae65d425.png",
+   "published": "2026-11-13T03:27:59+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Jaylen Brown: 'It'd be great to see Tacko get an opportunity'",
+   "summary": "",
+   "link": "https://sports.yahoo.com/articles/jaylen-brown-itd-great-see-032758326.html",
+   "image": "https://s.yimg.com/lo/mysterio/api/c76453f54da3253d5a895f42aa7fb61d257eb6946f99e12bb2b58a066d44b905/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhoops_hype_usa_today_sports_articles_974%2F4339461686ee497ef47730d610f04c03.png",
+   "published": "2026-11-13T03:27:58+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "ליגת האלופות",
+   "keywords": [
+    "ריאל מדריד"
+   ],
+   "title": "Real Madrid midfielder targets return against Celta Vigo after injury scare",
+   "summary": "Although he does not get the same spotlight as some of the biggest stars in the team, the midfielder Aurelien Tchouameni has remained a key player for Real Madrid ever since his signing for the Mereng...",
+   "link": "https://sports.yahoo.com/articles/real-madrid-midfielder-targets-return-032500043.html",
+   "image": "https://media.zenfs.com/en/madrid_voice_articles_898/ecf79412ccf22b47c8f7e2fffe190af1.jpg",
+   "published": "2026-11-13T03:25:00+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "לה ליגה",
+   "keywords": [
+    "ריאל מדריד"
+   ],
+   "title": "Real Madrid midfielder targets return against Celta Vigo after injury scare",
+   "summary": "Although he does not get the same spotlight as some of the biggest stars in the team, the midfielder Aurelien Tchouameni has remained a key player for Real Madrid ever since his signing for the Mereng...",
+   "link": "https://sports.yahoo.com/articles/real-madrid-midfielder-targets-return-032500043.html",
+   "image": "https://media.zenfs.com/en/madrid_voice_articles_898/ecf79412ccf22b47c8f7e2fffe190af1.jpg",
+   "published": "2026-11-13T03:25:00+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
   },
   {
    "site": "UEFA.com",
@@ -725,7 +882,7 @@
    "title": "Cade Cunningham makes NBA history with career night in Pistons' 2OT win over Wizards",
    "summary": "Cade Cunningham had 52 points, 11 assists and no turnovers in a double-overtime win against the Wizards.",
    "link": "https://www.nytimes.com/athletic/7777903/2026/11/12/cade-cunningham-stats-points-pistons-wizards-score-results/",
-   "image": "https://static01.nyt.com/athletic/uploads/wp/2026/11/12220552/2026-11-10T031820Z_1764522299_MT1USATODAY30322714_RTRMADP_3_NBA-WASHINGTON-WIZARDS-AT-DETROIT-PISTONS-1-scaled.jpg",
+   "image": "https://static01.nyt.com/athletic/uploads/wp/2026/11/12224110/GettyImages-2304870094-scaled.jpg",
    "published": "2026-11-13T03:19:02+00:00",
    "first_seen": "2026-11-13T03:30:26+00:00"
   },
@@ -743,6 +900,20 @@
    "image": "https://media.zenfs.com/en/celtics_wire_usa_today_sports_articles_699/82e453eb9f413b7bf1f143a41dc5d4d4.jpg",
    "published": "2026-11-13T03:17:52+00:00",
    "first_seen": "2026-11-13T03:30:26+00:00"
+  },
+  {
+   "site": "NBC Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "NBA | Fantasy Basketball: News, Videos, Stats, Highlights, Results & More - Rotoworld",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82dUs1OTZ2WjhmcmV6elA4VldkQmVfVi0tOFNlTUlmdl9sT1RmNldaaTBTb1VGZmtMaWhKY1JqNTFqdDJJSzVSem9TN0hfUFNZMklBaHFIZw?oc=5",
+   "image": "",
+   "published": "2026-11-13T03:17:43+00:00",
+   "first_seen": "2026-11-12T22:30:26+00:00"
   },
   {
    "site": "UEFA.com",
@@ -794,8 +965,8 @@
    "keywords": [
     "NBA"
    ],
-   "title": "AJ Dybantsa bloodied after collision during Wizards-Pistons game",
-   "summary": "No. 1 overall pick AJ Dybantsa was knocked to the court after colliding with Cade Cunningham and his mouth was bloodied.",
+   "title": "Cade Cunningham has historic night as Pistons outlast Wizards in bloody battle",
+   "summary": "AJ Dybantsa was knocked to the court after colliding with Cade Cunningham and his mouth was bloodied. Cunningham went on to have a historic night.",
    "link": "https://sports.yahoo.com/articles/aj-dybantsa-bloodied-collision-during-025821033.html",
    "image": "https://s.yimg.com/lo/mysterio/api/ef092eb2ce372d0e1b10294f0b9fb2f5bb5f1f0c475ec1845126edc31c496719/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Fa49d0ca38f0bf4e749947e05b08b31b8.jpg",
    "published": "2026-11-13T02:58:21+00:00",
@@ -969,20 +1140,6 @@
    "image": "https://media.zenfs.com/en/gameday_chatter_552/f0080edd6f9b0028a9b169aef02ac78b.jpg",
    "published": "2026-11-13T02:22:34+00:00",
    "first_seen": "2026-11-13T02:30:26+00:00"
-  },
-  {
-   "site": "NBC Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "NBA | Fantasy Basketball: News, Videos, Stats, Highlights, Results & More - Rotoworld",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82dUs1OTZ2WjhmcmV6elA4VldkQmVfVi0tOFNlTUlmdl9sT1RmNldaaTBTb1VGZmtMaWhKY1JqNTFqdDJJSzVSem9TN0hfUFNZMklBaHFIZw?oc=5",
-   "image": "",
-   "published": "2026-11-13T02:19:17+00:00",
-   "first_seen": "2026-11-12T22:30:26+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -1533,6 +1690,20 @@
    "first_seen": "2026-11-13T01:00:30+00:00"
   },
   {
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "Kevin De Bruyne pleased with Belgium's reaction against Türki̇ye in Nations League",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQanpmeDZ0LWQzdTZ3cGhxSU5XbHVrQllmOXhsamxqcjJuSzM2SVlySTQxRjJPN0U5MmxoVjBmdFF1MGdINEhTSzhDVVdsWHhDb0hCa0F2aExVX1NsSWwtMVE2dHVuamFnZnp5WS1yY3Z3RWdjU1lLT1FTMzhXWUhoa0p6U2FGSjV2dnNONlpjZFNfRzBUVzk2RS15MjMtTURkMmxxUWgyUmtYZHFUbEE3TlZaVXczdnJ5b2FVUVZYcmVubkthXzUxRUd1ZG4yRHN3cUJjc09B?oc=5",
+   "image": "",
+   "published": "2026-11-13T00:39:51+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
    "site": "וואלה",
    "category": "ספורט",
    "subcategory": "יורוליג",
@@ -1576,6 +1747,20 @@
    "image": "",
    "published": "2026-11-13T00:30:34+00:00",
    "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "Nations League highlights: Czechia 0-2 Spain",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPV2xqUEhRREtSUFpzQ05UMGV2Q25DREhfRkMzVkNRdkhKaFdnZzZDYkZXRjFPVDl2R2RMTWIwbmJmRVhXaVJWTW9pNWNvMkhLbHF5NFlMdEdkNlB5NWRpSmJYTlZ2QkVicEM2eVREdHhSVWNXNEJiOXp3bFN5NXZVSHdMc3NsTnVodVpoYVE5V2hQY05WdnZfakdaNXlmUHR3VUw3Ql9GMkxjZWt6Y2lYcGVOYmRPcGZDSS1hZmtSTzYxcmJuTlptZllkbDlVTzhzcFhz?oc=5",
+   "image": "",
+   "published": "2026-11-13T00:20:32+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -2120,6 +2305,21 @@
    "first_seen": "2026-11-13T03:00:31+00:00"
   },
   {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "גולדן סטייט"
+   ],
+   "title": "Warriors’ center gets last laugh as NBA suspends Rockets star for several games",
+   "summary": "Warriors center Charles Bassey kept his hands down when Marcus Smart swung at him. The Houston Rockets guard will now sit for three games after the NBA suspended him Thursday...",
+   "link": "https://sports.yahoo.com/articles/warriors-center-gets-last-laugh-232010600.html",
+   "image": "https://media.zenfs.com/en/ny_post_sports_articles_389/72bf1262e77a0d7a0d786048b488c89a.jpg",
+   "published": "2026-11-12T23:20:10+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
+  },
+  {
    "site": "Sports Illustrated",
    "category": "ספורט",
    "subcategory": "NBA",
@@ -2231,6 +2431,20 @@
    "image": "",
    "published": "2026-11-12T23:16:56+00:00",
    "first_seen": "2026-11-12T23:30:26+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Mike Brown not ready to make a Mikal Bridges role change despite offensive struggles",
+   "summary": "Mikal Bridges is basically a starter in name only at the moment.",
+   "link": "https://sports.yahoo.com/articles/mike-brown-not-ready-mikal-231654915.html",
+   "image": "https://media.zenfs.com/en/ny_post_sports_articles_389/3eca2ed680b325dbdccf8fe25b3c02a5.jpg",
+   "published": "2026-11-12T23:16:54+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
   },
   {
    "site": "UEFA.com",
@@ -2415,6 +2629,20 @@
    "image": "",
    "published": "2026-11-12T23:08:09+00:00",
    "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
+   "site": "EuroLeague",
+   "category": "ספורט",
+   "subcategory": "יורוקאפ",
+   "keywords": [
+    "יורוקאפ"
+   ],
+   "title": "Skyliners Frankfurt-Maxima Roma | Round 7 Highlights | 2026-27 BKT EuroCup",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQOXVYclh2NTF0b3hWYnRKS3hEU09XbXh4aVBKTC1jOWpUNUxwRkFTZ1Y5NEZoQU5qNFY1LWpZaVhUc1hkUkJkMW8yLUxMTFhXdVR0ZUZIOFo4OVFhTVpMVEp6RzZHM0pfanZQOXZ5VUZPcFI0MVN3SEZvSHNzak9lUnh6QWNmRTZWNFBCOVFBRExQZk0xZ3JJbVRTRzhSazNycVlCZ2REYXBwMUVDMnNGbWZ2Y2JBbTlMR25zc3FoNDB6ZC1JMFhNSC14RlNPOW5MMldzaXdXWmtXSFZTdDhTeldLV250SUN1OWwtUDltUGpBVEcyVUhrcTQta3VZMjhVb0l6QzBn?oc=5",
+   "image": "",
+   "published": "2026-11-12T23:08:09+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
   },
   {
    "site": "EuroLeague",
@@ -3531,118 +3759,6 @@
    "image": "",
    "published": "2026-11-12T22:13:41+00:00",
    "first_seen": "2026-11-12T22:30:26+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "בוסטון סלטיקס"
-   ],
-   "title": "‘Let's check the ball up': Jaylen Brown ready for first game against Celtics",
-   "summary": "Brown will face Boston for the first time Tuesday as the Eastern Conference’s top two teams meet in Philadelphia.",
-   "link": "https://sports.yahoo.com/articles/lets-check-ball-jaylen-brown-162000020.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/bce3fd48bd15ba80131a1d605cc331059cb773111d7de1af1cfceb2d60a158d9/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2F03fa384067f269c3c1eaceddb85944e3.jpg",
-   "published": "2026-11-12T22:13:26+00:00",
-   "first_seen": "2026-11-13T03:30:26+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "בוסטון סלטיקס"
-   ],
-   "title": "Back in Philadelphia with Celtics, Paul George looks forward to ‘a regular game'",
-   "summary": "After two seasons with the Sixers, Paul George has returned to Philadelphia.",
-   "link": "https://sports.yahoo.com/articles/back-philadelphia-celtics-paul-george-111819903.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/2f4f17de732108cdd03986de07d182743408bc2c915a708422ca5d268387e402/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2F90a8fbf73f517543dae00682edd81c5c.jpg",
-   "published": "2026-11-12T22:13:26+00:00",
-   "first_seen": "2026-11-13T03:30:26+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Observations after Sixers suffer blowout loss to Cavs, fall in NBA Cup",
-   "summary": "The Sixers fell to their second loss of the season on Friday night in Cleveland.",
-   "link": "https://sports.yahoo.com/articles/observations-sixers-suffer-blowout-loss-170608101.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/f566a13f5ec1fd14a4cf19589f0477e3d5b8856feed5e75010a40af281030cab/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2F91a8bcb119227421a534086bf4ca6e59.jpg",
-   "published": "2026-11-12T22:13:26+00:00",
-   "first_seen": "2026-11-13T03:30:26+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "בוסטון סלטיקס"
-   ],
-   "title": "Sixers, Brown have a ‘humbling' night in loss to Celtics",
-   "summary": "Jaylen Brown called the Sixers' blowout defeat to the Celtics “humbling.”",
-   "link": "https://sports.yahoo.com/articles/sixers-brown-humbling-night-loss-101218318.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/92e54e55e3547c1dc7d27e729e401e16b6022831cd84462acde56616631e2432/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2Fb5ac8e43322f1653020b5eacbbb4ecaf.jpg",
-   "published": "2026-11-12T22:13:26+00:00",
-   "first_seen": "2026-11-13T03:30:26+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "לברון ג'יימס"
-   ],
-   "title": "Embiid and James listed as questionable for Sixers vs. Raptors",
-   "summary": "The Sixers listed both Joel Embiid and LeBron James as questionable for their game against the Raptors.",
-   "link": "https://sports.yahoo.com/articles/embiid-james-listed-questionable-sixers-173614574.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/4346deab571279e57fc24929b3e0813d65df7ca33a929fe80c3355f437d9b9d8/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2F17ae99c43fb640d6460e7c4e65eecf5e.jpg",
-   "published": "2026-11-12T22:13:26+00:00",
-   "first_seen": "2026-11-13T03:30:26+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "בוסטון סלטיקס"
-   ],
-   "title": "Observations after Sixers shake off slow start, Embiid injury scare to win",
-   "summary": "The Sixers brushed off their blowout loss to the Celtics and got back in the win column Thursday night.",
-   "link": "https://sports.yahoo.com/articles/observations-sixers-shake-off-slow-171100041.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/6608a9498267ea474dc24841d44344d9727a09c75e37eec960978f3a7f9333db/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2Fa17315985aac15f1db486498d1add688.jpg",
-   "published": "2026-11-12T22:13:26+00:00",
-   "first_seen": "2026-11-13T03:30:26+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "בוסטון סלטיקס"
-   ],
-   "title": "Observations after Sixers lose 1st Brown vs. Tatum matchup, George scores 36",
-   "summary": "Round 1 of the new-look Sixers vs. the new-look Celtics decisively went Boston’s way on Tuesday night.",
-   "link": "https://sports.yahoo.com/articles/observations-sixers-lose-1st-brown-222459305.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/f19859eb04ce87a89b05b1948559871cd3a275b1e19a1b05482d6a254e334a17/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2Fd78f3a288db200bb1372861ca94e60b5.jpg",
-   "published": "2026-11-12T22:13:26+00:00",
-   "first_seen": "2026-11-13T03:30:26+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "לברון ג'יימס"
-   ],
-   "title": "LeBron Log No. 4: A courtside sip, 16,000 makes and Cleveland's welcome",
-   "summary": "James sampled a fan’s wine, reached an unprecedented scoring milestone and experienced Cleveland’s full emotional range.",
-   "link": "https://sports.yahoo.com/articles/lebron-log-no-4-courtside-111309906.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/de10752c6c8d3ea9cf621686b675f082043550d91a343000f65e4db703f3ef28/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2Fbeb117359d2f26a1874258174266261d.jpg",
-   "published": "2026-11-12T22:13:26+00:00",
-   "first_seen": "2026-11-13T03:30:26+00:00"
   },
   {
    "site": "EuroLeague",
@@ -8351,20 +8467,6 @@
    "first_seen": "2026-11-12T19:38:28+00:00"
   },
   {
-   "site": "ישראל היום",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורגל",
-   "keywords": [
-    "מכבי תל אביב"
-   ],
-   "title": "אחרי 3 שנים: מכבי תל אביב בדרך לרווח משמעותי | היום",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5DeXZNeFV3MmFQanptTzk3Rk1xU3FjUER1ZXNlTmF4SkNIZm4wdmFYTlVzZzc0N1VDZlZJeTJYc19pMzNTemR2NUxaVXdUR2l4U29POUlHcGRYbGE5ZnFneDNQeXhSZUZ4Yno2QUtETU9LMm43eW1PTTM0MA?oc=5",
-   "image": "",
-   "published": "2026-11-12T17:10:09+00:00",
-   "first_seen": "2026-11-12T19:48:42+00:00"
-  },
-  {
    "site": "N12",
    "category": "ספורט",
    "subcategory": "ליגת האלופות",
@@ -8865,6 +8967,20 @@
    "first_seen": "2026-11-12T20:00:30+00:00"
   },
   {
+   "site": "ספורט 5",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורגל",
+   "keywords": [
+    "מכבי חיפה"
+   ],
+   "title": "היגינס: \"מכבי חיפה גיששה. אמרתי לה לא\"",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvOWFKczhoM1U3ejA1Vm1mSC1td19jTVFiN085eEdOU0hxUXZTUkFfLUNFRl91VktXTUl6N3B3OU5VWTZNdVEwdkloVTNMaWdCQW5WZVE3ZE5oaTc4MXRBME5oWnhKMGpLLS1lZW5aOTA?oc=5",
+   "image": "",
+   "published": "2026-11-12T15:59:01+00:00",
+   "first_seen": "2026-11-12T19:48:42+00:00"
+  },
+  {
    "site": "N12",
    "category": "ספורט",
    "subcategory": "ליגת האלופות",
@@ -8906,20 +9022,6 @@
    "image": "https://www.ynet.co.il/images/big_defual_image_1024_new.png",
    "published": "2026-11-12T15:57:58+00:00",
    "first_seen": "2026-11-12T16:50:13+00:00"
-  },
-  {
-   "site": "ספורט 5",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורגל",
-   "keywords": [
-    "מכבי חיפה"
-   ],
-   "title": "היגינס: \"מכבי חיפה גיששה. אמרתי לה לא\"",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvOWFKczhoM1U3ejA1Vm1mSC1td19jTVFiN085eEdOU0hxUXZTUkFfLUNFRl91VktXTUl6N3B3OU5VWTZNdVEwdkloVTNMaWdCQW5WZVE3ZE5oaTc4MXRBME5oWnhKMGpLLS1lZW5aOTA?oc=5",
-   "image": "",
-   "published": "2026-11-12T15:56:00+00:00",
-   "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
    "site": "ישראל היום",
@@ -9311,6 +9413,20 @@
    "link": "https://www.fourfourtwo.com/competition/watch-england-vs-croatia-nations-league-2026-27-free",
    "image": "https://cdn.mos.cms.futurecdn.net/yJUn4hPquJg8DA8RjYjpdY-1920-80.png",
    "published": "2026-11-12T15:00:00+00:00",
+   "first_seen": "2026-11-12T19:48:42+00:00"
+  },
+  {
+   "site": "ישראל היום",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורגל",
+   "keywords": [
+    "מכבי תל אביב"
+   ],
+   "title": "אחרי 3 שנים: מכבי תל אביב בדרך לרווח משמעותי",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5DeXZNeFV3MmFQanptTzk3Rk1xU3FjUER1ZXNlTmF4SkNIZm4wdmFYTlVzZzc0N1VDZlZJeTJYc19pMzNTemR2NUxaVXdUR2l4U29POUlHcGRYbGE5ZnFneDNQeXhSZUZ4Yno2QUtETU9LMm43eW1PTTM0MA?oc=5",
+   "image": "",
+   "published": "2026-11-12T14:58:41+00:00",
    "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
@@ -11048,7 +11164,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xelNYVFcxQ3ZScUtuSU9kT08xS2g3Z0NUV0NLUzNSNkdiQ25idXFlcG5sRXJ5c2tBX1Fid0cxalpvbldKd3dfT2M4eDNJWmVxemJNZ2FfdFVTcW93ZURGSERyY2VSUHBROFRvd2cwcllKdw?oc=5",
    "image": "",
-   "published": "2026-11-12T10:31:00+00:00",
+   "published": "2026-11-12T10:31:57+00:00",
    "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
@@ -11191,7 +11307,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE13Y1JhTFRSUjNrb0ZHVU5GN19NMER3Zlp1S3RjSjZ0T0o1UlA1SlJwRmVQV1pFMjNrTG94VXhkdDA3MVVwM2FhTzU4YWpMb1hUVk5ULVlsQi1DY0R3TTRzZnNOVWZIWC1pZzA5QVlySC0?oc=5",
    "image": "",
-   "published": "2026-11-12T10:02:00+00:00",
+   "published": "2026-11-12T10:03:08+00:00",
    "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
@@ -11676,6 +11792,20 @@
    "image": "",
    "published": "2026-11-12T08:32:22+00:00",
    "first_seen": "2026-11-13T03:00:31+00:00"
+  },
+  {
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "David Jurásek | Czechia | UEFA Nations League",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPejk3dmZyRUNpdUc0anVoUWNyVkFyY1JsSy1PQ3NaTWFJdHRacHRGb3QtLWJKUG8yeDJyYTRJMFY4TTFhSlFjRElqTVRRd2puVlkxWTU4MjV6T1ZVQ1paWWJGaW9lVWlucXcxdC1jdmZLcnEyNU8wNjd3SWpwMlJwN3B4R1g?oc=5",
+   "image": "",
+   "published": "2026-11-12T08:32:19+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
   },
   {
    "site": "Ynet",
@@ -12199,6 +12329,20 @@
    "image": "",
    "published": "2026-11-12T05:46:15+00:00",
    "first_seen": "2026-11-12T19:48:42+00:00"
+  },
+  {
+   "site": "Goal.com",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "פרמייר ליג"
+   ],
+   "title": "Marco Rose’s pressing monster has the Premier League trembling: suddenly unstoppable after a horror start",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOSEVZZmpCSE1qcVhvekUzWlp1a2drSzFoX1FEMEhqaDBZeTFXdTBSX0t5WElyaGpHeXY2eEVDZnJyRXoyUTlqVFZ3OEpYUi1vU1kwWW1HdHFwbHB2TXRhZm1IODM5dWFHT0xDM0tET25sN2RmVFZXRlJzRmpLTy1GU0VKcnRHdjQzQkpKT0l6T1pRR25aOHRVNFNHeTR4SWhlaDRpNm5fT0lCS2d0eVF1TmxFRnNMN2M4NDN1NWp3a1BINDY5MW16cUpwLXRWMF96aE9lUDNXcmgzMUhOZms5NTlEclhxRkxRVnRaQ1Z4eFhVb3o0WlBiZQ?oc=5",
+   "image": "",
+   "published": "2026-11-12T05:40:42+00:00",
+   "first_seen": "2026-11-13T04:00:28+00:00"
   },
   {
    "site": "Goal.com",
@@ -13175,20 +13319,6 @@
    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQbHF1dEVJZG1tcUFCS1UybmNzdXdKdVg5V2lwRnRuazBRd29VT1pHS2dZSHY1TzdOeVFYOE1SN0p6bmpxQjJqTmYzaWlUS043V3VlV3VlSnBRem8zZVNkQWRLZXRQN1k3YWdyNHlySUR5eVVLdi1YdWtoTGtyYngyWmtLU1N2ajUwNW9TalctMTVGMlpmWml2NFN3NlY3cTBxV0ZXYUFnX1lBd2FFTGhPLWJCVC1PMlhzWG9sMzBmU2xFTWNvRkwzbXp2Qk5RYXdmcGNHM1hPb21aMGZBa1JRTlJudXZTbTVfUmdyb1pBRFI?oc=5",
    "image": "",
    "published": "2026-11-11T21:18:57+00:00",
-   "first_seen": "2026-11-12T19:48:42+00:00"
-  },
-  {
-   "site": "Daily Mail",
-   "category": "ספורט",
-   "subcategory": "הפרמייר ליג",
-   "keywords": [
-    "ליברפול"
-   ],
-   "title": "Liverpool Confidential: Why Will Wright is the breakout star of Reds academy - LEWIS STEELE reveals club's plans for 6ft 3in hat-trick hero, his rise from Euxton Villa to Anfield and why coaches believe he's Andoni Iraola's next big thing",
-   "summary": "On Will Wright's last two trips abroad, he has needed to check in some extra baggage for the flight hom. Two UEFA Youth League away games, two hat-tricks and a pair of match balls to boot.",
-   "link": "https://www.dailymail.com/sport/football/article-16284175/Liverpool-Wright-academy.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-   "image": "https://i.dailymail.com/1s/2026/11/11/18/112448949-0-image-a-17_1794423292540.jpg",
-   "published": "2026-11-11T21:17:00+00:00",
    "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
@@ -14331,20 +14461,6 @@
    "first_seen": "2026-11-11T19:43:47+00:00"
   },
   {
-   "site": "BBC Sport",
-   "category": "ספורט",
-   "subcategory": "ליגת האלופות",
-   "keywords": [
-    "ליגת האלופות"
-   ],
-   "title": "Chelsea play out goalless draw with Hacken",
-   "summary": "Chelsea maintain their unbeaten start in the Women's Champions League but were frustrated by Hacken who pick up their second point in this season's competition.",
-   "link": "https://www.bbc.co.uk/sport/football/videos/c62keklwjpe0o?at_medium=RSS&at_campaign=rss",
-   "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2945/live/0373f810-dd50-11f1-a701-fddedf244c16.jpg",
-   "published": "2026-11-10T20:07:12+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
-  },
-  {
    "site": "הארץ",
    "category": "פוליטיקה",
    "subcategory": "כללי",
@@ -14386,20 +14502,6 @@
    "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/06/18/HJgYFA4ZzGe/HJgYFA4ZzGe_0_0_3000_1689_0_medium.jpg",
    "published": "2026-11-10T18:57:48+00:00",
    "first_seen": "2026-11-11T19:43:47+00:00"
-  },
-  {
-   "site": "Daily Mail",
-   "category": "ספורט",
-   "subcategory": "ליגת האלופות",
-   "keywords": [
-    "ריאל מדריד"
-   ],
-   "title": "Jude Bellingham says he 'wants to be a gentleman' but admits he doesn't feel 'mature' because 'I can't cook, I can't drive and I rely on my family' in new smouldering photoshoot",
-   "summary": "Real Madrid and England star Jude Bellingham has admitted he doesn't feel 'mature', despite being labelled as such from a young age.",
-   "link": "https://www.dailymail.com/sport/football/article-16281645/jude-bellingham-gentleman-family-interview.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-   "image": "https://i.dailymail.com/1s/2026/11/10/18/112425215-0-image-a-26_1794335071612.jpg",
-   "published": "2026-11-10T18:36:46+00:00",
-   "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
    "site": "Daily Mail",
