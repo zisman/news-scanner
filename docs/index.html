@@ -2,156 +2,21 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3f2f2">
 <title>סורק חדשות</title>
-<style>
-  :root{
-    --bg:#f4f5f7; --card:#ffffff; --ink:#15181d; --muted:#667080; --line:#e2e5ea;
-    --accent:#0b5fff; --chip:#eef3ff; --ph1:#dfe4ec; --ph2:#c9d0db;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --bg:#101216; --card:#1a1d23; --ink:#eef0f3; --muted:#98a1b0; --line:#2a2e36;
-      --accent:#7aa7ff; --chip:#1f2a44; --ph1:#262b34; --ph2:#323946; }
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font-family:-apple-system,"Segoe UI",Arial,"Noto Sans Hebrew",sans-serif;line-height:1.5}
-  header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:14px 16px 10px}
-  h1{margin:0;font-size:1.15rem}
-  .sub{color:var(--muted);font-size:.8rem;margin-top:2px}
-  .crumbs{margin-top:10px;font-size:.85rem;color:var(--muted)}
-  .crumbs b{color:var(--ink)}
-  .filters{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
-  .filters::-webkit-scrollbar{display:none}
-  .filters button{flex:0 0 auto;border:1px solid var(--line);background:transparent;color:var(--ink);
-    padding:6px 14px;border-radius:999px;font:inherit;font-size:.85rem;cursor:pointer}
-  .filters button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-  main{max-width:720px;margin:0 auto;padding:14px 12px 40px;display:grid;gap:14px}
-  .note{background:var(--chip);border-radius:12px;padding:10px 14px;font-size:.82rem;color:var(--ink)}
-  article{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
-  .tile{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 8px 16px;text-align:center;
-    text-decoration:none;color:var(--ink);display:flex;flex-direction:column;align-items:center;gap:10px;font:inherit;cursor:pointer}
-  .tile:active{transform:scale(.97)} .tile:hover{border-color:var(--accent)}
-  .tile .ico{font-size:2.6rem;line-height:1} .tile .nm{font-weight:700;font-size:1rem}
-  .tile .cnt{font-size:.75rem;color:var(--muted)}
-  .crumbs a{color:var(--accent);text-decoration:none} .filters:empty{display:none}
-  .img img{width:100%;height:100%;object-fit:cover;display:block}
-  details{font-size:.8rem;color:var(--muted)} details li{direction:ltr;text-align:left;word-break:break-all;margin-bottom:4px}
-  .img{aspect-ratio:16/9;background:linear-gradient(135deg,var(--ph1),var(--ph2));
-    display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem}
-  .body{padding:12px 14px 14px}
-  .meta{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted);margin-bottom:6px}
-  .site{font-weight:700;color:var(--accent)}
-  h2{margin:0 0 6px;font-size:1.05rem;line-height:1.35}
-  p{margin:0 0 10px;font-size:.92rem;color:var(--ink)}
-  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-  .tags span{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:.75rem}
-  a.more{display:inline-block;color:var(--accent);font-weight:600;font-size:.9rem;text-decoration:none}
-  a.more:hover{text-decoration:underline}
-  .empty{text-align:center;color:var(--muted);padding:30px 0}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="app.css">
 </head>
 <body>
-<header>
-  <h1>סורק חדשות</h1>
-  <div class="sub" id="updated">טוען…</div>
-  <div class="crumbs" id="crumbs"></div>
-  <div class="filters" id="filters"></div>
-  <div class="filters" id="kwfilters"></div>
-</header>
-<main id="feed"></main>
-
-<script>
-let DATA={items:[],feeds:[],taxonomy:[]}, site="הכול", kw="הכול";
-const $=id=>document.getElementById(id);
-function el(tag, cls, text){ const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
-function ago(iso){
-  const m=Math.round((Date.now()-new Date(iso))/60000);
-  if(m<1) return "עכשיו"; if(m<60) return "לפני "+m+" דק'";
-  const h=Math.round(m/60); if(h<24) return "לפני "+h+" שע'";
-  return new Date(iso).toLocaleDateString("he-IL",{day:"numeric",month:"numeric"});
-}
-function route(){
-  const p=new URLSearchParams(location.hash.slice(1));
-  return {c:p.get("c"), s:p.get("s")};
-}
-function href(c,s){ const p=new URLSearchParams(); if(c) p.set("c",c); if(s) p.set("s",s); const q=p.toString(); return q? "#"+q : "#"; }
-function link(text,h){ const a=el("a",null,text); a.href=h; return a; }
-function tile(icon,name,count,h){
-  const a=el("a","tile"); a.href=h;
-  a.append(el("div","ico",icon||"📁"), el("div","nm",name), el("div","cnt",count));
-  return a;
-}
-function chips(box, values, cur, set){
-  box.replaceChildren(...values.map(v=>{
-    const b=el("button",null,v); b.type="button"; b.setAttribute("aria-pressed",String(v===cur));
-    b.onclick=()=>{set(v);render();}; return b;
-  }));
-}
-function sources(){
-  const det=el("details"); det.append(el("summary",null,"מצב המקורות"));
-  const ul=el("ul");
-  (DATA.feeds||[]).forEach(f=>ul.append(el("li",null,(f.ok?"✓ ":"✗ ")+f.site+" — "+f.url+" — "+(f.ok? f.found+" items, "+f.matched+" matched": f.error))));
-  det.append(ul); return det;
-}
-function render(){
-  const {c,s}=route(), tax=DATA.taxonomy||[], items=DATA.items||[];
-  const cat=tax.find(t=>t.name===c), sub=cat && cat.subcategories.find(x=>x.name===s);
-  $("updated").textContent = DATA.updated ? "סריקה אחרונה: "+ago(DATA.updated) : "";
-  $("filters").replaceChildren(); $("kwfilters").replaceChildren();
-  const cr=$("crumbs"); cr.replaceChildren();
-
-  if(!cat){                                   // home: main categories
-    cr.append(el("b",null,"קטגוריות"));
-    const g=el("div","grid");
-    tax.forEach(t=>{ const n=items.filter(i=>i.category===t.name).length;
-      g.append(tile(t.icon,t.name,n? n+" ידיעות":"—",href(t.name))); });
-    $("feed").replaceChildren(g, sources()); return;
-  }
-  if(!sub){                                   // sub-categories of one category
-    cr.append(link("קטגוריות",href()), document.createTextNode(" › "), el("b",null,cat.name));
-    if(!cat.subcategories.length){
-      $("feed").replaceChildren(el("div","empty","עוד לא הוגדרו תתי־קטגוריות ל"+cat.name)); return; }
-    const g=el("div","grid");
-    cat.subcategories.forEach(x=>{ const n=items.filter(i=>i.category===cat.name&&i.subcategory===x.name).length;
-      g.append(tile(x.icon,x.name,n? n+" ידיעות":"—",href(cat.name,x.name))); });
-    $("feed").replaceChildren(g); return;
-  }
-  // feed of one sub-category
-  cr.append(link("קטגוריות",href()), document.createTextNode(" › "), link(cat.name,href(cat.name)),
-            document.createTextNode(" › "), el("b",null,sub.name));
-  const mine=items.filter(i=>i.category===cat.name&&i.subcategory===sub.name);
-  const sitesL=["הכול",...new Set(mine.map(i=>i.site))], kwL=["הכול",...new Set(mine.flatMap(i=>i.keywords))];
-  if(!sitesL.includes(site)) site="הכול"; if(!kwL.includes(kw)) kw="הכול";
-  chips($("filters"), sitesL, site, v=>site=v);
-  chips($("kwfilters"), kwL, kw, v=>kw=v);
-  const list=mine.filter(i=>(site==="הכול"||i.site===site)&&(kw==="הכול"||i.keywords.includes(kw)));
-  const cards=list.map(i=>{
-    const a=el("article");
-    if(i.image){
-      const box=el("div","img"), im=el("img");
-      im.src=i.image; im.alt=""; im.loading="lazy"; im.referrerPolicy="no-referrer";
-      im.onerror=()=>box.remove(); box.append(im); a.append(box);
-    }
-    const b=el("div","body");
-    const m=el("div","meta"); m.append(el("span","site",i.site), el("span",null,ago(i.published)));
-    const tg=el("div","tags"); i.keywords.forEach(x=>tg.append(el("span",null,x)));
-    const l=el("a","more","לקריאה המלאה ←"); l.href=i.link; l.target="_blank"; l.rel="noopener noreferrer";
-    b.append(m, el("h2",null,i.title)); if(i.summary) b.append(el("p",null,i.summary));
-    b.append(tg,l); a.append(b); return a;
-  });
-  $("feed").replaceChildren(...(cards.length?cards:[el("div","empty","אין כרגע ידיעות מתאימות")]));
-}
-async function load(){
-  try{
-    const r=await fetch("data.json?t="+Date.now(),{cache:"no-store"});
-    DATA=await r.json();
-  }catch(e){ $("updated").textContent="לא הצלחתי לטעון נתונים"; }
-  render();
-}
-addEventListener("hashchange",()=>{ site="הכול"; kw="הכול"; render(); scrollTo(0,0); });
-load(); setInterval(load, 5*60*1000);
-</script>
+<main id="app" aria-live="off"></main>
+<nav id="tabbar" class="tabbar" aria-label="ניווט ראשי"></nav>
+<div id="toast" class="toast" role="status"></div>
+<script src="leans.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
