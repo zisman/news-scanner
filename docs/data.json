@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T00:30:26+00:00",
+ "updated": "2026-11-13T01:00:30+00:00",
  "feeds": [
   {
    "site": "Ynet",
@@ -14,7 +14,7 @@
    "url": "https://www.ynet.co.il/Integration/StoryRss185.xml",
    "ok": true,
    "found": 30,
-   "matched": 14,
+   "matched": 13,
    "error": ""
   },
   {
@@ -100,10 +100,10 @@
   {
    "site": "וואלה",
    "url": "https://rss.walla.co.il/feed/1?type=main",
-   "ok": true,
-   "found": 13,
-   "matched": 1,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "site": "וואלה",
@@ -214,7 +214,7 @@
    "url": "https://www.theguardian.com/football/rss",
    "ok": true,
    "found": 59,
-   "matched": 33,
+   "matched": 32,
    "error": ""
   },
   {
@@ -238,7 +238,7 @@
    "url": "https://sports.yahoo.com/rss/",
    "ok": true,
    "found": 50,
-   "matched": 4,
+   "matched": 5,
    "error": ""
   },
   {
@@ -254,7 +254,7 @@
    "url": "https://sports.yahoo.com/soccer/rss/",
    "ok": true,
    "found": 50,
-   "matched": 26,
+   "matched": 25,
    "error": ""
   },
   {
@@ -325,7 +325,7 @@
    "site": "כאן",
    "url": "https://news.google.com/rss/search?q=site%3Akan.org.il%20%D7%A1%D7%A4%D7%95%D7%A8%D7%98%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 77,
+   "found": 80,
    "matched": 1,
    "error": ""
   },
@@ -333,7 +333,7 @@
    "site": "רשת 13",
    "url": "https://news.google.com/rss/search?q=site%3A13tv.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 83,
+   "found": 82,
    "matched": 0,
    "error": ""
   },
@@ -349,7 +349,7 @@
    "site": "The Times of Israel",
    "url": "https://news.google.com/rss/search?q=site%3Atimesofisrael.com%20sports%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 17,
+   "found": 20,
    "matched": 1,
    "error": ""
   },
@@ -373,23 +373,23 @@
    "site": "NBA.com",
    "url": "https://news.google.com/rss/search?q=site%3Anba.com/news%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 22,
-   "matched": 9,
+   "found": 23,
+   "matched": 11,
    "error": ""
   },
   {
    "site": "UEFA.com",
    "url": "https://news.google.com/rss/search?q=site%3Auefa.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 28,
-   "matched": 22,
+   "found": 29,
+   "matched": 24,
    "error": ""
   },
   {
    "site": "EuroLeague",
    "url": "https://news.google.com/rss/search?q=site%3Aeuroleaguebasketball.net%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 56,
+   "found": 50,
    "matched": 19,
    "error": ""
   },
@@ -405,7 +405,7 @@
    "site": "BasketNews",
    "url": "https://news.google.com/rss/search?q=site%3Abasketnews.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 61,
+   "found": 66,
    "matched": 32,
    "error": ""
   },
@@ -436,10 +436,10 @@
   {
    "site": "Fox Sports",
    "url": "https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30",
-   "ok": true,
-   "found": 16,
-   "matched": 1,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "site": "NBC Sports",
@@ -453,7 +453,7 @@
    "site": "Sports Illustrated",
    "url": "https://www.si.com/feed",
    "ok": true,
-   "found": 83,
+   "found": 85,
    "matched": 7,
    "error": ""
   },
@@ -660,6 +660,79 @@
    "first_seen": "2026-11-12T22:30:26+00:00"
   },
   {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "גולדן סטייט"
+   ],
+   "title": "Spurs add De'Aaron Fox to injury list ahead of NBA Cup game against Warriors",
+   "summary": "The hottest team in the NBA could be without two starters in Fox and Devin Vassell when it hosts Golden State on Friday in an NBA Cup group stage game.",
+   "link": "https://sports.yahoo.com/articles/spurs-add-deaaron-fox-injury-005257153.html",
+   "image": "https://media.zenfs.com/en/san_antonio_express_news_hearst_574/744ed8805d8449f8530ae7daaa25acf5.jpg",
+   "published": "2026-11-13T00:52:57+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "פורטלנד טרייל בלייזרס"
+   ],
+   "title": "Dame Time is back in Portland — and the Blazers look dangerous",
+   "summary": "A new Blazers season brings a new starting lineup, a new coach, a new ownership group and a new set of expectations.",
+   "link": "https://sports.yahoo.com/articles/dame-time-back-portland-blazers-132904797.html",
+   "image": "https://media.zenfs.com/en/oregonlive_com_articles_764/c2f5e81b9b4b1aae21ced493d7211144.jpg",
+   "published": "2026-11-13T00:50:44+00:00",
+   "first_seen": "2026-11-12T19:38:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "גולדן סטייט"
+   ],
+   "title": "Freeman soars to Class 9A state title over Bennett County",
+   "summary": "Nov. 12—VERMILLION, S.D.",
+   "link": "https://sports.yahoo.com/articles/freeman-soars-class-9a-state-005000416.html",
+   "image": "",
+   "published": "2026-11-13T00:50:00+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
+   "site": "The Athletic",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "גולדן סטייט",
+    "סטף קרי"
+   ],
+   "title": "NBA season live updates: Raptors-76ers, Mavericks-Timberwolves highlight Thursday’s 4-game slate",
+   "summary": "Follow our live coverage of the latest news, injury fallout and more.",
+   "link": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/",
+   "image": "https://theathletic-media-production.s3-us-west-2.amazonaws.com/3O8C8RgzvHTs_TKrZsGr3jQN2_1440x960.jpg",
+   "published": "2026-11-13T00:49:18+00:00",
+   "first_seen": "2026-11-12T19:38:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "טניס",
+   "keywords": [
+    "טניס"
+   ],
+   "title": "Coco Gauff makes ‘lucky’ admission on crazy 2nd-set comeback to beat Marta Kostyuk",
+   "summary": "Coco Gauff admitted she was already preparing for a third set before mounting a comeback against Marta Kostyuk on Thursday, winning six consecutive games to secure a 6-4, 7-5 win in round-robin play at the WTA Finals . Gauff trailed 5-1 in the second set before rallying to…",
+   "link": "https://sports.yahoo.com/articles/coco-gauff-makes-lucky-admission-004608863.html",
+   "image": "https://media.zenfs.com/en/clutchpoints_articles_939/7c851fed650c87190ac60b3917abe8d9.jpg",
+   "published": "2026-11-13T00:46:08+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
    "site": "וואלה",
    "category": "ספורט",
    "subcategory": "יורוליג",
@@ -689,6 +762,37 @@
    "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/8/4118898-46.jpg",
    "published": "2026-11-13T00:44:00+00:00",
    "first_seen": "2026-11-12T22:00:31+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "אולסטאר",
+    "בוסטון סלטיקס"
+   ],
+   "title": "Celtics’ Paul George Gets Bold All-Star Prediction From 17-Year NBA Veteran",
+   "summary": "When the Boston Celtics acquired Paul George as part of the Jaylen Brown trade, the fanbase was understandably upset. George was coming off two straight seasons of injury issues with the Philadelphia 76ers.However, the 36-year-old forward looks like a totally different player…",
+   "link": "https://sports.yahoo.com/articles/celtics-paul-george-gets-bold-004150652.html",
+   "image": "https://media.zenfs.com/en/heavy_214/58a3c9151c3168fdb4d867ba2a504ec1.jpg",
+   "published": "2026-11-13T00:41:50+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
+   "site": "Sports Illustrated",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "גולדן סטייט",
+    "סטף קרי"
+   ],
+   "title": "3 Moves Warriors Should Explore During Steph Curry's Oblique Absence",
+   "summary": "What the Dubs can do while Curry is out for at least the next two weeks",
+   "link": "https://www.si.com/nba/warriors/onsi/3-moves-warriors-should-explore-during-steph-curry-s-oblique-absence-01m792eya1e4?utm_source=RSS",
+   "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5616,h_3159,x_0,y_268/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/inside_the_warriors/01m795gmjkh69wndzbvn.jpg",
+   "published": "2026-11-13T00:40:58+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
   },
   {
    "site": "וואלה",
@@ -720,6 +824,20 @@
    "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/8/4118918-46.jpg",
    "published": "2026-11-13T00:32:00+00:00",
    "first_seen": "2026-11-12T19:38:28+00:00"
+  },
+  {
+   "site": "EuroLeague",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "EuroLeague Fantasy winners and losers, Round 11: Thursday",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWFBET3Q4NDBwbThITHgzamNlcjVzMTFHZ0R3SkRlNF91djdac2c1b1Z5VDYwOG80NEtSNVZRbFk4ZGxBSGM4VVJfREtCcC1hVVJ4dkt1Nnd0OGRnZER2aTZIa0xfcDVERTViQkNuOUdWTE1hRWdzVUowcm45akNRQUVoLWdEWUcxcFJ4WVIxWGVWblZ4N3IwRldoZFI2UmJ6ZFdYRGhXU09DTGNRakR0VTlR?oc=5",
+   "image": "",
+   "published": "2026-11-13T00:30:34+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
   },
   {
    "site": "UEFA.com",
@@ -763,36 +881,6 @@
    "image": "",
    "published": "2026-11-13T00:25:50+00:00",
    "first_seen": "2026-11-12T19:48:42+00:00"
-  },
-  {
-   "site": "The Athletic",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "גולדן סטייט",
-    "סטף קרי"
-   ],
-   "title": "NBA season live updates: Steph Curry injury to sideline Warriors' guard for at least 2 weeks; Bulls' Caleb Wilson fractures hand",
-   "summary": "Follow our live coverage of the latest news, injury fallout and more.",
-   "link": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/",
-   "image": "https://theathletic-media-production.s3-us-west-2.amazonaws.com/3O8C8RgzvHTs_cI2XYbpjb9o1_1440x898.jpg",
-   "published": "2026-11-13T00:22:21+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "פורטלנד טרייל בלייזרס"
-   ],
-   "title": "Dame Time is back in Portland — and the Blazers look dangerous",
-   "summary": "A new Blazers season brings a new starting lineup, a new coach, a new ownership group and a new set of expectations.",
-   "link": "https://sports.yahoo.com/articles/dame-time-back-portland-blazers-132904797.html",
-   "image": "https://media.zenfs.com/en/oregonlive_com_articles_764/c2f5e81b9b4b1aae21ced493d7211144.jpg",
-   "published": "2026-11-13T00:20:36+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
   },
   {
    "site": "UEFA.com",
@@ -1245,6 +1333,20 @@
    ],
    "title": "Skyliners Frankfurt-Maxima Roma | Round 7 Highlights | 2026-27 BKT EuroCup",
    "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQcUJLU1B4Tk9pUHBueWNwUVotVXhxNkdqZFVJMGc0QnNGeWdtMl90TmJUZUR0a2J6QUp0c0pKcVNmcE55bUNKYmU4cnA3VU1xSjhXMnZVOW1wRDBPenFPYmRYdFliNXJ3NjN1RF9od2xidnNpWFFwWFhzcTdVYllnQnI5TmV2T0l0dk01YkV5TFJleTA2UWMzM2EtcWhuNGxxWkVVdy1zV3c0RUpPY3hBYkhzazRqYVdsNkFqLWh6UWtVR253a2w3aEVFbjJTSXBtRkxxRk5YaElqNHJ6MEF5MnJfYXFLNE9Rd3ZVb0paOElCV0pDZkx2eQ?oc=5",
+   "image": "",
+   "published": "2026-11-12T23:25:40+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
+   "site": "EuroLeague",
+   "category": "ספורט",
+   "subcategory": "יורוקאפ",
+   "keywords": [
+    "יורוקאפ"
+   ],
+   "title": "Skyliners Frankfurt-Maxima Roma | Round 7 Highlights | 2026-27 BKT EuroCup",
+   "summary": "",
    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOd0d2elNrQm1YbDlRbGZzNWtrcjVYN2ljSklqREphc2IxcUZCSUtELVJ4bS1Pb09sRXVJWWdGM3VHb2hVeVBnbkdlQjNINU8xUXpSekZreW9Qd2tYQ0NSRGJiY1Vaby1lV0pwLU5TV0R6cFJ5Qm9PZ0tPak9UMkFaUERfT0MwQzhjWmVZWUptbEZpTzdOb2h1WFVkQlRHZUdPeDdHc3JXNkMwWGJSTGZQLVZIRjdrRmZCVFQtX0w2dWs1NDNUZWdKdnZneE5Jbm5xVXVaRVpULVQ0YWl1dktOcGM5MHFBRjM1eUNpMUo0dHE4RWVJSEVpZFh1UUtvNVdyV1N3?oc=5",
    "image": "",
    "published": "2026-11-12T23:23:51+00:00",
@@ -1507,6 +1609,20 @@
   {
    "site": "EuroLeague",
    "category": "ספורט",
+   "subcategory": "יורוקאפ",
+   "keywords": [
+    "יורוקאפ"
+   ],
+   "title": "Skyliners Frankfurt-Maxima Roma | Round 7 Highlights | 2026-27 BKT EuroCup",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObmJ1aVF5eW5jZXE2ajRMWmQ4V1BWdUszdjY1VjNwUHZ6M1NOVEtfT29hMVViSDJ0bGllaElVc0RmcDU0LU5EWVdGUWUwNkt6U1dXOU1XZkxFUDl1dHRKUGZQaS1LUEpqZ3V4T01ER19lZTZJLUdldVNHUlhhQ21vcFdnODRWTDdGSW8wV0JpZGwwSTdTalRWQ3piUkZUV1BWY1A0MFdwbGJjeDBFbGZEMnA1MHc?oc=5",
+   "image": "",
+   "published": "2026-11-12T23:08:09+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
+   "site": "EuroLeague",
+   "category": "ספורט",
    "subcategory": "יורוליג",
    "keywords": [
     "יורוליג"
@@ -1590,6 +1706,20 @@
    "image": "",
    "published": "2026-11-12T23:06:12+00:00",
    "first_seen": "2026-11-12T23:30:26+00:00"
+  },
+  {
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "ליגת האלופות",
+   "keywords": [
+    "ליגת האלופות"
+   ],
+   "title": "Women's Champions League: Every 2026/27 starting line-up",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOFFfckFIYnptYTR2bmtnN2h1X2xkc3dsbUduSi1sSmNqeXVCSkdVeDFSN0hORlJSc1ZMWXFFb3JwbDFsNVJGOFRUc2psZWs1V0IybmlZZENoUGFlSFJyajU4M0YtT1Q2RkdsYjNUT2VoLVZyTkFQN0Q0VUdXWlE0MWowQzFfTDZLVzFhTjVxZENacGh5MnRhMGtKUXYtZm1VS3p2eXpxUXVEamtSWDE5SDV5Z200WDN2eUIzVnhEanlWXzBQcGtkc0xoSHU0dEU1NGJwdFBSWE4?oc=5",
+   "image": "",
+   "published": "2026-11-12T23:06:09+00:00",
+   "first_seen": "2026-11-12T21:30:26+00:00"
   },
   {
    "site": "EuroLeague",
@@ -2192,6 +2322,20 @@
    "first_seen": "2026-11-12T23:30:26+00:00"
   },
   {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Wizards vs. Pistons Discussion",
+   "summary": "The Washington Wizards (4-8) are reeling amid a five-game losing streak that’s featured four double-digit losses, turnover issues and stagnant offensive sets. Washington is on the second night of a back-to-back after losing 114-101 to an Indiana Pacers squad that didn’t have…",
+   "link": "https://sports.yahoo.com/articles/wizards-vs-pistons-discussion-223000105.html",
+   "image": "https://media.zenfs.com/en/sb_nation_articles_115/273e1e6072ec13daf09a44ad33cfa43b.jpg",
+   "published": "2026-11-12T22:30:00+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
    "site": "Football Italia",
    "category": "ספורט",
    "subcategory": "נבחרות ישראל",
@@ -2263,6 +2407,21 @@
    "image": "",
    "published": "2026-11-12T22:26:16+00:00",
    "first_seen": "2026-11-12T23:50:11+00:00"
+  },
+  {
+   "site": "EuroLeague",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "אולימפיאקוס",
+    "יורוליג"
+   ],
+   "title": "Olympiacos Piraeus-Dubai Basketball | Round 11 Highlights | 2026-27 EuroLeague",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQSjRFcWlnd2tWSnlNTTBienRZWlh1b2JrZzRaV19laVV4blU2Ykt1clBneTRxYWMyNXd1cWZjSFo2N01YQVlUUVdrQWtUS2ZpektVeVFLRVAtdzVBN1pLdmhHZUUyLUNvV3EtZnFMcWJoLXc4YXFUNnRRdFExdG5kdGpLYURnUTFjblBUY3pHQm51NFdwYklucl82RWs1YUhOSlN3Q25oV2tQUkplOUVDVG5pcHU3b3V1UjBMLXRYVFRlbXNZMlFacVdmek13bzc3QUJlNGtqLUlKelNac09YWjVjT2hPdXNZZFJySlFvX0pFdw?oc=5",
+   "image": "",
+   "published": "2026-11-12T22:26:16+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
   },
   {
    "site": "ספורט 5",
@@ -3422,6 +3581,20 @@
    "image": "https://media.zenfs.com/en/sb_nation_articles_115/a39c86ef1052a9f54be4f13db358ce16.jpg",
    "published": "2026-11-12T21:37:51+00:00",
    "first_seen": "2026-11-13T00:00:30+00:00"
+  },
+  {
+   "site": "ספורט 5",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "צפו. שינה את הדרבי? החוק החדש ביורוליג",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1zMjhjcHJuc1pMdkVYZlktWTRZSUtmVG5BVWF4UEVfRGl6R3dUdEJCSG9rRDg4clRhek9tM1R5azREdU5ncHNEUl9GLUpZVDgwRzdfaUI3WEZUU3JxMU1UQmE5bmFXMmloT1Rya3JSVG9TZw?oc=5",
+   "image": "",
+   "published": "2026-11-12T21:32:00+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
   },
   {
    "site": "Ynet",
@@ -5304,20 +5477,6 @@
    "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
-   "site": "UEFA.com",
-   "category": "ספורט",
-   "subcategory": "ליגת האלופות",
-   "keywords": [
-    "ליגת האלופות"
-   ],
-   "title": "Women's Champions League: Every 2026/27 starting line-up",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOFFfckFIYnptYTR2bmtnN2h1X2xkc3dsbUduSi1sSmNqeXVCSkdVeDFSN0hORlJSc1ZMWXFFb3JwbDFsNVJGOFRUc2psZWs1V0IybmlZZENoUGFlSFJyajU4M0YtT1Q2RkdsYjNUT2VoLVZyTkFQN0Q0VUdXWlE0MWowQzFfTDZLVzFhTjVxZENacGh5MnRhMGtKUXYtZm1VS3p2eXpxUXVEamtSWDE5SDV5Z200WDN2eUIzVnhEanlWXzBQcGtkc0xoSHU0dEU1NGJwdFBSWE4?oc=5",
-   "image": "",
-   "published": "2026-11-12T19:34:58+00:00",
-   "first_seen": "2026-11-12T21:30:26+00:00"
-  },
-  {
    "site": "Yahoo Sports",
    "category": "ספורט",
    "subcategory": "NBA",
@@ -5534,6 +5693,20 @@
    "image": "https://media.zenfs.com/en/clutchpoints_articles_939/6f63f90a72ef3ea6d85fead28ec9513a.jpg",
    "published": "2026-11-12T19:26:59+00:00",
    "first_seen": "2026-11-12T19:38:28+00:00"
+  },
+  {
+   "site": "ישראל היום",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "דני אבדיה"
+   ],
+   "title": "הסנטר שזלזל בדני אבדיה: \"לא חושב שהוא עשה הרבה מולי\" | היום",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5yVmlrZzBDMnZvaVZjZjNMc3dSaElDUmRrUm1ZcTVxZHV1TFNVS3JKak1adDhrbVRmV3dFbjJjb2JTUmdiTWJJc1JaU2FTUDJJb3VhaW1aYUNDekNrdy1UVmtMVGdaQTZieVZzWExEYXFEa25ZSHdZSQ?oc=5",
+   "image": "",
+   "published": "2026-11-12T19:25:47+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
   },
   {
    "site": "Goal.com",
@@ -7676,35 +7849,6 @@
    "first_seen": "2026-11-12T19:38:28+00:00"
   },
   {
-   "site": "CBS Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Use DraftKings promo code to get $200 bonus, free NBA League Pass for Commanders-Giants, TNF NFL betting",
-   "summary": "DraftKings offers $200 in bonus bets and three free months of NBA League Pass after your first $5 wager for Giants vs. Commanders on Thursday Night Football",
-   "link": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-free-nba-league-pass-commanders-giants-tnf-nfl-betting/",
-   "image": "https://sportshub.cbsistatic.com/i/2026/10/18/c97262f9-761a-4e09-92d0-e42eb8f40a51/draftkings-nba-league-pass-200-bonus-cbssports.png",
-   "published": "2026-11-12T17:16:34+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
-  },
-  {
-   "site": "ESPN",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "גולדן סטייט",
-    "סטף קרי"
-   ],
-   "title": "Golden State's Stephen Curry has an oblique abdominal tear and will be re-evaluated in two weeks.",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YUDQ4cDFwLUwzRXFKbUVTOU1Rd1BhMkxUaVplSFBUVERGYTVjbDI1am41R0VsaUpxTFEyT1ZuRVllWjFBVV9ZbXQ2V1RXSEdvNlI3S0FULUMwM2FJdXZpTTk1djR2VjI3TXFwYy1B?oc=5",
-   "image": "",
-   "published": "2026-11-12T17:16:30+00:00",
-   "first_seen": "2026-11-12T22:00:31+00:00"
-  },
-  {
    "site": "Football Italia",
    "category": "ספורט",
    "subcategory": "נבחרות ישראל",
@@ -7759,20 +7903,6 @@
    "image": "",
    "published": "2026-11-12T17:15:55+00:00",
    "first_seen": "2026-11-12T20:30:27+00:00"
-  },
-  {
-   "site": "Eurohoops",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Carmelo Anthony on Doc Rivers’ Giannis comments: “It’s easy for the player to get the blame”",
-   "summary": "Anthony said Rivers should have discussed his concerns with Antetokounmpo privately The post Carmelo Anthony on Doc Rivers’ Giannis comments: “It’s easy for the player to get the blame” appeared first on Eurohoops .",
-   "link": "https://www.eurohoops.net/en/nba-news/2034095/carmelo-anthony-on-doc-rivers-giannis-comments-its-easy-for-the-player-to-get-the-blame/",
-   "image": "https://images.eurohoops.net/2021/02/f4a35786-giannis-melo-625x375.jpg",
-   "published": "2026-11-12T17:15:42+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -7857,48 +7987,6 @@
    "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/11/12/HJR00MdXAMe/HJR00MdXAMe_405_61_2191_1234_0_medium.jpg",
    "published": "2026-11-12T17:11:21+00:00",
    "first_seen": "2026-11-12T19:38:28+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Observations after Sixers suffer blowout loss to Cavs, fall in NBA Cup",
-   "summary": "The Sixers fell to their second loss of the season on Friday night in Cleveland.",
-   "link": "https://sports.yahoo.com/articles/observations-sixers-suffer-blowout-loss-170608101.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/f566a13f5ec1fd14a4cf19589f0477e3d5b8856feed5e75010a40af281030cab/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2F91a8bcb119227421a534086bf4ca6e59.jpg",
-   "published": "2026-11-12T17:11:00+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "בוסטון סלטיקס"
-   ],
-   "title": "Back in Philadelphia with Celtics, Paul George looks forward to ‘a regular game'",
-   "summary": "After two seasons with the Sixers, Paul George has returned to Philadelphia.",
-   "link": "https://sports.yahoo.com/articles/back-philadelphia-celtics-paul-george-111819903.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/2f4f17de732108cdd03986de07d182743408bc2c915a708422ca5d268387e402/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2F90a8fbf73f517543dae00682edd81c5c.jpg",
-   "published": "2026-11-12T17:11:00+00:00",
-   "first_seen": "2026-11-12T19:48:42+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "בוסטון סלטיקס"
-   ],
-   "title": "Sixers, Brown have a ‘humbling' night in loss to Celtics",
-   "summary": "Jaylen Brown called the Sixers' blowout defeat to the Celtics “humbling.”",
-   "link": "https://sports.yahoo.com/articles/sixers-brown-humbling-night-loss-101218318.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/92e54e55e3547c1dc7d27e729e401e16b6022831cd84462acde56616631e2432/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcsnphilly.com%2Fb5ac8e43322f1653020b5eacbbb4ecaf.jpg",
-   "published": "2026-11-12T17:11:00+00:00",
-   "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
    "site": "ישראל היום",
@@ -8429,20 +8517,6 @@
    "first_seen": "2026-11-12T20:00:30+00:00"
   },
   {
-   "site": "ספורט 5",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורגל",
-   "keywords": [
-    "מכבי חיפה"
-   ],
-   "title": "היגינס: \"מכבי חיפה גיששה. אמרתי לה לא\"",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvOWFKczhoM1U3ejA1Vm1mSC1td19jTVFiN085eEdOU0hxUXZTUkFfLUNFRl91VktXTUl6N3B3OU5VWTZNdVEwdkloVTNMaWdCQW5WZVE3ZE5oaTc4MXRBME5oWnhKMGpLLS1lZW5aOTA?oc=5",
-   "image": "",
-   "published": "2026-11-12T15:59:01+00:00",
-   "first_seen": "2026-11-12T19:48:42+00:00"
-  },
-  {
    "site": "N12",
    "category": "ספורט",
    "subcategory": "ליגת האלופות",
@@ -8484,6 +8558,20 @@
    "image": "https://www.ynet.co.il/images/big_defual_image_1024_new.png",
    "published": "2026-11-12T15:57:58+00:00",
    "first_seen": "2026-11-12T16:50:13+00:00"
+  },
+  {
+   "site": "ספורט 5",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורגל",
+   "keywords": [
+    "מכבי חיפה"
+   ],
+   "title": "היגינס: \"מכבי חיפה גיששה. אמרתי לה לא\"",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvOWFKczhoM1U3ejA1Vm1mSC1td19jTVFiN085eEdOU0hxUXZTUkFfLUNFRl91VktXTUl6N3B3OU5VWTZNdVEwdkloVTNMaWdCQW5WZVE3ZE5oaTc4MXRBME5oWnhKMGpLLS1lZW5aOTA?oc=5",
+   "image": "",
+   "published": "2026-11-12T15:56:00+00:00",
+   "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
    "site": "Goal.com",
@@ -11424,7 +11512,7 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE4yODVacFk2U3dEVkR0VEdHODhEQllycDFhanVIaFUtX1FFckJGTjNIbVFQMTg4clpQUDItMS1vOS1UX3NWU1pJVTh1cWxRR2hZaTd3dDBpQ2FyNGdCd25wM2RMTzE5eU56R3E2WWRKdkEwdw?oc=5",
    "image": "",
-   "published": "2026-11-12T07:30:00+00:00",
+   "published": "2026-11-12T07:31:28+00:00",
    "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
@@ -15491,6 +15579,20 @@
    "first_seen": "2026-11-12T19:48:42+00:00"
   },
   {
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "Santeri Väänänen | Finland | UEFA Nations League",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcFZZZnVLU3ZKNE5tVmtwN0h5X0VOQVFpMTB6Qzk0TElmaXp6XzJYU1hsUTk2aTJNYjI5VFhHdktGeGROdWoxbEdNc1pBYll4YnpqTUYxVHBtUzFWZTFFVnpTRDVWbHdwVVVJRXVyS1N3QmdLTkRQS19CcWFCZF9GTm5sZG9qQXdn?oc=5",
+   "image": "",
+   "published": "2026-09-25T23:12:14+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
+  },
+  {
    "site": "וואלה",
    "category": "פוליטיקה",
    "subcategory": "כללי",
@@ -16115,6 +16217,20 @@
    "image": "https://www.telegraph.co.uk/content/dam/sport/2022/09/30/TELEMMGLPICT000239250867_trans_NvBQzQNjv4BqCxolCfFRktxha0WgUhXMoHwSCF1R0VweJ7DS2UnVMSQ.jpeg",
    "published": "2022-09-30T10:21:41+00:00",
    "first_seen": "2026-11-12T19:48:42+00:00"
+  },
+  {
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "Josip Šutalo | Croatia | UEFA Nations League",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZFphR25tWFhKNzFOVXdtc1pHaXFtakpqdURDYmJISXJVczlyb2V4bVdjMzFKTDRhYXFpSGt0VmozbTNTRmU0QkdRWGhDQjhpSXNtZDBjMmlhWlBVWEVFV0VwaXcwMkdVS1NDNXc1bjVzUmkyZzQwYXF2NG04TF82bW1HUQ?oc=5",
+   "image": "",
+   "published": "2022-06-06T12:50:12+00:00",
+   "first_seen": "2026-11-13T01:00:30+00:00"
   },
   {
    "site": "The Telegraph",
