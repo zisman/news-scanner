@@ -105,14 +105,48 @@ def parse_feed(raw):
     return out
 
 
+IMG_META = ("og:image", "og:image:url", "og:image:secure_url", "twitter:image", "twitter:image:src")
+
+
 def og_image(url):
+    """Main image of an article page (og:image / twitter:image / image_src)."""
     try:
-        page = fetch(url, 400_000).decode("utf-8", "ignore")
+        page = fetch(url, 600_000).decode("utf-8", "ignore")
     except Exception:
         return ""
-    m = (re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', page) or
-         re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', page))
-    return html.unescape(m.group(1)) if m else ""
+    for tag in re.findall(r"<meta\b[^>]*>", page, re.I):
+        name = re.search(r'(?:property|name)\s*=\s*["\']([^"\']+)', tag, re.I)
+        val = re.search(r'content\s*=\s*["\']([^"\']+)', tag, re.I)
+        if name and val and name.group(1).lower() in IMG_META:
+            img = html.unescape(val.group(1)).strip()
+            if img and not re.search(r"defau?l|logo|placeholder", img, re.I):
+                return urllib.parse.urljoin(url, img)
+    m = re.search(r'<link[^>]+rel=["\']image_src["\'][^>]+href=["\']([^"\']+)', page, re.I)
+    return urllib.parse.urljoin(url, html.unescape(m.group(1))) if m else ""
+
+
+def google_real_url(link):
+    """Turn a news.google.com/rss/articles/... link into the publisher's article URL."""
+    m = re.search(r"/(?:rss/)?(?:articles|read)/([^/?#]+)", link)
+    if not m:
+        return ""
+    gid = m.group(1)
+    try:
+        page = fetch("https://news.google.com/rss/articles/" + gid, 400_000).decode("utf-8", "ignore")
+        sig = re.search(r'data-n-a-sg="([^"]+)"', page).group(1)
+        ts = re.search(r'data-n-a-ts="([^"]+)"', page).group(1)
+        inner = ('["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
+                 '"X","X",1,[1,1,1],1,1,null,0,0,null,0],"%s",%s,"%s"]' % (gid, ts, sig))
+        body = "f.req=" + urllib.parse.quote(json.dumps([[["Fbv4je", inner]]]))
+        req = urllib.request.Request("https://news.google.com/_/DotsSplashUi/data/batchexecute", data=body.encode(),
+                                     headers={"User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
+        with urllib.request.urlopen(req, timeout=12) as r:
+            text = r.read().decode("utf-8", "ignore")
+        arr = json.loads(text.split("\n\n")[1])[:-2]
+        url = json.loads(arr[0][2])[1]
+        return url if url.startswith("http") else ""
+    except Exception:
+        return ""
 
 
 def two_sentences(text, title):
@@ -192,7 +226,8 @@ def main():
                         "site": site["name"], "category": cat, "subcategory": sub,
                         "keywords": sorted(set(hits) | set(prev.get("keywords", []))),
                         "title": e["title"], "summary": two_sentences(e["desc"], e["title"]),
-                        "link": link, "image": e["image"] or prev.get("image", ""),
+                        "link": link, "image": e["image"] or prev.get("image", ""), "url": prev.get("url", ""),
+                        "tried": prev.get("tried", 0),
                         "published": (d or now).isoformat(timespec="seconds") if (d or not prev) else prev["published"],
                         "first_seen": prev.get("first_seen", now.isoformat(timespec="seconds")),
                     }
@@ -209,13 +244,28 @@ def main():
         if per[k] <= cap:
             capped.append(i)
     keep = capped
-    budget, seen = 25, {}                                # page fetches per run for missing images
+    # 1) Google News links -> real article URL   2) missing images -> article's og:image
+    by_link = {}
     for i in keep:
-        if not i["image"] and i["link"] in seen:
-            i["image"] = seen[i["link"]]
-        elif not i["image"] and budget and "news.google.com" not in i["link"]:
-            budget -= 1
-            i["image"] = seen[i["link"]] = og_image(i["link"])
+        by_link.setdefault(i["link"], []).append(i)
+    todo = [l for l, g in by_link.items() if "news.google.com" in l and not g[0].get("url") and g[0].get("tried", 0) < 2][:250]
+    with concurrent.futures.ThreadPoolExecutor(8) as ex:
+        for l, real in zip(todo, ex.map(google_real_url, todo)):
+            for i in by_link[l]:
+                i["url"] = real
+                if not real:
+                    i["tried"] = i.get("tried", 0) + 1
+    need = [l for l, g in by_link.items() if not g[0]["image"] and g[0].get("tried", 0) < 3
+            and (g[0].get("url") or "news.google.com" not in l)][:300]
+    with concurrent.futures.ThreadPoolExecutor(12) as ex:
+        found = list(ex.map(lambda l: og_image(by_link[l][0].get("url") or l), need))
+    for l, img in zip(need, found):
+        for i in by_link[l]:
+            i["image"] = img
+            if not img:
+                i["tried"] = i.get("tried", 0) + 1
+    print("google links resolved:", sum(1 for l in todo if by_link[l][0]["url"]), "/", len(todo),
+          "| images found:", sum(1 for x in found if x), "/", len(need))
 
     data = {"updated": now.isoformat(timespec="seconds"), "feeds": status,
             "taxonomy": [{"name": c["name"], "icon": c.get("icon", ""),

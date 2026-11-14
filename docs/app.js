@@ -47,6 +47,12 @@ function h(tag, props, ...kids) {
 }
 const icon = (name, fill) => h("i", { class: (fill ? "ph-fill" : "ph-duotone") + " ph-" + name, "aria-hidden": "true" });
 const save = (k) => store.set(k, S[k]);
+function thumb(src, site, cls) {
+  const plate = () => h("div", { class: (cls || "thumb") + " plate", "aria-hidden": "true" }, h("span", { dir: "auto" }, site || ""));
+  if (!src) return plate();
+  return h("img", { class: cls || "thumb", src, alt: "", loading: "lazy", referrerpolicy: "no-referrer",
+    onerror: (e) => e.target.replaceWith(plate()) });
+}
 
 function ago(iso) {
   const m = Math.round((Date.now() - Date.parse(iso)) / 60000);
@@ -103,11 +109,12 @@ function build() {
   const byLink = new Map();
   for (const i of DATA.items || []) {
     if (ex.has(i.site)) continue;
-    let a = byLink.get(i.link);
+    const key = i.url || i.link;
+    let a = byLink.get(key);
     if (!a) {
-      a = { link: i.link, site: i.site, title: i.title, summary: i.summary || "", image: i.image || "", published: i.published,
+      a = { link: key, site: i.site, title: i.title, summary: i.summary || "", image: i.image || "", published: i.published,
         cats: new Set(), subs: new Set(), keywords: new Set() };
-      byLink.set(i.link, a);
+      byLink.set(key, a);
     }
     a.cats.add(i.category); a.subs.add(i.category + "|" + i.subcategory);
     (i.keywords || []).forEach((k) => a.keywords.add(k));
@@ -224,10 +231,12 @@ async function share(title) {
   } catch (e) { /* cancelled */ }
 }
 function storyRow(cl, opts = {}) {
-  return h("a", { class: "story src-row", href: storyHref(cl) },
-    h("div", { class: "kicker" }, crumbFor(cl, opts.cat)),
-    h("h3", { class: "row-head" }, cl.title),
-    h("div", { class: "meta" }, sourcesLabel(cl.sites.length) + " · " + ago(cl.latest), opts.isNew ? h("span", { class: "tag-2" }, " · חדש") : null));
+  return h("a", { class: "story src-row with-thumb", href: storyHref(cl) },
+    h("div", { class: "grow" },
+      h("div", { class: "kicker" }, crumbFor(cl, opts.cat)),
+      h("h3", { class: "row-head", dir: "auto" }, cl.title),
+      h("div", { class: "meta" }, sourcesLabel(cl.sites.length) + " · " + ago(cl.latest), opts.isNew ? h("span", { class: "tag-2" }, " · חדש") : null)),
+    thumb(cl.image, cl.lead.site));
 }
 
 /* ---------- feed ---------- */
@@ -289,8 +298,9 @@ function feedView(r) {
     feed.append(h("ol", { class: "list" }, rest.map((cl, i) => h("li", null,
       h("span", { class: "num", "aria-hidden": "true" }, String(i + 1)),
       h("a", { class: "story", href: storyHref(cl) },
-        h("h3", null, cl.title),
-        h("div", { class: "meta-line" }, h("span", { class: "tag" }, sourcesLabel(cl.sites.length)), h("span", { class: "meta" }, ago(cl.latest))))))));
+        h("h3", { dir: "auto" }, cl.title),
+        h("div", { class: "meta-line" }, h("span", { class: "tag" }, sourcesLabel(cl.sites.length)), h("span", { class: "meta" }, ago(cl.latest)))),
+      thumb(cl.image, cl.lead.site)))));
   }
   app.push(feed);
   if (list.length > feedLimit) app.push(h("button", { class: "block-btn", onclick: () => { feedLimit += 40; render(); } }, "עוד סיפורים"));
@@ -298,23 +308,25 @@ function feedView(r) {
 }
 function leadItem(cl) {
   return h("a", { class: "story lead", href: storyHref(cl) },
-    cl.image ? h("img", { src: cl.image, alt: "", loading: "lazy", referrerpolicy: "no-referrer", onerror: (e) => e.target.remove() }) : null,
-    h("h2", null, cl.title),
-    cl.summary ? h("p", null, cl.summary) : null,
+    thumb(cl.image, cl.lead.site, "lead-img"),
+    h("h2", { dir: "auto" }, cl.title),
+    cl.summary ? h("p", { dir: "auto" }, cl.summary) : null,
     h("div", { class: "meta-line" },
       h("span", { class: "tag" }, sourcesLabel(cl.sites.length)),
       h("span", { class: "meta" }, siteNames(cl, 2) + " · " + ago(cl.latest))));
 }
 function compactItem(cl) {
-  return h("a", { class: "story src-row", href: storyHref(cl) },
-    h("div", { class: "meta" }, ago(cl.latest) + " · ראשון: " + cl.first.site + " | " + sourcesLabel(cl.sites.length)),
-    h("h3", { class: "row-head" }, cl.title),
-    h("div", { class: "ticks", "aria-hidden": "true" }, cl.sites.map((s) => h("span", { class: "tick" + (cl.pol && LEANS[s] ? " " + LEANS[s] : "") }))));
+  return h("a", { class: "story src-row with-thumb", href: storyHref(cl) },
+    h("div", { class: "grow" },
+      h("div", { class: "meta" }, ago(cl.latest) + " · ראשון: " + cl.first.site + " | " + sourcesLabel(cl.sites.length)),
+      h("h3", { class: "row-head", dir: "auto" }, cl.title),
+      h("div", { class: "ticks", "aria-hidden": "true" }, cl.sites.map((s) => h("span", { class: "tick" + (cl.pol && LEANS[s] ? " " + LEANS[s] : "") })))),
+    thumb(cl.image, cl.lead.site));
 }
 function spectrumItem(cl) {
   const blind = cl.pol ? blindspot(cl.lean) : "";
   return h("a", { class: "story src-row", href: storyHref(cl) },
-    h("h3", { class: "row-head" }, cl.title),
+    h("div", { class: "with-thumb" }, h("h3", { class: "row-head grow", dir: "auto" }, cl.title), thumb(cl.image, cl.lead.site)),
     cl.pol ? leanBar(cl.lean) : null,
     h("div", { class: "meta-line" },
       blind ? h("span", { class: "tag-2" }, blind + " · ") : null,
@@ -331,10 +343,10 @@ function storyView(r) {
       h("button", { class: "icon-btn" + (saved ? " on" : ""), "aria-label": saved ? "הסר משמורים" : "שמור", "aria-pressed": String(saved), onclick: () => toggleSave(cl) }, icon("bookmark-simple", saved)),
       h("button", { class: "icon-btn", "aria-label": "שיתוף", onclick: () => share(cl.title) }, icon("share-network"))),
     h("div", { class: "kicker" }, crumbFor(cl)),
-    h("h1", { class: "story-h" }, cl.title),
+    h("h1", { class: "story-h", dir: "auto" }, cl.title),
     h("div", { class: "meta" }, "סוכם מ־" + sourcesLabel(cl.sites.length) + " · עודכן " + hhmm(cl.latest)),
-    cl.image ? h("img", { class: "hero", src: cl.image, alt: "", referrerpolicy: "no-referrer", onerror: (e) => e.target.remove() }) : null,
-    cl.summary ? h("p", { class: "reader-body" }, cl.summary) : null
+    thumb(cl.image, cl.lead.site, "hero"),
+    cl.summary ? h("p", { class: "reader-body", dir: "auto" }, cl.summary) : null
   ];
   const blind = cl.pol ? blindspot(cl.lean) : "";
   out.push(h("section", { class: "section" },
@@ -357,9 +369,11 @@ function storyView(r) {
   return out;
 }
 function articleRow(a) {
-  return h("a", { class: "src-row", href: articleHref(a) },
-    h("div", { class: "src-meta" }, h("b", null, a.site), h("span", { class: "meta" }, hhmm(a.published))),
-    h("div", { class: "row-h" }, a.title));
+  return h("a", { class: "src-row with-thumb", href: articleHref(a) },
+    h("div", { class: "grow" },
+      h("div", { class: "src-meta" }, h("b", { dir: "auto" }, a.site), h("span", { class: "meta" }, hhmm(a.published))),
+      h("div", { class: "row-h", dir: "auto" }, a.title)),
+    thumb(a.image, a.site));
 }
 
 /* ---------- article reader ---------- */
@@ -374,11 +388,11 @@ function articleView(r) {
     h("div", { class: "screen-head" }, backBtn(), h("span", { class: "spacer" }),
       h("button", { class: "icon-btn", "aria-label": "שיתוף", onclick: () => share(a.title) }, icon("share-network"))),
     h("div", { class: "src-meta", style: "display:flex;gap:var(--space-2);align-items:baseline;margin-block-start:var(--space-2)" },
-      h("b", null, a.site), h("span", { class: "lean-tag" }, lean ? LEAN_HE[lean] : "ללא סיווג")),
-    h("h1", { class: "story-h" }, a.title),
+      h("b", { dir: "auto" }, a.site), h("span", { class: "lean-tag" }, lean ? LEAN_HE[lean] : "ללא סיווג")),
+    h("h1", { class: "story-h", dir: "auto" }, a.title),
     h("div", { class: "meta" }, "פורסם " + hhmm(a.published) + " · " + ago(a.published)),
-    a.image ? h("img", { class: "hero", src: a.image, alt: "", referrerpolicy: "no-referrer", onerror: (e) => e.target.remove() }) : null,
-    h("p", { class: "reader-body" }, a.summary || "לכתבה הזו אין תקציר זמין. הטקסט המלא נמצא באתר המקור."),
+    thumb(a.image, a.site, "hero"),
+    h("p", { class: "reader-body", dir: a.summary ? "auto" : null }, a.summary || "לכתבה הזו אין תקציר זמין. הטקסט המלא נמצא באתר המקור."),
     h("div", { class: "section" },
       h("a", { class: "block-btn primary", href: a.link, target: "_blank", rel: "noopener noreferrer" }, "לקריאה המלאה ב־" + a.site + " ↗")),
     others.length ? h("section", { class: "section" },
@@ -429,7 +443,7 @@ function savedView() {
     const cl = BY_LINK.get(x.l);
     if (cl) return storyRow(cl);
     return h("a", { class: "src-row", href: x.l, target: "_blank", rel: "noopener noreferrer" },
-      h("div", { class: "kicker" }, "כבר לא בפיד"), h("h3", { class: "row-head" }, x.title), h("div", { class: "meta" }, "נשמר " + ago(new Date(x.at).toISOString())));
+      h("div", { class: "kicker" }, "כבר לא בפיד"), h("h3", { class: "row-head", dir: "auto" }, x.title), h("div", { class: "meta" }, "נשמר " + ago(new Date(x.at).toISOString())));
   }));
   return out;
 }
@@ -504,7 +518,7 @@ function sourcesView() {
       rows.map((s) => {
         const on = !S.excluded.includes(s.name);
         return h("div", { class: "switch-row" },
-          h("div", { class: "grow" }, h("div", { class: "name" }, s.name), h("div", { class: "meta" }, storiesLabel(s.today) + " היום")),
+          h("div", { class: "grow" }, h("div", { class: "name", dir: "auto" }, s.name), h("div", { class: "meta" }, storiesLabel(s.today) + " היום")),
           switchEl(on, (on ? "הוצא את " : "כלול את ") + s.name, () => {
             S.excluded = on ? [...S.excluded, s.name] : S.excluded.filter((x) => x !== s.name);
             save("excluded"); build(); render();
