@@ -52,12 +52,6 @@
           "categories": [
             "כלכלה"
           ]
-        },
-        {
-          "url": "https://rcs.mako.co.il/rss/finances-news.xml",
-          "categories": [
-            "כלכלה"
-          ]
         }
       ]
     },
@@ -1728,10 +1722,12 @@
       "name": "Yahoo Finance",
       "feeds": [
         {
-          "url": "https://finance.yahoo.com/news/rssindex",
+          "url": "https://news.google.com/rss/search?q=site%3Afinance.yahoo.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
           "categories": [
             "כלכלה"
-          ]
+          ],
+          "google": true,
+          "econ_fallback": true
         }
       ]
     },
@@ -1840,10 +1836,12 @@
       "name": "Restaurant Business",
       "feeds": [
         {
-          "url": "https://www.restaurantbusinessonline.com/rss.xml",
+          "url": "https://news.google.com/rss/search?q=site%3Arestaurantbusinessonline.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
           "categories": [
             "כלכלה"
-          ]
+          ],
+          "google": true,
+          "econ_fallback": true
         }
       ]
     },
