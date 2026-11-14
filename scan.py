@@ -37,12 +37,12 @@ def clean(s):
     return re.sub(r"\s+", " ", html.unescape(s)).strip()
 
 
-def term_regex(term):
+def term_regex(term, case=False):
     """Whole-word match that tolerates Hebrew prefix letters (ה/ב/ל/ו/מ/ש/כ)."""
     t = re.escape(norm(term))
     lead = rf"(?<![{HEB}])[ובהלמשכ]{{0,3}}" if re.match(rf"[{HEB}]", term) else ""
     if not lead:                                         # Latin term: whole word, any letter case
-        return re.compile(r"(?<![A-Za-z])" + t + r"(?![A-Za-z])", re.I)
+        return re.compile(r"(?<![A-Za-z])" + t + r"(?![A-Za-z])", 0 if case else re.I)
     return re.compile(lead + t + rf"(?![{HEB}])")
 
 
@@ -138,7 +138,7 @@ def main():
     rules = []          # (category, subcategory, sites, [(keyword name, [regex])])
     for cat in cfg["categories"]:
         for sub in cat["subcategories"]:
-            kws = [(k["name"], [term_regex(t) for t in k["match"]],
+            kws = [(k["name"], [term_regex(t, k.get("case")) for t in k["match"]],
                     [term_regex(t) for t in k.get("context", [])],
                     [term_regex(t) for t in k.get("exclude", [])]) for k in sub["keywords"]]
             sites = set(cat.get("sites") or [s["name"] for s in cfg["sites"]])
