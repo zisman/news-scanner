@@ -79,7 +79,7 @@ function hashOf(params) {
 }
 function route() {
   const p = new URLSearchParams(location.hash.slice(1));
-  return { v: p.get("v") || "feed", c: p.get("c") || "", s: p.get("s") || "", t: p.get("t") || "", l: p.get("l") || "", q: p.get("q") || "" };
+  return { v: p.get("v") || "feed", c: p.get("c") || "", s: p.get("s") || "", t: p.get("t") || "", k: p.get("k") || "", l: p.get("l") || "", q: p.get("q") || "" };
 }
 const storyHref = (cl) => hashOf({ v: "story", l: cl.lead.link });
 const articleHref = (a) => hashOf({ v: "article", l: a.link });
@@ -191,12 +191,13 @@ function groupOf(cat, sub, topic) {
   const s = t && t.subcategories.find((x) => x.name === sub);
   return s && (s.groups || []).find((g) => g.name === topic);
 }
-function inTopic(cl, cat, sub, topic) {
+function inTopic(cl, cat, sub, topic, item) {
   const sk = cat + "|" + sub;
   if (!cl.subs.has(sk)) return false;
   if (!topic) return true;
   const g = groupOf(cat, sub, topic), set = cl.kws[sk];
-  return !!(g && set && g.keywords.some((k) => set.has(k)));
+  if (!g || !set) return false;
+  return item ? set.has(item) : g.keywords.some((k) => set.has(k));
 }
 function crumbFor(cl, preferCat) {
   let sub = [...cl.subs].find((x) => preferCat && x.startsWith(preferCat + "|")) || [...cl.subs][0] || "";
@@ -283,7 +284,9 @@ function feedView(r) {
   const sub = subs.includes(r.s) ? r.s : "";
   const groups = sub ? (cat.subcategories.find((x) => x.name === sub).groups || []) : [];
   const topic = groups.some((g) => g.name === r.t) ? r.t : "";
-  lastFeedHash = hashOf({ c: cat.name, s: sub, t: topic });
+  const items = topic ? groups.find((g) => g.name === topic).keywords : [];
+  const item = items.includes(r.k) ? r.k : "";
+  lastFeedHash = hashOf({ c: cat.name, s: sub, t: topic, k: item });
 
   app.push(h("nav", { class: "cat-tabs", role: "tablist", "aria-label": "קטגוריות" },
     tax.map((t) => h("a", { class: "cat-tab", role: "tab", href: hashOf({ c: t.name }), "aria-selected": String(t.name === cat.name) }, t.name))));
@@ -295,11 +298,15 @@ function feedView(r) {
     app.push(h("div", { class: "chips scroll topic-chips", role: "group", "aria-label": "תת נושאים" },
       ["", ...groups.map((g) => g.name)].map((t) => h("a", { class: "chip small", href: hashOf({ c: cat.name, s: sub, t }), "aria-pressed": String(t === topic) }, t || "הכל"))));
   }
-  const list = CLUSTERS.filter((cl) => (sub ? inTopic(cl, cat.name, sub, topic) : cl.cats.has(cat.name)));
-  const fkey = cat.name + "|" + (sub || "*") + (topic ? "|" + topic : "");
+  if (items.length > 1) {                                   // fourth level: a specific team / player
+    app.push(h("div", { class: "chips scroll item-chips", role: "group", "aria-label": topic },
+      ["", ...items].map((k) => h("a", { class: "chip small", href: hashOf({ c: cat.name, s: sub, t: topic, k }), "aria-pressed": String(k === item) }, k || "כולם"))));
+  }
+  const list = CLUSTERS.filter((cl) => (sub ? inTopic(cl, cat.name, sub, topic, item) : cl.cats.has(cat.name)));
+  const fkey = cat.name + "|" + (sub || "*") + (topic ? "|" + topic : "") + (item ? "|" + item : "");
   const followed = !!S.follow[fkey];
   app.push(h("div", { class: "crumb-row" },
-    h("span", { class: "meta" }, cat.name + (sub ? " › " + sub : "") + (topic ? " › " + topic : "") + " · " + storiesLabel(list.length)),
+    h("span", { class: "meta" }, cat.name + (sub ? " › " + sub : "") + (topic ? " › " + topic : "") + (item ? " › " + item : "") + " · " + storiesLabel(list.length)),
     subs.length ? h("button", { class: "text-btn", "aria-pressed": String(followed), onclick: () => {
       if (followed) delete S.follow[fkey]; else { S.follow[fkey] = { alert: true }; toast("נוסף למעקב"); }
       save("follow"); render();
@@ -471,10 +478,10 @@ function savedView() {
 }
 
 /* ---------- following ---------- */
-function followLabel(key) { const [c, s, t] = key.split("|"); return s === "*" ? c + " · הכל" : c + " › " + s + (t ? " › " + t : ""); }
+function followLabel(key) { const [c, s, t, k] = key.split("|"); return s === "*" ? c + " · הכל" : c + " › " + s + (t ? " › " + t : "") + (k ? " › " + k : ""); }
 function clustersFor(key) {
-  const [c, s, t] = key.split("|");
-  return CLUSTERS.filter((cl) => (s === "*" ? cl.cats.has(c) : inTopic(cl, c, s, t || "")));
+  const [c, s, t, k] = key.split("|");
+  return CLUSTERS.filter((cl) => (s === "*" ? cl.cats.has(c) : inTopic(cl, c, s, t || "", k || "")));
 }
 function switchEl(on, label, onchange) {
   return h("button", { class: "switch", role: "switch", "aria-checked": String(on), "aria-label": label, onclick: onchange });
@@ -485,7 +492,7 @@ function followingView() {
   if (!keys.length) out.push(h("p", { class: "empty" }, "עוד לא עקבת אחרי נושא. אפשר לעקוב מכל נושא בפיד."));
   else out.push(h("section", null, keys.map((k) => h("div", { class: "switch-row" },
     h("div", { class: "grow" },
-      h("a", { class: "name", href: hashOf({ c: k.split("|")[0], s: k.split("|")[1] === "*" ? "" : k.split("|")[1], t: k.split("|")[2] || "" }) }, followLabel(k)),
+      h("a", { class: "name", href: hashOf({ c: k.split("|")[0], s: k.split("|")[1] === "*" ? "" : k.split("|")[1], t: k.split("|")[2] || "", k: k.split("|")[3] || "" }) }, followLabel(k)),
       h("div", { class: "meta" }, storiesLabel(clustersFor(k).filter((cl) => isToday(cl.latest)).length) + " היום · ",
         h("button", { class: "text-btn", style: "min-block-size:auto;padding:0", onclick: () => { delete S.follow[k]; save("follow"); render(); } }, "הסר"))),
     switchEl(S.follow[k].alert, "התראות עבור " + followLabel(k), () => { S.follow[k].alert = !S.follow[k].alert; save("follow"); render(); })))));

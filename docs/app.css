@@ -206,3 +206,6 @@ a.name:hover{color:var(--accent-700)}
 /* third level: topics under a sub-category */
 .topic-chips{margin-block-start:var(--space-2)}
 .chip.small{min-block-size:var(--touch);font-size:var(--fs-meta);border-color:var(--neutral-300)}
+.item-chips{margin-block-start:var(--space-2)}
+.item-chips .chip{border-style:dashed}
+.item-chips .chip[aria-pressed="true"]{border-style:solid}
