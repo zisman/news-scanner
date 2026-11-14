@@ -132,7 +132,7 @@ def google_real_url(link):
         return ""
     gid = m.group(1)
     try:
-        page = fetch("https://news.google.com/rss/articles/" + gid, 400_000).decode("utf-8", "ignore")
+        page = fetch("https://news.google.com/rss/articles/" + gid, 4_000_000).decode("utf-8", "ignore")
         sig = re.search(r'data-n-a-sg="([^"]+)"', page).group(1)
         ts = re.search(r'data-n-a-ts="([^"]+)"', page).group(1)
         inner = ('["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'

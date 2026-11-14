@@ -6,7 +6,7 @@ link = [i["link"] for i in link if "news.google" in i["link"]][0]
 gid = re.search(r"/(?:rss/)?(?:articles|read)/([^/?#]+)", link).group(1)
 for u in ["https://news.google.com/rss/articles/" + gid, "https://news.google.com/articles/" + gid]:
     try:
-        page = scan.fetch(u, 400_000).decode("utf-8", "ignore")
+        page = scan.fetch(u, 4_000_000).decode("utf-8", "ignore")
         print(u[:60], len(page), "sg" , bool(re.search(r'data-n-a-sg="', page)), "ts", bool(re.search(r'data-n-a-ts="', page)))
         print(page[:300].replace("\n"," "))
         m = re.search(r'https?://(?!news\.google|www\.google|fonts|www\.gstatic|ssl\.gstatic)[^"\s<>]+', page); print("first ext url:", m and m.group(0)[:120])
