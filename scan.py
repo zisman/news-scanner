@@ -132,9 +132,19 @@ def google_real_url(link):
         return ""
     gid = m.group(1)
     try:
-        page = fetch("https://news.google.com/rss/articles/" + gid, 4_000_000).decode("utf-8", "ignore")
-        sig = re.search(r'data-n-a-sg="([^"]+)"', page).group(1)
-        ts = re.search(r'data-n-a-ts="([^"]+)"', page).group(1)
+        req = urllib.request.Request("https://news.google.com/rss/articles/" + gid, headers={"User-Agent": UA})
+        page, sig, ts = "", None, None
+        with urllib.request.urlopen(req, timeout=12) as r:      # read only until both values appear
+            while len(page) < 4_000_000:
+                chunk = r.read(65536)
+                if not chunk:
+                    break
+                page += chunk.decode("utf-8", "ignore")
+                sig = re.search(r'data-n-a-sg="([^"]+)"', page)
+                ts = re.search(r'data-n-a-ts="([^"]+)"', page)
+                if sig and ts:
+                    break
+        sig, ts = sig.group(1), ts.group(1)
         inner = ('["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
                  '"X","X",1,[1,1,1],1,1,null,0,0,null,0],"%s",%s,"%s"]' % (gid, ts, sig))
         body = "f.req=" + urllib.parse.quote(json.dumps([[["Fbv4je", inner]]]))
@@ -248,7 +258,7 @@ def main():
     by_link = {}
     for i in keep:
         by_link.setdefault(i["link"], []).append(i)
-    todo = [l for l, g in by_link.items() if "news.google.com" in l and not g[0].get("url") and g[0].get("tried", 0) < 2][:250]
+    todo = [l for l, g in by_link.items() if "news.google.com" in l and not g[0].get("url") and g[0].get("tried", 0) < 2][:400]
     with concurrent.futures.ThreadPoolExecutor(8) as ex:
         for l, real in zip(todo, ex.map(google_real_url, todo)):
             for i in by_link[l]:
