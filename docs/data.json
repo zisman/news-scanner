@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T03:00:32+00:00",
+ "updated": "2026-11-14T03:30:24+00:00",
  "feeds": [
   {
    "site": "Ynet",
@@ -108,10 +108,10 @@
   {
    "site": "וואלה",
    "url": "https://rss.walla.co.il/feed/1?type=main",
-   "ok": true,
-   "found": 13,
-   "matched": 8,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "site": "וואלה",
@@ -286,7 +286,7 @@
    "url": "https://sports.yahoo.com/rss/",
    "ok": true,
    "found": 50,
-   "matched": 6,
+   "matched": 9,
    "error": ""
   },
   {
@@ -294,7 +294,7 @@
    "url": "https://sports.yahoo.com/nba/rss/",
    "ok": true,
    "found": 50,
-   "matched": 41,
+   "matched": 43,
    "error": ""
   },
   {
@@ -334,7 +334,7 @@
    "url": "https://www.nytimes.com/athletic/rss/news/",
    "ok": true,
    "found": 100,
-   "matched": 14,
+   "matched": 15,
    "error": ""
   },
   {
@@ -350,7 +350,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Asport5.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
    "found": 95,
-   "matched": 14,
+   "matched": 15,
    "error": ""
   },
   {
@@ -374,14 +374,14 @@
    "url": "https://news.google.com/rss/search?q=site%3Aisraelhayom.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
    "found": 100,
-   "matched": 9,
+   "matched": 11,
    "error": ""
   },
   {
    "site": "כאן",
    "url": "https://news.google.com/rss/search?q=site%3Akan.org.il%20%D7%A1%D7%A4%D7%95%D7%A8%D7%98%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 47,
+   "found": 46,
    "matched": 1,
    "error": ""
   },
@@ -389,7 +389,7 @@
    "site": "כאן",
    "url": "https://news.google.com/rss/search?q=site%3Akan.org.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 50,
+   "found": 49,
    "matched": 11,
    "error": ""
   },
@@ -422,14 +422,14 @@
    "url": "https://www.jpost.com/rss/rssfeedsfrontpage.aspx",
    "ok": true,
    "found": 26,
-   "matched": 23,
+   "matched": 20,
    "error": ""
   },
   {
    "site": "The Times of Israel",
    "url": "https://news.google.com/rss/search?q=site%3Atimesofisrael.com%20sports%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 10,
+   "found": 7,
    "matched": 0,
    "error": ""
   },
@@ -438,7 +438,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Atimesofisrael.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 24,
+   "matched": 25,
    "error": ""
   },
   {
@@ -454,14 +454,14 @@
    "url": "https://news.google.com/rss/search?q=site%3Aespn.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 3,
+   "matched": 4,
    "error": ""
   },
   {
    "site": "NBA.com",
    "url": "https://news.google.com/rss/search?q=site%3Anba.com/news%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 17,
+   "found": 18,
    "matched": 8,
    "error": ""
   },
@@ -477,7 +477,7 @@
    "site": "EuroLeague",
    "url": "https://news.google.com/rss/search?q=site%3Aeuroleaguebasketball.net%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 47,
+   "found": 46,
    "matched": 15,
    "error": ""
   },
@@ -486,7 +486,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Agoal.com/en%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 31,
+   "matched": 34,
    "error": ""
   },
   {
@@ -518,7 +518,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Aapnews.com%20sports%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 1,
+   "matched": 2,
    "error": ""
   },
   {
@@ -526,7 +526,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Aapnews.com%20politics%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 21,
+   "matched": 20,
    "error": ""
   },
   {
@@ -534,16 +534,16 @@
    "url": "https://news.google.com/rss/search?q=site%3Ableacherreport.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 14,
+   "matched": 13,
    "error": ""
   },
   {
    "site": "Fox Sports",
    "url": "https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30",
-   "ok": false,
-   "found": 0,
-   "matched": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "ok": true,
+   "found": 14,
+   "matched": 1,
+   "error": ""
   },
   {
    "site": "NBC Sports",
@@ -558,7 +558,7 @@
    "url": "https://www.si.com/feed",
    "ok": true,
    "found": 90,
-   "matched": 10,
+   "matched": 8,
    "error": ""
   },
   {
@@ -605,7 +605,7 @@
    "site": "talkSPORT",
    "url": "https://news.google.com/rss/search?q=site%3Atalksport.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 77,
+   "found": 76,
    "matched": 12,
    "error": ""
   },
@@ -629,7 +629,7 @@
    "site": "Football365",
    "url": "https://news.google.com/rss/search?q=site%3Afootball365.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 10,
+   "found": 9,
    "matched": 4,
    "error": ""
   },
@@ -661,7 +661,7 @@
    "site": "i24NEWS",
    "url": "https://news.google.com/rss/search?q=site%3Ai24news.tv/he%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 31,
+   "found": 32,
    "matched": 7,
    "error": ""
   },
@@ -669,7 +669,7 @@
    "site": "מקור ראשון",
    "url": "https://news.google.com/rss/search?q=site%3Amakorrishon.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 60,
+   "found": 59,
    "matched": 4,
    "error": ""
   },
@@ -685,8 +685,8 @@
    "site": "דבר",
    "url": "https://news.google.com/rss/search?q=site%3Adavar1.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 13,
-   "matched": 1,
+   "found": 16,
+   "matched": 2,
    "error": ""
   },
   {
@@ -701,7 +701,7 @@
    "site": "כלכליסט",
    "url": "https://news.google.com/rss/search?q=site%3Acalcalist.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 35,
+   "found": 34,
    "matched": 2,
    "error": ""
   },
@@ -709,7 +709,7 @@
    "site": "דה מרקר",
    "url": "https://news.google.com/rss/search?q=site%3Athemarker.com%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 40,
+   "found": 39,
    "matched": 2,
    "error": ""
   },
@@ -781,8 +781,8 @@
    "site": "gov.il",
    "url": "https://news.google.com/rss/search?q=site%3Agov.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 66,
-   "matched": 11,
+   "found": 62,
+   "matched": 6,
    "error": ""
   },
   {
@@ -813,7 +813,7 @@
    "site": "BBC News",
    "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
    "ok": true,
-   "found": 22,
+   "found": 23,
    "matched": 8,
    "error": ""
   },
@@ -1213,8 +1213,8 @@
    "site": "Roll Call",
    "url": "https://news.google.com/rss/search?q=site%3Arollcall.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 31,
-   "matched": 4,
+   "found": 38,
+   "matched": 6,
    "error": ""
   },
   {
@@ -1262,7 +1262,7 @@
    "url": "https://www.washingtonexaminer.com/feed",
    "ok": true,
    "found": 10,
-   "matched": 8,
+   "matched": 9,
    "error": ""
   },
   {
@@ -1278,7 +1278,7 @@
    "url": "https://nypost.com/us-news/feed/",
    "ok": true,
    "found": 20,
-   "matched": 2,
+   "matched": 3,
    "error": ""
   },
   {
@@ -1286,7 +1286,7 @@
    "url": "https://nypost.com/news/feed/",
    "ok": true,
    "found": 20,
-   "matched": 2,
+   "matched": 3,
    "error": ""
   }
  ],
@@ -1429,6 +1429,97 @@
    "category": "פוליטיקה",
    "subcategory": "מדיניות חוץ וביטחון",
    "keywords": [
+    "יחסי ישראל-ארה\"ב",
+    "לבנון"
+   ],
+   "title": "Voices from the Arab press: Trump's midterm defeat and the future of US-Israel ties",
+   "summary": "A weekly selection of opinions and analyses from the Arab media around the world.",
+   "link": "https://www.jpost.com/middle-east/article-914674",
+   "image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/746042",
+   "published": "2026-11-14T04:10:19+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "The Jerusalem Post",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "בחירות האמצע",
+    "הדמוקרטים (ארה\"ב)",
+    "טראמפ"
+   ],
+   "title": "Voices from the Arab press: Trump's midterm defeat and the future of US-Israel ties",
+   "summary": "A weekly selection of opinions and analyses from the Arab media around the world.",
+   "link": "https://www.jpost.com/middle-east/article-914674",
+   "image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/746042",
+   "published": "2026-11-14T04:10:19+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "The New York Times",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "הקונגרס",
+    "טראמפ"
+   ],
+   "title": "Here’s the latest.",
+   "summary": "Trump administration officials blamed a telecommunication outage and said they needed more funding from Congress to pay for system upgrades.",
+   "link": "https://www.nytimes.com/live/2026/11/13/us/ground-stop-nationwide-flights-faa/nationwide-ground-stop-flights-faa",
+   "image": "https://static01.nyt.com/images/2026/11/13/multimedia/13FAA-groundstop-promo520p/13FAA-groundstop-carousel-qzbh-facebookJumbo.jpg",
+   "published": "2026-11-14T03:27:33+00:00",
+   "first_seen": "2026-11-13T22:30:25+00:00"
+  },
+  {
+   "site": "Washington Examiner",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "הדמוקרטים (ארה\"ב)",
+    "הסנאט"
+   ],
+   "title": "Pete Buttigieg reminds Democrats he campaigned on Medicare for All Who Want It six years ago",
+   "summary": "DENVER — Former Transportation Secretary Pete Buttigieg campaigned on Medicare for All Who Want It in 2020. Six years later, he sees a “convergence” in the party around the proposal.",
+   "link": "https://www.washingtonexaminer.com/news/campaigns/presidential/4803786/pete-buttigieg-medicare-for-all-democrats-healthcare-reform/",
+   "image": "https://www.washingtonexaminer.com/wp-content/uploads/2026/11/AP26308073004220.jpg?w=1024",
+   "published": "2026-11-14T03:27:01+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "New York Post",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "בחירות האמצע"
+   ],
+   "title": "Anthony Santander breaks silence on Islamophobic posts in wake of Abdul El-Sayed’s midterms win",
+   "summary": "Blue Jays outfielder Anthony Santander has broken his silence.",
+   "link": "https://nypost.com/2026/11/13/sports/blue-jays-anthony-santander-breaks-silence-on-islamophobic-posts/",
+   "image": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2026%2F11%2Fnewspress-collage-v07o35ez6-1794623898819.jpg?quality%3D90%26strip%3Dall%261794605939",
+   "published": "2026-11-14T03:26:32+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "The Athletic",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "גולדן סטייט",
+    "סטף קרי"
+   ],
+   "title": "NBA season live scores updates: Knicks NBA Cup defense on brink, Spurs blowing out Curry-less Warriors, flight chaos",
+   "summary": "Follow our live coverage of the latest news, flight issues, injury fallout and tonight’s NBA Cup action.",
+   "link": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/",
+   "image": "https://theathletic-media-production.s3-us-west-2.amazonaws.com/3O8C8RgzvHTs_uAzDvbWpvOqp_1440x960.jpg",
+   "published": "2026-11-14T03:26:12+00:00",
+   "first_seen": "2026-11-12T19:38:28+00:00"
+  },
+  {
+   "site": "The Jerusalem Post",
+   "category": "פוליטיקה",
+   "subcategory": "מדיניות חוץ וביטחון",
+   "keywords": [
     "איראן"
    ],
    "title": "White House confirms Trump-Xi-Putin trilateral summit in China, Iran and nuclear arms on agenda",
@@ -1470,7 +1561,35 @@
    "first_seen": "2026-11-14T02:00:33+00:00"
   },
   {
+   "site": "Eurohoops",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Dejounte Murray requests trade, New Orleans Pelicans weigh possible offers",
+   "summary": "A complicated situation emerges at the New Orleans Pelicans with a public trade request by 30-year-old Dejounte Murray The post Dejounte Murray requests trade, New Orleans Pelicans weigh possible offers appeared first on Eurohoops .",
+   "link": "https://www.eurohoops.net/en/nba-news/2034896/dejounte-murray-trade-request-new-orleans-pelicans-nba/",
+   "image": "https://images.eurohoops.net/2025/03/9d0785e0-dejounte-murray-pelicans.jpeg",
+   "published": "2026-11-14T03:19:54+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
    "site": "The Athletic",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Judge orders LSU to roster RJ Luis, clearing him to play despite SEC rule",
+   "summary": "LSU coach Will Wade testified that he had not rostered Luis, who had signed a two-way NBA contract, for fear of retribution from the SEC.",
+   "link": "https://www.nytimes.com/athletic/7780401/2026/11/13/judge-orders-lsu-roster-rj-luis-sec/",
+   "image": "https://static01.nyt.com/athletic/uploads/wp/2026/11/13195001/AP26237102578179.jpg",
+   "published": "2026-11-14T03:17:00+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
    "category": "ספורט",
    "subcategory": "NBA",
    "keywords": [
@@ -1478,27 +1597,209 @@
     "גולדן סטייט",
     "סטף קרי"
    ],
-   "title": "NBA season live scores updates: Knicks NBA Cup defense on brink after Pacers loss, FAA ground stop impacts travel",
-   "summary": "Follow our live coverage of the latest news, flight issues, injury fallout and tonight’s NBA Cup action.",
-   "link": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/",
-   "image": "https://theathletic-media-production.s3-us-west-2.amazonaws.com/3O8C8RgzvHTs_JJP972lytpxt_1440x960.jpg",
-   "published": "2026-11-14T02:58:26+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
+   "title": "Draymond Green Defends Rockets From ‘Dirty’ Allegations Despite Stephen Curry’s Concerning Injury",
+   "summary": "Draymond Green reveals his thoughts on the Houston Rockets after Stephen Curry gets sidelined for multiple weeks with injury.",
+   "link": "https://sports.yahoo.com/articles/draymond-green-defends-rockets-dirty-031639038.html",
+   "image": "https://media.zenfs.com/en/fadeaway_world_951/4992f78e57cc9e1ffc2cad1da08e7eb7.jpg",
+   "published": "2026-11-14T03:16:39+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
-   "site": "The New York Times",
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Bucks’ Tyler Herro talks some serious trash to Magic chatty Magic fan",
+   "summary": "Tyler Herro is not one to back down from a little back-and-forth, even on the road. During the Milwaukee Bucks’ clash with the Orlando Magic on Friday night , the Bucks guard got into it with a heckling fan at Kia Center.",
+   "link": "https://sports.yahoo.com/articles/bucks-tyler-herro-talks-serious-031156219.html",
+   "image": "https://media.zenfs.com/en/clutchpoints_articles_939/71e839c930b8a489b55a00e5c9e5c4ac.jpg",
+   "published": "2026-11-14T03:11:56+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "The Guardian",
    "category": "פוליטיקה",
    "subcategory": "ארצות הברית",
    "keywords": [
+    "בחירות האמצע",
+    "הדמוקרטים (ארה\"ב)",
+    "הסנאט",
     "הקונגרס",
+    "הרפובליקנים",
     "טראמפ"
    ],
-   "title": "Here’s the latest.",
-   "summary": "Trump administration officials blamed a telecommunication outage and said they needed more funding from Congress to pay for system upgrades.",
-   "link": "https://www.nytimes.com/live/2026/11/13/us/ground-stop-nationwide-flights-faa/nationwide-ground-stop-flights-faa",
-   "image": "https://static01.nyt.com/images/2026/11/13/multimedia/13FAA-groundstop-promo520p/13FAA-groundstop-carousel-qzbh-facebookJumbo.jpg",
-   "published": "2026-11-14T02:53:40+00:00",
-   "first_seen": "2026-11-13T22:30:25+00:00"
+   "title": "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment – as it happened",
+   "summary": "This live blog is now closed. Follow our latest coverage here.",
+   "link": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
+   "image": "https://i.guim.co.uk/img/media/b253768714365e4818d3fcf51ed796d8355c4e6d/278_0_2096_1677/master/2096.jpg?width=140&quality=85&auto=format&fit=max&s=b3473cf019d629ffa5a98aa182c75153",
+   "published": "2026-11-14T03:11:35+00:00",
+   "first_seen": "2026-11-13T13:37:51+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "גולדן סטייט",
+    "סטף קרי"
+   ],
+   "title": "Spurs ambush Warriors in first quarter of first game since Steph Curry injury",
+   "summary": "The Warriors were playing their first game since Stephen Curry got injured and the Spurs pretty much immediately ran them off the floor.",
+   "link": "https://sports.yahoo.com/articles/spurs-ambush-warriors-first-quarter-030853064.html",
+   "image": "https://s.yimg.com/lo/mysterio/api/093f3103f59059c9a8321fe1c4e33a2ed81b8ec21d5fc4c8f59b7bff7cdd10da/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F8e5224199a832c94263a9eb9315a73ba.jpg",
+   "published": "2026-11-14T03:08:53+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "אולסטאר"
+   ],
+   "title": "Dejounte Murray could face a massive fine, suspension for Pelicans trade demand",
+   "summary": "The drama seemingly never stops down south, especially when Dejounte Murray is stirring the pot on social media. First came the shots at Tony Parker’s mentorship with the San Antonio Spurs, then some headbutting with Trae Young’s Atlanta Hawks.",
+   "link": "https://sports.yahoo.com/articles/dejounte-murray-could-face-massive-030847840.html",
+   "image": "https://media.zenfs.com/en/clutchpoints_articles_939/b2adf681d880a1238021777753b4a69e.jpg",
+   "published": "2026-11-14T03:08:47+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Siakam and Nesmith power the Pacers to a 106-104 win over the Knicks",
+   "summary": "INDIANAPOLIS (AP) — Pascal Siakam scored 19 points and Aaron Nesmith added 18 to lead the Indiana Pacers to a 106-104 win over the New York Knicks in an NBA Cup game on Friday night.Siakam's 15-foot jumper with 1:49 remaining gave Indiana a 106-98 lead before the Knicks…",
+   "link": "https://sports.yahoo.com/articles/siakam-nesmith-power-pacers-106-030845560.html",
+   "image": "https://s.yimg.com/lo/mysterio/api/a0ba81a62ec3fc051bfd0239503204018fb3311708eaef8a5f2bf61f308300d1/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fap.org%2Ffa62046271bb07ca4d0b5c69a453e973.jpg",
+   "published": "2026-11-14T03:08:45+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "גולדן סטייט",
+    "ויקטור וומבניאמה"
+   ],
+   "title": "Spurs bring designer drip, fresh hairstyles to NBA Cup showdown against Warriors",
+   "summary": "Victor Wembanyama, Stephon Castle, Dylan Harper and David Jones-Garcia showed off their pregame fashion before the Spurs' NBA Cup matchup against the Golden State Warriors.",
+   "link": "https://sports.yahoo.com/articles/spurs-bring-designer-drip-fresh-030717512.html",
+   "image": "https://media.zenfs.com/en/san_antonio_express_news_hearst_574/5b70c23f67fb9d910cb0eb95cade401b.jpg",
+   "published": "2026-11-14T03:07:17+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Gonzaga's Davis Fogle to face stern defensive test from LSU, Saliou Niang | Key matchup",
+   "summary": "Nov. 13—Davis Fogle eventually hopes to test his game at the highest level, with NBA aspirations that could materialize sooner than later for the Gonzaga wing.",
+   "link": "https://sports.yahoo.com/articles/gonzagas-davis-fogle-face-stern-030700860.html",
+   "image": "",
+   "published": "2026-11-14T03:07:00+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Washington Examiner",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "בחירות האמצע",
+    "הבית הלבן",
+    "הרפובליקנים",
+    "טראמפ"
+   ],
+   "title": "Rubio’s Federalist Society performance fuels 2028 fire: ‘If he runs, he’ll be formidable’",
+   "summary": "Attendees leaving the Federalist Society’s National Lawyers Convention on Friday said they heard something more than a pep talk for Republicans after their midterm losses. To many of them, Secretary of State Marco Rubio sounded like someone who might run for president in 2028.",
+   "link": "https://www.washingtonexaminer.com/news/white-house/4803686/rubio-federalist-society-speech-fuels-2028-talk/",
+   "image": "https://www.washingtonexaminer.com/wp-content/uploads/2026/11/AP26317824418051.jpg?w=1024",
+   "published": "2026-11-14T03:06:53+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Sports Illustrated",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Checking in on Tyler Tanner, Luigi Suigo and Other NBA Draft Prospects",
+   "summary": "Multiple players declared for the 2026 NBA Draft but opted for returns to college basketball.",
+   "link": "https://www.si.com/nba/draft/newsfeed/checking-in-on-tyler-tanner-luigi-suigo-and-other-nba-draft-prospects-01m7bdp7hret?utm_source=RSS",
+   "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4737,h_2664,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/nba_draft/01m7bdzqdaqmpzmvfwt0.jpg",
+   "published": "2026-11-14T03:06:30+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "AP",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "טראמפ"
+   ],
+   "title": "Trump administration blames ‘overloaded’ systems for ground stop after FAA lets flights resume",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeFBta25Rakd3c0VBM0NUWjJzbmV2ajZwTWRtUFVTcTVzZ2otRGo0cXZSWWV0MzNBSXdmMXNzdm9SU1d1blBBNnktRlNqQmcwVUVxQzhCNERGel9ETDBHZjJwb29IYmhGX2VPNm8xeGwwU0VNajFzZnpIM19lejBOVTZrRVVjb2t4SDh3emhSZHI?oc=5",
+   "image": "",
+   "published": "2026-11-14T03:05:00+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "JJ Redick reveals Austin Reaves' status following heel injury",
+   "summary": "How serious is the heel injury that Lakers guard Austin Reaves sustained on Wednesday?",
+   "link": "https://sports.yahoo.com/articles/jj-redick-reveals-austin-reaves-030152555.html",
+   "image": "https://s.yimg.com/lo/mysterio/api/6dd7d156cb1a5c5fe3e792e417d54a58d3ba2d51b40fef154a8fe48eb895272d/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Flebron_wire_usa_today_sports_articles_234%2Fdad3da67bd2989b5a5b90a725de59f90.jpg",
+   "published": "2026-11-14T03:01:52+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "גולדן סטייט",
+    "סטף קרי"
+   ],
+   "title": "Warriors’ Yaxel Lendeborg doesn’t want to waste ‘grandpa age’ Stephen Curry’s last years",
+   "summary": "Yaxel Lendeborg has determination to help Stephen Curry reach the mountaintop once again amid a promising start to the Golden State Warriors’ 2026-27 season. Lendeborg is going through the rookie campaign of his NBA career with the Warriors following an incredible time in…",
+   "link": "https://sports.yahoo.com/articles/warriors-yaxel-lendeborg-doesn-t-030102981.html",
+   "image": "https://media.zenfs.com/en/clutchpoints_articles_939/80c24417b7fea64a34f233042e3e8b19.jpg",
+   "published": "2026-11-14T03:01:02+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Bleacher Report",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "FAA's Nationwide Ground Stop of Flights Impacts Air Travel for NBA, NHL, CFB, More Teams",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdTM1QlBoTjRzZmExXzhKMUpGWjkxUUhVZjUzSHVmWWdFVjBQTWNQdEZvTEp4NmZkZmJZUEpQaFJHd0U2UklMQlpnRnMwcTFmNXZsRXJTc2VfQVVoS0k0eWhWYjk3cl83ZG1wcDRDelJ2RjNwcDFCSkczeEJwOE16NzFtUm41X1NUb2tKdnVnMHNJaVBRal92NlZXXzN0blJCbVdBTWc0dmg4RlFKdURSdU5SYVZzZktnQTA4eVFUUQ?oc=5",
+   "image": "",
+   "published": "2026-11-14T03:00:00+00:00",
+   "first_seen": "2026-11-14T00:00:37+00:00"
   },
   {
    "site": "NBC Sports",
@@ -1587,25 +1888,6 @@
    "first_seen": "2026-11-14T03:00:32+00:00"
   },
   {
-   "site": "The Guardian",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "בחירות האמצע",
-    "הדמוקרטים (ארה\"ב)",
-    "הסנאט",
-    "הקונגרס",
-    "הרפובליקנים",
-    "טראמפ"
-   ],
-   "title": "US flight outage live updates: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment",
-   "summary": "Sean Duffy says ‘it’s going to take us some time to unwind what’s happened’ but also points finger at Congress, claiming lack of funding for systems upgrades US aviation agency lifts nationwide ground stop affecting all air travel Chaos at US airports as flight stoppage…",
-   "link": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
-   "image": "https://i.guim.co.uk/img/media/b253768714365e4818d3fcf51ed796d8355c4e6d/278_0_2096_1677/master/2096.jpg?width=140&quality=85&auto=format&fit=max&s=b3473cf019d629ffa5a98aa182c75153",
-   "published": "2026-11-14T02:45:23+00:00",
-   "first_seen": "2026-11-13T13:37:51+00:00"
-  },
-  {
    "site": "Sports Illustrated",
    "category": "ספורט",
    "subcategory": "NBA",
@@ -1692,6 +1974,20 @@
    "first_seen": "2026-11-14T03:00:32+00:00"
   },
   {
+   "site": "NBC Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "NBA Betting: News, Videos, Stats, Highlights, Results & More - Rotoworld",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1mTTI5WllOc0NhbzZRUVVYZVNiZmlSZzFIVXU4alo4TFdWbHJNcVhWMVJGZXd2eFhnZTZjYkpwb0lTSk1RNUkwcjhUSm9QUQ?oc=5",
+   "image": "",
+   "published": "2026-11-14T02:32:59+00:00",
+   "first_seen": "2026-11-13T22:00:37+00:00"
+  },
+  {
    "site": "The Jerusalem Post",
    "category": "פוליטיקה",
    "subcategory": "מדיניות חוץ וביטחון",
@@ -1734,20 +2030,6 @@
    "image": "https://media.zenfs.com/en/clutchpoints_articles_939/0cc9886b0abd38f8b4e5baf9cbb6aefa.jpg",
    "published": "2026-11-14T02:29:45+00:00",
    "first_seen": "2026-11-14T03:00:32+00:00"
-  },
-  {
-   "site": "Bleacher Report",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "FAA's Nationwide Ground Stop of Flights Impacts Air Travel for NBA, NHL, CFB, More Teams",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdTM1QlBoTjRzZmExXzhKMUpGWjkxUUhVZjUzSHVmWWdFVjBQTWNQdEZvTEp4NmZkZmJZUEpQaFJHd0U2UklMQlpnRnMwcTFmNXZsRXJTc2VfQVVoS0k0eWhWYjk3cl83ZG1wcDRDelJ2RjNwcDFCSkczeEJwOE16NzFtUm41X1NUb2tKdnVnMHNJaVBRal92NlZXXzN0blJCbVdBTWc0dmg4RlFKdURSdU5SYVZzZktnQTA4eVFUUQ?oc=5",
-   "image": "",
-   "published": "2026-11-14T02:26:15+00:00",
-   "first_seen": "2026-11-14T00:00:37+00:00"
   },
   {
    "site": "AP",
@@ -2755,6 +3037,34 @@
    "first_seen": "2026-11-14T01:30:33+00:00"
   },
   {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Cavs at Heat game thread",
+   "summary": "The Cavs will start a three-game road trip tonight.",
+   "link": "https://sports.yahoo.com/articles/cavs-heat-game-thread-010000681.html",
+   "image": "https://media.zenfs.com/en/sb_nation_articles_115/0474b461b24487aa9afff0b1136eace8.jpg",
+   "published": "2026-11-14T01:00:00+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Game Preview #13: Wolves vs Bulls",
+   "summary": "One team is must-watch TV. The other is must-not-watch TV.",
+   "link": "https://sports.yahoo.com/articles/game-preview-13-wolves-vs-010000388.html",
+   "image": "https://media.zenfs.com/en/sb_nation_articles_115/71b11571a962099ce104ed39d797a6f6.jpg",
+   "published": "2026-11-14T01:00:00+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
    "site": "The Washington Times",
    "category": "פוליטיקה",
    "subcategory": "ארצות הברית",
@@ -2767,6 +3077,20 @@
    "image": "",
    "published": "2026-11-14T00:57:33+00:00",
    "first_seen": "2026-11-14T01:30:33+00:00"
+  },
+  {
+   "site": "AP",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "טראמפ"
+   ],
+   "title": "Trump administration cancels mandatory pay hike for Head Start teachers",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdElLamtHcXp3Wnl1ZkVQLVNXTTBhcWtsMUZsSDRXUzhkWWhDOEtvZGhoSEU4U0FEeXRTd2YwOHZYVXg3Z0t3ZllqWEI4MkhNc1Z6TzNDZVRGbW9YaS1OenpMeThBNjJnTnM2Uno2M0tjMlhaSE1kY240SzNzQnUtcHR2OTEzLUtEM2dzdElHcUhRT3lwZDNMMEt3?oc=5",
+   "image": "",
+   "published": "2026-11-14T00:57:00+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "Washington Examiner",
@@ -2795,6 +3119,20 @@
    "image": "",
    "published": "2026-11-14T00:56:42+00:00",
    "first_seen": "2026-11-14T01:00:29+00:00"
+  },
+  {
+   "site": "AP",
+   "category": "ספורט",
+   "subcategory": "טניס",
+   "keywords": [
+    "טניס"
+   ],
+   "title": "Tennis Scores, News & Stats",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1EbzBXMF9LTzNjVndrTjNjcVkwZFdxclRGRzFrVUFQcHJ2NXhUbDhCUnVFZzR5UHNSeGtsbmRxQTNDbkE?oc=5",
+   "image": "",
+   "published": "2026-11-14T00:54:58+00:00",
+   "first_seen": "2026-11-13T10:00:29+00:00"
   },
   {
    "site": "The Hill",
@@ -2853,6 +3191,20 @@
    "image": "",
    "published": "2026-11-14T00:49:26+00:00",
    "first_seen": "2026-11-14T01:00:29+00:00"
+  },
+  {
+   "site": "Goal.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "UEFA Nations League A Home",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdEFWZlo1Q05JaHZvQXVmMVV6MGtJRnd3aFJCbUJ0SkVsaWpaVEVDTFNzeFhQZ3NNRnI1YVJiZEtuNEtLYXdXRE9BVG5tRUZzSTRWUmJBR0l3c21Iem0ybFM4ZjVaSWh0NG1LRGhvcDZ1djNzeXlmV3ZnNmVlMlJ4Vkg2TEUzdThUZFhV?oc=5",
+   "image": "",
+   "published": "2026-11-14T00:47:38+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "The Washington Post",
@@ -3071,17 +3423,32 @@
   },
   {
    "site": "AP",
-   "category": "ספורט",
-   "subcategory": "טניס",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
    "keywords": [
-    "טניס"
+    "הבית הלבן",
+    "טראמפ"
    ],
-   "title": "Tennis Scores, News & Stats",
+   "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1EbzBXMF9LTzNjVndrTjNjcVkwZFdxclRGRzFrVUFQcHJ2NXhUbDhCUnVFZzR5UHNSeGtsbmRxQTNDbkE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOUd4MWZqTjdxYkRUaW55bWxuNy1BX1FaZVNYZHRtNEg4NWdzTENNMlVLOUt6QlptMzd1cUtLanJ0U1pPNVVrbjZDRXo0UWszZjV6d09hRy1GaUFFWE9PUmtzRnFxOUxJdW1OTy0zT21LbnU3RGlhQUUtNHlnRW9nUjhJRmQ0QUFDME9oelNZTVQ?oc=5",
    "image": "",
-   "published": "2026-11-14T00:28:43+00:00",
-   "first_seen": "2026-11-13T10:00:29+00:00"
+   "published": "2026-11-14T00:29:00+00:00",
+   "first_seen": "2026-11-14T01:00:29+00:00"
+  },
+  {
+   "site": "AP",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "רוסיה"
+   ],
+   "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, White House says",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOUd4MWZqTjdxYkRUaW55bWxuNy1BX1FaZVNYZHRtNEg4NWdzTENNMlVLOUt6QlptMzd1cUtLanJ0U1pPNVVrbjZDRXo0UWszZjV6d09hRy1GaUFFWE9PUmtzRnFxOUxJdW1OTy0zT21LbnU3RGlhQUUtNHlnRW9nUjhJRmQ0QUFDME9oelNZTVQ?oc=5",
+   "image": "",
+   "published": "2026-11-14T00:29:00+00:00",
+   "first_seen": "2026-11-14T01:00:29+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -3246,6 +3613,35 @@
    "image": "",
    "published": "2026-11-14T00:11:15+00:00",
    "first_seen": "2026-11-14T00:30:30+00:00"
+  },
+  {
+   "site": "NBC News",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "טראמפ"
+   ],
+   "title": "Trump, Xi and Putin plan an unprecedented meeting on the sidelines of APEC, officials say",
+   "summary": "President Donald Trump will meet with the leaders of China and Russia on the sidelines of the Asia-Pacific Economic Cooperation summit in Shenzen, China’s tech hub, next week, an unprecedented gathering of the heads of the world’s biggest nuclear powers.",
+   "link": "https://www.nbcnews.com/world/china/trump-xi-putin-plan-unprecedented-joint-meeting-sidelines-apec-officia-rcna609275",
+   "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit_1500w/rockcms/2026-11/261106-Xi-Trump-Putin-vsb-1846-405edd.jpg",
+   "published": "2026-11-14T00:08:58+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
+   "site": "NBC News",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "סין",
+    "רוסיה"
+   ],
+   "title": "Trump, Xi and Putin plan an unprecedented meeting on the sidelines of APEC, officials say",
+   "summary": "President Donald Trump will meet with the leaders of China and Russia on the sidelines of the Asia-Pacific Economic Cooperation summit in Shenzen, China’s tech hub, next week, an unprecedented gathering of the heads of the world’s biggest nuclear powers.",
+   "link": "https://www.nbcnews.com/world/china/trump-xi-putin-plan-unprecedented-joint-meeting-sidelines-apec-officia-rcna609275",
+   "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit_1500w/rockcms/2026-11/261106-Xi-Trump-Putin-vsb-1846-405edd.jpg",
+   "published": "2026-11-14T00:08:58+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "Al Jazeera English",
@@ -3785,32 +4181,18 @@
    "first_seen": "2026-11-14T01:30:33+00:00"
   },
   {
-   "site": "AP",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
    "keywords": [
-    "טראמפ"
+    "ליגת האומות"
    ],
-   "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, officials say",
+   "title": "Nations League highlights: Serbia 1-3 Germany | Highlights | UEFA Nations League",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOUd4MWZqTjdxYkRUaW55bWxuNy1BX1FaZVNYZHRtNEg4NWdzTENNMlVLOUt6QlptMzd1cUtLanJ0U1pPNVVrbjZDRXo0UWszZjV6d09hRy1GaUFFWE9PUmtzRnFxOUxJdW1OTy0zT21LbnU3RGlhQUUtNHlnRW9nUjhJRmQ0QUFDME9oelNZTVQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPX2hwZUQ5UHZIZmdQU1dKSXNYeWR0VEFTWTdRZTEwbHF2NUxBR1FZSFduTTZEUkVhWWZtT3hYSjFsVXZoemlNOVcwUVVfdHljNmlSSVR3ckNLWlpuTWp0V2dXSW9ON0Z3T00ycW9nQUtCLWZtVThqaTdVZ3htQlV6UkxQRmlHbG11RWZiTE1YZEp6SWtzQXQ2R1VXQnc2RG55V0E4YlZWZkkxRm83Ui1JRnVPcUxSZ29yWTFxTmpuYkxaUzN3QnAyZjluM3V4VURTVHpvTA?oc=5",
    "image": "",
-   "published": "2026-11-13T23:44:00+00:00",
-   "first_seen": "2026-11-14T01:00:29+00:00"
-  },
-  {
-   "site": "AP",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "רוסיה"
-   ],
-   "title": "Trump, Xi and Putin plan an unprecedented joint meeting on the sidelines of APEC, officials say",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOUd4MWZqTjdxYkRUaW55bWxuNy1BX1FaZVNYZHRtNEg4NWdzTENNMlVLOUt6QlptMzd1cUtLanJ0U1pPNVVrbjZDRXo0UWszZjV6d09hRy1GaUFFWE9PUmtzRnFxOUxJdW1OTy0zT21LbnU3RGlhQUUtNHlnRW9nUjhJRmQ0QUFDME9oelNZTVQ?oc=5",
-   "image": "",
-   "published": "2026-11-13T23:44:00+00:00",
-   "first_seen": "2026-11-14T01:00:29+00:00"
+   "published": "2026-11-13T23:42:45+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "Daily Mail",
@@ -3899,18 +4281,18 @@
    "first_seen": "2026-11-14T00:00:37+00:00"
   },
   {
-   "site": "NBC Sports",
+   "site": "ESPN",
    "category": "ספורט",
-   "subcategory": "NBA",
+   "subcategory": "נבחרות ישראל",
    "keywords": [
-    "NBA"
+    "ליגת האומות"
    ],
-   "title": "NBA Betting: News, Videos, Stats, Highlights, Results & More - Rotoworld",
+   "title": "'This is the way': Xavi lauds Netherlands after tying record Nations League win",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1mTTI5WllOc0NhbzZRUVVYZVNiZmlSZzFIVXU4alo4TFdWbHJNcVhWMVJGZXd2eFhnZTZjYkpwb0lTSk1RNUkwcjhUSm9QUQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQTBkRjBCcS1fUGdMQm91b3A0M045WUxPT0ZhUl84c3lvU2VOVXB6c3VmRXphbFhvVUg4OTRkS04zUlNpMV9zbEFYN2pqRnk1Z1dIMnhweUhoZ29mWkQ0cG42TGxzUzZwTlhyRjlQU1BUMVYxRXF2XzVFMmVvZFVaLU5QaVBELW5fS04zMFdEX3FOMzlreVI1bEJhems?oc=5",
    "image": "",
-   "published": "2026-11-13T23:34:18+00:00",
-   "first_seen": "2026-11-13T22:00:37+00:00"
+   "published": "2026-11-13T23:33:00+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -4276,6 +4658,21 @@
    "image": "https://media.zenfs.com/en/fadeaway_world_951/395ddc093706053aa5e4140a427af4e2.jpg",
    "published": "2026-11-13T23:08:22+00:00",
    "first_seen": "2026-11-13T23:30:27+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "אולסטאר"
+   ],
+   "title": "Pelicans star Dejounte Murray requests trade out of New Orleans",
+   "summary": "The former All-Star requested a trade from the Pelicans.",
+   "link": "https://sports.yahoo.com/articles/pelicans-star-dejounte-murray-requests-230714283.html",
+   "image": "https://media.zenfs.com/en/ny_post_sports_articles_389/0aa1d139c2fa84ac2c0d4035d0895b49.jpg",
+   "published": "2026-11-13T23:07:14+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "UEFA.com",
@@ -5450,6 +5847,20 @@
    "first_seen": "2026-11-14T03:00:32+00:00"
   },
   {
+   "site": "Goal.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "Germany player ratings vs Serbia: Florian Wirtz and Brajan Gruda shine in dominant Nations League victory",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcnF0RDM1MmE2ZHBOek5XbFNEblFjaTN5M2hITlJMLTJRRG9hS2VpM1RONkI5TVIxTFZDVlk5eTNUdXV3amdLbnNxWjFqTEJWbFlVUlFEOU1kU3NHbFpqOVdtQTNWcmw4RlFGYmgweHJDeEtWNGVkNFRGMGQyNnVRSXc0QXRURHFMRkxKU3hrWm5CdFRUeTR0NEFuLXgyRGdG?oc=5",
+   "image": "",
+   "published": "2026-11-13T22:08:22+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
+  },
+  {
    "site": "Yahoo Sports",
    "category": "ספורט",
    "subcategory": "NBA",
@@ -6006,6 +6417,20 @@
    "image": "https://media.zenfs.com/en/dpa_international_526/560902f80e4cf0175b294d27603d1cee.jpg",
    "published": "2026-11-13T21:48:40+00:00",
    "first_seen": "2026-11-13T22:00:37+00:00"
+  },
+  {
+   "site": "The Times of Israel",
+   "category": "פוליטיקה",
+   "subcategory": "מדיניות חוץ וביטחון",
+   "keywords": [
+    "לבנון"
+   ],
+   "title": "Lebanese army says it seized arms and ammunition in Beirut Hezbollah stronghold",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdFd5Zlg5TWF5bmU0cm1jOWJPb0xCaTJUWkIzTlhmdkFabndGaVBZdnRXbHRVSjMtWDlvT2xDUnlDMVA1M25xYWZ2aEhLWFhfYWVGbGF3SzdZUUt4YTdybjNVb0VmN3VOSzdMM2Z2VU14dnVrWVlRYUo5V3g0TWRLTEpPMHlIWkZxRG01TmQ4VjB4U0RYOHN4cTNacExPaEhXam1Ibk9mOHdYTzc0NTlV0gG0AUFVX3lxTE5GY2ZaT0lHWExSTDVNYVBrRElrUTVXcE5URlpULXZUeHFvaUM5VFljazVfYm9BUmxtMmxPeXpCVDI5TXY2YlNITGwtMXlFSDAyQXBDZHFoNzFqdXNTRDZKRXNiYkgxMVEwM2xqZ05FTHFxdURzeU9LZ1JObUp6U0tzLWR1aW1aVzMxNEFwUjdrN0E5aGdiSGMxWGtKSVgzVHZVdEU5Z1pSNjhnaW94WUxwNmo4OQ?oc=5",
+   "image": "",
+   "published": "2026-11-13T21:48:00+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "RealClearPolitics",
@@ -6692,21 +7117,6 @@
    "first_seen": "2026-11-13T22:00:37+00:00"
   },
   {
-   "site": "The New York Times",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "בחירות האמצע",
-    "הקונגרס"
-   ],
-   "title": "Hakeem Jeffries Pushes to Lock Down House Speakership, With No Challenger Emerging",
-   "summary": "Facing resistance from the left but no challenger, the Democratic leader is sewing up support from key coalitions as his allies say he deserves a unanimous vote.",
-   "link": "https://www.nytimes.com/2026/11/13/us/politics/jeffries-house-speaker-democrats.html",
-   "image": "https://static01.nyt.com/images/2026/11/13/multimedia/13dc-jeffries-pfct/13dc-jeffries-pfct-mediumSquareAt3X.jpg",
-   "published": "2026-11-13T21:28:36+00:00",
-   "first_seen": "2026-11-13T20:00:36+00:00"
-  },
-  {
    "site": "Yahoo Sports",
    "category": "ספורט",
    "subcategory": "NBA",
@@ -6720,21 +7130,6 @@
    "image": "https://media.zenfs.com/en/sb_nation_articles_115/7decd1177264d40a6f1a4c2ef9ca7910.jpg",
    "published": "2026-11-13T21:28:01+00:00",
    "first_seen": "2026-11-14T00:00:37+00:00"
-  },
-  {
-   "site": "The Hill",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הבית הלבן",
-    "טראמפ"
-   ],
-   "title": "Hassett denies report he is leaving White House",
-   "summary": "Kevin Hassett, the director of the National Economic Council (NEC), pushed back Friday on a report that he will depart the Trump administration in the coming weeks. He told CNBC’s Eamon Javers through text that the report is “not true.” The White House also denied the report,…",
-   "link": "https://thehill.com/homenews/administration/6219713-kevin-hassett-denies-departure/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/05/hassettkevin_051926gn01_w.jpg?w=900",
-   "published": "2026-11-13T21:26:26+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
   },
   {
    "site": "Sports Illustrated",
@@ -6780,34 +7175,6 @@
    "first_seen": "2026-11-13T20:30:33+00:00"
   },
   {
-   "site": "The Jerusalem Post",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "טראמפ"
-   ],
-   "title": "Trump and Netanyahu must seize the narrow window of opportunity to stop Iran - opinion",
-   "summary": "The fact is that another crushing blow against Iran is necessary, and Israel and the US have a narrow window of opportunity to strike.",
-   "link": "https://www.jpost.com/opinion/article-914713",
-   "image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/745698",
-   "published": "2026-11-13T21:24:02+00:00",
-   "first_seen": "2026-11-13T20:30:33+00:00"
-  },
-  {
-   "site": "National Review",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "טראמפ"
-   ],
-   "title": "Did Payments by Huang’s Nvidia Influence Trump’s Policy on Chip Exports to China?",
-   "summary": "While correlation doesn’t necessarily mean causation, there is an undeniable correlation between Nvidia’s payments and Trump’s loosening of export restrictions.",
-   "link": "https://www.nationalreview.com/article/did-payments-by-huang-s-nvidia-influence-trump-s-policy-on-chip-exports-to-china",
-   "image": "https://cdn.sanity.io/images/yu68q2re/production/135d700058dcbda815f6e79ba5f2fb9fb3b49cb2-2057x1200.jpg?w=600",
-   "published": "2026-11-13T21:22:58+00:00",
-   "first_seen": "2026-11-13T21:23:05+00:00"
-  },
-  {
    "site": "National Review",
    "category": "פוליטיקה",
    "subcategory": "המזרח התיכון והעולם",
@@ -6851,20 +7218,6 @@
    "first_seen": "2026-11-13T14:30:26+00:00"
   },
   {
-   "site": "גלובס",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "טראמפ"
-   ],
-   "title": "על רקע לחצי נתניהו לחדש את המלחמה באיראן: ראש המוסד מבקר בוושינגטון",
-   "summary": "אחרי התקיפה האמריקאית אמש - במשמרות המהפכה טוענים שתקפו בבחרין • טראמפ הודה: במקרה שבו הנהגת השלטון באיראן תישאר זהה בסוף כהונתו, \"זאת תהיה תבוסה. אני אגיד שזאת תבוסה\" • עדכונים שוטפים",
-   "link": "https://www.globes.co.il/news/article.aspx?did=1001563333#utm_source=RSS",
-   "image": "https://res.cloudinary.com/globes/image/upload/t_800X392/v1793719472/shutterstock_2684103865_dottfy.jpg",
-   "published": "2026-11-13T21:22:00+00:00",
-   "first_seen": "2026-11-13T21:23:05+00:00"
-  },
-  {
    "site": "מעריב",
    "category": "פוליטיקה",
    "subcategory": "מדיניות חוץ וביטחון",
@@ -6876,22 +7229,6 @@
    "link": "https://www.maariv.co.il/news/world/article-1388138",
    "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1158890",
    "published": "2026-11-13T21:21:41+00:00",
-   "first_seen": "2026-11-13T21:23:05+00:00"
-  },
-  {
-   "site": "Washington Examiner",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הדמוקרטים (ארה\"ב)",
-    "הסנאט",
-    "הקונגרס"
-   ],
-   "title": "Push for new Democratic leadership overshadows celebrations at Denver confab",
-   "summary": "DENVER — Division over who should lead the Democratic Party in Congress in January 2027 has been put on stark display at a celebration of the party’s historic election gains. At the two-day What’s Next conference in Denver, where strategists and lawmakers are debating the…",
-   "link": "https://www.washingtonexaminer.com/news/senate/4803367/push-new-democratic-leadership-overshadows-celebrations-denver-confab/",
-   "image": "https://www.washingtonexaminer.com/wp-content/uploads/2026/11/AP26317627609160.jpg?w=1024",
-   "published": "2026-11-13T21:21:22+00:00",
    "first_seen": "2026-11-13T21:23:05+00:00"
   },
   {
@@ -6920,21 +7257,6 @@
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTEFIUmxrbU1JZmNoUllOeEV6ZW1tV3c4aFpOSFJjWWkxWlpyVnY0SjNjSlh1VHNTMzJQalJobzFaQl9zM1RVWm9saWdFd1RRRHlUZnp5VHozcWhCVWVaaEcyRDdwTk9SU2M1T3NxYlFDYnBramdqdHZkeWVyanl5V2xRZGdaa1dSVERIamZDUHFvc1Z2VHNTSHkwdlZXLUJkV2pfc0k1RmpWbHBPMWJXb3FNRmI4NEwzWHQzd3RXREVteGdnb1VfSExDSQ?oc=5",
    "image": "",
    "published": "2026-11-13T21:19:49+00:00",
-   "first_seen": "2026-11-13T21:23:05+00:00"
-  },
-  {
-   "site": "Semafor",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הבית הלבן",
-    "טראמפ"
-   ],
-   "title": "Trump’s AI task force discusses cyber risks",
-   "summary": "Director of National Intelligence Jay Clayton, who leads the task force, informed the members about the work that tech CEOs who signed the White House AI accord are doing to prepare “a common set of industry standards,” an administration official said.",
-   "link": "https://www.semafor.com/article/11/13/2026/trumps-ai-task-force-discusses-cyber-risks",
-   "image": "https://img.semafor.com/0c98b278dd95b0e88e4564e74bef33d06a85e88d-4585x3056.jpg",
-   "published": "2026-11-13T21:19:21+00:00",
    "first_seen": "2026-11-13T21:23:05+00:00"
   },
   {
@@ -6995,133 +7317,6 @@
    "first_seen": "2026-11-13T21:30:30+00:00"
   },
   {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "“None of us want to be here in terms of losing one in …",
-   "summary": "",
-   "link": "https://sports.yahoo.com/articles/none-us-want-terms-losing-211557775.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/3229fedb4209fd437e9a7d126203f8ffaa5492d0af3b1e9af726d0c1b421aa19/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhoops_hype_usa_today_sports_articles_974%2Fc14b66263c8e42e07c790a8305726f3d.png",
-   "published": "2026-11-13T21:15:57+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "‘This is a tough question, but for sure one of my best …",
-   "summary": "",
-   "link": "https://sports.yahoo.com/articles/tough-sure-one-best-211556661.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/42b7d4ac63b0ff5d3bb27e6976fd77ca4361a160a5ea3ae38b496404488d694b/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhoops_hype_usa_today_sports_articles_974%2F12f152d2d7e60732bf3b58cd717f160b.png",
-   "published": "2026-11-13T21:15:56+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "“I just knew he was one of the best players in this …",
-   "summary": "",
-   "link": "https://sports.yahoo.com/articles/just-knew-one-best-players-211555476.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/cb36870f7e16b61f4bb77cc06ac48f900adc1f3807c5c2e092516eea659ef7a1/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhoops_hype_usa_today_sports_articles_974%2F7348b5e00a5b1a587ba8160ecd69b637.png",
-   "published": "2026-11-13T21:15:55+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Nick Nurse on Joel Embiid’s improved movement and rim …",
-   "summary": "",
-   "link": "https://sports.yahoo.com/articles/nick-nurse-joel-embiid-improved-211554218.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/b2ec0c7534bb85a4fa78646f56936dc05c45141a6dd2ffc05a0aec8ece917fe6/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhoops_hype_usa_today_sports_articles_974%2Fe0533a85575051ced9d78a06db3f78c5.png",
-   "published": "2026-11-13T21:15:54+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "I think that we did a lot of great things tonight as a …",
-   "summary": "",
-   "link": "https://sports.yahoo.com/articles/think-did-lot-great-things-211553060.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/512e98e975e00e0445a6c188d8e2f1ca64fea06a2816eff00889d4cc1eda6555/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhoops_hype_usa_today_sports_articles_974%2F7f66998b6d367b6e89b4216004bbb975.png",
-   "published": "2026-11-13T21:15:53+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "“He’s grown in so many ways. Obviously whether it be …",
-   "summary": "",
-   "link": "https://sports.yahoo.com/articles/grown-many-ways-obviously-whether-211552122.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/6a79ad33ca676497ed8309d42d83598838700ea173c49dad43abc918a990d7c5/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhoops_hype_usa_today_sports_articles_974%2F934ff475a76ba005846ac1e8d6639e29.png",
-   "published": "2026-11-13T21:15:52+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Obviously, we’re a team that’s trying to grow and get …",
-   "summary": "",
-   "link": "https://sports.yahoo.com/articles/obviously-team-trying-grow-211551062.html",
-   "image": "https://s.yimg.com/lo/mysterio/api/1427a1a91e7aa39f32a461e98a3a27da86a5f1d921c53787930a53d533d7f3ac/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhoops_hype_usa_today_sports_articles_974%2F71dfe2768dcefbf198eb6bdd33276bb7.png",
-   "published": "2026-11-13T21:15:51+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
-  },
-  {
-   "site": "CBS Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Pacers-Knicks, UCLA-Illinois, college football",
-   "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football, NFL on Friday",
-   "link": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-pacers-knicks-ucla-illinois-college-football-friday/",
-   "image": "https://sportshub.cbsistatic.com/i/2026/09/08/8c9b2f2a-2dd9-45bb-932a-45e8faf837ef/betmgm-promo-code-september-2026.jpg",
-   "published": "2026-11-13T21:15:28+00:00",
-   "first_seen": "2026-11-13T22:00:37+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "אולסטאר"
-   ],
-   "title": "Donovan Mitchell goes off on Charles Barkley",
-   "summary": "If Charles Barkley does retire from television after this season on Inside the NBA, don’t expect Cleveland Cavaliers All-Star Donovan Mitchell to be too upset about it. Prior to their win over the defending champion New York Knicks earlier this week, Barkley gave a very blunt…",
-   "link": "https://sports.yahoo.com/articles/donovan-mitchell-goes-off-charles-211514151.html",
-   "image": "https://media.zenfs.com/en/awful_announcing_173/2710ef48d4b4ca0933fc9fa9d3621953.jpg",
-   "published": "2026-11-13T21:15:14+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
-  },
-  {
    "site": "The Washington Post",
    "category": "פוליטיקה",
    "subcategory": "המזרח התיכון והעולם",
@@ -7151,19 +7346,18 @@
    "first_seen": "2026-11-13T21:23:05+00:00"
   },
   {
-   "site": "Sports Illustrated",
-   "category": "ספורט",
-   "subcategory": "NBA",
+   "site": "Reuters",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
    "keywords": [
-    "גולדן סטייט",
-    "סטף קרי"
+    "מצרים"
    ],
-   "title": "The Warriors Were Winning—Now Steph Curry Is Hurt",
-   "summary": "Chris Mannix and Grant Liffmann break down who will step up for the Warriors in Steph Curry’s absence and whether the team will make a trade sooner than expected.",
-   "link": "https://www.si.com/nba/video/the-warriors-were-winning-now-steph-curry-is-hurt-01m7bb43drtbxxr2hm25?utm_source=RSS",
-   "image": "https://images2.minutemediacdn.com/image/upload/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/video/thumbnail/mmsport/01m7bb43drtbxxr2hm25/01m7bb43drtbxxr2hm25-ee1bad8fc1b73ea37462304089898644.jpg",
-   "published": "2026-11-13T21:10:29+00:00",
-   "first_seen": "2026-11-13T21:30:30+00:00"
+   "title": "Egypt to set up state-backed company to license artisanal gold miners, free detainees, lawmaker says",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbmFNSGdJbnF0Y0pfbTNyaDk0TzBwOWRVakFNRWVhM3RnM2psSDN6cWRRaF95UHUtMVhVSkp6cUJFTDBzLWdmaGIxUkFqSk16eDNIdGktOG5nYmQwNTl4cGxTdXBPMlVLNTFDTkNFak5lM1J3Um93WVJaNzlaSzZtMXNKOEhad1pIaVcyVXRHVjl3ZEs3bm1YMWxPUWY2MnA0ajg0WDcxTHNGbG1yZU9qWFdXVFpoem9tMzJ3SFZ3S2tZbUdfLXc?oc=5",
+   "image": "",
+   "published": "2026-11-13T21:14:25+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -7219,21 +7413,6 @@
    "link": "https://sports.yahoo.com/articles/silva-says-portugal-ready-spotlight-210903905.html",
    "image": "https://media.zenfs.com/en/afp.com/d3f2499d246fdeae064ad6666fecf12d.jpg",
    "published": "2026-11-13T21:09:03+00:00",
-   "first_seen": "2026-11-13T21:23:05+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "גולדן סטייט",
-    "סטף קרי"
-   ],
-   "title": "Warriors Guard Sends Confident Message Amid Steph Curry Injury",
-   "summary": "The Golden State Warriors are said to be without Steph Curry for at least two weeks due to an abdominal injury.Curry was diagnosed with an oblique abdominal tear, suffered on Wednesday in the first quarter of their 115-108 loss to the Houston Rockets.Yaxel Lendeborg and…",
-   "link": "https://sports.yahoo.com/articles/warriors-guard-sends-confident-message-210700722.html",
-   "image": "https://media.zenfs.com/en/heavy_214/818c2f7bc9799c778f56ec529e24aa42.png",
-   "published": "2026-11-13T21:07:00+00:00",
    "first_seen": "2026-11-13T21:23:05+00:00"
   },
   {
@@ -7250,21 +7429,6 @@
    "link": "https://nypost.com/2026/11/13/us-news/trump-will-have-historic-meeting-with-xi-putin-in-china/",
    "image": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2026%2F11%2Fnewspress-collage-u1gasvwgc-1794604436313.jpg?quality%3D90%26strip%3Dall%261794586651",
    "published": "2026-11-13T21:06:14+00:00",
-   "first_seen": "2026-11-13T21:23:05+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "גולדן סטייט",
-    "סטף קרי"
-   ],
-   "title": "Warriors Get Encouraging Stephen Curry Update Despite Devastating Injury",
-   "summary": "Stephen Curry delivers an encouraging surprise after his serious injury as the Warriors prepare for a difficult test in San Antonio. The post Warriors Get Encouraging Stephen Curry Update Despite Devastating Injury appeared first on HEAVY.",
-   "link": "https://sports.yahoo.com/articles/warriors-encouraging-stephen-curry-despite-210606224.html",
-   "image": "https://media.zenfs.com/en/heavy_214/983bd796d7674eb50710837301b79151.jpg",
-   "published": "2026-11-13T21:06:06+00:00",
    "first_seen": "2026-11-13T21:23:05+00:00"
   },
   {
@@ -7310,20 +7474,6 @@
    "first_seen": "2026-11-13T21:23:05+00:00"
   },
   {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Dejoute Murray Demands Trade From The Pelicans After 4-8 Start",
-   "summary": "Pelicans guard Dejounte Murray requests a trade in his third season with the Pelicans.",
-   "link": "https://sports.yahoo.com/articles/dejoute-murray-demands-trade-pelicans-210211337.html",
-   "image": "https://media.zenfs.com/en/fadeaway_world_951/c0747d6bd76690bff94e769fabb66b5d.jpg",
-   "published": "2026-11-13T21:02:11+00:00",
-   "first_seen": "2026-11-13T21:23:05+00:00"
-  },
-  {
    "site": "UEFA.com",
    "category": "ספורט",
    "subcategory": "נבחרות ישראל",
@@ -7349,20 +7499,6 @@
    "link": "https://www.newsweek.com/us-air-force-responds-to-drone-activity-at-base-in-uk-after-iran-threat-12713848",
    "image": "https://www.newsweek.com/Newsweek_logo_social.jpg",
    "published": "2026-11-13T21:00:01+00:00",
-   "first_seen": "2026-11-13T21:00:30+00:00"
-  },
-  {
-   "site": "Sports Illustrated",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "פורטלנד טרייל בלייזרס"
-   ],
-   "title": "A Golden Knicks Trade Opportunity Might Become Real Very Soon",
-   "summary": "With upcoming games against the Pacers, Raptors, Timberwolves and Trail Blazers, that’s where the New York Knicks’ players and coaches are focused. Leon Rose an",
-   "link": "https://www.si.com/nba/knicks/onsi/golden-knicks-trade-opportunity-might-become-real-very-soon-01m7asd120n8?utm_source=RSS",
-   "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4604,h_2589,x_0,y_0/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/all_knicks/01m7aseknwv9eryz8jdd.jpg",
-   "published": "2026-11-13T21:00:00+00:00",
    "first_seen": "2026-11-13T21:00:30+00:00"
   },
   {
@@ -7433,20 +7569,6 @@
    "link": "https://sports.yahoo.com/articles/report-udogie-could-eager-juventus-205200222.html",
    "image": "https://media.zenfs.com/en/football_italia_articles_132/9612bc1411a8453a450f14a1b52c57f6.jpg",
    "published": "2026-11-13T20:52:00+00:00",
-   "first_seen": "2026-11-13T21:23:05+00:00"
-  },
-  {
-   "site": "ישראל היום",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "אגדת ה-NBA קושר לשריפת הענק בלוס אנג'לס: \"עובדים עם הרשויות\"",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9QZEtmQUlOMmM0T3FHUEtINzdpOUZJUENia3ZvLWpEOU1nY2hIQkxSNDhDbGZHOThlZHI3RWFFVzJ0NXZlMVBzcUdNR0dUeXF0X3ZRSFRJaVFQRjJEaUdhaG4wTF81OE1Fa0RzVDdUYjJCVzM0dHh4aA?oc=5",
-   "image": "",
-   "published": "2026-11-13T20:51:56+00:00",
    "first_seen": "2026-11-13T21:23:05+00:00"
   },
   {
@@ -9518,6 +9640,20 @@
    "image": "https://i.guim.co.uk/img/media/cf486b8222139aa40698ef1ce78a51d522716296/344_0_2768_2215/master/2768.jpg?width=140&quality=85&auto=format&fit=max&s=68bac943b11782930fd7772ffc11b5f6",
    "published": "2026-11-13T19:00:23+00:00",
    "first_seen": "2026-11-13T19:30:26+00:00"
+  },
+  {
+   "site": "Goal.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "UEFA Nations League C Home",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSDkwbzIyWGRwbWVGX0ZEYWxZcVpMQmJHNGdDN1luQ2ZJRVJMNmUwdFFBbVdVZDc0cHVnQ0QzQ01tUV9zajBzdDZIZDBKQ0xwTG5rcDFWODBuV0huNmdrdmw3VTdnNTIxdDZMU0dVY094d1V1RWRtNE43VWl6UUh5QW93RVJyZw?oc=5",
+   "image": "",
+   "published": "2026-11-13T18:59:51+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "Football Italia",
@@ -13410,20 +13546,6 @@
    "first_seen": "2026-11-13T16:00:41+00:00"
   },
   {
-   "site": "Washington Examiner",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "טורקיה"
-   ],
-   "title": "Newsom to decide whether he’s running for president in ‘early January’",
-   "summary": "Gov. Gavin Newsom (D-CA) said he will decide in early January 2027 whether to seek the Democratic presidential nomination in 2028, putting a timetable on a decision that has fueled speculation about his political future for more than a year.",
-   "link": "https://www.washingtonexaminer.com/news/campaigns/presidential/4802657/gavin-newsom-2028-presidential-bid-decision-early-january/",
-   "image": "https://www.washingtonexaminer.com/wp-content/uploads/2026/11/AP26316487447961.jpg?w=1024",
-   "published": "2026-11-13T15:55:04+00:00",
-   "first_seen": "2026-11-13T16:00:41+00:00"
-  },
-  {
    "site": "France 24",
    "category": "פוליטיקה",
    "subcategory": "אירופה",
@@ -13436,20 +13558,6 @@
    "link": "https://www.france24.com/en/france/20261113-france-asks-brussels-to-examine-algeria-s-non-compliance-of-eu-association-agreement",
    "image": "https://s.france24.com/media/display/04b022ae-df7a-11f1-af78-3f371022a770/w:1024/p:16x9/AP24214729582761.jpg",
    "published": "2026-11-13T15:54:52+00:00",
-   "first_seen": "2026-11-13T16:00:41+00:00"
-  },
-  {
-   "site": "Newsweek",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "סין"
-   ],
-   "title": "China’s Security Services Are No Match for American HR Departments",
-   "summary": "If the espionage allegations are true, the CCP should thank its lucky stars Alice Huang got to Jensen before Nvidia’s HR did.",
-   "link": "https://www.newsweek.com/chinas-secret-service-no-match-american-hr-12710795",
-   "image": "https://assets.newsweek.com/wp-content/uploads/2026/11/GettyImages-2299645290.jpg?w=1200&crop=1",
-   "published": "2026-11-13T15:54:45+00:00",
    "first_seen": "2026-11-13T16:00:41+00:00"
   },
   {
@@ -14493,6 +14601,20 @@
    "image": "https://s.france24.com/media/display/c55988f8-df5a-11f1-b15d-3f371022a770/w:1024/p:16x9/capture-96a34f6a.jpg",
    "published": "2026-11-13T14:45:00+00:00",
    "first_seen": "2026-11-13T14:52:23+00:00"
+  },
+  {
+   "site": "gov.il",
+   "category": "פוליטיקה",
+   "subcategory": "חקיקה ומשפט",
+   "keywords": [
+    "בג\"ץ"
+   ],
+   "title": "החלטה בתיק בג\"ץ 7235/09",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNN2JyWVZVRjFoT09VcTFJbXJKX0VLeGo3QTJ2SEFjOTdWSXB0YVZqVzhOTllVVWh5bHptR0lxUTc1MlRSRUJlTDk0dU5saTc3VlV2WWZIcVVQMzdYZnZqb0UxRE5DaEl0aUNud0o2WHNsTTdmRXJwZ0ZPNWY4VFoybi0wT0Q1MENwOHZMZUt0LWw1SFlxWTZ6Z29jUHNQMUJoTGM4S3NCXy1KbEtRdWFQaFdpNFpzVmtoX0kw?oc=5",
+   "image": "",
+   "published": "2026-11-13T14:44:11+00:00",
+   "first_seen": "2026-11-14T03:30:24+00:00"
   },
   {
    "site": "Goal.com",
@@ -15799,20 +15921,6 @@
    "first_seen": "2026-11-13T14:00:32+00:00"
   },
   {
-   "site": "The Hill",
-   "category": "פוליטיקה",
-   "subcategory": "מדיניות חוץ וביטחון",
-   "keywords": [
-    "איראן"
-   ],
-   "title": "Trump says he would 'easily' beat 'highly overrated' Obama",
-   "summary": "President Trump claimed in a new interview that he could “easily” beat former President Obama in a political match-up, days after Republicans experienced sweeping losses in the midterm elections. “I got many more votes than he got, and I got many more votes in the states,”…",
-   "link": "https://thehill.com/homenews/campaign/6218241-donald-trump-barack-obama-potential-matchup-midterms-postelection/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/11/Trump_Obama_111326.png?w=900",
-   "published": "2026-11-13T13:38:16+00:00",
-   "first_seen": "2026-11-13T13:40:40+00:00"
-  },
-  {
    "site": "Politico Europe",
    "category": "פוליטיקה",
    "subcategory": "אירופה",
@@ -15853,20 +15961,6 @@
    "image": "https://i.guim.co.uk/img/media/06ca4826a4e96a1a7518bee5de37403f2a0de64e/95_0_2040_1632/master/2040.jpg?width=140&quality=85&auto=format&fit=max&s=d70d6099405013e016ca643f341a8000",
    "published": "2026-11-13T13:35:49+00:00",
    "first_seen": "2026-11-13T14:00:32+00:00"
-  },
-  {
-   "site": "Washington Examiner",
-   "category": "פוליטיקה",
-   "subcategory": "מדיניות חוץ וביטחון",
-   "keywords": [
-    "איראן"
-   ],
-   "title": "Producer prices rose to 6.5% in October",
-   "summary": "Inflation, as measured by the producer price index, rose two-tenths of a percentage point to 6.5% for the year ending in October, the Bureau of Labor Statistics reported Friday. Economists have been closely watching PPI reports and other inflation data amid the war with Iran…",
-   "link": "https://www.washingtonexaminer.com/policy/finance-and-economy/4802085/producer-prices-rose-october/",
-   "image": "https://www.washingtonexaminer.com/wp-content/uploads/2025/08/ppi-inflation-july.webp?w=700",
-   "published": "2026-11-13T13:35:44+00:00",
-   "first_seen": "2026-11-13T13:37:51+00:00"
   },
   {
    "site": "Football Italia",
@@ -16009,7 +16103,7 @@
    "first_seen": "2026-11-13T02:30:26+00:00"
   },
   {
-   "site": "הכנסת",
+   "site": "gov.il",
    "category": "פוליטיקה",
    "subcategory": "בחירות וסקרים",
    "keywords": [
@@ -16023,7 +16117,7 @@
    "first_seen": "2026-11-13T16:00:41+00:00"
   },
   {
-   "site": "הכנסת",
+   "site": "gov.il",
    "category": "פוליטיקה",
    "subcategory": "חקיקה ומשפט",
    "keywords": [
@@ -19234,20 +19328,6 @@
   {
    "site": "The Guardian",
    "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות"
-   ],
-   "title": "Pochettino to sign two-and-a-half-year Manchester United deal; Fernandes rejects second contract offer: football – live",
-   "summary": "USMNT head coach is due to speak later on Friday Today’s fixtures | Follow us on TikTok | Mail David Here’s David Hytner’s report of England’s 2-1 win over Croatia in the Nations League last night. Comes complete with photo of Harry Kane in classic penalty-taking pose.",
-   "link": "https://www.theguardian.com/football/live/2026/nov/13/mauricio-pochettino-manchester-united-head-coach-football-live",
-   "image": "https://i.guim.co.uk/img/media/439498851cd883a872e25e9954722b73d1efbd30/166_0_2363_1891/master/2363.jpg?width=140&quality=85&auto=format&fit=max&s=d660434193e248bc2bfad19ad24ee181",
-   "published": "2026-11-13T10:10:14+00:00",
-   "first_seen": "2026-11-13T09:00:32+00:00"
-  },
-  {
-   "site": "The Guardian",
-   "category": "ספורט",
    "subcategory": "ליגת האלופות",
    "keywords": [
     "ברצלונה",
@@ -19392,20 +19472,6 @@
    "first_seen": "2026-11-13T07:00:29+00:00"
   },
   {
-   "site": "Ynet",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "נבחרת ישראל בכדורגל"
-   ],
-   "title": "פרויקט 2030: הדרך ליצור נבחרת ישראל עוצמתית | תוכן גולשים",
-   "summary": "בחירת המאמן חשובה. אבל מעתה יש להקדיש הרבה יותר זמן לשדרוג ועיבוי הסגל שיהיה לו לאמן.",
-   "link": "https://www.ynet.co.il/sport/article/h1ttfk1afe",
-   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/10/03/HJaf8UCqfg/HJaf8UCqfg_0_119_3000_1689_0_medium.jpg",
-   "published": "2026-11-13T10:00:00+00:00",
-   "first_seen": "2026-11-13T10:30:25+00:00"
-  },
-  {
    "site": "EuroLeague",
    "category": "ספורט",
    "subcategory": "יורוליג",
@@ -19418,20 +19484,6 @@
    "image": "",
    "published": "2026-11-13T10:00:00+00:00",
    "first_seen": "2026-11-13T10:30:25+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות"
-   ],
-   "title": "MOREIRA ENJOYS WINNING NIGHT WITH BELGIUM",
-   "summary": "The November international break kicked off with the first Rossoneri players in action on Matchday 5 of the UEFA Nations League. All eyes were on San Siro for the evening's big clash between Italy and...",
-   "link": "https://sports.yahoo.com/articles/moreira-enjoys-winning-night-belgium-100000452.html",
-   "image": "https://media.zenfs.com/en/ac_milan_articles_993/8bec6ca19c00e6813661b3e2d7087809.jpg",
-   "published": "2026-11-13T10:00:00+00:00",
-   "first_seen": "2026-11-13T11:00:32+00:00"
   },
   {
    "site": "The Times of Israel",
@@ -19617,20 +19669,6 @@
    "first_seen": "2026-11-13T10:00:29+00:00"
   },
   {
-   "site": "UEFA.com",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות"
-   ],
-   "title": "Idris Hopi | Czechia | UEFA Nations League",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZFhYcGp6dWxNV3pmV3VPU295RzhIdFdCYmVlaWNxQVVXdHNaaUlmSjZXVmVOaTc0MTNtLTBNU2N3QjF0MU1UcURfWXNhQy1kWDlXa0JjeERlZjJjeWVLZjVOeFY2X1FLRWplNmZVSS14OF9WdHB0OU1nRkZ4RFZ1QQ?oc=5",
-   "image": "",
-   "published": "2026-11-13T09:30:40+00:00",
-   "first_seen": "2026-11-13T03:00:31+00:00"
-  },
-  {
    "site": "ישראל היום",
    "category": "פוליטיקה",
    "subcategory": "כנסת וממשלה",
@@ -19672,20 +19710,6 @@
    "image": "",
    "published": "2026-11-13T09:25:45+00:00",
    "first_seen": "2026-11-12T19:48:42+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות"
-   ],
-   "title": "\"You can't always play the same way for 90 minutes\" – Zidane backs Olise after quiet second half against Italy",
-   "summary": "Michael Olise struck early to capitalise on a mistake by Gianluigi Donnarumma and give France the lead in Thursday's UEFA Nations League clash against Italy.However, Olise's influence waned in the sec...",
-   "link": "https://sports.yahoo.com/articles/cant-always-play-same-way-092100442.html",
-   "image": "https://media.zenfs.com/en/bulinews_articles_290/1206217c7f1af8a4a0b92c8f9576aae3.jpg",
-   "published": "2026-11-13T09:21:00+00:00",
-   "first_seen": "2026-11-13T09:30:25+00:00"
   },
   {
    "site": "The Jerusalem Post",
