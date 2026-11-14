@@ -237,7 +237,7 @@ def main():
                         "keywords": sorted(set(hits) | set(prev.get("keywords", []))),
                         "title": e["title"], "summary": two_sentences(e["desc"], e["title"]),
                         "link": link, "image": e["image"] or prev.get("image", ""), "url": prev.get("url", ""),
-                        "tried": prev.get("tried", 0),
+                        "gtried": prev.get("gtried", 0), "itried": prev.get("itried", 0),
                         "published": (d or now).isoformat(timespec="seconds") if (d or not prev) else prev["published"],
                         "first_seen": prev.get("first_seen", now.isoformat(timespec="seconds")),
                     }
@@ -258,22 +258,22 @@ def main():
     by_link = {}
     for i in keep:
         by_link.setdefault(i["link"], []).append(i)
-    todo = [l for l, g in by_link.items() if "news.google.com" in l and not g[0].get("url") and g[0].get("tried", 0) < 2][:400]
+    todo = [l for l, g in by_link.items() if "news.google.com" in l and not g[0].get("url") and g[0].get("gtried", 0) < 3][:400]
     with concurrent.futures.ThreadPoolExecutor(8) as ex:
         for l, real in zip(todo, ex.map(google_real_url, todo)):
             for i in by_link[l]:
                 i["url"] = real
                 if not real:
-                    i["tried"] = i.get("tried", 0) + 1
-    need = [l for l, g in by_link.items() if not g[0]["image"] and g[0].get("tried", 0) < 3
-            and (g[0].get("url") or "news.google.com" not in l)][:300]
-    with concurrent.futures.ThreadPoolExecutor(12) as ex:
+                    i["gtried"] = i.get("gtried", 0) + 1
+    need = [l for l, g in by_link.items() if not g[0]["image"] and g[0].get("itried", 0) < 3
+            and (g[0].get("url") or "news.google.com" not in l)][:600]
+    with concurrent.futures.ThreadPoolExecutor(16) as ex:
         found = list(ex.map(lambda l: og_image(by_link[l][0].get("url") or l), need))
     for l, img in zip(need, found):
         for i in by_link[l]:
             i["image"] = img
             if not img:
-                i["tried"] = i.get("tried", 0) + 1
+                i["itried"] = i.get("itried", 0) + 1
     print("google links resolved:", sum(1 for l in todo if by_link[l][0]["url"]), "/", len(todo),
           "| images found:", sum(1 for x in found if x), "/", len(need))
 
