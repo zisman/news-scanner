@@ -184,7 +184,7 @@ def main():
         for sub in cat["subcategories"]:
             kws = [(k["name"], [term_regex(t, k.get("case")) for t in k["match"]],
                     [term_regex(t) for t in k.get("context", [])],
-                    [term_regex(t) for t in k.get("exclude", [])]) for k in sub["keywords"]]
+                    [term_regex(t) for t in k.get("exclude", [])], bool(k.get("secondary"))) for k in sub["keywords"]]
             sites = set(cat.get("sites") or [s["name"] for s in cfg["sites"]])
             rules.append((cat["name"], sub["name"], sites, kws))
     valid = {(r[0], r[1]) for r in rules}
@@ -220,12 +220,13 @@ def main():
                     if site["name"] not in sites or (only and cat not in only):
                         continue
                     wide = hay + " \n " + urllib.parse.unquote(e["link"])
-                    hits = [name for name, rxs, ctx, exc in kws
+                    hits = [(name, sec) for name, rxs, ctx, exc, sec in kws
                             if any(r.search(hay) for r in rxs)
                             and (not ctx or any(r.search(wide) for r in ctx))
                             and not any(r.search(wide) for r in exc)]
-                    if not hits:
+                    if not any(not sec for _, sec in hits):      # secondary words (results, transfers) only refine
                         continue
+                    hits = [name for name, _ in hits]
                     st["matched"] += 0 if counted else 1
                     counted = True
                     link = e["link"].strip()
@@ -279,7 +280,9 @@ def main():
 
     data = {"updated": now.isoformat(timespec="seconds"), "feeds": status,
             "taxonomy": [{"name": c["name"], "icon": c.get("icon", ""),
-                          "subcategories": [{"name": s["name"], "icon": s.get("icon", "")}
+                          "subcategories": [{"name": s["name"], "icon": s.get("icon", ""),
+                                             "groups": s.get("groups") or [{"name": k["name"], "keywords": [k["name"]]}
+                                                                           for k in s["keywords"] if not k.get("secondary")]}
                                             for s in c["subcategories"]]}
                          for c in cfg["categories"]],
             "items": keep}

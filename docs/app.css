@@ -202,3 +202,7 @@ a.name:hover{color:var(--accent-700)}
 .list li{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:var(--space-3);row-gap:var(--space-2)}
 .list li .thumb{grid-column:1/-1;grid-row:1}
 .thumb.plate{font-size:var(--fs-list)}
+
+/* third level: topics under a sub-category */
+.topic-chips{margin-block-start:var(--space-2)}
+.chip.small{min-block-size:var(--touch);font-size:var(--fs-meta);border-color:var(--neutral-300)}
