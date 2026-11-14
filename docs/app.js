@@ -615,6 +615,10 @@ function render() {
   if (r.v === "search" && app.dataset.view === "search" && app.querySelector("input")) { renderTabbar(r.v, false); return; }
   app.dataset.view = r.v;
   app.replaceChildren(...fn(r).filter(Boolean));
+  app.querySelectorAll(".chips.scroll [aria-pressed='true'], .cat-tabs [aria-selected='true']").forEach((el) => {
+    const row = el.parentElement;                       // keep the active chip visible without moving the page
+    row.scrollLeft += el.getBoundingClientRect().left - row.getBoundingClientRect().left - (row.clientWidth - el.offsetWidth) / 2;
+  });
   renderTabbar(r.v, false);
   renderRail();
 }
