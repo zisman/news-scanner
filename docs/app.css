@@ -195,3 +195,10 @@ a.name:hover{color:var(--accent-700)}
 .plate{display:flex;align-items:center;justify-content:center;background:var(--color-surface);color:var(--neutral-600);
   font-size:var(--fs-meta);font-weight:700;text-align:center;padding:var(--space-1);overflow:hidden}
 .plate.lead-img,.plate.hero{font-size:var(--fs-list)}
+
+/* images sit above the text, full width */
+.with-thumb{flex-direction:column;align-items:stretch;gap:var(--space-2)}
+.with-thumb .thumb,.list li .thumb,.group .thumb{order:-1;inline-size:100%;aspect-ratio:16/9}
+.list li{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:var(--space-3);row-gap:var(--space-2)}
+.list li .thumb{grid-column:1/-1;grid-row:1}
+.thumb.plate{font-size:var(--fs-list)}
