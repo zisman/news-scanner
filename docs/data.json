@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T06:30:24+00:00",
+ "updated": "2026-11-17T07:00:29+00:00",
  "feeds": [
   {
    "site": "Ynet",
@@ -22,7 +22,7 @@
    "url": "https://www.ynet.co.il/Integration/StoryRss1854.xml",
    "ok": true,
    "found": 30,
-   "matched": 11,
+   "matched": 9,
    "error": ""
   },
   {
@@ -62,7 +62,7 @@
    "url": "https://rcs.mako.co.il/rss/31750a2610f26110VgnVCM1000005201000aRCRD.xml",
    "ok": true,
    "found": 20,
-   "matched": 9,
+   "matched": 12,
    "error": ""
   },
   {
@@ -124,10 +124,10 @@
   {
    "site": "וואלה",
    "url": "https://rss.walla.co.il/feed/1?type=main",
-   "ok": true,
-   "found": 13,
-   "matched": 6,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "site": "וואלה",
@@ -142,7 +142,7 @@
    "url": "https://rss.walla.co.il/feed/3?type=main",
    "ok": true,
    "found": 30,
-   "matched": 19,
+   "matched": 20,
    "error": ""
   },
   {
@@ -206,7 +206,7 @@
    "url": "https://www.maariv.co.il/Rss/RssChadashot",
    "ok": true,
    "found": 20,
-   "matched": 13,
+   "matched": 11,
    "error": ""
   },
   {
@@ -214,7 +214,7 @@
    "url": "https://www.maariv.co.il/Rss/RssFeedsBusiness",
    "ok": true,
    "found": 20,
-   "matched": 0,
+   "matched": 1,
    "error": ""
   },
   {
@@ -222,15 +222,15 @@
    "url": "https://www.maariv.co.il/Rss/RssFeedsKalkala",
    "ok": true,
    "found": 20,
-   "matched": 0,
+   "matched": 1,
    "error": ""
   },
   {
    "site": "BBC Sport",
    "url": "https://feeds.bbci.co.uk/sport/rss.xml",
    "ok": true,
-   "found": 66,
-   "matched": 19,
+   "found": 67,
+   "matched": 18,
    "error": ""
   },
   {
@@ -334,7 +334,7 @@
    "url": "https://sports.yahoo.com/rss/",
    "ok": true,
    "found": 50,
-   "matched": 9,
+   "matched": 10,
    "error": ""
   },
   {
@@ -342,7 +342,7 @@
    "url": "https://sports.yahoo.com/nba/rss/",
    "ok": true,
    "found": 50,
-   "matched": 43,
+   "matched": 44,
    "error": ""
   },
   {
@@ -350,7 +350,7 @@
    "url": "https://sports.yahoo.com/soccer/rss/",
    "ok": true,
    "found": 50,
-   "matched": 24,
+   "matched": 25,
    "error": ""
   },
   {
@@ -406,20 +406,12 @@
    "url": "https://news.google.com/rss/search?q=site%3Asport1.maariv.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
    "found": 100,
-   "matched": 39,
+   "matched": 41,
    "error": ""
   },
   {
    "site": "ישראל היום",
    "url": "https://news.google.com/rss/search?q=site%3Aisraelhayom.co.il/sport%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": true,
-   "found": 32,
-   "matched": 16,
-   "error": ""
-  },
-  {
-   "site": "ישראל היום",
-   "url": "https://news.google.com/rss/search?q=site%3Aisraelhayom.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": false,
    "found": 0,
    "matched": 0,
@@ -427,11 +419,19 @@
   },
   {
    "site": "ישראל היום",
-   "url": "https://news.google.com/rss/search?q=site%3Aisraelhayom.co.il/business%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
+   "url": "https://news.google.com/rss/search?q=site%3Aisraelhayom.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 9,
-   "matched": 2,
+   "found": 100,
+   "matched": 25,
    "error": ""
+  },
+  {
+   "site": "ישראל היום",
+   "url": "https://news.google.com/rss/search?q=site%3Aisraelhayom.co.il/business%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "כאן",
@@ -452,10 +452,10 @@
   {
    "site": "רשת 13",
    "url": "https://news.google.com/rss/search?q=site%3A13tv.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": false,
-   "found": 0,
+   "ok": true,
+   "found": 100,
    "matched": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": ""
   },
   {
    "site": "The Jerusalem Post",
@@ -485,17 +485,17 @@
    "site": "The Times of Israel",
    "url": "https://news.google.com/rss/search?q=site%3Atimesofisrael.com%20sports%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 22,
+   "found": 19,
    "matched": 0,
    "error": ""
   },
   {
    "site": "The Times of Israel",
    "url": "https://news.google.com/rss/search?q=site%3Atimesofisrael.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
-   "ok": true,
-   "found": 100,
-   "matched": 38,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "Sports Rabbi",
@@ -525,8 +525,8 @@
    "site": "UEFA.com",
    "url": "https://news.google.com/rss/search?q=site%3Auefa.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 32,
-   "matched": 23,
+   "found": 36,
+   "matched": 27,
    "error": ""
   },
   {
@@ -534,7 +534,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Aeuroleaguebasketball.net%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 32,
-   "matched": 11,
+   "matched": 12,
    "error": ""
   },
   {
@@ -542,15 +542,15 @@
    "url": "https://news.google.com/rss/search?q=site%3Agoal.com/en%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 32,
+   "matched": 29,
    "error": ""
   },
   {
    "site": "BasketNews",
    "url": "https://news.google.com/rss/search?q=site%3Abasketnews.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 60,
-   "matched": 28,
+   "found": 62,
+   "matched": 29,
    "error": ""
   },
   {
@@ -588,10 +588,10 @@
   {
    "site": "AP",
    "url": "https://news.google.com/rss/search?q=site%3Aapnews.com%20politics%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
-   "ok": false,
-   "found": 0,
-   "matched": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "found": 100,
+   "matched": 25,
+   "error": ""
   },
   {
    "site": "AP",
@@ -606,7 +606,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Ableacherreport.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 12,
+   "matched": 13,
    "error": ""
   },
   {
@@ -630,7 +630,7 @@
    "url": "https://www.si.com/feed",
    "ok": true,
    "found": 90,
-   "matched": 13,
+   "matched": 14,
    "error": ""
   },
   {
@@ -700,10 +700,10 @@
   {
    "site": "Football365",
    "url": "https://news.google.com/rss/search?q=site%3Afootball365.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
-   "ok": true,
-   "found": 10,
-   "matched": 4,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "Football Italia",
@@ -716,24 +716,24 @@
   {
    "site": "חדשות 13",
    "url": "https://news.google.com/rss/search?q=site%3A13tv.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": false,
-   "found": 0,
-   "matched": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "found": 100,
+   "matched": 19,
+   "error": ""
   },
   {
    "site": "ערוץ 14",
    "url": "https://news.google.com/rss/search?q=site%3Anow14.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": false,
+   "ok": true,
    "found": 0,
    "matched": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": ""
   },
   {
    "site": "i24NEWS",
    "url": "https://news.google.com/rss/search?q=site%3Ai24news.tv/he%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 59,
+   "found": 58,
    "matched": 14,
    "error": ""
   },
@@ -742,15 +742,15 @@
    "url": "https://news.google.com/rss/search?q=site%3Amakorrishon.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
    "found": 85,
-   "matched": 26,
+   "matched": 27,
    "error": ""
   },
   {
    "site": "זמן ישראל",
    "url": "https://news.google.com/rss/search?q=site%3Azman.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 52,
-   "matched": 32,
+   "found": 56,
+   "matched": 31,
    "error": ""
   },
   {
@@ -773,16 +773,16 @@
    "site": "כלכליסט",
    "url": "https://news.google.com/rss/search?q=site%3Acalcalist.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 70,
-   "matched": 21,
+   "found": 67,
+   "matched": 18,
    "error": ""
   },
   {
    "site": "דה מרקר",
    "url": "https://news.google.com/rss/search?q=site%3Athemarker.com%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 59,
-   "matched": 14,
+   "found": 58,
+   "matched": 15,
    "error": ""
   },
   {
@@ -798,7 +798,7 @@
    "url": "https://www.kipa.co.il/feed/",
    "ok": true,
    "found": 50,
-   "matched": 12,
+   "matched": 13,
    "error": ""
   },
   {
@@ -806,7 +806,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Akikar.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
    "found": 100,
-   "matched": 32,
+   "matched": 34,
    "error": ""
   },
   {
@@ -822,14 +822,14 @@
    "url": "https://www.jdn.co.il/feed/",
    "ok": true,
    "found": 8,
-   "matched": 2,
+   "matched": 3,
    "error": ""
   },
   {
    "site": "העין השביעית",
    "url": "https://news.google.com/rss/search?q=site%3Athe7eye.org.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 16,
+   "found": 15,
    "matched": 2,
    "error": ""
   },
@@ -844,26 +844,26 @@
   {
    "site": "הכנסת",
    "url": "https://news.google.com/rss/search?q=site%3Aknesset.gov.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": false,
-   "found": 0,
-   "matched": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "found": 11,
+   "matched": 9,
+   "error": ""
   },
   {
    "site": "gov.il",
    "url": "https://news.google.com/rss/search?q=site%3Agov.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
    "found": 100,
-   "matched": 13,
+   "matched": 14,
    "error": ""
   },
   {
    "site": "חדשות מקומיות",
    "url": "https://news.google.com/rss/search?q=%22%D7%A8%D7%90%D7%A9%20%D7%94%D7%A2%D7%99%D7%A8%22%20OR%20%22%D7%A8%D7%90%D7%A9%20%D7%94%D7%9E%D7%95%D7%A2%D7%A6%D7%94%22%20OR%20%22%D7%9E%D7%95%D7%A2%D7%A6%D7%AA%20%D7%94%D7%A2%D7%99%D7%A8%22%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": true,
-   "found": 14,
-   "matched": 4,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "BBC News",
@@ -901,7 +901,7 @@
    "site": "BBC News",
    "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
    "ok": true,
-   "found": 56,
+   "found": 55,
    "matched": 9,
    "error": ""
   },
@@ -1142,7 +1142,7 @@
    "url": "https://www.euronews.com/rss",
    "ok": true,
    "found": 50,
-   "matched": 19,
+   "matched": 18,
    "error": ""
   },
   {
@@ -1294,7 +1294,7 @@
    "url": "https://feeds.bloomberg.com/technology/news.rss",
    "ok": true,
    "found": 20,
-   "matched": 13,
+   "matched": 12,
    "error": ""
   },
   {
@@ -1302,7 +1302,7 @@
    "url": "https://www.latimes.com/politics/rss2.0.xml",
    "ok": true,
    "found": 94,
-   "matched": 54,
+   "matched": 55,
    "error": ""
   },
   {
@@ -1332,10 +1332,10 @@
   {
    "site": "Newsweek",
    "url": "https://www.newsweek.com/rss",
-   "ok": true,
-   "found": 20,
-   "matched": 4,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 404: Not Found"
   },
   {
    "site": "TIME",
@@ -1452,26 +1452,26 @@
   {
    "site": "ice",
    "url": "https://news.google.com/rss/search?q=site%3Aice.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": true,
-   "found": 100,
-   "matched": 13,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "מאמון",
    "url": "https://news.google.com/rss/search?q=site%3Amamon.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": false,
+   "ok": true,
    "found": 0,
    "matched": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": ""
   },
   {
    "site": "פאנדר",
    "url": "https://news.google.com/rss/search?q=site%3Afunder.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": false,
-   "found": 0,
-   "matched": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "found": 50,
+   "matched": 17,
+   "error": ""
   },
   {
    "site": "Geektime",
@@ -1492,10 +1492,10 @@
   {
    "site": "הלמ\"ס",
    "url": "https://news.google.com/rss/search?q=site%3Acbs.gov.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": true,
-   "found": 3,
-   "matched": 2,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "Globes English",
@@ -1508,10 +1508,10 @@
   {
    "site": "CTech",
    "url": "https://news.google.com/rss/search?q=site%3Acalcalistech.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
-   "ok": false,
-   "found": 0,
-   "matched": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "found": 20,
+   "matched": 5,
+   "error": ""
   },
   {
    "site": "MarketWatch",
@@ -1532,18 +1532,18 @@
   {
    "site": "Yahoo Finance",
    "url": "https://news.google.com/rss/search?q=site%3Afinance.yahoo.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
-   "ok": true,
-   "found": 100,
-   "matched": 43,
-   "error": ""
-  },
-  {
-   "site": "Barron's",
-   "url": "https://news.google.com/rss/search?q=site%3Abarrons.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": false,
    "found": 0,
    "matched": 0,
    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+  },
+  {
+   "site": "Barron's",
+   "url": "https://news.google.com/rss/search?q=site%3Abarrons.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
+   "ok": true,
+   "found": 100,
+   "matched": 17,
+   "error": ""
   },
   {
    "site": "Fortune",
@@ -1582,7 +1582,7 @@
    "url": "https://www.investing.com/rss/news.rss",
    "ok": true,
    "found": 10,
-   "matched": 0,
+   "matched": 1,
    "error": ""
   },
   {
@@ -3320,6 +3320,96 @@
   {
    "site": "וואלה",
    "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "דני אבדיה",
+    "פורטלנד טרייל בלייזרס",
+    "תוצאות"
+   ],
+   "title": "\"לא הייתה להם תשובה לאבדיה\": המחמאות והעקיצות אחרי ההפסד",
+   "summary": "דני אבדיה סיפק עוד הופעה אישית מרשימה, אבל פורטלנד נעצרה הלילה (בין שני לשלישי) אחרי שלושה ניצחונות רצופים, כשנכנעה 106:98 למינסוטה. הישראלי הוביל את קבוצתו עם 27 נקודות, 8 ריבאונדים ו-4 אסיסטים, אך בארצות הברית עסקו בעיקר בהבדלים בין שתי המחציות שלו, בקשיי הקליעה של חבריו…",
+   "link": "https://sports.walla.co.il/item/3876562",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/9/4119941-46.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T09:47:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "ברצלונה (כדורסל)",
+    "העברות וחוזים"
+   ],
+   "title": "קיליאן הייז סיכם בברצלונה, אבל התעקש על סעיף שחרור ל-NBA",
+   "summary": "ברצלונה בדרך להחתמה מסקרנת במיוחד: קיליאן הייז, הגארד הצרפתי בן ה-25 ששיחק בשש העונות האחרונות ב-NBA, הגיע להסכם עם המועדון הקטלאני, כך מדווח הבוקר (שלישי). לפי הדיווח, שאושר על ידי סוכנו של השחקן, יאן באליקוזו, החוזה יכלול גם סעיף יציאה ל-NBA, שיאפשר להייז לשוב לליגה הטובה…",
+   "link": "https://sports.walla.co.il/item/3876559",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/3/4113543-46.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T09:29:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "העברות וחוזים"
+   ],
+   "title": "קיליאן הייז סיכם בברצלונה, אבל התעקש על סעיף שחרור ל-NBA",
+   "summary": "ברצלונה בדרך להחתמה מסקרנת במיוחד: קיליאן הייז, הגארד הצרפתי בן ה-25 ששיחק בשש העונות האחרונות ב-NBA, הגיע להסכם עם המועדון הקטלאני, כך מדווח הבוקר (שלישי). לפי הדיווח, שאושר על ידי סוכנו של השחקן, יאן באליקוזו, החוזה יכלול גם סעיף יציאה ל-NBA, שיאפשר להייז לשוב לליגה הטובה…",
+   "link": "https://sports.walla.co.il/item/3876559",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/3/4113543-46.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T09:29:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "הפועל תל אביב",
+    "יורוליג"
+   ],
+   "title": "הפועל תל אביב לא רוצה להיות מופתעת: \"צריכים להביא אנרגיה\"",
+   "summary": "אחרי שלושה הפסדים רצופים ביורוליג, האדומים יתארחו אצל נועלת הטבלה, באסקוניה (21:30). גינת עשוי שוב להיות חלק מהרוטציה",
+   "link": "https://sports.walla.co.il/item/3876557",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/9/4119219-46.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T09:27:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורסל",
+   "keywords": [
+    "הפועל תל אביב"
+   ],
+   "title": "הפועל תל אביב לא רוצה להיות מופתעת: \"צריכים להביא אנרגיה\"",
+   "summary": "אחרי שלושה הפסדים רצופים ביורוליג, האדומים יתארחו אצל נועלת הטבלה, באסקוניה (21:30). גינת עשוי שוב להיות חלק מהרוטציה",
+   "link": "https://sports.walla.co.il/item/3876557",
+   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/9/4119219-46.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T09:27:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "וואלה",
+   "category": "ספורט",
    "subcategory": "יורוליג",
    "keywords": [
     "אולימפיאקוס",
@@ -3465,6 +3555,995 @@
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
   {
+   "site": "חדשות 13",
+   "category": "פוליטיקה",
+   "subcategory": "פוליטיקאים",
+   "keywords": [
+    "ליברמן"
+   ],
+   "title": "דן אילוז נגד ליברמן: \"חש מרומה ונבגד, אלחם בחוק הגיוס\"",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9RR0tvVFlCajVibVVNeC1yTnVWMTlSUjlyV3Q4TE1wVzRrOVJTYTdEcFZsWW82Q25oRVZ0LW1KMTlVM3BCNURxbWUwTF85SDhEQVc1aDhWNzJBc1pqSGNFbEdNM1U4NFdrSW9yUFd5a2VoS19U?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T06:59:44+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "חדשות 13",
+   "category": "פוליטיקה",
+   "subcategory": "חקיקה ומשפט",
+   "keywords": [
+    "חוק הגיוס"
+   ],
+   "title": "דן אילוז נגד ליברמן: \"חש מרומה ונבגד, אלחם בחוק הגיוס\"",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9RR0tvVFlCajVibVVNeC1yTnVWMTlSUjlyV3Q4TE1wVzRrOVJTYTdEcFZsWW82Q25oRVZ0LW1KMTlVM3BCNURxbWUwTF85SDhEQVc1aDhWNzJBc1pqSGNFbEdNM1U4NFdrSW9yUFd5a2VoS19U?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T06:59:44+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "גלובס",
+   "category": "כלכלה",
+   "subcategory": "הייטק וסטארטאפים",
+   "keywords": [
+    "בינה מלאכותית"
+   ],
+   "title": "אלביט עקפה את צפי האנליסטים; צבר ההזמנות טיפס לשיא חדש",
+   "summary": "החברה הביטחונית הציגה עלייה דו־ספרתית בהכנסות וברווח הנקי ברבעון השלישי, וצבר ההזמנות טיפס לשיא של 33 מיליארד דולר • המנכ\"ל בצלאל מכליס: \"מגדילים את קיבולת הייצור ומטמיעים שימוש בבינה מלאכותית בכל רחבי הארגון כדי לקדם פרודוקטיביות\"",
+   "link": "https://www.globes.co.il/news/article.aspx?did=1001563703#utm_source=RSS",
+   "image": "https://res.cloudinary.com/globes/image/upload/t_800X392/v1660725066/COT_Pic/800_xalfbz.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:57:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מקור ראשון",
+   "category": "פוליטיקה",
+   "subcategory": "מדיניות חוץ וביטחון",
+   "keywords": [
+    "איראן"
+   ],
+   "title": "פחות מחודשיים נותרו: חלון התקיפה האמריקנית באיראן על סף סגירה",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBKZ2FoVDVtcE1UelpIMVBTSUxab2JwZ3pPTHNSS2w5U3A3TjVzTDVLRlhzcjR6SmIwSUZhWmNkUXFlZFdfMmdYcG9VOFYxQnhxNGk5dFJNbUp4X21wV0RuVThOX2ZTcE9zVy1jOA?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T06:56:47+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Bloomberg",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "טראמפ"
+   ],
+   "title": "Zelenskyy Says US, Europe Delegates to Hold Peace Talks",
+   "summary": "Ukrainian President Volodymyr Zelenskyy said he held online talks with US and European delegations who made additional plans toward the goal of leader-level peace negotiations. Earlier Monday, President Donald Trump told reporters that a planned trilateral meeting on Thursday…",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-17/zelenskyy-says-us-europe-delegates-to-hold-peace-talks-video",
+   "image": "",
+   "url": "",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:56:47+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Bloomberg",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "סין",
+    "רוסיה"
+   ],
+   "title": "Zelenskyy Says US, Europe Delegates to Hold Peace Talks",
+   "summary": "Ukrainian President Volodymyr Zelenskyy said he held online talks with US and European delegations who made additional plans toward the goal of leader-level peace negotiations. Earlier Monday, President Donald Trump told reporters that a planned trilateral meeting on Thursday…",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-17/zelenskyy-says-us-europe-delegates-to-hold-peace-talks-video",
+   "image": "",
+   "url": "",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:56:47+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורסל",
+   "keywords": [
+    "הפועל העמק",
+    "תוצאות"
+   ],
+   "title": "בהפועל חולון מקווים לצאת לדרך חדשה: \"האנרגיה והמחויבות ניצחה\"",
+   "summary": "הצהובים-סגולים קטעו את רצף ההפסדים עם 69:87 גדול על הפועל העמק בבכורה על הקווים של שמוליק ברנר, שהיה מרוצה ממה שראה: \"ניצחון חשוב של קבוצה שהייתה צריכה אותו\". בצד השני, דאגה בקבוצה של גיא גודס: \"המצב בטבלה מחייב שינוי גישה מיידי\"",
+   "link": "https://www.ynet.co.il/sport/israelibasketball/article/rytbuofafg",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2025/01/16/H10AKjLvJe/H10AKjLvJe_391_16_1113_627_0_medium.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:52:34+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "כלכלה",
+   "subcategory": "הייטק וסטארטאפים",
+   "keywords": [
+    "בינה מלאכותית"
+   ],
+   "title": "נתן לבינה המלאכותית לעשות את המבחן - והסתבך בגדול",
+   "summary": "נבחן בדרום קוריאה ענה נכון על 159 מתוך 160 שאלות והוכתר למצטיין הארצי, אלא שההישג החריג עורר חשדות. כעת נחשפה התרמית המתוחכמת שהצליחה להטעות אפילו את המשגיחים",
+   "link": "https://www.maariv.co.il/news/viral/article-1389300",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1159960",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:52:31+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Investing.com",
+   "category": "כלכלה",
+   "subcategory": "הייטק וסטארטאפים",
+   "keywords": [
+    "אנבידיה"
+   ],
+   "title": "Wall Street futures dip as Nvidia earnings loom amid AI jitters",
+   "summary": "",
+   "link": "https://www.investing.com/news/stock-market-news/wall-street-futures-muted-as-nvidia-earnings-loom-amid-ai-jitters-5031353",
+   "image": "https://content-media.investing.com/news/LYNXMPEM4K17E_1200_L.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:52:20+00:00",
+   "first_seen": "2026-11-17T01:00:30+00:00"
+  },
+  {
+   "site": "Reuters",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "אוקראינה",
+    "רוסיה"
+   ],
+   "title": "Russia says Ukraine struck its bridge to Crimea for second day in biggest drone attack of war",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTl9Eb1E5UVQ3M3dxTUZvVFZiRndFUElsU3RMZ2ZGR0poZlV6X3JHdklhNUswWEE4RGZkbXZkWmpwS3I3ZTgyY1Vrc2tXOXZnYl9kSlJsT1BuR3pWZmkyYlRENWgyWHVSU0Y5dkhVdlFrNXMxMnNJTTVMRTF6aUJpQkdXUnV1NnE5aW43QVFlYmFfdjlxTVBUY0Rfam1tSFBRMl8weFVMSWw0RFBTekdncV8weE5CcXlwcHhMWDh3QQ?oc=5",
+   "image": "",
+   "url": "https://www.reuters.com/world/russia-says-ukraine-struck-its-bridge-crimea-second-day-biggest-drone-attack-war-2026-11-17/",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:52:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "ספורט 1",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "דני אבדיה"
+   ],
+   "title": "\"למינסוטה לא הייתה תשובה לדני אבדיה\": המספרים המרשימים והמחמאות בארה\"ב",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9uMTg3Q3paZVVqVnI4ZVZrQml5YWkwTW9sN3EzWHJFZGZJTEhxUURhbmgtMjUzTzB4RGQ1YnI3UzlEWTRqTldFSWNQOHU3OG1ZOUNqel9lX3hkckdJNXFHX2JxcW1aT0ktUUJ5LXVn?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T06:51:52+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "זמן ישראל",
+   "category": "פוליטיקה",
+   "subcategory": "מדיניות חוץ וביטחון",
+   "keywords": [
+    "איראן"
+   ],
+   "title": "איראן ועומאן דנו בשיט במצר הורמוז ובמשא ומתן המתנהל בניסיון למנוע הסלמה",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5rWHFQakhMWXZ0MGctWHlxVDZWY2dVMy1nM182WUVTN0RXU2w5WmMtQ3ZMR2xZM3NOQmFvbFd6V0s0ZmFoV2VVN0xxUQ?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T06:50:27+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "N12",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "אוקראינה",
+    "רוסיה"
+   ],
+   "title": "מכה לסמל של פוטין: אוקראינה פתחה במתקפה נרחבת על גשר קרץ', דיווחים על נזק כבד",
+   "summary": "אוקראינה ביצעה מתקפה מסיבית על גשר קרץ', המחבר בין רוסיה לחצי האי קרים • בתיעוד מהמקום נראה שנגרם נזק כבד, ורוסיה הודיעה כי תנועת הרכבים והרכבות נעצרה לחלוטין • על פי הדיווחים אוקראינה השתמשה בכטב\"מים ובטילים מקומיים ומערביים",
+   "link": "https://www.mako.co.il/news-world/2026_q4/Article-01abddeae38e1a1027.htm",
+   "image": "https://img.mako.co.il/2026/10/28/PUTINVLADF_re_autoOrient_a.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:48:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "ONE",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "ברצלונה (כדורסל)",
+    "העברות וחוזים"
+   ],
+   "title": "רכש מרשים: ברצלונה סיכמה על הצטרפותו של הייז",
+   "summary": "דיווח: הצרפתי ששיחק בדטרויט, ברוקלין וסקרמנטו, חוזר לאירופה בחוזה עם סעיף יציאה ל-NBA. הוא העמיד ממוצעי 8 נקודות ו-5 אסיסטים מאז נבחר בדראפט",
+   "link": "https://www.one.co.il/Article/539094.html?ref=rss",
+   "image": "https://photo.one.co.il/Image/GG/7,1/1817061.webp",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:47:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "ONE",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "העברות וחוזים"
+   ],
+   "title": "רכש מרשים: ברצלונה סיכמה על הצטרפותו של הייז",
+   "summary": "דיווח: הצרפתי ששיחק בדטרויט, ברוקלין וסקרמנטו, חוזר לאירופה בחוזה עם סעיף יציאה ל-NBA. הוא העמיד ממוצעי 8 נקודות ו-5 אסיסטים מאז נבחר בדראפט",
+   "link": "https://www.one.co.il/Article/539094.html?ref=rss",
+   "image": "https://photo.one.co.il/Image/GG/7,1/1817061.webp",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:47:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "כיפה",
+   "category": "פוליטיקה",
+   "subcategory": "מפלגות",
+   "keywords": [
+    "ישראל ביתנו"
+   ],
+   "title": "מתקפה חריפה על ליברמן מתוך ישראל ביתנו: \"חש מרומה ונבגד\"",
+   "summary": "הח\"כ לשעבר דן אילוז תוקף את יו\"ר המפלגה בעקבות שינוי עמדתו בסוגיית הגיוס והיחס לחרדים והמגעים להקמת ממשלה: \"מתכוון להילחם בחוק הגיוס\"",
+   "link": "https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1236557-0/",
+   "image": "https://www.kipa.co.il/userFiles/post_u343250_6afab949eb695_1794816329.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:46:41+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "כיפה",
+   "category": "פוליטיקה",
+   "subcategory": "פוליטיקאים",
+   "keywords": [
+    "ליברמן"
+   ],
+   "title": "מתקפה חריפה על ליברמן מתוך ישראל ביתנו: \"חש מרומה ונבגד\"",
+   "summary": "הח\"כ לשעבר דן אילוז תוקף את יו\"ר המפלגה בעקבות שינוי עמדתו בסוגיית הגיוס והיחס לחרדים והמגעים להקמת ממשלה: \"מתכוון להילחם בחוק הגיוס\"",
+   "link": "https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1236557-0/",
+   "image": "https://www.kipa.co.il/userFiles/post_u343250_6afab949eb695_1794816329.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:46:41+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "כיפה",
+   "category": "פוליטיקה",
+   "subcategory": "חקיקה ומשפט",
+   "keywords": [
+    "חוק הגיוס"
+   ],
+   "title": "מתקפה חריפה על ליברמן מתוך ישראל ביתנו: \"חש מרומה ונבגד\"",
+   "summary": "הח\"כ לשעבר דן אילוז תוקף את יו\"ר המפלגה בעקבות שינוי עמדתו בסוגיית הגיוס והיחס לחרדים והמגעים להקמת ממשלה: \"מתכוון להילחם בחוק הגיוס\"",
+   "link": "https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1236557-0/",
+   "image": "https://www.kipa.co.il/userFiles/post_u343250_6afab949eb695_1794816329.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:46:41+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Al-Monitor",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "טורקיה"
+   ],
+   "title": "Turkey appoints trustee to pro-opposition TV channel Sozcu, outlet says",
+   "summary": "ANKARA, Nov 17 (Reuters) - Turkish authorities raided the offices of pro-oppositionSozcu TV early on Tuesday and appointed a trustee to run its television and online platforms, the channel said, extending a crackdown on the opposition and renewing concerns about media…",
+   "link": "https://www.al-monitor.com/originals/2026/11/turkey-appoints-trustee-pro-opposition-tv-channel-sozcu-outlet-says",
+   "image": "",
+   "url": "",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:46:30+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Al-Monitor",
+   "category": "פוליטיקה",
+   "subcategory": "מדיניות חוץ וביטחון",
+   "keywords": [
+    "איראן"
+   ],
+   "title": "Oman, Iran foreign ministers discuss safeguarding maritime corridors",
+   "summary": "DUBAI, Nov 17 (Reuters) - Oman and Iran discussed on Tuesday safeguarding maritime corridors and ensuring the smooth flow of global shipping and trade, as well as revitalising channels for dialogue and negotiations to prevent escalations, the Omani foreign ministry said in a…",
+   "link": "https://www.al-monitor.com/originals/2026/11/oman-iran-foreign-ministers-discuss-safeguarding-maritime-corridors",
+   "image": "",
+   "url": "",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:46:30+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "ליגת האלופות",
+   "keywords": [
+    "העברות וחוזים",
+    "יובנטוס"
+   ],
+   "title": "Juve, Hojbjerg twist! Napoli-Esposito, €60m for Koné: morning news🔥",
+   "summary": "The January transfer market is heating up, and Serie A's big clubs are preparing their next moves. Juventus are weighing up a move for Hojbjerg thanks to a potential Anguissa domino effect, Napoli are...",
+   "link": "https://sports.yahoo.com/articles/juve-hojbjerg-twist-napoli-esposito-064600805.html",
+   "image": "https://media.zenfs.com/en/onefootball_articles_802/8b51690d9b66039e7f8d5a438c5bc9ce.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:46:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "JDN",
+   "category": "פוליטיקה",
+   "subcategory": "מפלגות",
+   "keywords": [
+    "מפלגות מחוץ לכנסת"
+   ],
+   "title": "וַיְהִי בֹקֶר יוֹם שְׁלִישִׁי • כותרות העיתונים – ז' בכסלו ה'תשפ\"ז",
+   "summary": "שערי עיתוני היהדות החרדית ליום שלישי ז' בכסלו ה'תשפ\"ז הפוסט וַיְהִי בֹקֶר יוֹם שְׁלִישִׁי • כותרות העיתונים – ז' בכסלו ה'תשפ\"ז הופיע לראשונה ב- JDN .",
+   "link": "https://www.jdn.co.il/j_world/2767087/",
+   "image": "https://www.jdn.co.il/wp-content/uploads/2026/05/%D7%91%D7%95%D7%A7%D7%A8-%D7%A2%D7%99%D7%AA%D7%95%D7%A0%D7%99%D7%9D-768x512.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:45:12+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "הארץ",
+   "category": "פוליטיקה",
+   "subcategory": "בחירות וסקרים",
+   "keywords": [
+    "בחירות"
+   ],
+   "title": "נשיא ההתאחדות הצרפתית יתמודד מול אינפנטינו בבחירות לנשיאות פיפ\"א",
+   "summary": "פיליפ דיאלו יהיה המועמד מטעם אופ\"א בבחירות לנשיאות הגוף המנהל של הכדורגל העולמי שייערכו ב-18 במרץ",
+   "link": "https://www.haaretz.co.il/sport/world-soccer/2026-11-17/ty-article/000001a1-e83b-d3ad-a5e3-ebfb37090000",
+   "image": "https://img.haarets.co.il/bs/000001a1-e83e-d381-ade5-ebffd0040000/1f/f8/3c5b420e4fdfaa0e9aec97f30a5d/195175.jpg?width=108&height=81",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:45:03+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Deutsche Welle",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "בחירות האמצע",
+    "טראמפ"
+   ],
+   "title": "India news: Modi to attend ASEAN, Quad meet in Manila",
+   "summary": "This is the first time Modi and US President Donald Trump are meeting since the US midterm elections, which changed the political scene in the US.",
+   "link": "https://www.dw.com/en/india-news-modi-to-attend-asean-quad-meet-in-manila/live-79964913?maca=en-rss-en-all-1573-rdf",
+   "image": "https://static.dw.com/image/79958185_6.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:45:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "פוליטיקה",
+   "subcategory": "כנסת וממשלה",
+   "keywords": [
+    "כנסת"
+   ],
+   "title": "ההתנהלות החריגה של המשטרה ביום הבחירות נחשפת: \"לא פגשו את המודיע\"",
+   "summary": "נצ\"מ בדימוס אלי לוי מתח ב-103fm ביקורת חריפה על המעצרים ביום הבחירות, טען כי המשטרה לא אימתה כראוי את המידע המודיעיני ותקף את המפכ\"ל על שתיקתו מול הציבור",
+   "link": "https://www.maariv.co.il/news/law/article-1389303",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1095938",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:44:37+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "פוליטיקה",
+   "subcategory": "בחירות וסקרים",
+   "keywords": [
+    "בחירות"
+   ],
+   "title": "ההתנהלות החריגה של המשטרה ביום הבחירות נחשפת: \"לא פגשו את המודיע\"",
+   "summary": "נצ\"מ בדימוס אלי לוי מתח ב-103fm ביקורת חריפה על המעצרים ביום הבחירות, טען כי המשטרה לא אימתה כראוי את המידע המודיעיני ותקף את המפכ\"ל על שתיקתו מול הציבור",
+   "link": "https://www.maariv.co.il/news/law/article-1389303",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1095938",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:44:37+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "העברות וחוזים",
+    "תוצאות"
+   ],
+   "title": "Heat’s Giannis Antetokounmpo reveals approach to first game vs. Bucks since huge trade",
+   "summary": "MIAMI – As Giannis Antetokounmpo and the Miami Heat obtain another epic win in the 128-110 win over the Houston Rockets, marking their fifth straight and eighth in the last 10 contests, all eyes will be on Wednesday night against the Milwaukee Bucks. With Antetokounmpo…",
+   "link": "https://sports.yahoo.com/articles/heat-giannis-antetokounmpo-reveals-approach-064344822.html",
+   "image": "https://media.zenfs.com/en/clutchpoints_articles_939/59bda1594e7f4b8be2dd537feeaec796.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:43:44+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "N12",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "דני אבדיה",
+    "פורטלנד טרייל בלייזרס",
+    "תוצאות"
+   ],
+   "title": "\"רק דני אבדיה הופיע, בלי סיוע זה נראה רע מאוד\"",
+   "summary": "בפורטלנד סיכמו את ההפסד למינסוטה. וגם: הצורך של הקבוצה ומה אמר מייקה נורי?",
+   "link": "https://www.mako.co.il/news-sport/basketball-2026_q4/Article-71c4982e828e1a1027.htm",
+   "image": "https://img.mako.co.il/2026/11/17/sportFive_1806437_A.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:41:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Bloomberg",
+   "category": "כלכלה",
+   "subcategory": "הייטק וסטארטאפים",
+   "keywords": [
+    "אנבידיה",
+    "בינה מלאכותית"
+   ],
+   "title": "Breaking Down the US Move to Curb Remote Access to Chips",
+   "summary": "Bloomberg Intelligence Senior Analyst Rob Lea discusses US concerns about the Chinese AI sector as the Trump administration moves to limit several countries from providing Chinese companies remote access to advanced artificial intelligence chips and servers. Several Southeast…",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-17/breaking-down-the-us-move-to-curb-remote-access-to-chips-video",
+   "image": "",
+   "url": "",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:38:40+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "לוקה דונצ'יץ'",
+    "פציעות"
+   ],
+   "title": "Lakers’ announcement before Hornets game should worry Luka Doncic about their 8-game win streak",
+   "summary": "The Los Angeles Lakers announced their injury report before their November 17 clash against the Charlotte Hornets, which massively endangers their ongoing win streak. Luka Doncic has carried an incredible burden for the Lakers all season, averaging 39.",
+   "link": "https://sports.yahoo.com/articles/lakers-announcement-hornets-game-worry-063812089.html",
+   "image": "https://media.zenfs.com/en/hitc_articles_832/ff92d18c39f58d732047a7e883fcd033.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:38:12+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "The Guardian",
+   "category": "פוליטיקה",
+   "subcategory": "מדיניות חוץ וביטחון",
+   "keywords": [
+    "איראן"
+   ],
+   "title": "Hundreds arrested in anti-Trump protests in Philippines amid anger over Iran war and AI pact",
+   "summary": "Organisers say up to 10,000 people could join the next round of demonstrations ahead of the US president’s arrival in Manila for the Asean summit Hundreds of people have been arrested in heated demonstrations against Donald Trump in Manila, as authorities braced for more…",
+   "link": "https://www.theguardian.com/world/2026/nov/17/hundreds-arrested-manila-anti-trump-protests-philippines",
+   "image": "https://i.guim.co.uk/img/media/75ec4cfc6a89c1babfe1389687fbafa71b3713af/333_0_3333_2666/master/3333.jpg?width=140&quality=85&auto=format&fit=max&s=d705d30eaf39229da515c775b9c5324e",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:37:35+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "The Guardian",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "טראמפ"
+   ],
+   "title": "Hundreds arrested in anti-Trump protests in Philippines amid anger over Iran war and AI pact",
+   "summary": "Organisers say up to 10,000 people could join the next round of demonstrations ahead of the US president’s arrival in Manila for the Asean summit Hundreds of people have been arrested in heated demonstrations against Donald Trump in Manila, as authorities braced for more…",
+   "link": "https://www.theguardian.com/world/2026/nov/17/hundreds-arrested-manila-anti-trump-protests-philippines",
+   "image": "https://i.guim.co.uk/img/media/75ec4cfc6a89c1babfe1389687fbafa71b3713af/333_0_3333_2666/master/3333.jpg?width=140&quality=85&auto=format&fit=max&s=d705d30eaf39229da515c775b9c5324e",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:37:35+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות",
+    "תוצאות"
+   ],
+   "title": "'I wouldn't have ever dreamed of this!' – Jurgen Klopp reacts to Germany's stunning 5-0 rout of the Netherlands",
+   "summary": "Germany head coach Jurgen Klopp has praised his side's extraordinary 5-0 victory over the Netherlands at the Olympiastadion. The dominant win secured top spot in Group A2 and sent Die Nationalmannschaft into the UEFA Nations League quarter-finals in style.",
+   "link": "https://sports.yahoo.com/articles/wouldnt-ever-dreamed-jurgen-klopp-063724452.html",
+   "image": "https://media.zenfs.com/en/goal_com_505/a5b6ff45eec23d60c47bccc17b9cd2ab.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:37:24+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "ONE",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורסל",
+   "keywords": [
+    "הפועל העמק"
+   ],
+   "title": "\"הייתה רוח לחימה והיה כיף לראות את הקבוצה\"",
+   "summary": "בהפועל חולון חגגו את ה-69:87 על הפועל העמק בבכורה של ברנר והיו מרוצים, בעיקר מההגנה: \"כל מי ששיחק תרם את החלק שלו\". מדפורד: \"אנרגיות חדשות\"",
+   "link": "https://www.one.co.il/Article/539081.html?ref=rss",
+   "image": "https://photo.one.co.il/Image/GG/7,1/1898995.webp",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:37:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Bloomberg",
+   "category": "כלכלה",
+   "subcategory": "עבודה ושכר",
+   "keywords": [
+    "פנסיה"
+   ],
+   "title": "Canada Pension Funds Join Nordic Capital in €3 Billion Cary Deal",
+   "summary": "CVC Capital Partners Plc is selling its stake in vehicle glass repair company Cary Group to two of Canada’s largest pension funds and Nordic Capital, which is set to reinvest in the business, according to people familiar with the matter.",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-17/canada-pension-funds-cvc-capital-partners-nordic-capital-in-3-billion-cary-deal",
+   "image": "",
+   "url": "",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:36:33+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "JDN",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "ירדן"
+   ],
+   "title": "הפיגוע ביריחו: צה\"ל ניהל מרדף אחרי המחבלים שתקפו יהודים",
+   "summary": "לפי צה\"ל, המחבלים ניגחו רכב ישראלי ותקפו את יושביו. שני צעירים כבני 18 פונו במצב קל לשערי צדק.",
+   "link": "https://www.jdn.co.il/news/2767064/",
+   "image": "https://www.jdn.co.il/wp-content/uploads/2026/11/MixCollage-17-Nov-2026-08-35-AM-9292-1-scaled.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:36:26+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "N12",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות",
+    "תוצאות"
+   ],
+   "title": "\"לא יהיה כיף נגדנו\": גרמניה בטירוף אחרי ה-0:5 על הולנד",
+   "summary": "יורגן קלופ סיים את הקמפיין הראשון שלו כמאמן נבחרת גרמניה עם תוצאה אדירה על היריבה המרה, המקום ה-1 בבית בליגת האומות והעפלה לרבע הגמר • בסיום הוא היה ציורי: \"החזרנו את הרוקנרול\"",
+   "link": "https://www.mako.co.il/news-sport/world_soccer-2026_q4/Article-76ff7face28e1a1026.htm",
+   "image": "https://img.mako.co.il/2026/11/17/GERMANY_TEAM_re_autoOrient_a.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:36:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "NBC Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "NBA | Fantasy Basketball: News, Videos, Stats, Highlights, Results & More - Rotoworld",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82dUs1OTZ2WjhmcmV6elA4VldkQmVfVi0tOFNlTUlmdl9sT1RmNldaaTBTb1VGZmtMaWhKY1JqNTFqdDJJSzVSem9TN0hfUFNZMklBaHFIZw?oc=5",
+   "image": "",
+   "url": "https://www.nbcsports.com/fantasy/basketball",
+   "gtried": 1,
+   "itried": 3,
+   "published": "2026-11-17T06:35:50+00:00",
+   "first_seen": "2026-11-16T21:30:26+00:00"
+  },
+  {
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "Nations League quarter-finals: Who is through? Who can join them? What is the state of play in each League A group?",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUGtpaUFnaDdVdXRaWlNrazktUnlYSm45bHNXRUc0UXpqdldWNUVNZk5VMTREa3RSd05Td3pOc1BFdHE3ZzFzUl9wUV9NTHgtRTdvU0RPS2xjTy1xWks3MXpoTHNnajFIajdCX2xYMDlqZExUdmJ3UUpnVzlqU1VoV2lveGUtc0huM1JCNndaQ0tiV1RmQ3h6c3NpSUx6a3lqbXQ4dWxlR2s5UHpBMTlDQWdqUG9LYXVBcmZNczF2Vy1KWUFROTFmRHF3QjZIc1h4Z0tDQQ?oc=5",
+   "image": "",
+   "url": "https://www.uefa.com/uefanationsleague/news/02ab-22096ba64f4d-f179d6d05013-1000--nations-league-quarter-finals-who-is-through-who-can-joi/",
+   "gtried": 0,
+   "itried": 3,
+   "published": "2026-11-17T06:35:50+00:00",
+   "first_seen": "2026-11-15T09:30:25+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "פוליטיקה",
+   "subcategory": "כנסת וממשלה",
+   "keywords": [
+    "כנסת"
+   ],
+   "title": "\"יש אפליה נגד יהודים\": חנמאל דורפמן מתרגל לתפקיד החדש - וחושף את המהלך הבא",
+   "summary": "חבר הכנסת החדש של עוצמה יהודית תוקף את השמאל ואת מערכת המשפט, טוען לזיופים בבחירות ודורש ללכת שוב לקלפיות. במקביל, הוא חושף את מהלך החקיקה הראשון שבכוונתו לקדם",
+   "link": "https://www.maariv.co.il/news/politics/article-1389299",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1159952",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:35:50+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "פוליטיקה",
+   "subcategory": "בחירות וסקרים",
+   "keywords": [
+    "בחירות"
+   ],
+   "title": "\"יש אפליה נגד יהודים\": חנמאל דורפמן מתרגל לתפקיד החדש - וחושף את המהלך הבא",
+   "summary": "חבר הכנסת החדש של עוצמה יהודית תוקף את השמאל ואת מערכת המשפט, טוען לזיופים בבחירות ודורש ללכת שוב לקלפיות. במקביל, הוא חושף את מהלך החקיקה הראשון שבכוונתו לקדם",
+   "link": "https://www.maariv.co.il/news/politics/article-1389299",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1159952",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:35:50+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "פוליטיקה",
+   "subcategory": "מפלגות",
+   "keywords": [
+    "עוצמה יהודית"
+   ],
+   "title": "\"יש אפליה נגד יהודים\": חנמאל דורפמן מתרגל לתפקיד החדש - וחושף את המהלך הבא",
+   "summary": "חבר הכנסת החדש של עוצמה יהודית תוקף את השמאל ואת מערכת המשפט, טוען לזיופים בבחירות ודורש ללכת שוב לקלפיות. במקביל, הוא חושף את מהלך החקיקה הראשון שבכוונתו לקדם",
+   "link": "https://www.maariv.co.il/news/politics/article-1389299",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1159952",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:35:50+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "פוליטיקה",
+   "subcategory": "פוליטיקאים",
+   "keywords": [
+    "בן גביר"
+   ],
+   "title": "\"יש אפליה נגד יהודים\": חנמאל דורפמן מתרגל לתפקיד החדש - וחושף את המהלך הבא",
+   "summary": "חבר הכנסת החדש של עוצמה יהודית תוקף את השמאל ואת מערכת המשפט, טוען לזיופים בבחירות ודורש ללכת שוב לקלפיות. במקביל, הוא חושף את מהלך החקיקה הראשון שבכוונתו לקדם",
+   "link": "https://www.maariv.co.il/news/politics/article-1389299",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1159952",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:35:50+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "פוליטיקה",
+   "subcategory": "חקיקה ומשפט",
+   "keywords": [
+    "מערכת המשפט"
+   ],
+   "title": "\"יש אפליה נגד יהודים\": חנמאל דורפמן מתרגל לתפקיד החדש - וחושף את המהלך הבא",
+   "summary": "חבר הכנסת החדש של עוצמה יהודית תוקף את השמאל ואת מערכת המשפט, טוען לזיופים בבחירות ודורש ללכת שוב לקלפיות. במקביל, הוא חושף את מהלך החקיקה הראשון שבכוונתו לקדם",
+   "link": "https://www.maariv.co.il/news/politics/article-1389299",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1159952",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:35:50+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Sports Illustrated",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "פורטלנד טרייל בלייזרס"
+   ],
+   "title": "2 Studs and 1 Dud From Timberwolves’ Win vs Trail Blazers",
+   "summary": "The Timberwolves took down the Trail Blazers with Terrence Shannon Jr. leading the way with a career-high 34 points.",
+   "link": "https://www.si.com/nba/timberwolves/onsi/two-studs-one-dud-timberwolves-win-trail-blazers-01m7kr26g28n?utm_source=RSS",
+   "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3596,h_2022,x_0,y_672/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/all_timberwolves/01m7kzw2vxh4gsv632kk.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:35:12+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "גלובס",
+   "category": "כלכלה",
+   "subcategory": "מטבעות וסחורות",
+   "keywords": [
+    "דולר-שקל",
+    "נפט"
+   ],
+   "title": "חמישה דברים שכדאי לדעת לקראת פתיחת המסחר בבורסה",
+   "summary": "יום המסחר צפוי להיפתח במגמה מעורבת • וול סטריט ננעלה אתמול בירידות חדות בעקבות הטלטלה באנבידיה, שתפרסם הלילה את הדוחות שעשויים להיות החשובים בתולדותיה • החוזים בניו יורק רושמים ירידות קלות • הדולר בשיא של כשנה מול השקל • מחירי הנפט ממשיכים לאבד גובה • וגם: למרות התנודתיות -…",
+   "link": "https://www.globes.co.il/news/article.aspx?did=1001563651#utm_source=RSS",
+   "image": "https://res.cloudinary.com/globes/image/upload/t_800X392/v1677662936/COT_Pic/5-%D7%93%D7%91%D7%A8%D7%99%D7%9D.jpg3_x3c4yv.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:35:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "גלובס",
+   "category": "כלכלה",
+   "subcategory": "הייטק וסטארטאפים",
+   "keywords": [
+    "אנבידיה"
+   ],
+   "title": "חמישה דברים שכדאי לדעת לקראת פתיחת המסחר בבורסה",
+   "summary": "יום המסחר צפוי להיפתח במגמה מעורבת • וול סטריט ננעלה אתמול בירידות חדות בעקבות הטלטלה באנבידיה, שתפרסם הלילה את הדוחות שעשויים להיות החשובים בתולדותיה • החוזים בניו יורק רושמים ירידות קלות • הדולר בשיא של כשנה מול השקל • מחירי הנפט ממשיכים לאבד גובה • וגם: למרות התנודתיות -…",
+   "link": "https://www.globes.co.il/news/article.aspx?did=1001563651#utm_source=RSS",
+   "image": "https://res.cloudinary.com/globes/image/upload/t_800X392/v1677662936/COT_Pic/5-%D7%93%D7%91%D7%A8%D7%99%D7%9D.jpg3_x3c4yv.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:35:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "ספורט 1",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורגל",
+   "keywords": [
+    "הפועל תל אביב"
+   ],
+   "title": "הפועל תל אביב לא רוצה להיות מופתעת: \"צריכים להביא אנרגיה\"",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE00RWEwNGh1M21aVktaLWZCY0REZElPVkk2ZmpNYkhLcG5FU0ZnelhEb3JZS3M1bVlNNkhqbFRHRFRKZURoMHZ6VnRaVU1zM00xZ2VrQVptLVRIZXFLRmpQRnNjUEtsSVRaenU0Yk42X3Y?oc=5",
+   "image": "https://sport1images.maariv.co.il/image/upload/f_auto,fl_lossy,c_thumb,g_north,w_1200,h_630/1293409",
+   "url": "https://sport1.maariv.co.il/israeli-basketball/article/1999468/",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:34:58+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "ערוץ 7",
+   "category": "פוליטיקה",
+   "subcategory": "בחירות וסקרים",
+   "keywords": [
+    "בחירות"
+   ],
+   "title": "דן אילוז נגד ליברמן: \"אני חש מרומה ונבגד\"",
+   "summary": "<p>דן אילוז, שעזב את הליכוד והצטרף לישראל ביתנו לקראת הבחירות האחרונות, תוקף בחריפות את אביגדור ליברמן בעקבות שינוי עמדתו בסוגיית חוק הגיוס ויחסו לחרדים, כך דווח בחדשות 13. \"אני חש מרומה ונבגד.",
+   "link": "https://www.inn.co.il/flashes/1141258",
+   "image": "https://www.inn.co.il/files/pictures/0/0.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:34:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "ערוץ 7",
+   "category": "פוליטיקה",
+   "subcategory": "מפלגות",
+   "keywords": [
+    "הליכוד",
+    "ישראל ביתנו"
+   ],
+   "title": "דן אילוז נגד ליברמן: \"אני חש מרומה ונבגד\"",
+   "summary": "<p>דן אילוז, שעזב את הליכוד והצטרף לישראל ביתנו לקראת הבחירות האחרונות, תוקף בחריפות את אביגדור ליברמן בעקבות שינוי עמדתו בסוגיית חוק הגיוס ויחסו לחרדים, כך דווח בחדשות 13. \"אני חש מרומה ונבגד.",
+   "link": "https://www.inn.co.il/flashes/1141258",
+   "image": "https://www.inn.co.il/files/pictures/0/0.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:34:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "ערוץ 7",
+   "category": "פוליטיקה",
+   "subcategory": "פוליטיקאים",
+   "keywords": [
+    "ליברמן"
+   ],
+   "title": "דן אילוז נגד ליברמן: \"אני חש מרומה ונבגד\"",
+   "summary": "<p>דן אילוז, שעזב את הליכוד והצטרף לישראל ביתנו לקראת הבחירות האחרונות, תוקף בחריפות את אביגדור ליברמן בעקבות שינוי עמדתו בסוגיית חוק הגיוס ויחסו לחרדים, כך דווח בחדשות 13. \"אני חש מרומה ונבגד.",
+   "link": "https://www.inn.co.il/flashes/1141258",
+   "image": "https://www.inn.co.il/files/pictures/0/0.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:34:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "ערוץ 7",
+   "category": "פוליטיקה",
+   "subcategory": "חקיקה ומשפט",
+   "keywords": [
+    "חוק הגיוס"
+   ],
+   "title": "דן אילוז נגד ליברמן: \"אני חש מרומה ונבגד\"",
+   "summary": "<p>דן אילוז, שעזב את הליכוד והצטרף לישראל ביתנו לקראת הבחירות האחרונות, תוקף בחריפות את אביגדור ליברמן בעקבות שינוי עמדתו בסוגיית חוק הגיוס ויחסו לחרדים, כך דווח בחדשות 13. \"אני חש מרומה ונבגד.",
+   "link": "https://www.inn.co.il/flashes/1141258",
+   "image": "https://www.inn.co.il/files/pictures/0/0.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:34:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Bloomberg",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "טראמפ"
+   ],
+   "title": "Trump to Attend ‘Quad’ Economic Security Talks Before Xi Meeting",
+   "summary": "President Donald Trump will meet with the leaders of India, Australia, and Japan on Tuesday for a top-level gathering of their informal security group, an opportunity to reassure key Indo-Pacific partners ahead of Trump’s highly anticipated meetings with Xi Jinping later this…",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-17/trump-quad-india-australia-japan-economic-security-talks-before-xi-meeting",
+   "image": "",
+   "url": "",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:33:19+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Bloomberg",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "סין"
+   ],
+   "title": "Trump to Attend ‘Quad’ Economic Security Talks Before Xi Meeting",
+   "summary": "President Donald Trump will meet with the leaders of India, Australia, and Japan on Tuesday for a top-level gathering of their informal security group, an opportunity to reassure key Indo-Pacific partners ahead of Trump’s highly anticipated meetings with Xi Jinping later this…",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-17/trump-quad-india-australia-japan-economic-security-talks-before-xi-meeting",
+   "image": "",
+   "url": "",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:33:19+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "פוליטיקה",
+   "subcategory": "בחירות וסקרים",
+   "keywords": [
+    "בחירות"
+   ],
+   "title": "\"לא היו בחירות דמוקרטיות\": הטענות החריפות של בכיר הליכוד",
+   "summary": "שגיא קייזלר, מנהל טוהר הבחירות מטעם הליכוד, טען בריאיון ל-103fm כי אי סדרים חמורים התרחשו בקלפיות במגזר הערבי ודרש לחקור 1,281 תלונות: \"מה אנחנו מבקשים? לא שגנבו לנו את הבחירות, אלא תבדקו\"",
+   "link": "https://www.maariv.co.il/news/politics/article-1389295",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1151947",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:32:18+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "מעריב",
+   "category": "פוליטיקה",
+   "subcategory": "מפלגות",
+   "keywords": [
+    "הליכוד"
+   ],
+   "title": "\"לא היו בחירות דמוקרטיות\": הטענות החריפות של בכיר הליכוד",
+   "summary": "שגיא קייזלר, מנהל טוהר הבחירות מטעם הליכוד, טען בריאיון ל-103fm כי אי סדרים חמורים התרחשו בקלפיות במגזר הערבי ודרש לחקור 1,281 תלונות: \"מה אנחנו מבקשים? לא שגנבו לנו את הבחירות, אלא תבדקו\"",
+   "link": "https://www.maariv.co.il/news/politics/article-1389295",
+   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1151947",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:32:18+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "לברון ג'יימס"
+   ],
+   "title": "LeBron James Says ESPN Is Lying About His Unusual Request From 76ers’ Coaching Staff",
+   "summary": "LeBron James calls out ESPN for making false claims about requesting patience from the 76ers' coaching staff.",
+   "link": "https://sports.yahoo.com/articles/lebron-james-says-espn-lying-063214572.html",
+   "image": "https://media.zenfs.com/en/fadeaway_world_951/7e770b974d4b6e242d751379eab41f0f.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:32:14+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "The Jerusalem Post",
    "category": "פוליטיקה",
    "subcategory": "מדיניות חוץ וביטחון",
@@ -3482,6 +4561,74 @@
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
   {
+   "site": "דה מרקר",
+   "category": "כלכלה",
+   "subcategory": "מאקרו ישראל",
+   "keywords": [
+    "צמיחה ותוצר"
+   ],
+   "title": "חוק מרפי, גרסת ישראל: התמ\"ג קופץ, ובקופה חסרים מיליארדים",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbURpaWFYS25CWWxVcWNkTU1kSm1hdTNMNlVrVmRMalNnWExmV3YwUktISkhTZlJWVlQ5MXZ2ZTdmVlBWUFo5MUVCb1Y4V3Q4R0RtQXJSY2hDUVU3amNHQk9LY0w5RWU1ZlM0Q1pCRmZiNTJhRlAzRGR2MmgwTkU1a3VRWlJWcFFvVEdpQ2MwMWw2QUo2SnphN2txV3N3WXVDRVp3?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T06:31:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "כיפה",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "טראמפ"
+   ],
+   "title": "אחרי הסערה: טראמפ מנסה להחזיר את מנכ\"ל אנבידיה לתפקיד",
+   "summary": "לאחר שמנכ\"ל אנבידיה, ג'נסן הואנג, ניהל רומן מחוץ לנישואין עם מרגלת סינית, הוא נאלץ לעזוב את תפקידו. כעת טראמפ אמר כי \"לא יהיה אכפת לו\" אם הואנג יוחזר לתפקיד",
+   "link": "https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1236540-0/",
+   "image": "https://www.kipa.co.il/userFiles/post_u344819_6afbf39add81d_1794896794.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:30:58+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Ynet",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורגל",
+   "keywords": [
+    "מכבי חיפה"
+   ],
+   "title": "מכבי חיפה מחכה לרן בן שמעון: יקבל פנייה - אם יתפטר מהנבחרת",
+   "summary": "הירוקים עוקבים אחר מצבו של המאמן הלאומי, לאחר שנחשף ב-ynet שלפי מקורביו הוא שוקל לא להמשיך לקמפיין נוסף. אם אכן בן שמעון יעזוב את הנבחרת, הוא יהפוך למועמד הישראלי המוביל להחליף את בכר",
+   "link": "https://www.ynet.co.il/sport/israelisoccer/article/bygz8dtrfx",
+   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/09/28/H10b9Pvqze/H10b9Pvqze_0_0_850_479_0_medium.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:30:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "ליגת האלופות",
+   "keywords": [
+    "באיירן מינכן"
+   ],
+   "title": "Vincent Kompany led training session for Bayern Munich as he continues comeback",
+   "summary": "The head honcho is back in charge at FC Bayern.",
+   "link": "https://sports.yahoo.com/articles/vincent-kompany-led-training-session-063000721.html",
+   "image": "https://media.zenfs.com/en/sb_nation_articles_115/f48f24411c58b12e50d95d22c5508fb5.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:30:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "Bloomberg",
    "category": "פוליטיקה",
    "subcategory": "ארצות הברית",
@@ -3495,7 +4642,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:28:07+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -3514,7 +4661,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:28:07+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -3531,7 +4678,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:28:07+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -3553,6 +4700,43 @@
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
   {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "העברות וחוזים",
+    "לברון ג'יימס"
+   ],
+   "title": "‘It was weird’: Iman Shumpert shares what LeBron James did in 2015 just before his trade to the Cavs",
+   "summary": "LeBron James possesses one of the finest minds in basketball. The Philadelphia 76ers star has always had incredible game IQ, not just during matches but when it comes to identifying players as well.",
+   "link": "https://sports.yahoo.com/articles/weird-iman-shumpert-shares-lebron-062656089.html",
+   "image": "https://media.zenfs.com/en/hitc_articles_832/9b4126960361bd6d8448888f68584878.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:26:56+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "ברוקלין נטס"
+   ],
+   "title": "76ers’ Joel Embiid reveals shooting issue before breaking out of slump vs. Nets",
+   "summary": "Joel Embiid dropped a season-high 37 points to lead the Philadelphia 76ers past the Brooklyn Nets , 135-123, at Barclays Center on Monday. Embiid shot 13-of-22 from the field and 9-of-10 from the free-throw line and added five rebounds and two blocks, as the 76ers notched…",
+   "link": "https://sports.yahoo.com/articles/76ers-joel-embiid-reveals-shooting-062611505.html",
+   "image": "https://media.zenfs.com/en/clutchpoints_articles_939/7a6cc7645135701298182b80d0ec661e.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:26:11+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "JDN",
    "category": "פוליטיקה",
    "subcategory": "מדיניות חוץ וביטחון",
@@ -3562,7 +4746,7 @@
    "title": "דיווח ב-CNN: איראן מגבשת תוכניות לפגיעה בבכירי הממשל עם \"פצצה מלוכלכת\"",
    "summary": "שבעה גורמים אמריקניים אמרו לרשת CNN כי המודיעין האמריקאי מצביע על תכנון אפשרי של פגיעה באמצעות \"פצצה מלוכלכת\" או נשק כימי. הרשויות נערכו לתרחישי חירום, ובבית הלבן מסרו כי אין כעת איום אמין על ארה\"ב הפוסט דיווח ב-CNN: איראן מגבשת תוכניות לפגיעה בבכירי הממשל עם \"פצצה מלוכלכת\"…",
    "link": "https://www.jdn.co.il/news/2767063/",
-   "image": "https://www.jdn.co.il/wp-content/uploads/2026/11/6041696256263917900.jpg",
+   "image": "https://www.jdn.co.il/wp-content/uploads/2026/11/6024004723330978537.jpg",
    "url": "",
    "gtried": 0,
    "itried": 0,
@@ -3579,7 +4763,7 @@
    "title": "דיווח ב-CNN: איראן מגבשת תוכניות לפגיעה בבכירי הממשל עם \"פצצה מלוכלכת\"",
    "summary": "שבעה גורמים אמריקניים אמרו לרשת CNN כי המודיעין האמריקאי מצביע על תכנון אפשרי של פגיעה באמצעות \"פצצה מלוכלכת\" או נשק כימי. הרשויות נערכו לתרחישי חירום, ובבית הלבן מסרו כי אין כעת איום אמין על ארה\"ב הפוסט דיווח ב-CNN: איראן מגבשת תוכניות לפגיעה בבכירי הממשל עם \"פצצה מלוכלכת\"…",
    "link": "https://www.jdn.co.il/news/2767063/",
-   "image": "https://www.jdn.co.il/wp-content/uploads/2026/11/6041696256263917900.jpg",
+   "image": "https://www.jdn.co.il/wp-content/uploads/2026/11/6024004723330978537.jpg",
    "url": "",
    "gtried": 0,
    "itried": 0,
@@ -3599,7 +4783,7 @@
    "image": "",
    "url": "https://www.calcalist.co.il/market/article/rke00wokafl",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:23:00+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -3622,6 +4806,74 @@
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
   {
+   "site": "חדשות 13",
+   "category": "פוליטיקה",
+   "subcategory": "מדיניות חוץ וביטחון",
+   "keywords": [
+    "איראן"
+   ],
+   "title": "סגן הנשיא ואנס: \"טראמפ לא יאפשר למלחמה באיראן להפוך למלחמת נצח\"",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE84d3JGam1zMVo0emxXTUM4cUNVSndHazQxYnkwd0hVTURFSWpQbGh0SDlWOFVEZjRlT1k3RVkwMmZHVXhTVFMyaG14MlZRMkJ6Tk96ck5TRzZSc2J3MEJmc2tlQkUzMzR1dXJhQ2FSRW5Ha1Az?oc=5",
+   "image": "",
+   "url": "https://13tv.co.il/item/news/politics/security/dau-1138-905465784/",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:21:49+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "חדשות 13",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "טראמפ"
+   ],
+   "title": "סגן הנשיא ואנס: \"טראמפ לא יאפשר למלחמה באיראן להפוך למלחמת נצח\"",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE84d3JGam1zMVo0emxXTUM4cUNVSndHazQxYnkwd0hVTURFSWpQbGh0SDlWOFVEZjRlT1k3RVkwMmZHVXhTVFMyaG14MlZRMkJ6Tk96ck5TRzZSc2J3MEJmc2tlQkUzMzR1dXJhQ2FSRW5Ha1Az?oc=5",
+   "image": "",
+   "url": "https://13tv.co.il/item/news/politics/security/dau-1138-905465784/",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T06:21:49+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "חדשות 13",
+   "category": "פוליטיקה",
+   "subcategory": "מדיניות חוץ וביטחון",
+   "keywords": [
+    "איראן"
+   ],
+   "title": "דיווח: איראן פועלת לפגוע בבכירים בממשל האמריקני באמצעות נשק כימי",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4yUWZSdjhqWUF1REZ2cmdpaWhmVkdLMTB6RGZwUTNPeG5hcmUzVHFzdzBBNUU5cnJCdnRsLVdsdnRYZFozbWxuZmRsSm1kZ0lvc2ZwbDctUGttYmRjOGwwTlZpUlZuZEJzaWZEQnBlQQ?oc=5",
+   "image": "",
+   "url": "https://13tv.co.il/item/news/politics/security/iran-905465937/",
+   "gtried": 0,
+   "itried": 3,
+   "published": "2026-11-17T06:21:09+00:00",
+   "first_seen": "2026-11-17T06:00:29+00:00"
+  },
+  {
+   "site": "ערוץ 7",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "סעודיה"
+   ],
+   "title": "מול התקדמות החות'ים: הכוחות הפרו־סעודיים נסוגו מאזור המיצר האסטרטגי",
+   "summary": "<p>הכוחות הנתמכים בידי סעודיה בתימן נסוגו מהאזור הסמוך למיצר באב אל־מנדב בים סוף, על רקע התקדמות החות'ים לעבר עיר הנמל עדן. כך דווח בכאן חדשות.</p><p>גורם באחד הפלגים אמר כי הכוחות חשים שסעודיה אינה נחושה מספיק בלחימה בחות'ים וכי הסיוע האווירי שלה אינו מספק.",
+   "link": "https://www.inn.co.il/flashes/1141257",
+   "image": "https://www.inn.co.il/files/pictures/0/0.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:21:01+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "Financial Times",
    "category": "פוליטיקה",
    "subcategory": "המזרח התיכון והעולם",
@@ -3634,7 +4886,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:20:15+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -3651,7 +4903,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:20:15+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -3822,7 +5074,7 @@
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA1RHJyckcwTng2UEQxWDNGTF9YSEN6SmQyX2JRZUgwa3dNRm9ycHJtcWlCS2xaSzBOcUpIc09IM2pudWhvR1Y1UlJFY1hJODRrRmpCXzltMy1wS2RleEJN?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T06:13:21+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -3876,12 +5128,29 @@
    "title": "ירידה של 8%: מזרחי טפחות הרוויח 1.37 מיליארד שקל ברבעון",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPb0lQRUlQVjhfaC1GVzJiSzZlQUY1Z3pPeG9lT0YyRlc4Q3RTTU5hRlYwWWdQak00TzV5YXEtTS1QaGhheF9jWHdZazZwX2R2Q3ljTndiSmZGLWVKTkl6Mm9OWm15T2Vud1BhUXRFOE9xeEJ5Qm03YXJ5SHpNQW5sY3F4emhaV3h0cU5YdEN0Mm9wYjFmWDV0MDBOQU00MERpZGNN?oc=5",
-   "image": "",
+   "image": "https://img.haarets.co.il/bs/000001a1-e4c7-df0d-ada1-e7ff9d580000/00/52/a8af6d1543a5a93bd85efdfc8055/669010.jpg?precrop=2062,1199,x0,y74&width=1200&height=630&cmsprod",
    "url": "https://www.themarker.com/markets/2026-11-17/ty-article/.premium/000001a1-e4c7-df0d-ada1-e7ff9d580000",
    "gtried": 0,
    "itried": 1,
    "published": "2026-11-17T06:12:00+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
+  },
+  {
+   "site": "AP",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "הסנאט"
+   ],
+   "title": "2026 U.S. Senate Election Results",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ycUhlZzZ2V1lhd2pzVExlRFNUOVV5M0N6VHB5a2FuNFU2NDNaV0dSTV9hUVZTZHZCeVRjeWRWMnh0NUVIRW1vbmhfNFRsSVRqSWIwM21iUmMxTE4zYzhocm81ajd4U0x2R0R0Q1Bn?oc=5",
+   "image": "https://apnews.com/projects/elections-2026/social/us-senate.jpg",
+   "url": "https://apnews.com/projects/elections-2026/us-senate-results/",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T06:10:40+00:00",
+   "first_seen": "2026-11-16T17:00:34+00:00"
   },
   {
    "site": "כיפה",
@@ -3898,7 +5167,7 @@
    "url": "",
    "gtried": 0,
    "itried": 0,
-   "published": "2026-11-17T06:10:50+00:00",
+   "published": "2026-11-17T06:10:00+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
   {
@@ -3915,7 +5184,7 @@
    "url": "",
    "gtried": 0,
    "itried": 0,
-   "published": "2026-11-17T06:10:50+00:00",
+   "published": "2026-11-17T06:10:00+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
   {
@@ -3931,7 +5200,7 @@
    "image": "",
    "url": "https://www.washingtontimes.com/news/2026/nov/17/estonia-moves-shut-border-russia-linked-arson-attack-drone-makers/",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:09:50+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -3982,7 +5251,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:07:29+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -4086,7 +5355,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:03:05+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -4103,7 +5372,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:03:05+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -4227,7 +5496,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:00:06+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -4244,7 +5513,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T06:00:06+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -4313,9 +5582,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9MVjV5QTNqNUk4UjlKTFh1SkxrRDRzZFpTVFJvREhTOWxzREt3MHJpMzE0MzA4NC1pOWprNk9kbjVfYzVwNVN2SkN6NkQtLUJRbHJzV1JJdGV0NmtuRm9jSGg0Uml4Zm9IZ1hUTQ?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://www.makorrishon.co.il/news/middleeast/article/393638",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-17T05:59:59+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -4336,23 +5605,6 @@
    "itried": 0,
    "published": "2026-11-17T05:59:01+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
-  },
-  {
-   "site": "חדשות 13",
-   "category": "פוליטיקה",
-   "subcategory": "מדיניות חוץ וביטחון",
-   "keywords": [
-    "איראן"
-   ],
-   "title": "דיווח: איראן פועלת לפגוע בבכירים בממשל האמריקני באמצעות נשק כימי",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4yUWZSdjhqWUF1REZ2cmdpaWhmVkdLMTB6RGZwUTNPeG5hcmUzVHFzdzBBNUU5cnJCdnRsLVdsdnRYZFozbWxuZmRsSm1kZ0lvc2ZwbDctUGttYmRjOGwwTlZpUlZuZEJzaWZEQnBlQQ?oc=5",
-   "image": "",
-   "url": "https://13tv.co.il/item/news/politics/security/iran-905465937/",
-   "gtried": 0,
-   "itried": 2,
-   "published": "2026-11-17T05:58:25+00:00",
-   "first_seen": "2026-11-17T06:00:29+00:00"
   },
   {
    "site": "Bleacher Report",
@@ -4383,7 +5635,7 @@
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRUYxNWREY3JfUTN5MklneTlkdU5COXRlRFZfdE9WbkszMVg1alVQcHo3VllOZjVJTWpSTHBNSWpCc2JScnhVRUlMOG5UbjZWRW9VNzhJbW9JZ2dJYThXcko5WE9kX3c5MUt0WDFaM09pajkwUzl5b3pYcjJvXzdDbUoyQU85V0kxN3ZJdXhuc0NkVnQtVEp3YmJYQ0czMjhsWVZnM3JhXzRaODVjTkMwbGk2c2NiTlU?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T05:58:00+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -4472,26 +5724,26 @@
    "image": "",
    "url": "https://www.israelhayom.co.il/sport/world-soccer/article/21868125",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T05:54:49+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
   {
-   "site": "NBC Sports",
+   "site": "Bleacher Report",
    "category": "ספורט",
    "subcategory": "NBA",
    "keywords": [
-    "NBA"
+    "לברון ג'יימס"
    ],
-   "title": "NBA | Fantasy Basketball: News, Videos, Stats, Highlights, Results & More - Rotoworld",
+   "title": "LeBron James Denies Rumors That He Asked 76ers Coaches to Be 'Patient' in IG Photo",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82dUs1OTZ2WjhmcmV6elA4VldkQmVfVi0tOFNlTUlmdl9sT1RmNldaaTBTb1VGZmtMaWhKY1JqNTFqdDJJSzVSem9TN0hfUFNZMklBaHFIZw?oc=5",
-   "image": "",
-   "url": "https://www.nbcsports.com/fantasy/basketball",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMlQ3Ry1rU1FJWHlYcEdISUxRWklaVXQ0aElqd2JSaHd3ckYxeWlhaVJBR0xiNjhhSmlXemk0bl96MEJvSGdJR2tWMjZONWQxbVNvR19Fd1UwQi1Vem1pbndRNnhMT2U3QXA0R2Z2VXk2TXJZTTFvWVdXd3ctN2ZieHBaMVVWSXVEbU5PQUtaV29XX08wckZOT2pYb3daaUFBSm5LRFhmdDJUa21lcFhKa1hUM0g?oc=5",
+   "image": "https://gsp-image-cdn.wmsports.io/cms/prod/bleacher-report/getty_images/2026-11/2305305806_large_cropped.jpg?w=1120&h=630",
+   "url": "https://bleacherreport.com/articles/25534365-lebron-james-denies-rumors-he-asked-76ers-coaches-be-patient-ig-photo",
    "gtried": 1,
-   "itried": 3,
-   "published": "2026-11-17T05:53:54+00:00",
-   "first_seen": "2026-11-16T21:30:26+00:00"
+   "itried": 0,
+   "published": "2026-11-17T05:52:04+00:00",
+   "first_seen": "2026-11-17T06:00:29+00:00"
   },
   {
    "site": "N12",
@@ -4528,23 +5780,6 @@
    "itried": 3,
    "published": "2026-11-17T05:51:10+00:00",
    "first_seen": "2026-11-15T08:30:25+00:00"
-  },
-  {
-   "site": "Bleacher Report",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "לברון ג'יימס"
-   ],
-   "title": "LeBron James Denies Rumors That He Asked 76ers Coaches to Be 'Patient' in IG Photo",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMlQ3Ry1rU1FJWHlYcEdISUxRWklaVXQ0aElqd2JSaHd3ckYxeWlhaVJBR0xiNjhhSmlXemk0bl96MEJvSGdJR2tWMjZONWQxbVNvR19Fd1UwQi1Vem1pbndRNnhMT2U3QXA0R2Z2VXk2TXJZTTFvWVdXd3ctN2ZieHBaMVVWSXVEbU5PQUtaV29XX08wckZOT2pYb3daaUFBSm5LRFhmdDJUa21lcFhKa1hUM0g?oc=5",
-   "image": "https://gsp-image-cdn.wmsports.io/cms/prod/bleacher-report/getty_images/2026-11/2305305806_large_cropped.jpg?w=1120&h=630",
-   "url": "https://bleacherreport.com/articles/25534365-lebron-james-denies-rumors-he-asked-76ers-coaches-be-patient-ig-photo",
-   "gtried": 1,
-   "itried": 0,
-   "published": "2026-11-17T05:51:07+00:00",
-   "first_seen": "2026-11-17T06:00:29+00:00"
   },
   {
    "site": "Eurohoops",
@@ -4681,7 +5916,7 @@
    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ONzVfYnBTSzh3NFByUE45cG15OVNrOHV4MlhFZ1ZpZXlCRUx5OThIN3RVaDBiOERwWkdFMU5Ec1dTXzJ3VzBfbkh3SFdZcTVqbl9ZT25n?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T05:47:48+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -4698,7 +5933,7 @@
    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ONzVfYnBTSzh3NFByUE45cG15OVNrOHV4MlhFZ1ZpZXlCRUx5OThIN3RVaDBiOERwWkdFMU5Ec1dTXzJ3VzBfbkh3SFdZcTVqbl9ZT25n?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T05:47:48+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -4785,7 +6020,7 @@
    "image": "",
    "url": "https://www.reuters.com/world/middle-east/oman-iran-foreign-ministers-discuss-safeguarding-maritime-corridors-2026-11-17/",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T05:45:00+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -4989,6 +6224,23 @@
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
   {
+   "site": "AP",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "בחירות האמצע"
+   ],
+   "title": "2026 Texas Midterm Election Results",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE01ekZMQkpEN0tQTUl1N0o5UXBMWXVSWHV4aG1ZYnNuT2lCRllyUlhTV3JmeHdaMnY1d3lQZ0xsR1Q0LXhmNlNKTUdxeVhrMWgtZXlwRTQtQXZQbExjUUZENXFId3Z0dy1O?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T05:36:54+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "Investing.com",
    "category": "כלכלה",
    "subcategory": "מטבעות וסחורות",
@@ -5102,7 +6354,7 @@
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GRG5BVmUxVXppTDIxS2lSYjc2T2FqUzYxLVB5WGFwNnBfNzduYk1waU9NQzFrWmU2c3dvZGYtM183UmUzQk5JOUxYX3luZGRwbkkwbnpPYWdNcmpKWVJlTWF5V21ObkV2UTQ5aTRtRjA3aEwtckxnTWdNYUZpdm8?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T05:33:00+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -5174,7 +6426,7 @@
    "image": "",
    "url": "https://www.bhol.co.il/news/1744786",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T05:32:07+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -5191,7 +6443,7 @@
    "image": "",
    "url": "https://www.bhol.co.il/news/1744786",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T05:32:07+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -5230,6 +6482,23 @@
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
   {
+   "site": "כלכליסט",
+   "category": "כלכלה",
+   "subcategory": "מטבעות וסחורות",
+   "keywords": [
+    "דולר-שקל"
+   ],
+   "title": "הדולר מתחזק מול השקל ומטפס ל-3.25 שקלים; בעולם בשיא של 19 חודשים",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFU3l2ZHdkbWtHU1pMVVF1UDE0YXAyR1Axb1FZSmRPenRmZ2VSY0NMUFhfc0VhYnVKOGRtWGd0N1ZyNU5pa2lMRjdVLXBkRWVJa1pFLXFzRVZjc3VDU0kybTI0NA?oc=5",
+   "image": "",
+   "url": "https://www.calcalist.co.il/market/article/sytqxvfrfx",
+   "gtried": 0,
+   "itried": 3,
+   "published": "2026-11-17T05:31:00+00:00",
+   "first_seen": "2026-11-17T06:00:29+00:00"
+  },
+  {
    "site": "Euronews",
    "category": "פוליטיקה",
    "subcategory": "אירופה",
@@ -5259,7 +6528,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T05:30:21+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -5276,7 +6545,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T05:30:00+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -5310,7 +6579,7 @@
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tQ0tVRzlvdGhpem9POEY4VUxyV1BXQVY0UjBnR1U5eVRtRlJHMkRTX0dkdVpJWEdNeFJuUmVmMHZqZnM5QXprUWwtalRXeXduUVJycFVEOU10N2VsSVhB?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T05:28:39+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -5380,7 +6649,7 @@
    "image": "",
    "url": "https://www.israelhayom.co.il/news/politics/article/21868108",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T05:25:52+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -5397,7 +6666,7 @@
    "image": "",
    "url": "https://www.israelhayom.co.il/news/politics/article/21868108",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T05:25:52+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -5453,7 +6722,7 @@
    "image": "",
    "url": "https://www.zman.co.il/742911/",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T05:24:26+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -5511,6 +6780,23 @@
    "itried": 0,
    "published": "2026-11-17T05:22:16+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
+  },
+  {
+   "site": "בחדרי חרדים",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "אוקראינה"
+   ],
+   "title": "אוקראינה תקפה בקרים בתגובה להפצצת הגשרים בקייב",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAtc3VaSjlaZUFfaTlsU1N3QWhZbVBraEFsc0QzUnR1aHpycVNqZktEOGxqOFRRVF9WR2NlbktiS3Rpbk1RSVg2SjRKaw?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T05:21:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
   },
   {
    "site": "The New York Times",
@@ -5582,23 +6868,6 @@
    "first_seen": "2026-11-17T05:30:24+00:00"
   },
   {
-   "site": "כלכליסט",
-   "category": "כלכלה",
-   "subcategory": "מטבעות וסחורות",
-   "keywords": [
-    "דולר-שקל"
-   ],
-   "title": "הדולר מתחזק מול השקל ומטפס ל-3.24 שקלים; בעולם בשיא של 19 חודשים",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFU3l2ZHdkbWtHU1pMVVF1UDE0YXAyR1Axb1FZSmRPenRmZ2VSY0NMUFhfc0VhYnVKOGRtWGd0N1ZyNU5pa2lMRjdVLXBkRWVJa1pFLXFzRVZjc3VDU0kybTI0NA?oc=5",
-   "image": "",
-   "url": "https://www.calcalist.co.il/market/article/sytqxvfrfx",
-   "gtried": 0,
-   "itried": 2,
-   "published": "2026-11-17T05:18:00+00:00",
-   "first_seen": "2026-11-17T06:00:29+00:00"
-  },
-  {
    "site": "ערוץ 7",
    "category": "פוליטיקה",
    "subcategory": "מדיניות חוץ וביטחון",
@@ -5644,7 +6913,7 @@
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qVTNmWkNiUmVObHBVY1YzS0VoOVVjYWh0NEY2SlJoTHBaTEd3ekZfeFprbVp2OFJzOE1XeGpuakRCLVNFZktSaWdpWDRBN0R0ZzJSbHAtbzl5NmJwNkhvaEZ6MFBjSlE?oc=5",
    "image": "",
    "url": "",
-   "gtried": 2,
+   "gtried": 3,
    "itried": 0,
    "published": "2026-11-17T05:15:15+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
@@ -5718,6 +6987,23 @@
    "itried": 0,
    "published": "2026-11-17T05:12:42+00:00",
    "first_seen": "2026-11-17T05:30:24+00:00"
+  },
+  {
+   "site": "ספורט 5",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "דני אבדיה"
+   ],
+   "title": "לראשונה מאז הפלייאוף: ההישג של דני אבדיה",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5mdWNkc3FCUk9NRDhoYXpEeDM5aGxwMW9wOHhGdHpiYUlmN2Vka1lCbkJTbUtvejdTeDYzQnFSSlpCOUQ1VTBMUXlkQ2tCSnhXY2xBbXIwRlVmVUFXSXFLMUZtYXE1TGZfOUU1LTg5VEs?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T05:12:42+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
   },
   {
    "site": "גלובס",
@@ -5854,7 +7140,7 @@
    "image": "",
    "url": "https://13tv.co.il/item/news/politics/security/dau-1138-905465784/?pid=62&refc=902992443",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T05:06:17+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -5871,7 +7157,7 @@
    "image": "",
    "url": "https://13tv.co.il/item/news/politics/security/dau-1138-905465784/?pid=62&refc=902992443",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T05:06:17+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -6745,6 +8031,23 @@
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
   {
+   "site": "בחדרי חרדים",
+   "category": "פוליטיקה",
+   "subcategory": "המזרח התיכון והעולם",
+   "keywords": [
+    "רוסיה"
+   ],
+   "title": "ישראלי שפירק כטב\"מים איראניים בסכנת הסגרה לרוסיה",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBUeUlhLVRjS0d0R0x5Q0xydldwS05GNDR6Z214U3ZaNEFXZUhVa2RRNkZMZHFrelgtd0lNcHJ3dGtySDhNYmpETnQ2NA?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-17T04:48:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "Bloomberg",
    "category": "כלכלה",
    "subcategory": "הייטק וסטארטאפים",
@@ -6883,6 +8186,24 @@
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
   {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "תוצאות"
+   ],
+   "title": "Game Recap: Seven Suns score in double figures in balanced victory over Denver, 117-105",
+   "summary": "The bench kept Phoenix afloat early before a more engaged starting unit took control in the second half.",
+   "link": "https://sports.yahoo.com/articles/game-recap-seven-suns-score-043626429.html",
+   "image": "https://media.zenfs.com/en/sb_nation_articles_115/71b4ff6527590a4eb254d502043a44c1.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T04:36:26+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "הארץ",
    "category": "ספורט",
    "subcategory": "NBA",
@@ -6915,7 +8236,7 @@
    "image": "",
    "url": "https://www.funder.co.il/article/214860",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T04:34:20+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -6932,7 +8253,7 @@
    "image": "",
    "url": "https://www.funder.co.il/article/214860",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T04:34:20+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -7072,7 +8393,7 @@
    "image": "",
    "url": "https://www.makorrishon.co.il/news/middleeast/article/384515",
    "gtried": 1,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T04:30:14+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
   },
@@ -7182,6 +8503,23 @@
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
   {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Sixers Bell Ringer: Sixers back in East’s top spot on back of big performances from Embiid, Brown",
+   "summary": "A vintage Joel Embiid performance lifts the Sixers to a road win in Brooklyn.",
+   "link": "https://sports.yahoo.com/articles/sixers-bell-ringer-sixers-back-042528065.html",
+   "image": "https://media.zenfs.com/en/sb_nation_articles_115/de27457fcfc4ee5c3298967acdad9852.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T04:25:28+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "Yahoo Finance",
    "category": "כלכלה",
    "subcategory": "הייטק וסטארטאפים",
@@ -7281,7 +8619,7 @@
    "image": "",
    "url": "https://www.timesofisrael.com/senior-eisenkot-bloc-official-said-to-see-no-chance-for-unity-government-after-pms-attempted-coup/",
    "gtried": 2,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T04:22:57+00:00",
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
@@ -7319,40 +8657,6 @@
    "itried": 0,
    "published": "2026-11-17T04:20:00+00:00",
    "first_seen": "2026-11-17T00:30:24+00:00"
-  },
-  {
-   "site": "AP",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "סין"
-   ],
-   "title": "Trump administration moves to block China from indirect access to American AI technology",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONGJmTGhQa3FRRDZtX3BqVk9SNlc1aHZ1QXZiUXdHMmlmZmdyUjFKS0hrREM1OFRrVDVjUGpSWnZfVTEtdlozVHVDc0h5Rld1cGVKQTFGYzVZOGJMdDNheWdEcFRhakxCVW1xcnQ3VHBzS2lRdWNPTGdtUkNxNVRnT1JUVzVKNzRXUlNuLUtBOVk2REZnZjMySER5NmhfNTliRjZsZ3B5TElrN0JU?oc=5",
-   "image": "",
-   "url": "",
-   "gtried": 3,
-   "itried": 0,
-   "published": "2026-11-17T04:19:00+00:00",
-   "first_seen": "2026-11-16T20:30:25+00:00"
-  },
-  {
-   "site": "AP",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "טראמפ"
-   ],
-   "title": "Trump administration moves to block China from indirect access to American AI technology",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONGJmTGhQa3FRRDZtX3BqVk9SNlc1aHZ1QXZiUXdHMmlmZmdyUjFKS0hrREM1OFRrVDVjUGpSWnZfVTEtdlozVHVDc0h5Rld1cGVKQTFGYzVZOGJMdDNheWdEcFRhakxCVW1xcnQ3VHBzS2lRdWNPTGdtUkNxNVRnT1JUVzVKNzRXUlNuLUtBOVk2REZnZjMySER5NmhfNTliRjZsZ3B5TElrN0JU?oc=5",
-   "image": "",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T04:19:00+00:00",
-   "first_seen": "2026-11-17T04:30:24+00:00"
   },
   {
    "site": "Sports Illustrated",
@@ -7402,7 +8706,7 @@
    "image": "",
    "url": "https://www.bhol.co.il/news/1744784",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T04:16:00+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -7487,7 +8791,7 @@
    "image": "",
    "url": "https://basketnews.com/players/18340-luka-doncic.html",
    "gtried": 2,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T04:14:36+00:00",
    "first_seen": "2026-11-17T05:30:24+00:00"
   },
@@ -7727,7 +9031,7 @@
    "image": "",
    "url": "https://www.reuters.com/world/china-canada-relations-more-stable-carney-says-he-meets-xi-2026-11-17/",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-17T04:08:00+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -7784,6 +9088,23 @@
    "itried": 0,
    "published": "2026-11-17T04:06:00+00:00",
    "first_seen": "2026-11-17T04:30:24+00:00"
+  },
+  {
+   "site": "AP",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "טראמפ"
+   ],
+   "title": "Taiwan may take a backseat when Xi and Trump meet for a third time at an APEC summit",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb0tlNzNydmppLWsyNUtjdXVCSmRsNklSN1BwNWU4a3ZHbDIxSFVvQ05wLUtoenJDcFNMaE9jRzRpaWlRamY4dzVMUDVTanJqb2FuMENLVDR0Rl9TTGhIUG1xeEdBN0FrN3lZREJBMEh1UkludllTczVlblA4bndsVGFCcHlja3N4dXFqWlR0WGpjQ2xKb3lmYXVUcjhZSHdMOHQ1akVR?oc=5",
+   "image": "",
+   "url": "https://apnews.com/article/taiwan-china-trump-xi-meeting-shenzhen-apec-eb211c849fa45cf3ddaa54102412a423",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-17T04:05:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
   },
   {
    "site": "דה מרקר",
@@ -8670,7 +9991,7 @@
    "image": "",
    "url": "https://www.reuters.com/sports/basketball/jeremiah-fears-logs-first-triple-double-pelicans-blitz-warriors--flm-2026-11-17/",
    "gtried": 2,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T03:57:00+00:00",
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
@@ -8687,7 +10008,7 @@
    "image": "",
    "url": "https://www.espn.com/nba/recap?gameId=401909999",
    "gtried": 2,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T03:56:53+00:00",
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
@@ -8703,7 +10024,7 @@
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNX01yOEN1TGxCekQ5dld3ZjJDWjlQMGVzRy1TNk9BRi1KaTVqWjRxczNid0Z1dE4yNTdzMmViNGpUaklaSy1TUXFPXy1xUHVyb0tnRnIwZ1U3MENqLWtHX0h0emFYVFZ4ZmlFaDlROGVtUl9JQ09JT2JsSG8xNzdSNzdCRHNpYkdYRjdDS0ZqbWIwSmdJN19qN3MwMVpGTU0?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T03:56:33+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -8755,7 +10076,7 @@
    "image": "",
    "url": "https://www.espn.com/nba/recap?gameId=401910000",
    "gtried": 2,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T03:54:54+00:00",
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
@@ -8896,23 +10217,6 @@
    "itried": 0,
    "published": "2026-11-17T03:50:38+00:00",
    "first_seen": "2026-11-17T04:00:30+00:00"
-  },
-  {
-   "site": "AP",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הסנאט"
-   ],
-   "title": "2026 U.S. Senate Election Results",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ycUhlZzZ2V1lhd2pzVExlRFNUOVV5M0N6VHB5a2FuNFU2NDNaV0dSTV9hUVZTZHZCeVRjeWRWMnh0NUVIRW1vbmhfNFRsSVRqSWIwM21iUmMxTE4zYzhocm81ajd4U0x2R0R0Q1Bn?oc=5",
-   "image": "https://apnews.com/projects/elections-2026/social/us-senate.jpg",
-   "url": "https://apnews.com/projects/elections-2026/us-senate-results/",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T03:50:36+00:00",
-   "first_seen": "2026-11-16T17:00:34+00:00"
   },
   {
    "site": "Bloomberg",
@@ -9283,23 +10587,6 @@
    "first_seen": "2026-11-17T04:00:30+00:00"
   },
   {
-   "site": "UEFA.com",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות"
-   ],
-   "title": "Nations League quarter-finals: Who is through? Who can join them? What is the state of play in each League A group?",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUGtpaUFnaDdVdXRaWlNrazktUnlYSm45bHNXRUc0UXpqdldWNUVNZk5VMTREa3RSd05Td3pOc1BFdHE3ZzFzUl9wUV9NTHgtRTdvU0RPS2xjTy1xWks3MXpoTHNnajFIajdCX2xYMDlqZExUdmJ3UUpnVzlqU1VoV2lveGUtc0huM1JCNndaQ0tiV1RmQ3h6c3NpSUx6a3lqbXQ4dWxlR2s5UHpBMTlDQWdqUG9LYXVBcmZNczF2Vy1KWUFROTFmRHF3QjZIc1h4Z0tDQQ?oc=5",
-   "image": "",
-   "url": "https://www.uefa.com/uefanationsleague/news/02ab-22096ba64f4d-f179d6d05013-1000--nations-league-quarter-finals-who-is-through-who-can-joi/",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-17T03:34:34+00:00",
-   "first_seen": "2026-11-15T09:30:25+00:00"
-  },
-  {
    "site": "Yahoo Sports",
    "category": "ספורט",
    "subcategory": "NBA",
@@ -9597,8 +10884,8 @@
    "title": "Gene Munster Says Nvidia Could Be the Next Apple if Investors ‘Sleep Well at Night’",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOVhWWC1VQXh3WHh5T0k1NTZFdGM4aXhGQkV1UVpLQklUak85bDZZUmNnZU9ULXdIY1lqTmo2bURzVzg0N3lOQldwYV9nWU80Y1B3MFJzX2xEM2RtMm9DbXhPeXdlb25VZW1vZGZjU2haaHFoc3JjRGpjck9DRy04Z0JCMWpraUxKZ2pveVVxbm5rdDBscDJ0RllkYw?oc=5",
-   "image": "",
-   "url": "",
+   "image": "https://s.yimg.com/lo/mysterio/api/3058fae1040ac966dded8835b07ddee308a780d49232dda0532934cb5d56c6a3/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2FBenzinga%2F7364e63912a75e1799f799a6fa1875dc.jpg",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/gene-munster-says-nvidia-could-032355214.html",
    "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T03:23:00+00:00",
@@ -10674,6 +11961,58 @@
    "first_seen": "2026-11-17T03:00:32+00:00"
   },
   {
+   "site": "N12",
+   "category": "פוליטיקה",
+   "subcategory": "כנסת וממשלה",
+   "keywords": [
+    "הרכבת הממשלה"
+   ],
+   "title": "המסלולים של איזנקוט להרכבת ממשלה",
+   "summary": "פסימיות בישר בנוגע לצירוף החרדים לממשלה בצל הקשיים עם חוק הגיוס • ביקורת בגוש השינוי על ליברמן: \"ויתר מהר מדי לחרדים\" • איזנקוט עדיין רוצה ממשלת מיעוט, אך לא ברור אם השותפים בגוש יסכימו לכך • וגם: שאלת הרוטציה",
+   "link": "https://www.mako.co.il/news-politics/2026_q4/Article-8b56e336357e1a1027.htm",
+   "image": "https://img.mako.co.il/2026/11/16/D_ST8570AA_autoOrient_a.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T02:48:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "N12",
+   "category": "פוליטיקה",
+   "subcategory": "פוליטיקאים",
+   "keywords": [
+    "איזנקוט",
+    "ליברמן"
+   ],
+   "title": "המסלולים של איזנקוט להרכבת ממשלה",
+   "summary": "פסימיות בישר בנוגע לצירוף החרדים לממשלה בצל הקשיים עם חוק הגיוס • ביקורת בגוש השינוי על ליברמן: \"ויתר מהר מדי לחרדים\" • איזנקוט עדיין רוצה ממשלת מיעוט, אך לא ברור אם השותפים בגוש יסכימו לכך • וגם: שאלת הרוטציה",
+   "link": "https://www.mako.co.il/news-politics/2026_q4/Article-8b56e336357e1a1027.htm",
+   "image": "https://img.mako.co.il/2026/11/16/D_ST8570AA_autoOrient_a.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T02:48:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "N12",
+   "category": "פוליטיקה",
+   "subcategory": "חקיקה ומשפט",
+   "keywords": [
+    "חוק הגיוס"
+   ],
+   "title": "המסלולים של איזנקוט להרכבת ממשלה",
+   "summary": "פסימיות בישר בנוגע לצירוף החרדים לממשלה בצל הקשיים עם חוק הגיוס • ביקורת בגוש השינוי על ליברמן: \"ויתר מהר מדי לחרדים\" • איזנקוט עדיין רוצה ממשלת מיעוט, אך לא ברור אם השותפים בגוש יסכימו לכך • וגם: שאלת הרוטציה",
+   "link": "https://www.mako.co.il/news-politics/2026_q4/Article-8b56e336357e1a1027.htm",
+   "image": "https://img.mako.co.il/2026/11/16/D_ST8570AA_autoOrient_a.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-17T02:48:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "Bloomberg",
    "category": "כלכלה",
    "subcategory": "מאקרו ישראל",
@@ -10757,7 +12096,7 @@
    "image": "",
    "url": "https://apnews.com/article/trump-china-manila-xi-putin-ffc5e5a2d384f00960034ec10087502e",
    "gtried": 1,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T02:44:00+00:00",
    "first_seen": "2026-11-17T05:30:24+00:00"
   },
@@ -10774,26 +12113,9 @@
    "image": "",
    "url": "https://apnews.com/article/trump-china-manila-xi-putin-ffc5e5a2d384f00960034ec10087502e",
    "gtried": 1,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T02:44:00+00:00",
    "first_seen": "2026-11-17T05:30:24+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Donovan Mitchell’s 39 points help push Cavaliers past Bulls 126-115",
-   "summary": "The Cavaliers were able to resist any potential Bulls comeback.",
-   "link": "https://sports.yahoo.com/articles/donovan-mitchell-39-points-help-024254313.html",
-   "image": "https://media.zenfs.com/en/sb_nation_articles_115/76cc4a9ceedbdf69768c9d209870ca6e.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:42:54+00:00",
-   "first_seen": "2026-11-17T05:00:30+00:00"
   },
   {
    "site": "i24NEWS",
@@ -10811,23 +12133,6 @@
    "itried": 0,
    "published": "2026-11-17T02:40:29+00:00",
    "first_seen": "2026-11-17T03:00:32+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Lakers vs. Hornets Preview: The winning continues",
-   "summary": "The Lakers look to remain hot on Tuesday against the Hornets.",
-   "link": "https://sports.yahoo.com/articles/lakers-vs-hornets-preview-winning-024029476.html",
-   "image": "https://media.zenfs.com/en/sb_nation_articles_115/e14d4f6d5887c52c36879655935ee347.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:40:29+00:00",
-   "first_seen": "2026-11-17T05:00:30+00:00"
   },
   {
    "site": "ערוץ 7",
@@ -10905,7 +12210,7 @@
    "keywords": [
     "אנבידיה"
    ],
-   "title": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
+   "title": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss",
    "summary": "A number of tech figures have backed an effort asking the AI chip giant to give Jensen Huang his job back.",
    "link": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/78e4/live/4bc24280-e1d2-11f1-b8c8-67fa35f5afdb.jpg",
@@ -10922,7 +12227,7 @@
    "keywords": [
     "טראמפ"
    ],
-   "title": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
+   "title": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss",
    "summary": "A number of tech figures have backed an effort asking the AI chip giant to give Jensen Huang his job back.",
    "link": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/78e4/live/4bc24280-e1d2-11f1-b8c8-67fa35f5afdb.jpg",
@@ -10931,58 +12236,6 @@
    "itried": 0,
    "published": "2026-11-17T02:37:53+00:00",
    "first_seen": "2026-11-16T16:00:32+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "בוסטון סלטיקס"
-   ],
-   "title": "Celtics outworked by Magic, lose 115-105 on back end of back-to-back",
-   "summary": "The Orlando Magic snap Boston’s 6-game win streak.",
-   "link": "https://sports.yahoo.com/articles/celtics-outworked-magic-lose-115-023728211.html",
-   "image": "https://media.zenfs.com/en/sb_nation_articles_115/53c6c4d14616e54640ac998b2c53dcc3.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:37:28+00:00",
-   "first_seen": "2026-11-17T05:00:30+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Player Grades: Cavs vs Bulls – Donovan Mitchell scores 39 points",
-   "summary": "Mitchell looked like an All-NBA player tonight.",
-   "link": "https://sports.yahoo.com/articles/player-grades-cavs-vs-bulls-023420546.html",
-   "image": "https://media.zenfs.com/en/sb_nation_articles_115/775a044933648a8f6655aadc4df7a471.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:34:20+00:00",
-   "first_seen": "2026-11-17T03:00:32+00:00"
-  },
-  {
-   "site": "Sports Illustrated",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "בוסטון סלטיקס"
-   ],
-   "title": "4 Winners, 1 Loser in Magic Upset Victory vs. Celtics",
-   "summary": "The Orlando Magic picked up their biggest victory of the season on the road against the Boston Celtics.",
-   "link": "https://www.si.com/nba/magic/onsi/4-winners-1-loser-in-magic-upset-victory-vs-celtics?utm_source=RSS",
-   "image": "https://images2.minutemediacdn.com/image/upload/c_crop,w_1018,h_572,x_879,y_164/c_fill,w_2880,ar_16:9,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/the_magic_insider/01m7kn39a2gdkbxf3e8m.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:33:13+00:00",
-   "first_seen": "2026-11-17T03:00:32+00:00"
   },
   {
    "site": "Bloomberg",
@@ -10999,24 +12252,6 @@
    "gtried": 0,
    "itried": 3,
    "published": "2026-11-17T02:32:11+00:00",
-   "first_seen": "2026-11-17T03:00:32+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "לוקה דונצ'יץ'"
-   ],
-   "title": "NBA’s latest update shows just how far Luka Doncic is ahead of the pack",
-   "summary": "Hollywood loves a good showman, and Luka Doncic is giving fans of the Los Angeles Lakers everything they could have hoped for with another magical campaign. Doncic has looked every bit the leading man, carrying the Lakers to an eight-game winning streak and a 12-2 record,…",
-   "link": "https://sports.yahoo.com/articles/nba-latest-shows-just-far-023153624.html",
-   "image": "https://media.zenfs.com/en/clutchpoints_articles_939/168c7281d891e6011dd6f5a3ca8f9629.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:31:53+00:00",
    "first_seen": "2026-11-17T03:00:32+00:00"
   },
   {
@@ -11092,24 +12327,6 @@
    "itried": 0,
    "published": "2026-11-17T02:29:11+00:00",
    "first_seen": "2026-11-16T15:30:26+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "תוצאות"
-   ],
-   "title": "Recap: Wizards drop eighth straight with 136-120 loss to Grizzlies",
-   "summary": "The Washington Wizards couldn’t hold onto a 12-point second-quarter lead Monday night, as the Memphis Grizzlies outscored them by 24 in the third quarter to pull away for a 131-120 victory and hand Washington its eighth consecutive loss. Washington opened the game with a…",
-   "link": "https://sports.yahoo.com/articles/recap-wizards-drop-eighth-straight-022845384.html",
-   "image": "https://media.zenfs.com/en/sb_nation_articles_115/60d95207be3d4ad65fbdeb02001e551d.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:28:45+00:00",
-   "first_seen": "2026-11-17T05:00:30+00:00"
   },
   {
    "site": "Deutsche Welle",
@@ -11253,24 +12470,6 @@
    "first_seen": "2026-11-17T02:30:25+00:00"
   },
   {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "בוסטון סלטיקס"
-   ],
-   "title": "Jayson Tatum Opens Up On The Moment He Knew He Was A Superstar And Facing Adversity In Olympics",
-   "summary": "The Boston Celtics' superstar Jayson Tatum says Steve Kerr benching him despite him winning the NBA Finals in 2024 was 'fishy'.",
-   "link": "https://sports.yahoo.com/articles/jayson-tatum-opens-moment-knew-021458732.html",
-   "image": "https://media.zenfs.com/en/fadeaway_world_951/d0f441ba5b09a6fb9d95166da7e351c9.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:14:58+00:00",
-   "first_seen": "2026-11-17T02:30:25+00:00"
-  },
-  {
    "site": "CBS News",
    "category": "פוליטיקה",
    "subcategory": "מדיניות חוץ וביטחון",
@@ -11357,24 +12556,6 @@
    "first_seen": "2026-11-17T02:30:25+00:00"
   },
   {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "פציעות"
-   ],
-   "title": "Heat’s Pelle Larsson ‘making progress’ towards illness return after ‘real good’ Monday workout",
-   "summary": "MIAMI – As the Miami Heat are being led by Giannis Antetokounmpo’s magic amid the team’s turnaround, the roster has been without a key piece for the past week. While the Heat have played much better since their 0-4 start to the season, the team has been missing Pelle Larsson.",
-   "link": "https://sports.yahoo.com/articles/heat-pelle-larsson-making-progress-020453945.html",
-   "image": "https://media.zenfs.com/en/clutchpoints_articles_939/4071c5e72edc9a161f2d7ec1be6c6ed2.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:04:53+00:00",
-   "first_seen": "2026-11-17T02:30:25+00:00"
-  },
-  {
    "site": "The New York Times",
    "category": "פוליטיקה",
    "subcategory": "ארצות הברית",
@@ -11393,24 +12574,6 @@
    "first_seen": "2026-11-16T23:30:25+00:00"
   },
   {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "העברות וחוזים"
-   ],
-   "title": "Raptors Listed As Potential Landing Spot For Naz Reid; Here’s How They Can Land Him",
-   "summary": "As the Raptors emerge as a potential landing spot for Naz Reid, we explore how they can land the Hornets' big man.",
-   "link": "https://sports.yahoo.com/articles/raptors-listed-potential-landing-spot-020304575.html",
-   "image": "https://media.zenfs.com/en/fadeaway_world_951/8c1f90be707edf3ead5a8821e69ea64f.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:03:04+00:00",
-   "first_seen": "2026-11-17T02:30:25+00:00"
-  },
-  {
    "site": "Daily Mail",
    "category": "ספורט",
    "subcategory": "הפרמייר ליג",
@@ -11425,59 +12588,6 @@
    "gtried": 0,
    "itried": 0,
    "published": "2026-11-17T02:01:49+00:00",
-   "first_seen": "2026-11-17T02:30:25+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "גולדן סטייט"
-   ],
-   "title": "Every player from California to play for the Golden State Warriors - Dwayne Dedmon",
-   "summary": "Our focus in this article is Dewayne Dedmon.",
-   "link": "https://sports.yahoo.com/articles/every-player-california-play-golden-020034444.html",
-   "image": "https://media.zenfs.com/en/warriors_wire_usa_today_sports_articles_759/a811ffaff4335f6ba908f53fd1ebe692.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:00:34+00:00",
-   "first_seen": "2026-11-17T02:30:25+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "ברוקלין נטס"
-   ],
-   "title": "Every player from California to play for the Brooklyn Nets - Eddie House",
-   "summary": "Our focus in this article is Eddie House",
-   "link": "https://sports.yahoo.com/articles/every-player-california-play-brooklyn-020026378.html",
-   "image": "https://media.zenfs.com/en/nets_wire_usa_today_sports_articles_725/0c8f6deb1553d02402e1d8d95b7b0630.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:00:26+00:00",
-   "first_seen": "2026-11-17T02:30:25+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA"
-   ],
-   "title": "Houston Rockets jersey history No. 42 - Wally Walker (1982-84)",
-   "summary": "During his time suiting up for the Rockets, Walker wore only jersey No. 42 and put up 7.4 points, 3.3 rebounds, and 1.8 assists per game.",
-   "link": "https://sports.yahoo.com/articles/houston-rockets-jersey-history-no-020019730.html",
-   "image": "https://media.zenfs.com/en/rockets_wire_usa_today_sports_articles_849/bae64e446fa07d8ac369dce362801b2c.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T02:00:19+00:00",
    "first_seen": "2026-11-17T02:30:25+00:00"
   },
   {
@@ -11512,25 +12622,6 @@
    "gtried": 0,
    "itried": 0,
    "published": "2026-11-17T02:00:00+00:00",
-   "first_seen": "2026-11-17T02:30:25+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "לוקה דונצ'יץ'",
-    "פורטלנד טרייל בלייזרס"
-   ],
-   "title": "Micah Nori makes head-turning Luka Doncic-LaMelo Ball comparison",
-   "summary": "The Portland Trail Blazers came into their game against the Minnesota Timberwolves on Monday looking to add to the current three-game win streak, and the key to doing so is going to be trying to limit star point guard LaMelo Ball . In fact, Blazers head coach Micah Nori…",
-   "link": "https://sports.yahoo.com/articles/micah-nori-makes-head-turning-015938564.html",
-   "image": "https://media.zenfs.com/en/clutchpoints_articles_939/96f42242042cd0c7293f0ecc532b906f.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T01:59:38+00:00",
    "first_seen": "2026-11-17T02:30:25+00:00"
   },
   {
@@ -11736,7 +12827,7 @@
    "image": "",
    "url": "https://www.reuters.com/business/energy/oil-slips-supply-surplus-outlook-despite-gulf-tensions-2026-11-17/",
    "gtried": 2,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-17T01:37:00+00:00",
    "first_seen": "2026-11-17T05:00:30+00:00"
   },
@@ -11958,8 +13049,8 @@
    "title": "This Is a Huge Week for the Stock Market: Nvidia Earnings, Fed Minutes, and Anthropic’s IPO",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVFliOVdBZXRMNHVzVlRZYUV3b2ttR00wUjFFaWs3QkFEeWotSWNlQ2VITzJsUzd2bTRnNHAydE04c1NfM3BvSzVWNUhxZWxmVWtMTGhHWl9CSGVKcGt4QmRkcXVGbnZaZHk1dWN1czBkYkFoRUhDQzgyVjdZQW1IR2xROGxfaWYxTkNldURFUmFMZ09ZR2p3RUdB?oc=5",
-   "image": "",
-   "url": "",
+   "image": "https://s.yimg.com/lo/mysterio/api/bc5a21de5e80880b24cf506547a88c984d8dca4910947652b02b48a287d34a27/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmotleyfool.com%2F616d75564a50ca74b1cbd907ce4f4b11.jpg",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/huge-week-stock-market-nvidia-011001115.html",
    "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T01:10:00+00:00",
@@ -11975,8 +13066,8 @@
    "title": "This Is a Huge Week for the Stock Market: Nvidia Earnings, Fed Minutes, and Anthropic’s IPO",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVFliOVdBZXRMNHVzVlRZYUV3b2ttR00wUjFFaWs3QkFEeWotSWNlQ2VITzJsUzd2bTRnNHAydE04c1NfM3BvSzVWNUhxZWxmVWtMTGhHWl9CSGVKcGt4QmRkcXVGbnZaZHk1dWN1czBkYkFoRUhDQzgyVjdZQW1IR2xROGxfaWYxTkNldURFUmFMZ09ZR2p3RUdB?oc=5",
-   "image": "",
-   "url": "",
+   "image": "https://s.yimg.com/lo/mysterio/api/bc5a21de5e80880b24cf506547a88c984d8dca4910947652b02b48a287d34a27/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmotleyfool.com%2F616d75564a50ca74b1cbd907ce4f4b11.jpg",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/huge-week-stock-market-nvidia-011001115.html",
    "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T01:10:00+00:00",
@@ -12450,23 +13541,6 @@
    "first_seen": "2026-11-17T03:00:32+00:00"
   },
   {
-   "site": "Investing.com",
-   "category": "כלכלה",
-   "subcategory": "הייטק וסטארטאפים",
-   "keywords": [
-    "אנבידיה"
-   ],
-   "title": "Wall Street futures muted as Nvidia earnings loom amid AI jitters",
-   "summary": "",
-   "link": "https://www.investing.com/news/stock-market-news/wall-street-futures-muted-as-nvidia-earnings-loom-amid-ai-jitters-5031353",
-   "image": "https://content-media.investing.com/news/LYNXMPEM4K17E_1200_L.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-17T00:33:12+00:00",
-   "first_seen": "2026-11-17T01:00:30+00:00"
-  },
-  {
    "site": "Axios",
    "category": "פוליטיקה",
    "subcategory": "ארצות הברית",
@@ -12686,7 +13760,7 @@
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9lTDc5Mm5UZ3hfS2o3blNWZHQ4aW9fTDJDM29SZFc2Rk9kaXREOWk5VHhWTEdoYzZpbWdUeUs5Uk1mLVdxSTk4aDFZWHJVWlFTZzdrUWVuREdZNjhTV2FFbzdHS1VDYjAyR3pzNA?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-17T00:21:26+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -13829,6 +14903,40 @@
    "itried": 3,
    "published": "2026-11-16T23:40:00+00:00",
    "first_seen": "2026-11-17T03:30:24+00:00"
+  },
+  {
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "Nations League highlights: Iceland 3-0 Luxembourg",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZ1pRTEp6Q0swNDNfeTgtaU1MZnNHVk1oSXFyc2V5Z3czdENmbW1GRk11bi1hWmZoMmdNTEs0SkhDYW0zcFZRNFlOTm5qdFB2M3pVN1lMNmJlM1puMHRhTktYd0o0cERQUGNmc3lYQVIxSzlMZC1aRzNNZERiVnVnaWE4N2hHa1h3bUlQd0VTNGFLSXRzMHl0RXNoVFFCRmNYdW9vSFR2MkRJSUkxVU1CRnVvbHNJcDVzQ1pRQmRzSkFSRVJIU2ROTEhkc0hQZnEzNDNpdUZNb2pUUQ?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-16T23:39:48+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
+   "site": "UEFA.com",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "Nations League highlights: Lithuania 2-1 Liechtenstein",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONEQ1ZmhUMFlxc0tkWEpxX2VsOXhRTWZaNXFEVHYzUGs1ck9pVVlFTHJ2eGY3cmFubzh3Ykd5NlpYU2d3OGg3d3hmSE9peVVpSmxwaXNTM0NOa2I4SmhySExYTXFtZmNVQkN2MngtM3Z1eTVDNHhRZkt5ZlkyVmtsNmVnY1QxUFFFeWlxbTlEb25LcVpCT3Ntc2JaQzRrb3Z3R21ITDNPMHh3NGNNX3Q1MER4UmNMMVBGNEpJVkxHZGxSRkZFbElOeUtpb0lMYWV0UUJlTTlJWnh4Y2tjbEhvMg?oc=5",
+   "image": "",
+   "url": "https://www.uefa.com/uefanationsleague/video/highlights/02ab-22164b2b073b-920a98c9c47f-1000--nations-league-highlights-lithuania-2-1-liechtenstein/",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-16T23:39:48+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
   },
   {
    "site": "Sports Illustrated",
@@ -15445,23 +16553,6 @@
    "first_seen": "2026-11-16T23:00:31+00:00"
   },
   {
-   "site": "Bloomberg",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "בחירות האמצע"
-   ],
-   "title": "Maryland Governor Moore on Midterms, FAA and AI Oversight",
-   "summary": "Maryland Governor Wes Moore says that what's \"sorely missing\" from the conversation about Friday's nationwide aviation shutdown is the \"plan so this doesn't have to happen again,\" during an interview with Bloomberg's Kailey Leinz and Joe Mathieu. Moore also discusses the…",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-16/maryland-governor-moore-on-midterms-faa-and-ai-video",
-   "image": "",
-   "url": "",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-16T22:55:21+00:00",
-   "first_seen": "2026-11-16T23:30:25+00:00"
-  },
-  {
    "site": "Yahoo Sports",
    "category": "ספורט",
    "subcategory": "הפרמייר ליג",
@@ -15511,24 +16602,6 @@
    "itried": 0,
    "published": "2026-11-16T22:54:50+00:00",
    "first_seen": "2026-11-16T22:30:24+00:00"
-  },
-  {
-   "site": "New York Post",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הדמוקרטים (ארה\"ב)",
-    "הסנאט"
-   ],
-   "title": "Abdul El-Sayed claims Senate is full of closeted Van Hollen supporters waiting to oust Schumer",
-   "summary": "Sen.-elect Abdul El-Sayed claims Democrats listed as Chuck Schumer supporters privately back Chris Van Hollen ahead of the Dec. 1 leadership vote.",
-   "link": "https://nypost.com/2026/11/16/us-news/abdul-el-sayed-claims-senate-is-full-of-closeted-van-hollen-supporters-waiting-to-oust-schumer/",
-   "image": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2026%2F11%2F148992522.jpg?quality%3D90%26strip%3Dall",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T22:54:13+00:00",
-   "first_seen": "2026-11-16T23:00:31+00:00"
   },
   {
    "site": "Bloomberg",
@@ -15637,40 +16710,6 @@
    "first_seen": "2026-11-16T23:00:31+00:00"
   },
   {
-   "site": "The Hill",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הקונגרס"
-   ],
-   "title": "Cassidy says America wants 'something different' than RFK Jr.",
-   "summary": "Presented by Coalition to Strengthen Americas Healthcare {beacon} Healthcare Healthcare PRESENTED BY The Big Story Cassidy calls for RFK Jr. to be fired As his time in Congress comes to an end, Sen.",
-   "link": "https://thehill.com/newsletters/healthcare/6223759-cassidy-calls-rfk-jr-fired/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/09/AP26258627990538-e1789569693621.jpg?w=900",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T22:47:46+00:00",
-   "first_seen": "2026-11-16T23:00:31+00:00"
-  },
-  {
-   "site": "The Washington Post",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הדמוקרטים (ארה\"ב)"
-   ],
-   "title": "Longtime budget watchdog is retiring, handing Democrats a CBO opportunity",
-   "summary": "Phillip Swagel will leave his role in January as director of the nonpartisan Congressional Budget Office.",
-   "link": "https://www.washingtonpost.com/politics/2026/11/16/phillip-swagel-leave-director-congressional-budget-office/",
-   "image": "",
-   "url": "",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-16T22:47:38+00:00",
-   "first_seen": "2026-11-16T23:00:31+00:00"
-  },
-  {
    "site": "Yahoo Sports",
    "category": "ספורט",
    "subcategory": "נבחרות ישראל",
@@ -15725,24 +16764,6 @@
   {
    "site": "The New York Times",
    "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הבית הלבן",
-    "טראמפ"
-   ],
-   "title": "Bessent Takes Hawkish Turn in White House Debate on China",
-   "summary": "The Treasury secretary who sought to de-escalate tariff wars is taking a tougher approach to exports of sensitive U.S. technology.",
-   "link": "https://www.nytimes.com/2026/11/16/us/politics/bessent-lutnick-china.html",
-   "image": "https://static01.nyt.com/images/2026/11/16/multimedia/16dc-bessent-01-tfpz/16dc-bessent-01-tfpz-mediumSquareAt3X.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T22:46:09+00:00",
-   "first_seen": "2026-11-16T21:30:26+00:00"
-  },
-  {
-   "site": "The New York Times",
-   "category": "פוליטיקה",
    "subcategory": "המזרח התיכון והעולם",
    "keywords": [
     "סין"
@@ -15756,41 +16777,6 @@
    "itried": 0,
    "published": "2026-11-16T22:46:09+00:00",
    "first_seen": "2026-11-16T21:30:26+00:00"
-  },
-  {
-   "site": "New York Post",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הסנאט"
-   ],
-   "title": "NYS Senate Dems pick new deputy leader as they restock for ‘tax the rich’ effort",
-   "summary": "Bronx State Sen. Jose Serrano, will take over as second-in-command of the Senate, replacing outgoing Queens state Sen.",
-   "link": "https://nypost.com/2026/11/16/us-news/nys-senate-dems-pick-new-deputy-leader-as-they-restock-for-new-tax-the-rich-effort/",
-   "image": "https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2026%2F11%2F148990219.jpg?quality%3D90%26strip%3Dall",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T22:45:46+00:00",
-   "first_seen": "2026-11-16T23:00:31+00:00"
-  },
-  {
-   "site": "The Hill",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "הקונגרס",
-    "טראמפ"
-   ],
-   "title": "The Memo: Sean Duffy’s $50B FAA request gets cool reception from Congress",
-   "summary": "The reverberations from Friday’s massive air traffic ground stop are now being felt on Capitol Hill as the Trump administration pushes for an extra $50 billion in funding for the Federal Aviation Administration (FAA). The push is being spearheaded by Transportation Secretary…",
-   "link": "https://thehill.com/homenews/analysis/6223711-duffy-pushes-air-traffic-upgrades/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/11/AP26212574425730-e1794832531360.jpg?w=900",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T22:44:13+00:00",
-   "first_seen": "2026-11-16T23:00:31+00:00"
   },
   {
    "site": "Fox News",
@@ -17779,6 +18765,23 @@
    "itried": 0,
    "published": "2026-11-16T21:46:10+00:00",
    "first_seen": "2026-11-16T23:30:25+00:00"
+  },
+  {
+   "site": "AP",
+   "category": "פוליטיקה",
+   "subcategory": "אירופה",
+   "keywords": [
+    "האיחוד האירופי"
+   ],
+   "title": "UK leader Andy Burnham says Brexit hasn’t worked ahead of a reset summit with the EU",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZGVhQnh3ZDFYZ0JqbnFKazRlM2RDblBURFRPZ2VLZTJSeUY5RmpreVJ5Sk14Qk5wWDJsaWZ0N3JSVVJvV1pCOXV4YVoxUDM4UFpLY2t1RWYwVmhNUHJuTXdraDNWbDAtN0otbXZXakg2bE5SNHpFRnZKNkUwVFJlVFBHLVd1akIxb2w4YmJ0VXF4dm9FWUdlZmlQSHpVNmxETWJhYTRlRjA?oc=5",
+   "image": "",
+   "url": "https://apnews.com/article/andy-burnham-lord-mayor-banquet-speech-brexit-073f83b31ac8372ab7835e06a830261b",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-16T21:46:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
   },
   {
    "site": "הארץ",
@@ -21015,23 +22018,6 @@
    "first_seen": "2026-11-16T20:30:25+00:00"
   },
   {
-   "site": "BBC News",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "אוקראינה"
-   ],
-   "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
-   "summary": "The Ukrainian president says the slowed-down internet is making it difficult to stop Russian attacks.",
-   "link": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
-   "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9a51/live/78372760-e180-11f1-9386-1b849272ca8f.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T20:16:15+00:00",
-   "first_seen": "2026-11-16T20:30:25+00:00"
-  },
-  {
    "site": "ישראל היום",
    "category": "פוליטיקה",
    "subcategory": "כנסת וממשלה",
@@ -21176,24 +22162,6 @@
    "subcategory": "אירופה",
    "keywords": [
     "האיחוד האירופי"
-   ],
-   "title": "What will Europe do next in Ukraine?",
-   "summary": "There is division within the European Union over diplomatic strategy for efforts to end the Russia-Ukraine war.",
-   "link": "https://www.aljazeera.com/video/inside-story/2026/11/16/what-will-europe-do-next-in-ukraine?traffic_source=rss",
-   "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794858749.jpg?resize=1920%2C1080&quality=80",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T20:12:21+00:00",
-   "first_seen": "2026-11-16T20:30:25+00:00"
-  },
-  {
-   "site": "Al Jazeera English",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "אוקראינה",
-    "רוסיה"
    ],
    "title": "What will Europe do next in Ukraine?",
    "summary": "There is division within the European Union over diplomatic strategy for efforts to end the Russia-Ukraine war.",
@@ -21364,24 +22332,6 @@
    "first_seen": "2026-11-17T01:30:25+00:00"
   },
   {
-   "site": "The Hill",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "סין",
-    "רוסיה"
-   ],
-   "title": "Live updates: Trump en route to Asia; Nvidia scandal, national ground stop fallout loom large",
-   "summary": "President Trump is en route to Asia where he will meet with world leaders, including Chinese President Xi Jinping and Russian President Vladimir Putin, this week. He will first attend the ASEAN summit in the Philippines before heading to China for the Asia-Pacific Economic…",
-   "link": "https://thehill.com/policy/transportation/6221658-live-updates-duffy-faa-outage-nvidia-trump-democrats-senate-leadership-battle/",
-   "image": "https://thehill.com/wp-content/uploads/sites/2/2026/11/AP26320522515355-e1794839735698.jpg?w=900",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T20:10:58+00:00",
-   "first_seen": "2026-11-16T15:30:26+00:00"
-  },
-  {
    "site": "Bloomberg",
    "category": "כלכלה",
    "subcategory": "מאקרו ישראל",
@@ -21464,23 +22414,6 @@
    "gtried": 0,
    "itried": 0,
    "published": "2026-11-16T20:07:13+00:00",
-   "first_seen": "2026-11-16T20:30:25+00:00"
-  },
-  {
-   "site": "Washington Examiner",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "סין"
-   ],
-   "title": "Trump administration cracks down on China-Nvidia chips loophole",
-   "summary": "The Trump administration unveiled a new regulation on Monday to prevent companies from helping China circumvent restrictions on access to advanced Nvidia products, a loophole exposed by the recent controversy surrounding the American chips manufacturer. The Commerce…",
-   "link": "https://www.washingtonexaminer.com/news/white-house/4804944/trump-administration-cracks-down-on-china-nvidia-chips-loophole/",
-   "image": "https://www.washingtonexaminer.com/wp-content/uploads/2026/11/AP26317576159004.jpg?w=1024",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T20:04:55+00:00",
    "first_seen": "2026-11-16T20:30:25+00:00"
   },
   {
@@ -21912,24 +22845,6 @@
    "first_seen": "2026-11-16T21:00:30+00:00"
   },
   {
-   "site": "Ynet",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "סין",
-    "רוסיה"
-   ],
-   "title": "הקרמלין: פוטין עשוי להיפגש עם קים ג'ונג און בסין",
-   "summary": "",
-   "link": "https://www.ynet.co.il/news/article/hk1100rrurfx",
-   "image": "https://www.ynet.co.il/images/big_defual_image_1024_new.png",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T19:56:18+00:00",
-   "first_seen": "2026-11-16T20:00:40+00:00"
-  },
-  {
    "site": "בחדרי חרדים",
    "category": "פוליטיקה",
    "subcategory": "מדיניות חוץ וביטחון",
@@ -22084,23 +22999,6 @@
    "itried": 3,
    "published": "2026-11-16T19:49:06+00:00",
    "first_seen": "2026-11-16T21:30:26+00:00"
-  },
-  {
-   "site": "Newsweek",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "ירדן"
-   ],
-   "title": "Vikings Receive Unfortunate Update on Star WR Jordan Addison",
-   "summary": "The receiver had a \"freak\" injury happen in practice last week that now requires surgery.",
-   "link": "https://www.newsweek.com/sports/nfl/vikings-receive-unfortunate-update-on-star-wr-jordan-addison-12723107",
-   "image": "https://assets.newsweek.com/wp-content/uploads/2026/11/GettyImages-2303028632.jpg?w=1200&crop=1",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T19:48:42+00:00",
-   "first_seen": "2026-11-16T20:00:40+00:00"
   },
   {
    "site": "כאן",
@@ -22292,23 +23190,6 @@
    "first_seen": "2026-11-16T20:30:25+00:00"
   },
   {
-   "site": "Semafor",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "סין"
-   ],
-   "title": "Citigroup CEO Jane Fraser sees 'demand-side problem' for AI",
-   "summary": "Fraser discussed investors increasing selectivity around AI and the bank’s growing relationships in China.",
-   "link": "https://www.semafor.com/article/11/16/2026/citigroup-ceo-jane-fraser-sees-demand-side-problem-for-ai",
-   "image": "https://img.semafor.com/66a0bea454ce1dba3fcb2edc6f50c04164c36471-5000x3335.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T19:44:10+00:00",
-   "first_seen": "2026-11-16T20:00:40+00:00"
-  },
-  {
    "site": "The Independent",
    "category": "ספורט",
    "subcategory": "נבחרות ישראל",
@@ -22324,24 +23205,6 @@
    "itried": 0,
    "published": "2026-11-16T19:44:00+00:00",
    "first_seen": "2026-11-16T11:30:26+00:00"
-  },
-  {
-   "site": "The New York Times",
-   "category": "פוליטיקה",
-   "subcategory": "המזרח התיכון והעולם",
-   "keywords": [
-    "אוקראינה",
-    "רוסיה"
-   ],
-   "title": "Winter Nightmare Looms Early in Ukraine as Russia Strikes Relentlessly",
-   "summary": "Even as it talks peace, Russia has opened a bombing campaign intended to strip Kyiv and other cities of heat, running water and sanitation this winter.",
-   "link": "https://www.nytimes.com/2026/11/16/world/europe/russia-ukraine-winter-campaign.html",
-   "image": "https://static01.nyt.com/images/2026/11/16/multimedia/16int-ukraine-winter-01-cjfl/16int-ukraine-winter-01-cjfl-mediumSquareAt3X.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T19:43:54+00:00",
-   "first_seen": "2026-11-16T20:00:40+00:00"
   },
   {
    "site": "BBC Sport",
@@ -24117,23 +24980,6 @@
    "first_seen": "2026-11-16T19:30:27+00:00"
   },
   {
-   "site": "Yahoo Finance",
-   "category": "כלכלה",
-   "subcategory": "הייטק וסטארטאפים",
-   "keywords": [
-    "אנבידיה"
-   ],
-   "title": "Trump Backs Jensen Huang’s Return to Nvidia as Sam Altman Says 'Heroes Have Flaws'",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVkhvQmNjMTkwMWdSSTlTMV8zbXV3M3pfQ1dMUGpBU3QzUk52LXlwb0FGek8yZWxJeHhMaWRFdHJ0dU9ZVm1zSkJFR3hpRWxqRzh5RWl3MW5LY0dnUk4xZVBydTRpWFE3T3JodDVfNzBPTEo0TzkyV0dSZTIxU19hRUp1Z09yZGw1RGVlcWRtUkdHREljbnA4?oc=5",
-   "image": "https://s.yimg.com/lo/mysterio/api/c0433640ed79b91d3f92b39961c5b46afc907e494752afde622516b8f818cf4a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fdecrypt_157%2Fc257ec220007eebd83ae13e67ad63b7a.png",
-   "url": "https://finance.yahoo.com/technology/articles/trump-backs-jensen-huang-return-190502062.html",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T19:05:02+00:00",
-   "first_seen": "2026-11-17T01:00:30+00:00"
-  },
-  {
    "site": "כיפה",
    "category": "פוליטיקה",
    "subcategory": "פוליטיקאים",
@@ -24170,24 +25016,6 @@
   {
    "site": "Bloomberg",
    "category": "כלכלה",
-   "subcategory": "הייטק וסטארטאפים",
-   "keywords": [
-    "אנבידיה",
-    "סטארטאפ"
-   ],
-   "title": "Tusk: Jensen Huang Should Not Return as Nvidia CEO",
-   "summary": "Tusk Ventures co-founder Bradley Tusk says Congress should examine the relationships between Nvidia’s former leadership and the Trump administration as questions remain over China, chip exports and national security. He discusses why he believes Jensen Huang should not return…",
-   "link": "https://www.bloomberg.com/news/videos/2026-11-16/tusk-jensen-huang-should-not-return-as-nvidia-ceo-video",
-   "image": "",
-   "url": "",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-16T19:04:31+00:00",
-   "first_seen": "2026-11-16T19:30:27+00:00"
-  },
-  {
-   "site": "Bloomberg",
-   "category": "כלכלה",
    "subcategory": "סחר ומכסים",
    "keywords": [
     "יצוא"
@@ -24201,23 +25029,6 @@
    "itried": 3,
    "published": "2026-11-16T19:04:31+00:00",
    "first_seen": "2026-11-16T19:30:27+00:00"
-  },
-  {
-   "site": "Yahoo Finance",
-   "category": "כלכלה",
-   "subcategory": "הייטק וסטארטאפים",
-   "keywords": [
-    "אנבידיה"
-   ],
-   "title": "Prediction: Here’s What Nvidia Stock Will Do After Its Projected $108 Billion Quarter Results Are Announced on Nov. 17",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSmZFaVpLdm5EaEhuOFBNR2FrRXlHZTZpbGpuRzQ1b2pXbFRwa2diMm5oODF2QVRPZGk1VnNXTTJreUxocnRnSVRMdVVIQ2NkNlFpRkt6d1ZpMVJiR3NlYi1EMWhmTDQ2WWp4ay02elRiSkZ6SDRJWVVtejduaHpjOUEwZGs2TURSb056SWc3NWFNbTlWb3ZSN0FFOWdNTlh6TlI1cA?oc=5",
-   "image": "https://s.yimg.com/lo/mysterio/api/a962dae81af5ebef9d9cf6ec44ae87ec9407447a357be80d6e97f7943d1a8ecc/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmotleyfool.com%2F841d4d5c6baff4d45a931fdaec3d441d.jpg",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidia-stock-projected-108-190402826.html",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T19:04:02+00:00",
-   "first_seen": "2026-11-16T21:00:30+00:00"
   },
   {
    "site": "Washington Examiner",
@@ -24374,23 +25185,6 @@
    "itried": 0,
    "published": "2026-11-16T19:03:36+00:00",
    "first_seen": "2026-11-16T19:30:27+00:00"
-  },
-  {
-   "site": "Yahoo Finance",
-   "category": "כלכלה",
-   "subcategory": "הייטק וסטארטאפים",
-   "keywords": [
-    "אנבידיה"
-   ],
-   "title": "Nvidia faces extraordinary push to restore Huang days after his exit",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMzBudUt0cnZYaGUtTjQwdmxOUDlrNHhxcEtSYnQxVmlwNTZxY0VGVjVfWHZMbkxlN2otb1NzczRSMkoyVFRyM2pPUTYtZTBacGlaUnNGbzFtWUJQaVMwRngwLXhqOGZESjktLWo5Q1Q0X1lvMHZlLVkyYXdKN2dSWFlPNW9ERzNKWElZak5mS2xCanFUZXZ6eQ?oc=5",
-   "image": "",
-   "url": "",
-   "gtried": 3,
-   "itried": 0,
-   "published": "2026-11-16T19:03:11+00:00",
-   "first_seen": "2026-11-16T22:30:24+00:00"
   },
   {
    "site": "CBS Sports",
@@ -26892,24 +27686,6 @@
    "first_seen": "2026-11-16T17:00:34+00:00"
   },
   {
-   "site": "זמן ישראל",
-   "category": "פוליטיקה",
-   "subcategory": "מדיניות חוץ וביטחון",
-   "keywords": [
-    "איראן",
-    "עזה"
-   ],
-   "title": "איתי לנדסברג נבו: לא איראן, לא חמאס – הקיצונים היהודים הם הסכנה",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5ILWxINTRGaEltTHNIWjdSV3NpRll0bGc3WHpscGhsSU9idDlGSG15ZHQwQkFhQ1kyV2NjX2hvZHlFaUMy?oc=5",
-   "image": "",
-   "url": "https://www.zman.co.il/741908/",
-   "gtried": 1,
-   "itried": 3,
-   "published": "2026-11-16T17:58:37+00:00",
-   "first_seen": "2026-11-17T02:00:31+00:00"
-  },
-  {
    "site": "Yahoo Finance",
    "category": "כלכלה",
    "subcategory": "מטבעות וסחורות",
@@ -27084,23 +27860,6 @@
    "first_seen": "2026-11-16T18:30:26+00:00"
   },
   {
-   "site": "כיכר השבת",
-   "category": "פוליטיקה",
-   "subcategory": "מדיניות חוץ וביטחון",
-   "keywords": [
-    "עזה"
-   ],
-   "title": "חמישה מחבלי חמאס חוסלו: אחד מהם פשט לישראל ב-7 באוקטובר | תיעוד",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQWlEamxLU09GNGd2Z05LVHpxSDRWMk5rNk02bHpQblFLTnBQYUNCTm1pZEE4N0pWZEF5N3RtUGQzbzRoSV9NWnFTMEowMHZoMG9vY1NPbnNLNVpLZndoVjd0UVVnVG9KREtoNlBreUpnOWlRT3FmTmp3RnJjU0FGU1dGUUE3bm9uUDBnUWxrZmdpZw?oc=5",
-   "image": "https://i.kikar.co.il/2026/11/16/b1dc2b80-e1e6-11f1-a761-818aba60818f__h900_w1600.jpg?width=1200&height=630&quality=80&format=jpeg&aspect_ratio=1200%3A630",
-   "url": "https://www.kikar.co.il/security-news/idf-eliminates-five-hamas-terrorists-jabaliya-octo",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T17:54:56+00:00",
-   "first_seen": "2026-11-16T22:30:24+00:00"
-  },
-  {
    "site": "בחדרי חרדים",
    "category": "פוליטיקה",
    "subcategory": "פוליטיקאים",
@@ -27222,23 +27981,6 @@
    "itried": 0,
    "published": "2026-11-16T17:50:00+00:00",
    "first_seen": "2026-11-16T18:30:26+00:00"
-  },
-  {
-   "site": "ערוץ 7",
-   "category": "פוליטיקה",
-   "subcategory": "מדיניות חוץ וביטחון",
-   "keywords": [
-    "עזה"
-   ],
-   "title": "צה\"ל חיסל חמישה מחבלי חמאס בעזה, אחד מהם השתתף בטבח ב-7 באוקטובר",
-   "summary": "<p>צה\"ל הודיע כי חיסל בחמישי ובשבת חמישה מחבלי חמאס ברצועת עזה, בהם מפקד מחלקה שהשתתף בטבח 7 באוקטובר וראש חוליית נוח'בה. </p><p>לדברי צה\"ל, המחבלים פעלו לקידום פיגועים ולשיקום יכולות חמאס תוך הפרת הפסקת האש.</p>",
-   "link": "https://www.inn.co.il/flashes/1141193",
-   "image": "https://www.inn.co.il/files/pictures/0/0.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T17:49:00+00:00",
-   "first_seen": "2026-11-16T18:00:32+00:00"
   },
   {
    "site": "Ynet",
@@ -27585,23 +28327,6 @@
    "first_seen": "2026-11-16T18:00:32+00:00"
   },
   {
-   "site": "JDN",
-   "category": "פוליטיקה",
-   "subcategory": "מדיניות חוץ וביטחון",
-   "keywords": [
-    "איראן"
-   ],
-   "title": "דיווח ב'ניו יורק טיימס': מדוע איראן מקימה סכרים ומפלי מים מרוחקים?",
-   "summary": "משטר האייתוללות מפנה משאבים כלכליים והנדסיים אדירים להקמת תשתיות מים ואנרגיה באזורים מבודדים. במטרה לייצר מקורות חשמל עבור מתקני הטילים התת-קרקעיים הפוסט דיווח ב'ניו יורק טיימס': מדוע איראן מקימה סכרים ומפלי מים מרוחקים?",
-   "link": "https://www.jdn.co.il/news/2766758/",
-   "image": "https://www.jdn.co.il/wp-content/uploads/2025/10/צילום-מסך-2025-10-05-150714.png",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T17:44:03+00:00",
-   "first_seen": "2026-11-16T18:00:32+00:00"
-  },
-  {
    "site": "וואלה",
    "category": "ספורט",
    "subcategory": "ליגת ווינר בכדורגל",
@@ -27739,23 +28464,6 @@
    "first_seen": "2026-11-16T18:00:32+00:00"
   },
   {
-   "site": "The Economist",
-   "category": "פוליטיקה",
-   "subcategory": "מדיניות חוץ וביטחון",
-   "keywords": [
-    "איראן"
-   ],
-   "title": "The War Room newsletter: Will America or Iran blink first?",
-   "summary": "Alex Turner, our defence editor, on why neither side can end the stalemate",
-   "link": "https://www.economist.com/international/2026/11/16/the-war-room-newsletter-will-america-or-iran-blink-first",
-   "image": "",
-   "url": "",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-16T17:38:50+00:00",
-   "first_seen": "2026-11-16T18:30:26+00:00"
-  },
-  {
    "site": "UEFA.com",
    "category": "ספורט",
    "subcategory": "נבחרות ישראל",
@@ -27768,26 +28476,9 @@
    "image": "",
    "url": "https://www.uefa.com/uefanationsleague/teams/players/250174960--vladimir-lucic/",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-16T17:38:41+00:00",
    "first_seen": "2026-11-17T06:00:29+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות"
-   ],
-   "title": "Mauricio Pochettino Leaves the USMNT with an Incomplete Grade",
-   "summary": "Mauricio Pochettino will officially leave his position as head coach of the United States men’s national team after the CONCACAF Nations League quarterfinal matches against Haiti. The Argentine will...",
-   "link": "https://sports.yahoo.com/articles/mauricio-pochettino-leaves-usmnt-incomplete-173800768.html",
-   "image": "https://media.zenfs.com/en/urban_pitch_articles_135/cfcfaf1cf10686b138569007db9d030b.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T17:38:00+00:00",
-   "first_seen": "2026-11-16T18:00:32+00:00"
   },
   {
    "site": "מעריב",
@@ -27857,23 +28548,6 @@
    "gtried": 0,
    "itried": 3,
    "published": "2026-11-16T17:37:00+00:00",
-   "first_seen": "2026-11-16T18:00:32+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות"
-   ],
-   "title": "Concacaf Nations League USMNT vs. Haiti – second leg preview",
-   "summary": "Leg two sees the USA and possibly the kids with a huge advantage",
-   "link": "https://sports.yahoo.com/articles/concacaf-nations-league-usmnt-vs-173633851.html",
-   "image": "https://media.zenfs.com/en/sb_nation_articles_115/9abb0f8bb4a4ae0a7c4c7bca9b5fba5d.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T17:36:33+00:00",
    "first_seen": "2026-11-16T18:00:32+00:00"
   },
   {
@@ -27996,25 +28670,6 @@
    "itried": 3,
    "published": "2026-11-16T17:32:46+00:00",
    "first_seen": "2026-11-16T10:50:32+00:00"
-  },
-  {
-   "site": "Ynet",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות",
-    "מנור סולומון",
-    "תוצאות"
-   ],
-   "title": "רן בן שמעון: \"אני לא מכיר שחקן אחד שוויתר על זימון\"",
-   "summary": "מאמן נבחרת ישראל התייחס לשחקנים שלא התייצבו לקראת נעילת ליגת האומות מול אוסטריה (מחר, 21:45), העריך שמנור סולומון יעמוד לרשותו והודה שהמילה \"מדהים\" הייתה מיותרת כשסיכם את משחק ההגנה מול קוסובו. דור פרץ הוסיף: \"מי שלא פה לא רלוונטי\"",
-   "link": "https://www.ynet.co.il/sport/israelisoccer/article/hyyr4korfg",
-   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/10/04/BkGVxQljGe/BkGVxQljGe_0_125_3000_1689_0_medium.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T17:30:26+00:00",
-   "first_seen": "2026-11-16T17:22:18+00:00"
   },
   {
    "site": "Ynet",
@@ -28825,23 +29480,6 @@
    "first_seen": "2026-11-16T18:00:32+00:00"
   },
   {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות"
-   ],
-   "title": "Is Germany v Netherlands on TV? How to watch Nations League group decider",
-   "summary": "Top spot in Nations League Group A2 is still up for grabs as Germany and Netherlands meet in Berlin",
-   "link": "https://sports.yahoo.com/articles/germany-v-netherlands-tv-watch-171219886.html",
-   "image": "https://media.zenfs.com/en/the_independent_us_sports_articles_270/3af011d24faa93b2bdba348e63307fb1.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T17:12:19+00:00",
-   "first_seen": "2026-11-16T17:22:18+00:00"
-  },
-  {
    "site": "Financial Times",
    "category": "פוליטיקה",
    "subcategory": "אירופה",
@@ -29084,7 +29722,7 @@
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSmMwN3BWOWxBb0hNZHJrSkZTb0IxWWJPTl8wWFFaWlpVU1dMLUJMb0VVenBoZ29SdGFCa09OekxWZU1McnpQMHJSUDZWU2pkd0MyLUFweGc5WFpEeXZQaE1UX05MT0VXYlBxN1lsZUhtdUZpa0ZPTVZQMmVJSV9tNF9VczZJZThiTVl3RnRMV0NLUGhuaVpGb1dEbm1rNWFLM0MwZEEwLV9NYVR1Y203MHZpYTBFVzNfSnFvVnltYldqbTF3T0tWMm11OEw?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-16T17:07:02+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -31487,6 +32125,23 @@
    "first_seen": "2026-11-16T16:00:32+00:00"
   },
   {
+   "site": "ספורט 5",
+   "category": "ספורט",
+   "subcategory": "ליגת האלופות",
+   "keywords": [
+    "ליגת האלופות"
+   ],
+   "title": "המהפכה הצפויה בליגת האלופות בעונה הבאה",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9waWVLOXZVYXhlYzNCeVhOWl9YOEpoa1JjNHJRalhTQU4talZyODQ2RUZKcWxwYVZ5YjNTN2lCZFRISG5sdWJqR25aNGVQZ2FHTnVZV0NFdGFTMWQwd1pKeHhtSjdydTFvSUZzZzFTV2hRUQ?oc=5",
+   "image": "https://www.sport5.co.il/Sip_Storage/FILES/2/size944x700/1806192.jpg",
+   "url": "https://www.sport5.co.il/articles.aspx?FolderID=398&docID=567851",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-16T15:35:49+00:00",
+   "first_seen": "2026-11-16T16:00:32+00:00"
+  },
+  {
    "site": "ספורט 1",
    "category": "ספורט",
    "subcategory": "ליגת האלופות",
@@ -31555,23 +32210,6 @@
    "first_seen": "2026-11-16T19:00:33+00:00"
   },
   {
-   "site": "ספורט 5",
-   "category": "ספורט",
-   "subcategory": "ליגת האלופות",
-   "keywords": [
-    "ליגת האלופות"
-   ],
-   "title": "המהפכה הצפויה בליגת האלופות בעונה הבאה",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9waWVLOXZVYXhlYzNCeVhOWl9YOEpoa1JjNHJRalhTQU4talZyODQ2RUZKcWxwYVZ5YjNTN2lCZFRISG5sdWJqR25aNGVQZ2FHTnVZV0NFdGFTMWQwd1pKeHhtSjdydTFvSUZzZzFTV2hRUQ?oc=5",
-   "image": "https://www.sport5.co.il/Sip_Storage/FILES/2/size944x700/1806192.jpg",
-   "url": "https://www.sport5.co.il/articles.aspx?FolderID=398&docID=567851",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T15:34:00+00:00",
-   "first_seen": "2026-11-16T16:00:32+00:00"
-  },
-  {
    "site": "UEFA.com",
    "category": "ספורט",
    "subcategory": "ליגת האלופות",
@@ -31622,41 +32260,6 @@
    "itried": 0,
    "published": "2026-11-16T15:32:33+00:00",
    "first_seen": "2026-11-16T17:00:34+00:00"
-  },
-  {
-   "site": "כיכר השבת",
-   "category": "פוליטיקה",
-   "subcategory": "פוליטיקאים",
-   "keywords": [
-    "ליברמן",
-    "נתניהו"
-   ],
-   "title": "אחרי הפליק-פלאק של ליברמן: הודעת \"האחדות\" של נתניהו והאיתות הברור למפלגות החרדיות",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdHdpSUtZdzVoS0tfeGxiWFgtcXNpTDdVNjYxaGY3T1RMZzhOankyWW9HYnBvcDJuMUw1Z09KbllLXy00Ymh0SFdUWWRUMnFuSzhVd0RkazZqeDBaZldTRnFhRUtucXQ3Zm9jYjBpMy04dlFycnU5OHJMR3ozNGRNa1pPckJ2bnBlSkNn?oc=5",
-   "image": "https://i.kikar.co.il/2026/11/16/d6caf170-e19f-11f1-a761-818aba60818f__h900_w1600.jpg?width=1200&height=630&quality=80&format=jpeg&aspect_ratio=1200%3A630",
-   "url": "https://www.kikar.co.il/political-news/netanyahu-promises-haredi-partners-draft-law",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T15:29:55+00:00",
-   "first_seen": "2026-11-16T22:30:24+00:00"
-  },
-  {
-   "site": "The Jerusalem Post",
-   "category": "פוליטיקה",
-   "subcategory": "פוליטיקאים",
-   "keywords": [
-    "נתניהו"
-   ],
-   "title": "Prosecution petitions High Court over limits on Mandelblit questioning in Netanyahu trial",
-   "summary": "Prosecutors petitioned the High Court over limits on questioning former attorney-general Avichai Mandelblit in Netanyahu's criminal trial.",
-   "link": "https://www.jpost.com/israel-news/crime-in-israel/article-915063",
-   "image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/744798",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T15:29:00+00:00",
-   "first_seen": "2026-11-16T13:30:27+00:00"
   },
   {
    "site": "The Jerusalem Post",
@@ -31744,23 +32347,6 @@
    "itried": 0,
    "published": "2026-11-16T15:26:36+00:00",
    "first_seen": "2026-11-16T16:00:32+00:00"
-  },
-  {
-   "site": "ערוץ 7",
-   "category": "פוליטיקה",
-   "subcategory": "פוליטיקאים",
-   "keywords": [
-    "שרי הממשלה"
-   ],
-   "title": "לוין לבג\"ץ: לדחות את עתירת לשכת עורכי הדין נגד הפחתת דמי החבר",
-   "summary": "<p>שר המשפטים יריב לוין ביקש מבג\"ץ לדחות את עתירת לשכת עורכי הדין נגד התיקון לחוק המסדיר את גביית דמי החבר והשימוש בהם. בתצהיר שהגיש, באמצעות עורך הדין אילן בומבך, טען כי התיקון נועד להבטיח אחריות תקציבית ומנהל תקין ולמנוע מימון פעילות פוליטית מכספי דמי החבר.</p><p>התיקון…",
-   "link": "https://www.inn.co.il/flashes/1141172",
-   "image": "https://www.inn.co.il/files/pictures/0/0.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T15:25:00+00:00",
-   "first_seen": "2026-11-16T15:30:26+00:00"
   },
   {
    "site": "ערוץ 7",
@@ -32067,41 +32653,6 @@
    "gtried": 0,
    "itried": 3,
    "published": "2026-11-16T15:16:21+00:00",
-   "first_seen": "2026-11-16T15:30:26+00:00"
-  },
-  {
-   "site": "מקור ראשון",
-   "category": "פוליטיקה",
-   "subcategory": "פוליטיקאים",
-   "keywords": [
-    "מנסור עבאס"
-   ],
-   "title": "מנסור עבאס: “לשכת ראש הממשלה ניסתה לשבש את הבחירות”",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kVVplWWVFRV9walluSmdYOUFmNHlkNHdQeTNvN3lucWg5RS02UEUwS2c0U2RZZ2FLYTV1YjIxVU01ZGkzN0N1SmtrVDZRZzRIdEoxUE9zYVhWQ1I3N3Bvc2xfT0laTV9uekE?oc=5",
-   "image": "",
-   "url": "https://www.makorrishon.co.il/news/politcal/article/393519",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-16T15:16:21+00:00",
-   "first_seen": "2026-11-16T15:30:26+00:00"
-  },
-  {
-   "site": "כיכר השבת",
-   "category": "פוליטיקה",
-   "subcategory": "פוליטיקאים",
-   "keywords": [
-    "איזנקוט",
-    "נתניהו"
-   ],
-   "title": "נתניהו זועם על איזנקוט: 'אם ההסתה לא תיפסק - אין טעם למשא ומתן'",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMS1ndkFjV3pCUWNPMTRGX3REYmp6OTF4ZXVlUHBuOTR1aFVHT3lyM2JjNlJ4RXlpLVB5eFRUYzlCd0VjMmEySjhieVhLejhKYlBKcEZCblZZSVd6dDZmY1A5UHVVMUZLTVEyOHFyM3pVVmk5NGlJVE9zTFE5Nm1xU3BhYlNJcU51dmE4?oc=5",
-   "image": "https://i.kikar.co.il/2026/11/12/22463380-debc-11f1-a761-818aba60818f__h900_w1600.jpg?width=1200&height=630&quality=80&format=jpeg&aspect_ratio=1200%3A630",
-   "url": "https://www.kikar.co.il/political-news/netanyahu-threatens-eisenkot-coalition-talks",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T15:15:48+00:00",
    "first_seen": "2026-11-16T15:30:26+00:00"
   },
   {
@@ -33170,9 +33721,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORTItd1I3bVphcjIyYlhWd0JncVZKdzNaQVV3WUFyYy10djB1TFZ5eFBpM3pYVmswRzlhbjh4TlVXT056bmdKX0JSWk84RnJYc2RlV3VBM19PZHpRN0NYOF9iMmdRdE9kYTR6OHNoUmk0NEdaYjJsMzA5ZWY1MG1Ockg1bkJOZ29IMjZMNHBQRW9yZGkzdVNfYnN6cUp4UWJzSWFta2xtSUoyR0lpVTRoM2NueVFqQmJpeS01YkxSbi0xYmN3V1pzNkVlTGRXT1A2Q2c?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://www.timesofisrael.com/liveblog_entry/raams-abbas-joins-joint-list-in-seeking-election-probe-says-netanyahu-endangered-democracy/",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-16T14:30:06+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
   },
@@ -33365,6 +33916,23 @@
    "itried": 3,
    "published": "2026-11-16T14:20:00+00:00",
    "first_seen": "2026-11-16T14:30:34+00:00"
+  },
+  {
+   "site": "ספורט 5",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורגל",
+   "keywords": [
+    "מכבי תל אביב"
+   ],
+   "title": "לפני מכבי ת\"א: ג'ון קונצ'אר שוחרר מאולימפיאקוס",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE52UzBDZXlPNHRGZHNYTWt0UGFoc25ua0Rzc2haVDdFcW5lZFVUZl9jMHkxeTFFWTJXVS01ZlZpZ1RvaG5neEh3Z2ZYamFzVURoLXVqbTdiV3dORl9KU19ZR2dTTWtMODVDN3V0QV94Q3N3Zw?oc=5",
+   "image": "https://www.sport5.co.il/Sip_Storage/FILES/4/size944x700/1806154.jpg",
+   "url": "https://www.sport5.co.il/articles.aspx?FolderID=405&docID=567835",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-16T14:20:00+00:00",
+   "first_seen": "2026-11-16T14:00:34+00:00"
   },
   {
    "site": "Investing.com",
@@ -33754,7 +34322,7 @@
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUDFJYzRsWlVyenlYWVpFSEw1SlZpeEZzZnhUWmJ1cURVeGlpUzN6ZTl2MDBwMGJWOXZPbnBNUzAzd2pMUVhFOURPTHR3TDFBX01TU25MTGlUdW90U0tpQnE1YnFSQ2ZZZ2NpQkEwMmZDX3FEWXJjQWJWYmVUdnR3REhEcmx3bmhGdU5KZHpra0VNbGxjZGVIQklsTWNxVWdH?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-16T14:08:53+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -33771,7 +34339,7 @@
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUDFJYzRsWlVyenlYWVpFSEw1SlZpeEZzZnhUWmJ1cURVeGlpUzN6ZTl2MDBwMGJWOXZPbnBNUzAzd2pMUVhFOURPTHR3TDFBX01TU25MTGlUdW90U0tpQnE1YnFSQ2ZZZ2NpQkEwMmZDX3FEWXJjQWJWYmVUdnR3REhEcmx3bmhGdU5KZHpra0VNbGxjZGVIQklsTWNxVWdH?oc=5",
    "image": "",
    "url": "",
-   "gtried": 1,
+   "gtried": 2,
    "itried": 0,
    "published": "2026-11-16T14:08:53+00:00",
    "first_seen": "2026-11-17T06:30:24+00:00"
@@ -35777,23 +36345,6 @@
    "first_seen": "2026-11-16T13:30:27+00:00"
   },
   {
-   "site": "The Independent",
-   "category": "ספורט",
-   "subcategory": "ליגת האלופות",
-   "keywords": [
-    "ליגת האלופות"
-   ],
-   "title": "Nike to replace Adidas as Champions League and Uefa ball supplier from 2027",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUUVlUjg4VHQwWmY3dkNOTlRrZWxBbWZzLS1mZUFOM1cwUXItQUlPNG9EM1FmNXJhdVduRzAtMFAtMnFTaEJmQl9VcjZpWnQxVVZYbUJBOVFhcXhFVF8tdjNBQzFuWmVkSHNFR3RpSGFkbl9MX3Z5dmRCSU9BYWsySnJJVFMyTmRmMzh1RDk1dkNXRTB5SEpwYTFRMTZ1MUpj?oc=5",
-   "image": "https://static.independent.co.uk/2026/11/16/13/649466758..?trim=0,35,0,35&width=1200&height=800&crop=1200:800",
-   "url": "https://www.independent.co.uk/sport/football/nike-adidas-uefa-match-ball-competitions-b3085681.html",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T13:12:00+00:00",
-   "first_seen": "2026-11-16T13:30:27+00:00"
-  },
-  {
    "site": "Bloomberg",
    "category": "כלכלה",
    "subcategory": "תקציב ומיסים",
@@ -35878,24 +36429,6 @@
    "itried": 0,
    "published": "2026-11-16T13:10:43+00:00",
    "first_seen": "2026-11-16T14:00:34+00:00"
-  },
-  {
-   "site": "FourFourTwo",
-   "category": "ספורט",
-   "subcategory": "ליגת האלופות",
-   "keywords": [
-    "העברות וחוזים",
-    "ריאל מדריד"
-   ],
-   "title": "Gareth Bale eyeing Sevilla takeover: report",
-   "summary": "Former Tottenham and Real Madrid man Gareth Bale could be involved in a new bid to take over Sevilla - which Los Blancos fans will surely be very normal about",
-   "link": "https://www.fourfourtwo.com/transfer/gareth-bale-eyeing-sevilla-takeover-report",
-   "image": "https://cdn.mos.cms.futurecdn.net/HBoeR6j88DEgChEWZD8C8D-1920-80.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T13:10:01+00:00",
-   "first_seen": "2026-11-16T13:30:27+00:00"
   },
   {
    "site": "FourFourTwo",
@@ -36447,23 +36980,6 @@
    "first_seen": "2026-11-16T17:00:34+00:00"
   },
   {
-   "site": "ספורט 5",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורגל",
-   "keywords": [
-    "מכבי תל אביב"
-   ],
-   "title": "שני השחקנים שנותרו מחוץ לסגל אולימפאקוס למכבי ת\"א",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE52UzBDZXlPNHRGZHNYTWt0UGFoc25ua0Rzc2haVDdFcW5lZFVUZl9jMHkxeTFFWTJXVS01ZlZpZ1RvaG5neEh3Z2ZYamFzVURoLXVqbTdiV3dORl9KU19ZR2dTTWtMODVDN3V0QV94Q3N3Zw?oc=5",
-   "image": "https://www.sport5.co.il/Sip_Storage/FILES/4/size944x700/1806154.jpg",
-   "url": "https://www.sport5.co.il/articles.aspx?FolderID=405&docID=567835",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T12:43:16+00:00",
-   "first_seen": "2026-11-16T14:00:34+00:00"
-  },
-  {
    "site": "ביזפורטל",
    "category": "כלכלה",
    "subcategory": "וול סטריט ושווקים",
@@ -36986,6 +37502,24 @@
    "first_seen": "2026-11-16T23:30:25+00:00"
   },
   {
+   "site": "BasketNews",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "העברות וחוזים",
+    "יורוליג"
+   ],
+   "title": "Would You Give These EuroLeague Stars Another Contract? / Video",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbW82Q1VXVzRQczFhSVM1cUk5YkxUazllUjVmTzgyWnE2cGdsaUlGeExSbjM3MmlpUDZZNEp6Q3A4VElLeDl3clZqbGU4aFFaNUR0SXRqbHA1U1RibW94VFFyN3VaOTZwX2RIeW9FM3R2am1Ed1BWNGhKZ211YTRnelpzLTBHMlh5NzRZOS1FdjdfZlRuV0V0SjJFZGladE9nV095V1NXNlc?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-16T12:28:00+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
+  },
+  {
    "site": "ONE",
    "category": "ספורט",
    "subcategory": "ליגת ווינר בכדורגל",
@@ -37190,6 +37724,23 @@
    "itried": 0,
    "published": "2026-11-16T12:20:50+00:00",
    "first_seen": "2026-11-16T13:00:32+00:00"
+  },
+  {
+   "site": "ספורט 5",
+   "category": "ספורט",
+   "subcategory": "ליגת ווינר בכדורגל",
+   "keywords": [
+    "הפועל תל אביב"
+   ],
+   "title": "4 שחקני הנוער שהצטרפו למחנה של הפועל ת\"א",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE05bnJPdUZTZTV2b0xnMjF4ZU1yQnV6bFZ3anRyMF9USlJHN3Y5R1g2bjNINW5QWEgtSGJ5bVRVQUpWOWVlZGxFY3BoS0twbGZMVzQ0cnZtbm5XNzhKMHUyZ056dVpWLWY2ekVrNTNIVU4?oc=5",
+   "image": "",
+   "url": "",
+   "gtried": 1,
+   "itried": 0,
+   "published": "2026-11-16T12:20:50+00:00",
+   "first_seen": "2026-11-17T07:00:29+00:00"
   },
   {
    "site": "N12",
@@ -39690,23 +40241,6 @@
    "first_seen": "2026-11-16T11:00:36+00:00"
   },
   {
-   "site": "Euronews",
-   "category": "פוליטיקה",
-   "subcategory": "אירופה",
-   "keywords": [
-    "האיחוד האירופי"
-   ],
-   "title": "EU clears UniCredit takeover of Germany's Commerzbank",
-   "summary": "The EU has approved UniCredit’s takeover of Germany’s Commerzbank, a cross-border deal aimed at strengthening Europe’s banking sector.",
-   "link": "https://www.euronews.com/2026/11/16/eu-clears-unicredit-takeover-of-germanys-commerzbank",
-   "image": "https://images.euronews.com/articles/stories/09/91/35/79/1200x675_cmsv2_01fb76f5-d4bd-5e3d-a993-4613397e114e-9913579.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T10:50:53+00:00",
-   "first_seen": "2026-11-16T11:00:36+00:00"
-  },
-  {
    "site": "Yahoo Sports",
    "category": "ספורט",
    "subcategory": "לה ליגה",
@@ -41294,23 +41828,6 @@
    "first_seen": "2026-11-16T08:00:31+00:00"
   },
   {
-   "site": "The Jerusalem Post",
-   "category": "פוליטיקה",
-   "subcategory": "מפלגות",
-   "keywords": [
-    "עוצמה יהודית"
-   ],
-   "title": "Far-right MKs back new Jericho settlement in an effort to repeal Oslo Accords",
-   "summary": "The families' move into the area marks another step in the campaign led by Otzma Yehudit lawmakers to repeal the Oslo Accords.",
-   "link": "https://www.jpost.com/israel-news/article-915016",
-   "image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/746471",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T09:32:26+00:00",
-   "first_seen": "2026-11-16T08:00:31+00:00"
-  },
-  {
    "site": "כלכליסט",
    "category": "כלכלה",
    "subcategory": "בנקים וביטוח",
@@ -41447,23 +41964,6 @@
    "first_seen": "2026-11-16T10:00:33+00:00"
   },
   {
-   "site": "Ynet",
-   "category": "פוליטיקה",
-   "subcategory": "מפלגות",
-   "keywords": [
-    "הליכוד"
-   ],
-   "title": "\"המקור המודיעיני\" שחובר ללשכת המפכ\"ל נחשף; דני לוי: \"הנחיתי לבדוק את הטענות נגד המשטרה\"",
-   "summary": "סגן המפכ\"ל ינהל את הבדיקה הפנימית על שרשרת הדיווח שהובילה למעצר פעילי רע\"מ ב-27 באוקטובר: \"המסקנות - תוך שבוע\". ראש הסגל הודה בהעברת המידע, ה\"מקור\" שחיבר למשטרה - דניאל גרינברג, יועץ לשעבר שעבד במשרד רה\"מ ובמטה הליכוד.",
-   "link": "https://www.ynet.co.il/news/article/hkde0vocfe",
-   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/10/27/H1YGbxR3fx/H1YGbxR3fx_1_42_1280_721_0_medium.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T09:25:41+00:00",
-   "first_seen": "2026-11-16T10:50:32+00:00"
-  },
-  {
    "site": "EuroLeague",
    "category": "ספורט",
    "subcategory": "יורוקאפ",
@@ -41512,23 +42012,6 @@
    "gtried": 0,
    "itried": 3,
    "published": "2026-11-16T09:23:32+00:00",
-   "first_seen": "2026-11-16T10:00:33+00:00"
-  },
-  {
-   "site": "כיפה",
-   "category": "פוליטיקה",
-   "subcategory": "מפלגות",
-   "keywords": [
-    "יהדות התורה"
-   ],
-   "title": "נתניהו מתחייב: \"בכל ממשלה שתקום - נלך יחד עם החרדים\"",
-   "summary": "ראש הממשלה קורא להקמת ממשלת אחדות ומבהיר כי לא ייפרד משותפיו החרדים. ברקע: המגעים בין יהדות התורה לגוש השינוי, וההתנגדות הנחרצת של דרעי למהלך",
-   "link": "https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1236451-0/",
-   "image": "https://www.kipa.co.il/userFiles/post_u344799_6afacc020194c_1794821122.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T09:23:00+00:00",
    "first_seen": "2026-11-16T10:00:33+00:00"
   },
   {
@@ -41928,23 +42411,6 @@
   {
    "site": "מעריב",
    "category": "פוליטיקה",
-   "subcategory": "מפלגות",
-   "keywords": [
-    "יהדות התורה"
-   ],
-   "title": "ינון מגל הפתיע את בן כספית בשידור: \"הוא חמוד\"",
-   "summary": "לאחר הדיווח שנפגש עם הרב הירש כדי למנוע חבירה לממשלת איזנקוט, ינון מגל אישר את קיום הפגישה וסיפר על השיחה. בעימות עם בן כספית התייחס גם לחוק הגיוס ולמגעים עם החרדים",
-   "link": "https://www.maariv.co.il/news/politics/article-1388951",
-   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/1149520",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T09:06:15+00:00",
-   "first_seen": "2026-11-16T10:00:33+00:00"
-  },
-  {
-   "site": "מעריב",
-   "category": "פוליטיקה",
    "subcategory": "חקיקה ומשפט",
    "keywords": [
     "חוק הגיוס"
@@ -42018,23 +42484,6 @@
     "אופוזיציה",
     "כנסת",
     "קואליציה"
-   ],
-   "title": "יעקב אשר בכנסת: \"עדיין לא יודע אם נהיה בקואליציה או באופוזיציה\"",
-   "summary": "בישיבה למינוי יו\"ר זמני לוועדת הכספים, יו\"ר יהדות התורה שיבח את פועלו של הרב משה גפני וקרא לחברי הוועדה לדאוג לכלל האזרחים. לדבריו, טרם ברור אם סיעתו תהיה בקואליציה או באופוזיציה הפוסט יעקב אשר בכנסת: \"עדיין לא יודע אם נהיה בקואליציה או באופוזיציה\" הופיע לראשונה ב- JDN .",
-   "link": "https://www.jdn.co.il/news/2766262/",
-   "image": "https://www.jdn.co.il/wp-content/uploads/2026/11/F261110YS268.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T09:04:48+00:00",
-   "first_seen": "2026-11-16T10:00:33+00:00"
-  },
-  {
-   "site": "JDN",
-   "category": "פוליטיקה",
-   "subcategory": "מפלגות",
-   "keywords": [
-    "יהדות התורה"
    ],
    "title": "יעקב אשר בכנסת: \"עדיין לא יודע אם נהיה בקואליציה או באופוזיציה\"",
    "summary": "בישיבה למינוי יו\"ר זמני לוועדת הכספים, יו\"ר יהדות התורה שיבח את פועלו של הרב משה גפני וקרא לחברי הוועדה לדאוג לכלל האזרחים. לדבריו, טרם ברור אם סיעתו תהיה בקואליציה או באופוזיציה הפוסט יעקב אשר בכנסת: \"עדיין לא יודע אם נהיה בקואליציה או באופוזיציה\" הופיע לראשונה ב- JDN .",
@@ -42935,24 +43384,6 @@
    "first_seen": "2026-11-16T09:00:30+00:00"
   },
   {
-   "site": "בחדרי חרדים",
-   "category": "פוליטיקה",
-   "subcategory": "כנסת וממשלה",
-   "keywords": [
-    "יו\"ר הכנסת",
-    "כנסת"
-   ],
-   "title": "הועדה המסדרת אישרה את 9 סגני יו\"ר הכנסת הזמניים בניהם טיבי וטאהא",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5mbDNlbFBTNkQ0cF9LY0drRnpsRXdPaTRXUFNmXy01TGt3ajZ1ZGNvMTd6cHNVdlo3TjRjbWhUY0VQUjBubUh6NEpMdw?oc=5",
-   "image": "",
-   "url": "https://www.bhol.co.il/news/1744686",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-16T08:31:00+00:00",
-   "first_seen": "2026-11-16T09:00:30+00:00"
-  },
-  {
    "site": "ice",
    "category": "כלכלה",
    "subcategory": "יוקר המחיה וצרכנות",
@@ -43108,23 +43539,6 @@
   {
    "site": "JDN",
    "category": "פוליטיקה",
-   "subcategory": "כנסת וממשלה",
-   "keywords": [
-    "כנסת"
-   ],
-   "title": "כ\"ץ מגיב לליברמן: לא אאפשר להפוך את הוועדה לקרקס פוליטי",
-   "summary": "לאחר שליברמן הודיע כי יבקש לזמן את הרמטכ\"ל לוועדת החוץ והביטחון, שר הביטחון אמר כי יאשר זימונים של נציגי צה\"ל לפי שיקולים מקצועיים. כ\"ץ האשים את ליברמן בניסיון להפוך את הוועדה ל\"במה לקרקס פוליטי\" הפוסט כ\"ץ מגיב לליברמן: לא אאפשר להפוך את הוועדה לקרקס פוליטי הופיע לראשונה ב- JDN .",
-   "link": "https://www.jdn.co.il/news/2766228/",
-   "image": "https://www.jdn.co.il/wp-content/uploads/2026/11/F261110CG530.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T08:12:44+00:00",
-   "first_seen": "2026-11-16T08:30:25+00:00"
-  },
-  {
-   "site": "JDN",
-   "category": "פוליטיקה",
    "subcategory": "חקיקה ומשפט",
    "keywords": [
     "חוק הגיוס"
@@ -43256,23 +43670,6 @@
    "gtried": 0,
    "itried": 3,
    "published": "2026-11-16T08:07:41+00:00",
-   "first_seen": "2026-11-16T08:30:25+00:00"
-  },
-  {
-   "site": "JDN",
-   "category": "פוליטיקה",
-   "subcategory": "כנסת וממשלה",
-   "keywords": [
-    "כנסת"
-   ],
-   "title": "ליברמן נבחר ליו\"ר ועדת החוץ והביטחון הזמנית: חוק הגיוס יעלה לדיון כבר היום",
-   "summary": "שמונה חברי כנסת תמכו בבחירת אביגדור ליברמן ליו\"ר הוועדה, ללא מתנגדים. לאחר ההצבעה הודיע שיבקש לזמן את ראשי מערכת הביטחון והמשטרה, וקרא להקים בדחיפות ועדת משנה למודיעין וועדה משותפת לתקציב הביטחון הפוסט ליברמן נבחר ליו\"ר ועדת החוץ והביטחון הזמנית: חוק הגיוס יעלה לדיון כבר היום…",
-   "link": "https://www.jdn.co.il/news/2766182/",
-   "image": "https://www.jdn.co.il/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-16-at-10.53.03.jpeg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T08:07:40+00:00",
    "first_seen": "2026-11-16T08:30:25+00:00"
   },
   {
@@ -43653,23 +44050,6 @@
    "first_seen": "2026-11-16T08:00:31+00:00"
   },
   {
-   "site": "gov.il",
-   "category": "פוליטיקה",
-   "subcategory": "חקיקה ומשפט",
-   "keywords": [
-    "בג\"ץ"
-   ],
-   "title": "בבית המשפט העליון 2994/23 פ\"ע כבוד השופטת יעל וילנר לפני: כבוד השופט עופ",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPbUx2UFZCdUk2dHI1RHRVVnMyaTllMEMxbEVCczEwZ1BPSmY0TFNlT2JKTE1RSnVweVlwWnBlNHBZbHJCbnkteEVkMWhqTWphTEllZF96QXpwa1NGdTdxU19tVkI0elhaWlZ2bnpsZ182Zmtnd1dvZmZmOUx3UDZQZnM0d2RYb0VnVGZXbkZnV1dBdnNMOGhYcTBYQ0lIMENXU2phSGNsaXNZODNZY1VyeGlMam1RVmg0SnZJZGszZnNkdWFfb2ZoRjhZdjZMVkhpWVg5endwT204MkZ3MWRSU1hzUkVnazNu?oc=5",
-   "image": "",
-   "url": "https://supremedecisions.court.gov.il/Home/Download?path=NetVerdicts%2F2026%2F11%2F15%2F2023-0-2994-17-2&fileName=ff3ff78fe0b54c6bb6069462cb89187e&type=4",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-16T07:42:13+00:00",
-   "first_seen": "2026-11-16T08:00:31+00:00"
-  },
-  {
    "site": "מעריב",
    "category": "כלכלה",
    "subcategory": "סחר ומכסים",
@@ -43684,76 +44064,6 @@
    "gtried": 0,
    "itried": 0,
    "published": "2026-11-16T07:41:52+00:00",
-   "first_seen": "2026-11-16T08:00:31+00:00"
-  },
-  {
-   "site": "כאן",
-   "category": "פוליטיקה",
-   "subcategory": "חקיקה ומשפט",
-   "keywords": [
-    "ועדות הכנסת"
-   ],
-   "title": "אביגדור ליברמן מונה ליו\"ר ועדת חוץ וביטחון",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAwcWJuMjR5Y3c3TGwtOUtrRm1ycHZrYi11ajRDSnpINEZ0MXdQQmlfVlZlZ05ldXdBNVNwODlXRUNkbTEzVEVlUzN1cWNjSkhnMUNxRGdXWVNkdjAtRFFET1REeU9nRVBTcVlnYVd3?oc=5",
-   "image": "https://www.kan.org.il/media/lbghvfiy/f260107ys602.jpg?rmode=pad&width=1200&height=630",
-   "url": "https://www.kan.org.il/content/kan-news/politic/live-1119624/",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T07:41:18+00:00",
-   "first_seen": "2026-11-16T08:00:31+00:00"
-  },
-  {
-   "site": "כיפה",
-   "category": "פוליטיקה",
-   "subcategory": "חקיקה ומשפט",
-   "keywords": [
-    "ועדות הכנסת"
-   ],
-   "title": "דקה אחרי המינוי: הדרישה הראשונה של ליברמן בתור יו\"ר ועדת חוץ וביטחון",
-   "summary": "יו\"ר ישראל ביתנו מונה לעמוד בראש ועדת החוץ והביטחון הזמנית, וכבר הציב דרישה ראשונה: לזמן לדיון את צמרת מערכת הביטחון והמשטרה - הרמטכ\"ל, ראש המוסד, ראש השב\"כ והמפכ\"ל",
-   "link": "https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1236436-0/",
-   "image": "https://www.kipa.co.il/userFiles/post_u343250_6afab949eb695_1794816329.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-16T07:41:00+00:00",
-   "first_seen": "2026-11-16T08:00:31+00:00"
-  },
-  {
-   "site": "בחדרי חרדים",
-   "category": "פוליטיקה",
-   "subcategory": "חקיקה ומשפט",
-   "keywords": [
-    "בג\"ץ",
-    "ועדות הכנסת",
-    "חוק הגיוס"
-   ],
-   "title": "ליברמן מונה ליו\"ר ועדת חו\"ב: \"נתעסק כבר היום בחוק הגיוס - שיעבור את הרמטכ\"ל, בג\"ץ והרב לנדו\"",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE92cGtSekxzZWNsVVh3T2FpOXBINmV1WUpSMHhOaFhJQmhsQU1odjVZSDJDbXRwaHYxd0pSbTAzZ0trVDlpdFgzSkFUZw?oc=5",
-   "image": "",
-   "url": "https://www.bhol.co.il/news/1744679",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-16T07:41:00+00:00",
-   "first_seen": "2026-11-16T08:00:31+00:00"
-  },
-  {
-   "site": "כאן",
-   "category": "פוליטיקה",
-   "subcategory": "חקיקה ומשפט",
-   "keywords": [
-    "ועדות הכנסת"
-   ],
-   "title": "אביגדור ליברמן מונה ליו\"ר ועדת חוץ וביטחון",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSlNYQXlOeGlXNG56eVBoOEtYMHRoRktVMjE4RG14YTdFVGxNSnpJWVN1MmFqbW5Dcm1CSmg2bm8wMmZmOEgxd3hlUVl5dzJUSzNkSnJMZEFHTzBvcHFMNzU1ZThZQndvR3BYZjFFOFdidzRIWHJuS19HOXB5cTJjY09R?oc=5",
-   "image": "",
-   "url": "https://www.kan.org.il/content/kan-news/politic/live-1119624/liveid-1119712/",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-16T07:38:04+00:00",
    "first_seen": "2026-11-16T08:00:31+00:00"
   },
   {
@@ -47274,23 +47584,6 @@
    "first_seen": "2026-11-15T20:30:27+00:00"
   },
   {
-   "site": "JDN",
-   "category": "פוליטיקה",
-   "subcategory": "בחירות וסקרים",
-   "keywords": [
-    "בחירות"
-   ],
-   "title": "עימות פומבי במפלגה הרפובליקנית סביב המלחמה באיראן והפסד בבחירות האמצע",
-   "summary": "מייק פנס דחה את טענותיו של ג'יי. די.",
-   "link": "https://www.jdn.co.il/news/2766100/",
-   "image": "https://www.jdn.co.il/wp-content/uploads/2025/01/F180123MA05_pr.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-15T19:55:28+00:00",
-   "first_seen": "2026-11-15T20:00:30+00:00"
-  },
-  {
    "site": "וואלה",
    "category": "ספורט",
    "subcategory": "ליגת ווינר בכדורגל",
@@ -47496,41 +47789,6 @@
    "first_seen": "2026-11-16T07:00:30+00:00"
   },
   {
-   "site": "מעריב",
-   "category": "פוליטיקה",
-   "subcategory": "בחירות וסקרים",
-   "keywords": [
-    "בחירות",
-    "סקר מנדטים"
-   ],
-   "title": "החזית הפנימית: איום שישראל אינה יכולה להתעלם | אל\"מ מיל' אמיר נוי",
-   "summary": "19 המנדטים של המפלגות הערביות, החשדות לפגיעה בטוהר הבחירות, ההקצנה הלאומית, האלימות הגואה והלחץ הבינלאומי להקמת מדינה פלסטינית מחייבים את ישראל להיערך למציאות חדשה",
-   "link": "https://www.maariv.co.il/news/opinions/article-1388798",
-   "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/835205",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-15T19:32:21+00:00",
-   "first_seen": "2026-11-15T20:00:30+00:00"
-  },
-  {
-   "site": "כאן",
-   "category": "פוליטיקה",
-   "subcategory": "בחירות וסקרים",
-   "keywords": [
-    "בחירות"
-   ],
-   "title": "הקלטות ראש הסגל של נתניהו על המידע שפתח את חקירת גניבת הבחירות",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB3NzVNTW5mTnJoWTFuUkZCZE5TeTd0QzZCajFJUTlqcEJsREpFVEtfeWR2ZHc2S1BXQTBFbVg1ODVoV1A1VVZla3owUGphYTk3U3dXWWVwcFBPMzQyakVMUzAtUVpfUzA?oc=5",
-   "image": "https://www.kan.org.il/media/mg0oz0ry/whatsapp-image-2026-11-15-at-213141.jpeg?rmode=pad&width=1200&height=630",
-   "url": "https://www.kan.org.il/content/kan-news/politic/1119585/",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-15T19:31:38+00:00",
-   "first_seen": "2026-11-15T20:00:30+00:00"
-  },
-  {
    "site": "Yahoo Finance",
    "category": "כלכלה",
    "subcategory": "כלכלה עולמית",
@@ -47596,40 +47854,6 @@
    "gtried": 0,
    "itried": 0,
    "published": "2026-11-15T19:25:00+00:00",
-   "first_seen": "2026-11-15T19:30:24+00:00"
-  },
-  {
-   "site": "i24NEWS",
-   "category": "פוליטיקה",
-   "subcategory": "בחירות וסקרים",
-   "keywords": [
-    "בחירות"
-   ],
-   "title": "המשטרה בודקת האם המקור המודיעיני בפרשת שוחד הבחירות שיקר",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5sdXJkM2lYMjk0c2VZeVJwdTRIUW5LYmJaUWt6bndteEhab0g5MVlCV0xaaHlDRTFKeEowTkVMekdJMzNmTkJnb0lGalQ5NDRTNnFReC1wekhtWlFnVE9sdjU2WjFJckdvdnZOWTJfVHp0Z2NO?oc=5",
-   "image": "https://cdn.i24news.tv/uploads/f8/53/7a/c4/4c/64/2c/38/f0/e2/2e/0d/d3/de/2b/fb/f8537ac44c642c38f0e22e0dd3de2bfb.jpg",
-   "url": "https://www.i24news.tv/he/news/israel-elections-2026/artc-e1f15a4d",
-   "gtried": 0,
-   "itried": 1,
-   "published": "2026-11-15T19:23:25+00:00",
-   "first_seen": "2026-11-15T19:30:24+00:00"
-  },
-  {
-   "site": "כיפה",
-   "category": "פוליטיקה",
-   "subcategory": "בחירות וסקרים",
-   "keywords": [
-    "בחירות"
-   ],
-   "title": "נתניהו מאיים על ערוץ 12: \"זה שקרים ועילה לדיבה\"",
-   "summary": "לשכת ראש הממשלה דוחה את הטענות בכתבת אילנה דיין על מעורבות ראש הסגל בפרשת הבחירות, טוענת כי פעל כחוק ומאיימת בתביעת דיבה בעקבות הפרסום בערוץ 12",
-   "link": "https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1236412-0/",
-   "image": "https://www.kipa.co.il/userFiles/post_u344799_6afa0605af78f_1794770437.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-15T19:23:01+00:00",
    "first_seen": "2026-11-15T19:30:24+00:00"
   },
   {
@@ -48959,74 +49183,6 @@
    "gtried": 0,
    "itried": 3,
    "published": "2026-11-15T18:12:32+00:00",
-   "first_seen": "2026-11-15T18:30:24+00:00"
-  },
-  {
-   "site": "BasketNews",
-   "category": "ספורט",
-   "subcategory": "יורוליג",
-   "keywords": [
-    "יורוליג"
-   ],
-   "title": "Dalibor Bagaric vs Giorgos Maslarinos EuroLeague",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQmlXZEM1MnY0ZnFlMWQ1RFlVWWFDZTdLRXVGblF0NHAwaHZNQl83TTcydUsxQlllSTE4ZWR4V2M2MURZRkF2X04yZ1pOVUVYNkI2R2Nwa1ZqbXNBa3RDdl96cUs2MDBsUkFfbEc3YzFSdWt6RmlVUEVSYmljU1UwX0lIaEt0Rm5fZkVPVjhnQThtQ2VoRWdMSGM3STdtS0luWFVn?oc=5",
-   "image": "",
-   "url": "https://basketnews.com/players/212-dalibor-bagaric/compare/2539-giorgos-maslarinos/25-euroleague.html",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-15T18:12:32+00:00",
-   "first_seen": "2026-11-15T18:30:24+00:00"
-  },
-  {
-   "site": "BasketNews",
-   "category": "ספורט",
-   "subcategory": "יורוליג",
-   "keywords": [
-    "יורוליג"
-   ],
-   "title": "Horace Jenkins vs Giorgos Maslarinos EuroLeague",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNLWxzNkhyRGd3R2VySHNGdVpXV1VfV1N2Y3ozWnB4bGt2c2ZweWJ2Rl9tYVdWVE5PN0dxZi1PRWtEY2VZc1JFV2h4cHpLVHJjQ3NIM0ZTMWl5UVg3RjlUaW5fMjdEdjFQdkFZM0FvX0VCQ2xkWmVsaEVDYm9ZSHBzNmJ3ZndtY0tULUc0MUVTVlNkcWdjMUNjSXhHN2kyMHd0RFpj?oc=5",
-   "image": "",
-   "url": "https://basketnews.com/players/1711-horace-jenkins/compare/2539-giorgos-maslarinos/25-euroleague.html",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-15T18:12:32+00:00",
-   "first_seen": "2026-11-15T18:30:24+00:00"
-  },
-  {
-   "site": "BasketNews",
-   "category": "ספורט",
-   "subcategory": "יורוליג",
-   "keywords": [
-    "יורוליג"
-   ],
-   "title": "Roberto Chiacig vs Giorgos Maslarinos EuroLeague",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcVJLXzNfVE9iZkZCdWNaRFdtSklPdHNxMWp1TlNsckUybHd0a1R3cGZ5VnV4bVRqQXVfa09mTkxiWW5pN0k1b0Z4akJ6U2ZQaFNmMU1zakdrcDgwdkFrTHEyNVF4NFhBNGUwR1lSWEZEVGdmNmN2WDROTldRNlgtLVQ4eXdrNFYwZElTSjI3WXFIdXZ1Q0NfVVV3d0s3c3VRSDE4?oc=5",
-   "image": "",
-   "url": "https://basketnews.com/players/681-roberto-chiacig/compare/2539-giorgos-maslarinos/25-euroleague.html",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-15T18:12:32+00:00",
-   "first_seen": "2026-11-15T20:00:30+00:00"
-  },
-  {
-   "site": "BasketNews",
-   "category": "ספורט",
-   "subcategory": "יורוליג",
-   "keywords": [
-    "יורוליג"
-   ],
-   "title": "Lucio Angulo vs Matjaz Smodis EuroLeague",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNHJEQ29JT0NZTXFJb1MzWUJEd040c1dGUHFQVUl6R2ZLUndQdUFfeExWbHJtdHREeU9qRHp6MTRLdnYydldUdm1wZGQ1YUNFT25tV0tDQ21SbHlPampJOVQ1YzB6endIYnhnMEs1NWFTNTVXZUdCekVFWnhvbGI4RjlsNlpoSENqWlBWM0M4OW9LdENjdUVkcQ?oc=5",
-   "image": "",
-   "url": "https://basketnews.com/players/124-lucio-angulo/compare/3759-matjaz-smodis/25-euroleague.html",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-15T18:12:31+00:00",
    "first_seen": "2026-11-15T18:30:24+00:00"
   },
   {
@@ -54106,23 +54262,6 @@
    "first_seen": "2026-11-15T06:30:30+00:00"
   },
   {
-   "site": "ספורט 1",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורגל",
-   "keywords": [
-    "הפועל תל אביב"
-   ],
-   "title": "דווקא בערב שבו חזרה לנצח: הנתון שאיש בהפועל תל אביב לא ירצה לראות",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNmpRUVc0RnBTSV9USFRVUGRsQWtRT1h0eXVqX3Y4TTRkekRrRWNIUmR3dXlfZGU0TEViZVN0bGpJT1dSdVl1Y0J5R2pVbDNiSnZndmxSd3U1NWs0aG5JbUpGWWlCejdOcTZfVEozd0phZGpKX0t0MWdZSmlveFJLdllkMkFiTzZOeThSZDhSejJPQQ?oc=5",
-   "image": "https://sport1images.maariv.co.il/image/upload/f_auto,fl_lossy,c_thumb,g_north,w_1200,h_630/1293066",
-   "url": "https://sport1.maariv.co.il/israeli-basketball/winner-basketball-league/article/1997731/",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-15T05:15:12+00:00",
-   "first_seen": "2026-11-15T05:30:29+00:00"
-  },
-  {
    "site": "פאנדר",
    "category": "כלכלה",
    "subcategory": "מטבעות וסחורות",
@@ -54174,23 +54313,6 @@
    "first_seen": "2026-11-15T16:30:29+00:00"
   },
   {
-   "site": "ספורט 1",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורגל",
-   "keywords": [
-    "מכבי תל אביב"
-   ],
-   "title": "במכבי תל אביב הודו: \"זה משהו יוצא דופן כמעט\"",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWXVJRmlQSHhFcTlLWjZzRXJPMHp0b0UwbGtIVnhkTDVfUWhPeW1LV2VUOGM5ZnZWZ0dGaG90dzdrMHRVc09JMklBME56T09Tekp6dkYyQmloTVBVZUoyWlYxd2tqV01sVUFmU08yaGk4d1gtTXZSRjgzZENkbUVaR0J5VjViQVpQb3ZEMTNYMWJQZw?oc=5",
-   "image": "https://sport1images.maariv.co.il/image/upload/f_auto,fl_lossy,c_thumb,g_north,w_1200,h_630/1293119",
-   "url": "https://sport1.maariv.co.il/israeli-basketball/winner-basketball-league/article/1997716/",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-15T05:08:54+00:00",
-   "first_seen": "2026-11-15T05:30:29+00:00"
-  },
-  {
    "site": "ice",
    "category": "כלכלה",
    "subcategory": "מטבעות וסחורות",
@@ -54223,23 +54345,6 @@
    "itried": 3,
    "published": "2026-11-15T05:00:03+00:00",
    "first_seen": "2026-11-15T07:00:29+00:00"
-  },
-  {
-   "site": "ONE",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורגל",
-   "keywords": [
-    "מכבי תל אביב"
-   ],
-   "title": "\"היינו צריכים להרוג את המשחק ובעטנו בדלי\"",
-   "summary": "במכבי ת\"א התאכזבו מה-82:77 לירושלים: \"זה לקח\". במועדון תהו למה לקח כ\"כ הרבה זמן להחזיר את מדר לפרקט, קטש: \"אולי פספסתי אותו בכמה דקות\"",
-   "link": "https://www.one.co.il/Article/538907.html?ref=rss",
-   "image": "https://photo.one.co.il/Image/GG/7,1/1898721.webp",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-15T04:52:00+00:00",
-   "first_seen": "2026-11-15T05:30:29+00:00"
   },
   {
    "site": "Ynet",
@@ -54843,23 +54948,6 @@
    "itried": 3,
    "published": "2026-11-15T01:06:51+00:00",
    "first_seen": "2026-11-15T03:00:32+00:00"
-  },
-  {
-   "site": "הלמ\"ס",
-   "category": "כלכלה",
-   "subcategory": "מאקרו ישראל",
-   "keywords": [
-    "הלמ\"ס"
-   ],
-   "title": "- הלשכה המרכזית לסטטיסטיקה",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNbGlRdTdHcE82ZnEwTFFNTXJxMzBDeGphbHFvUDBKbG8xQ3JHQzVwS0pPS3dhZWZmS3dGRDNYdVhpZUpmRVFVNnNnLTl3V3ZxSEN2dGRjNUczMFN1OGFVZEI4Ymh4ZlZpZ1lsLW9YSlE3T1ZPbFl6YjRfMVhjV2kwVkNvR0RvaXk0aEQ3eTlnWFMxbF9DZWliUlZfUEF6QlRFZXdjYU0tWmFKQ2tlSGNOVFRfOHRmQ3p6UHFhOHIyTE1qRHBFSnFucHEzbkpaUmZTTWFPWjlvdzVJWklBSzhGQzZUZmxWVTFfcXQ1OU5VVDl4TTY0ekpkNVplVmpqN28?oc=5",
-   "image": "",
-   "url": "https://www.cbs.gov.il/WebResource.axd?d=jkipp8PsCJHyxC59A83Eddfy76JM85da8cQrGl0QZy93aBBnz-mxOr5_3T1P8CA45tGzCxY_mpYHzjElGM2hGj3JV-N0Y0gUrmPzByelUKY1&t=638399427142847209",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-15T01:01:51+00:00",
-   "first_seen": "2026-11-15T03:30:24+00:00"
   },
   {
    "site": "EuroLeague",
@@ -56756,23 +56844,6 @@
    "gtried": 0,
    "itried": 0,
    "published": "2026-11-14T15:26:51+00:00",
-   "first_seen": "2026-11-14T15:30:25+00:00"
-  },
-  {
-   "site": "N12",
-   "category": "כלכלה",
-   "subcategory": "מטבעות וסחורות",
-   "keywords": [
-    "זהב"
-   ],
-   "title": "10 מדליות לישראל באליפות אירופה בקיקבוקס",
-   "summary": "עשו הרבה כבוד: ג׳ודה זכה בזהב, סצ׳קוב וגרוסמן סיימו עם הכסף",
-   "link": "https://www.mako.co.il/news-sport/sports_others-2026_q4/Article-a03e53cee9ad1a1026.htm",
-   "image": "https://img.mako.co.il/2026/11/14/sportFive_1804217_A.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-14T15:26:00+00:00",
    "first_seen": "2026-11-14T15:30:25+00:00"
   },
   {
@@ -61377,38 +61448,6 @@
    "first_seen": "2026-11-12T19:38:28+00:00"
   },
   {
-   "site": "Eurohoops",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורסל",
-   "keywords": [
-    "הפועל תל אביב"
-   ],
-   "title": "Micic chases EuroLeague title under Itoudis: “We have a common goal”",
-   "summary": "Discussing his relationship with Hapoel IBI Tel Aviv head coach Dimitris Itoudis, Vasilije Micic stresses a united front in chasing the EuroLeague championship The post Micic chases EuroLeague title under Itoudis: “We have a common goal” appeared first on Eurohoops .",
-   "link": "https://www.eurohoops.net/en/euroleague/2033910/vasilije-micic-talks-dimitris-itoudis-hapoel-tel-aviv-euroleague/",
-   "image": "https://images.eurohoops.net/2026/11/b4075a8e-micic-hapoel-tel-aviv.jpg",
-   "published": "2026-11-12T10:42:47+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
-  },
-  {
-   "site": "וואלה",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורסל",
-   "keywords": [
-    "הפועל תל אביב",
-    "מכבי תל אביב"
-   ],
-   "title": "קניון MYMALL בלימסול יעניק חסות למכבי תל אביב ביורוליג",
-   "summary": "הקניון, שבשליטת ארי נדל\"ן ודורסל, ילווה את משחקי הבית של הצהובים בקפריסין ויעניק הטבות והנחות לאוהדים. המהלך ייצא לדרך הערב בדרבי מול הפועל תל אביב",
-   "link": "https://finance.walla.co.il/item/3875960",
-   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/8/4118648-46.jpeg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-12T10:35:00+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
-  },
-  {
    "site": "Axios",
    "category": "כלכלה",
    "subcategory": "אנרגיה ותשתיות",
@@ -61471,21 +61510,6 @@
    "published": "2026-11-12T09:16:00+00:00",
    "first_seen": "2026-11-12T19:50:52+00:00",
    "url": "https://www.independent.co.uk/sport/tennis/emma-raducanu-tennis-return-injury-update-b3083619.html"
-  },
-  {
-   "site": "Ynet",
-   "category": "ספורט",
-   "subcategory": "ליגת ווינר בכדורסל",
-   "keywords": [
-    "הפועל תל אביב",
-    "מכבי תל אביב"
-   ],
-   "title": "ינאי יועמד לדין בעקבות ההתבטאויות נגד השופט ספי שמש: \"ביזוי והשמצה\"",
-   "summary": "תובע איגוד הכדורסל החליט להעמיד את בעלי הפועל ת\"א לדין משמעתי בעקבות דברים שאמר לאחר משחק גביע ווינר נגד מכבי ת\"א. בין היתר טען ינאי כי השופט בן ה-58 \"בקושי זז, בקושי רואה\"",
-   "link": "https://www.ynet.co.il/sport/israelibasketball/article/r11vdgxage",
-   "image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/01/03/H111MmyRUNbe/H111MmyRUNbe_504_50_2381_1341_0_medium.jpg",
-   "published": "2026-11-12T08:31:12+00:00",
-   "first_seen": "2026-11-12T19:38:28+00:00"
   },
   {
    "site": "גלובס",
