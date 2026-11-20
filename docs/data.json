@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T16:00:33+00:00",
+ "updated": "2026-11-20T16:02:15+00:00",
  "feeds": [
   {
    "site": "Ynet",
@@ -124,10 +124,10 @@
   {
    "site": "וואלה",
    "url": "https://rss.walla.co.il/feed/1?type=main",
-   "ok": true,
-   "found": 13,
-   "matched": 9,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "site": "וואלה",
@@ -262,7 +262,7 @@
    "url": "https://www.skysports.com/rss/11095",
    "ok": true,
    "found": 20,
-   "matched": 10,
+   "matched": 11,
    "error": ""
   },
   {
@@ -334,7 +334,7 @@
    "url": "https://sports.yahoo.com/rss/",
    "ok": true,
    "found": 50,
-   "matched": 7,
+   "matched": 10,
    "error": ""
   },
   {
@@ -350,7 +350,7 @@
    "url": "https://sports.yahoo.com/soccer/rss/",
    "ok": true,
    "found": 50,
-   "matched": 25,
+   "matched": 24,
    "error": ""
   },
   {
@@ -437,7 +437,7 @@
    "site": "כאן",
    "url": "https://news.google.com/rss/search?q=site%3Akan.org.il%20%D7%A1%D7%A4%D7%95%D7%A8%D7%98%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 100,
+   "found": 90,
    "matched": 1,
    "error": ""
   },
@@ -445,15 +445,15 @@
    "site": "כאן",
    "url": "https://news.google.com/rss/search?q=site%3Akan.org.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 87,
-   "matched": 27,
+   "found": 82,
+   "matched": 23,
    "error": ""
   },
   {
    "site": "רשת 13",
    "url": "https://news.google.com/rss/search?q=site%3A13tv.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 70,
+   "found": 52,
    "matched": 0,
    "error": ""
   },
@@ -533,8 +533,8 @@
    "site": "EuroLeague",
    "url": "https://news.google.com/rss/search?q=site%3Aeuroleaguebasketball.net%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 52,
-   "matched": 21,
+   "found": 53,
+   "matched": 20,
    "error": ""
   },
   {
@@ -549,7 +549,7 @@
    "site": "BasketNews",
    "url": "https://news.google.com/rss/search?q=site%3Abasketnews.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 72,
+   "found": 74,
    "matched": 22,
    "error": ""
   },
@@ -590,16 +590,16 @@
    "url": "https://news.google.com/rss/search?q=site%3Aapnews.com%20politics%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 30,
+   "matched": 29,
    "error": ""
   },
   {
    "site": "AP",
    "url": "https://news.google.com/rss/search?q=site%3Aapnews.com%20business%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
-   "ok": true,
-   "found": 100,
-   "matched": 6,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "Bleacher Report",
@@ -620,24 +620,24 @@
   {
    "site": "NBC Sports",
    "url": "https://news.google.com/rss/search?q=site%3Anbcsports.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
-   "ok": true,
-   "found": 100,
-   "matched": 5,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "Sports Illustrated",
    "url": "https://www.si.com/feed",
    "ok": true,
-   "found": 80,
-   "matched": 2,
+   "found": 79,
+   "matched": 3,
    "error": ""
   },
   {
    "site": "The Independent",
    "url": "https://news.google.com/rss/search?q=site%3Aindependent.co.uk/sport%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 59,
+   "found": 57,
    "matched": 8,
    "error": ""
   },
@@ -701,7 +701,7 @@
    "site": "Football365",
    "url": "https://news.google.com/rss/search?q=site%3Afootball365.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 11,
+   "found": 10,
    "matched": 4,
    "error": ""
   },
@@ -717,8 +717,8 @@
    "site": "חדשות 13",
    "url": "https://news.google.com/rss/search?q=site%3A13tv.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 70,
-   "matched": 16,
+   "found": 52,
+   "matched": 14,
    "error": ""
   },
   {
@@ -742,14 +742,14 @@
    "url": "https://news.google.com/rss/search?q=site%3Amakorrishon.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
    "found": 71,
-   "matched": 15,
+   "matched": 14,
    "error": ""
   },
   {
    "site": "זמן ישראל",
    "url": "https://news.google.com/rss/search?q=site%3Azman.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 61,
+   "found": 98,
    "matched": 16,
    "error": ""
   },
@@ -757,7 +757,7 @@
    "site": "דבר",
    "url": "https://news.google.com/rss/search?q=site%3Adavar1.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 31,
+   "found": 32,
    "matched": 4,
    "error": ""
   },
@@ -805,15 +805,15 @@
    "site": "כיכר השבת",
    "url": "https://news.google.com/rss/search?q=site%3Akikar.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 89,
-   "matched": 24,
+   "found": 90,
+   "matched": 25,
    "error": ""
   },
   {
    "site": "בחדרי חרדים",
    "url": "https://news.google.com/rss/search?q=site%3Abhol.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 67,
+   "found": 68,
    "matched": 24,
    "error": ""
   },
@@ -836,10 +836,10 @@
   {
    "site": "שומרים",
    "url": "https://news.google.com/rss/search?q=site%3Ashomrim.news%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
-   "ok": true,
-   "found": 1,
-   "matched": 1,
-   "error": ""
+   "ok": false,
+   "found": 0,
+   "matched": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "הכנסת",
@@ -853,8 +853,8 @@
    "site": "gov.il",
    "url": "https://news.google.com/rss/search?q=site%3Agov.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 100,
-   "matched": 9,
+   "found": 82,
+   "matched": 5,
    "error": ""
   },
   {
@@ -1037,7 +1037,7 @@
    "site": "CNN",
    "url": "https://news.google.com/rss/search?q=site%3Acnn.com/politics%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 2,
+   "found": 3,
    "matched": 1,
    "error": ""
   },
@@ -1182,7 +1182,7 @@
    "url": "https://www.aljazeera.com/xml/rss/all.xml",
    "ok": true,
    "found": 25,
-   "matched": 14,
+   "matched": 15,
    "error": ""
   },
   {
@@ -1230,7 +1230,7 @@
    "url": "https://abcnews.go.com/abcnews/politicsheadlines",
    "ok": true,
    "found": 25,
-   "matched": 10,
+   "matched": 13,
    "error": ""
   },
   {
@@ -1238,7 +1238,7 @@
    "url": "https://abcnews.go.com/abcnews/internationalheadlines",
    "ok": true,
    "found": 25,
-   "matched": 10,
+   "matched": 9,
    "error": ""
   },
   {
@@ -1260,10 +1260,10 @@
   {
    "site": "USA Today",
    "url": "https://news.google.com/rss/search?q=site%3Ausatoday.com/news/politics%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
-   "ok": true,
+   "ok": false,
    "found": 0,
    "matched": 0,
-   "error": ""
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "site": "Bloomberg",
@@ -1334,7 +1334,7 @@
    "url": "https://www.newsweek.com/rss",
    "ok": true,
    "found": 20,
-   "matched": 3,
+   "matched": 4,
    "error": ""
   },
   {
@@ -1365,7 +1365,7 @@
    "site": "Roll Call",
    "url": "https://news.google.com/rss/search?q=site%3Arollcall.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
-   "found": 48,
+   "found": 49,
    "matched": 9,
    "error": ""
   },
@@ -1422,7 +1422,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Awashingtontimes.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 20,
+   "matched": 17,
    "error": ""
   },
   {
@@ -1446,14 +1446,14 @@
    "url": "https://news.google.com/rss/search?q=site%3Abizportal.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
    "found": 100,
-   "matched": 20,
+   "matched": 19,
    "error": ""
   },
   {
    "site": "ice",
    "url": "https://news.google.com/rss/search?q=site%3Aice.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 94,
+   "found": 95,
    "matched": 9,
    "error": ""
   },
@@ -1469,17 +1469,17 @@
    "site": "פאנדר",
    "url": "https://news.google.com/rss/search?q=site%3Afunder.co.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 56,
-   "matched": 22,
+   "found": 51,
+   "matched": 20,
    "error": ""
   },
   {
    "site": "Geektime",
    "url": "https://www.geektime.co.il/feed/",
-   "ok": false,
-   "found": 0,
-   "matched": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "found": 30,
+   "matched": 12,
+   "error": ""
   },
   {
    "site": "בנק ישראל",
@@ -1493,8 +1493,8 @@
    "site": "הלמ\"ס",
    "url": "https://news.google.com/rss/search?q=site%3Acbs.gov.il%20when%3A1d&hl=he&gl=IL&ceid=IL%3Ahe",
    "ok": true,
-   "found": 5,
-   "matched": 1,
+   "found": 6,
+   "matched": 2,
    "error": ""
   },
   {
@@ -1542,7 +1542,7 @@
    "url": "https://news.google.com/rss/search?q=site%3Abarrons.com%20when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
    "ok": true,
    "found": 100,
-   "matched": 25,
+   "matched": 24,
    "error": ""
   },
   {
@@ -3607,6 +3607,23 @@
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
   {
+   "site": "Newsweek",
+   "category": "פוליטיקה",
+   "subcategory": "ארצות הברית",
+   "keywords": [
+    "הסנאט"
+   ],
+   "title": "Abdul El-Sayed Senate Quran Oath May Make History—What It Means for the US",
+   "summary": "After a campaign where he faced questions over his faith, El-Sayed is poised to make history during his oath of office.",
+   "link": "https://www.newsweek.com/abdul-el-sayed-senate-quran-oath-may-make-historywhat-it-means-for-the-us-12743406",
+   "image": "https://assets.newsweek.com/wp-content/uploads/2026/11/GettyImages-2302991677-706f25.jpg?w=1200&crop=1",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T16:00:00+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
+  },
+  {
    "site": "Sports Illustrated",
    "category": "ספורט",
    "subcategory": "NBA",
@@ -3696,6 +3713,110 @@
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
   {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "ליגת האלופות",
+   "keywords": [
+    "ברצלונה"
+   ],
+   "title": "Barcelona duo Ebrima Tunkara and Jordi Pesquer star as Spain’s Under-17s win World Cup opener",
+   "summary": "A great start from the two Barcelona players.",
+   "link": "https://sports.yahoo.com/articles/barcelona-duo-ebrima-tunkara-jordi-155518788.html",
+   "image": "https://media.zenfs.com/en/sb_nation_articles_115/ed08b78ac9808fb01f18c9d734b66bd1.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:55:18+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "לה ליגה",
+   "keywords": [
+    "ברצלונה"
+   ],
+   "title": "Barcelona duo Ebrima Tunkara and Jordi Pesquer star as Spain’s Under-17s win World Cup opener",
+   "summary": "A great start from the two Barcelona players.",
+   "link": "https://sports.yahoo.com/articles/barcelona-duo-ebrima-tunkara-jordi-155518788.html",
+   "image": "https://media.zenfs.com/en/sb_nation_articles_115/ed08b78ac9808fb01f18c9d734b66bd1.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:55:18+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
+  },
+  {
+   "site": "The Guardian",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "ליברפול",
+    "מנצ'סטר סיטי",
+    "פרמייר ליג"
+   ],
+   "title": "Fernandes to remain as captain under Pochettino; Arteta takes fantasy football action; Nations League draw – live",
+   "summary": "⚽ All the latest football news going into the weekend ⚽ Fixtures | Tables | Ten things to look out for | Mail Michael A Liverpool fan accused of racially abusing Antoine Semenyo has been found not guilty after the Manchester City forward withdrew his support for the…",
+   "link": "https://www.theguardian.com/football/live/2026/nov/20/weekend-football-countdown-live-news-updates",
+   "image": "https://i.guim.co.uk/img/media/a87b38a80782dd29e77eb49a598b51f3684f958e/0_0_5381_4305/master/5381.jpg?width=140&quality=85&auto=format&fit=max&s=8e392502b83ae05e4c45ac5a34f81aa3",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:54:50+00:00",
+   "first_seen": "2026-11-20T09:30:32+00:00"
+  },
+  {
+   "site": "The Guardian",
+   "category": "ספורט",
+   "subcategory": "ליגת האלופות",
+   "keywords": [
+    "ליגת האלופות"
+   ],
+   "title": "Fernandes to remain as captain under Pochettino; Arteta takes fantasy football action; Nations League draw – live",
+   "summary": "⚽ All the latest football news going into the weekend ⚽ Fixtures | Tables | Ten things to look out for | Mail Michael A Liverpool fan accused of racially abusing Antoine Semenyo has been found not guilty after the Manchester City forward withdrew his support for the…",
+   "link": "https://www.theguardian.com/football/live/2026/nov/20/weekend-football-countdown-live-news-updates",
+   "image": "https://i.guim.co.uk/img/media/a87b38a80782dd29e77eb49a598b51f3684f958e/0_0_5381_4305/master/5381.jpg?width=140&quality=85&auto=format&fit=max&s=8e392502b83ae05e4c45ac5a34f81aa3",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:54:50+00:00",
+   "first_seen": "2026-11-20T09:30:32+00:00"
+  },
+  {
+   "site": "The Guardian",
+   "category": "ספורט",
+   "subcategory": "נבחרות ישראל",
+   "keywords": [
+    "ליגת האומות"
+   ],
+   "title": "Fernandes to remain as captain under Pochettino; Arteta takes fantasy football action; Nations League draw – live",
+   "summary": "⚽ All the latest football news going into the weekend ⚽ Fixtures | Tables | Ten things to look out for | Mail Michael A Liverpool fan accused of racially abusing Antoine Semenyo has been found not guilty after the Manchester City forward withdrew his support for the…",
+   "link": "https://www.theguardian.com/football/live/2026/nov/20/weekend-football-countdown-live-news-updates",
+   "image": "https://i.guim.co.uk/img/media/a87b38a80782dd29e77eb49a598b51f3684f958e/0_0_5381_4305/master/5381.jpg?width=140&quality=85&auto=format&fit=max&s=8e392502b83ae05e4c45ac5a34f81aa3",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:54:50+00:00",
+   "first_seen": "2026-11-20T11:00:32+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "ליברפול"
+   ],
+   "title": "Filming training by drones should be illegal - Iraola",
+   "summary": "Liverpool head coach Andoni Iraola says filming with drones around training grounds should be illegal.",
+   "link": "https://sports.yahoo.com/articles/filming-training-drones-illegal-iraola-151755391.html",
+   "image": "https://media.zenfs.com/en/bbc_us_articles_995/800c28b7b1f7b46d5805baa414fdf98c.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:54:39+00:00",
+   "first_seen": "2026-11-20T15:30:30+00:00"
+  },
+  {
    "site": "The Guardian",
    "category": "פוליטיקה",
    "subcategory": "אירופה",
@@ -3740,9 +3861,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPY2w2QjQ3SHd0Nm1RTkpiUVdMUndqVjEyTHlZNjNaWDU1N2NtNEFzWFdXUVZsTk1ZS0FnUHZyeS0xblNHSHlGNjBjWEMzanhlOFZ4RlpRV3k2bDNNNlhCdXdEYzF4eVZsMzJRWTVTcDZBSUk3RjdfNGlZaEFEd3k0Z1Bn?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://www.kan.org.il/content/kan-news/defense/live-1121366/liveid-1121535/",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T15:53:21+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -3825,8 +3946,8 @@
    "title": "'It is a matter of balance' - Enzo Maresca backs Gianluigi Donnarumma and Enzo Fernandez as Man City boss calls for calm ahead of Fulham clash",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeHBGWXFIdkk4NUpaVDZ0OVdLS1RUb095WGtxUkxQTGxRendyS0l4V2o0YUlibzFXU0ZXY3pGQVowWGw0azZKYVJWWlJ2cVE5UVNJTWNIUXlqSlJEVC03ekl1S1N6QndCOHRMdnlVZHpzRkUtZE8yTDlOMUx1ekl1Sml6OE5IbURQVE9QWGQ5dFY2NnFkNUxNS0RTOWMxNUhHZ1k2TDVsZVgwRTZUcWlBMngxN1F5a1NOVTNLNUhoMm5acTN5?oc=5",
-   "image": "",
-   "url": "",
+   "image": "https://assets.goal.com/images/v3/getty-2303546239/crop/MM5DEOBRGY5DCNJYGQ5G433XMU5DINZRHIZDKOA=/GettyImages-2303546239.jpg",
+   "url": "https://www.goal.com/en-ca/news/enzo-maresca-backs-gianluigi-donnarumma-and-enzo-fernandez-man-city-fulham/blte2440b729b456175",
    "gtried": 1,
    "itried": 0,
    "published": "2026-11-20T15:51:04+00:00",
@@ -3842,12 +3963,30 @@
    "title": "'It is a matter of balance' - Enzo Maresca backs Gianluigi Donnarumma and Enzo Fernandez as Man City boss calls for calm ahead of Fulham clash",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc3lYdVYzLVE4RW5yUFdZaTVNSU9LV3hhcXprSmNGTmgxS1BpbUNrWDYxeS1aRkxZMnFyTFRqQ1A1WE1NRjJsZjJQTDgtaUVjMVRoUkVCSTlHWHZoRHRyOTR6NDZUSVlYeVJNMUloTVRlNHRvSWE0SzlwS2IyNk5GR3lmbHd3cXFfWXpPV3g5eFpndmlTc0ZSVnd5Q0l2UzVjM21zOGdlMXlqc1JnQkNLZFdIeFhCSk13T2JJamFsaFZGcXhS?oc=5",
-   "image": "",
-   "url": "",
+   "image": "https://assets.goal.com/images/v3/getty-2303546239/crop/MM5DEOBRGY5DCNJYGQ5G433XMU5DINZRHIZDKOA=/GettyImages-2303546239.jpg",
+   "url": "https://www.goal.com/en-us/news/enzo-maresca-backs-gianluigi-donnarumma-and-enzo-fernandez-man-city-fulham/blte2440b729b456175",
    "gtried": 1,
    "itried": 0,
    "published": "2026-11-20T15:51:04+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "מנצ'סטר סיטי",
+    "פרמייר ליג"
+   ],
+   "title": "'It is a matter of balance' - Enzo Maresca backs Gianluigi Donnarumma and Enzo Fernandez as Man City boss calls for calm ahead of Fulham clash",
+   "summary": "Manchester City manager Enzo Maresca has called for a sense of perspective as his side prepares to return to Premier League action against Fulham. Following a dip in results before the international break, the Italian tactician is determined to shield his high-profile stars…",
+   "link": "https://sports.yahoo.com/articles/matter-balance-enzo-maresca-backs-155104966.html",
+   "image": "https://media.zenfs.com/en/goal_com_505/e82b23ad4d11b90caa575d0d663181a2.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:51:04+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
   },
   {
    "site": "The Jerusalem Post",
@@ -3933,7 +4072,7 @@
    "image": "",
    "url": "https://www.reuters.com/sports/soccer/pochettino-vows-rebuild-manchester-united-from-scratch-ahead-liverpool-test-2026-11-20/",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-20T15:49:27+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -3947,12 +4086,46 @@
    "title": "מניית אנתרופיק צונחת - ומוחקת כמעט את כל הזינוק שרשמה בהנפקה",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQU25Dc19mNmVQVmZFdUJGSzhrUkYxZDFHSDlMX1RwUDlqUGxzX2dZZGRLODVpREdacjNJM0c3U0xGZXU0VmxQTXk4bXQ4eWY0VGZyZHQ2RERSMUotQkRBT2N3ZmJBeGRLTW1pTkQ4U1dkRTBSM1V0MXhvZ0dFY25UZi1WLXc0bEhITmJQTEI4bXhKM29UbkRseERDVQ?oc=5",
-   "image": "",
-   "url": "",
+   "image": "https://img.haarets.co.il/bs/000001a1-f996-d381-ade5-fbf7d4490000/c4/11/97484d264f88843573b4bf436df5/913170.jpg?precrop=2400,1395,x0,y0&width=1200&height=630&cmsprod",
+   "url": "https://www.themarker.com/wallstreet/2026-11-20/ty-article/000001a1-f996-d381-ade5-fbf7d4490000",
    "gtried": 1,
    "itried": 0,
    "published": "2026-11-20T15:49:00+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "ליברפול"
+   ],
+   "title": "Pochettino outlines his expectations in first Man Utd press conference",
+   "summary": "Mauricio Pochettino wants a say in “all the main decisions” around Manchester United’s squad after arriving as the club’s new head coach this week. Pochettino addressed the media for the first time as United boss on Friday, two days before the trip to face old rivals…",
+   "link": "https://sports.yahoo.com/articles/pochettino-outlines-expectations-first-man-154836827.html",
+   "image": "https://media.zenfs.com/en/dpa_international_526/d5fbb22bb8a933bbe7a4670f6bbb6fb3.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:48:36+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "הפרמייר ליג",
+   "keywords": [
+    "ליברפול"
+   ],
+   "title": "Manchester United travel to Anfield with 'advantage' claims Andoni Iraola despite drone footage",
+   "summary": "Liverpool manager Andoni Iraola insists Manchester United hold a 'small advantage' over his side ahead of their Anfield clash on Sunday, despite a rogue drone operator filming Mauricio Pochettino's first training session",
+   "link": "https://sports.yahoo.com/articles/manchester-united-travel-anfield-advantage-154828648.html",
+   "image": "https://media.zenfs.com/en/all_out_soccer_276/65e96b5bfb92c081a37de2af99c7b5f9.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:48:28+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
   },
   {
    "site": "Investing.com",
@@ -3970,6 +4143,23 @@
    "itried": 0,
    "published": "2026-11-20T15:48:24+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA"
+   ],
+   "title": "Hornets call up rookie Hannes Steinbach for NBA Cup matchup vs. Hawks",
+   "summary": "After four games with the Greensboro Swarm, rookie Hannes Steinbach is set to rejoin the Charlotte Hornets.",
+   "link": "https://sports.yahoo.com/articles/hornets-call-rookie-hannes-steinbach-154811785.html",
+   "image": "https://s.yimg.com/lo/mysterio/api/c792dadf7aafcc2ff74b6eaa16463f9877a015037965729646036dbdb71a7b24/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Frookie_wire_usa_today_sports_articles_968%2F7da2c33ca772589c33ebdf957aab0e0e.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:48:11+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
   },
   {
    "site": "BBC News",
@@ -4035,7 +4225,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-20T15:46:30+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -4091,6 +4281,24 @@
    "itried": 0,
    "published": "2026-11-20T15:46:00+00:00",
    "first_seen": "2026-11-20T14:30:28+00:00"
+  },
+  {
+   "site": "Yahoo Sports",
+   "category": "ספורט",
+   "subcategory": "NBA",
+   "keywords": [
+    "NBA",
+    "העברות וחוזים"
+   ],
+   "title": "The Pacers Are Looking For Help: 5 Under-The-Radar Players Who Could Make A Difference",
+   "summary": "With the Pacers looking into the trade market, here are five solid role players who could help them get better without giving up too much.",
+   "link": "https://sports.yahoo.com/articles/pacers-looking-help-5-under-154516180.html",
+   "image": "https://media.zenfs.com/en/fadeaway_world_951/bb59218b57ff2d1be70f3ca9dffb2af5.jpg",
+   "url": "",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T15:45:16+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -4365,8 +4573,8 @@
    "title": "הגרלת פלייאוף ליגת האומות",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE90XzA1Z1ZuMWZrcTNDLVlxYzRMSzd0bF9BSGRSLXE5alg3dkEtS1djamRoQ2lCNW9OdlJndlZIYUNxM2FMRWVycnVKSHBwWWVBcVBDdll1aFphQVRDRVRwei1CUW0?oc=5",
-   "image": "",
-   "url": "",
+   "image": "https://sport1images.maariv.co.il/image/upload/f_auto,fl_lossy,c_thumb,g_north,w_1200,h_630/1278444",
+   "url": "https://sport1.maariv.co.il/world-soccer/video/2002207",
    "gtried": 1,
    "itried": 0,
    "published": "2026-11-20T15:41:34+00:00",
@@ -4511,59 +4719,6 @@
    "itried": 0,
    "published": "2026-11-20T15:38:00+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
-  },
-  {
-   "site": "The Guardian",
-   "category": "ספורט",
-   "subcategory": "הפרמייר ליג",
-   "keywords": [
-    "ליברפול",
-    "מנצ'סטר סיטי",
-    "פרמייר ליג"
-   ],
-   "title": "Fernandes to remain as captain under Pochettino; Arteta takes fantasy football action; Nations League draw – live",
-   "summary": "⚽ All the latest football news going into the weekend ⚽ Fixtures | Tables | Ten things to look out for | Mail Michael A Liverpool fan accused of racially abusing Antoine Semenyo has been found not guilty after the Manchester City forward withdrew his support for the…",
-   "link": "https://www.theguardian.com/football/live/2026/nov/20/weekend-football-countdown-live-news-updates",
-   "image": "https://i.guim.co.uk/img/media/a87b38a80782dd29e77eb49a598b51f3684f958e/0_0_5381_4305/master/5381.jpg?width=140&quality=85&auto=format&fit=max&s=8e392502b83ae05e4c45ac5a34f81aa3",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T15:37:16+00:00",
-   "first_seen": "2026-11-20T09:30:32+00:00"
-  },
-  {
-   "site": "The Guardian",
-   "category": "ספורט",
-   "subcategory": "ליגת האלופות",
-   "keywords": [
-    "ליגת האלופות"
-   ],
-   "title": "Fernandes to remain as captain under Pochettino; Arteta takes fantasy football action; Nations League draw – live",
-   "summary": "⚽ All the latest football news going into the weekend ⚽ Fixtures | Tables | Ten things to look out for | Mail Michael A Liverpool fan accused of racially abusing Antoine Semenyo has been found not guilty after the Manchester City forward withdrew his support for the…",
-   "link": "https://www.theguardian.com/football/live/2026/nov/20/weekend-football-countdown-live-news-updates",
-   "image": "https://i.guim.co.uk/img/media/a87b38a80782dd29e77eb49a598b51f3684f958e/0_0_5381_4305/master/5381.jpg?width=140&quality=85&auto=format&fit=max&s=8e392502b83ae05e4c45ac5a34f81aa3",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T15:37:16+00:00",
-   "first_seen": "2026-11-20T09:30:32+00:00"
-  },
-  {
-   "site": "The Guardian",
-   "category": "ספורט",
-   "subcategory": "נבחרות ישראל",
-   "keywords": [
-    "ליגת האומות"
-   ],
-   "title": "Fernandes to remain as captain under Pochettino; Arteta takes fantasy football action; Nations League draw – live",
-   "summary": "⚽ All the latest football news going into the weekend ⚽ Fixtures | Tables | Ten things to look out for | Mail Michael A Liverpool fan accused of racially abusing Antoine Semenyo has been found not guilty after the Manchester City forward withdrew his support for the…",
-   "link": "https://www.theguardian.com/football/live/2026/nov/20/weekend-football-countdown-live-news-updates",
-   "image": "https://i.guim.co.uk/img/media/a87b38a80782dd29e77eb49a598b51f3684f958e/0_0_5381_4305/master/5381.jpg?width=140&quality=85&auto=format&fit=max&s=8e392502b83ae05e4c45ac5a34f81aa3",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T15:37:16+00:00",
-   "first_seen": "2026-11-20T11:00:32+00:00"
   },
   {
    "site": "Ynet",
@@ -4875,9 +5030,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOR1lHWVFlSnZTcW9OVTZGU0lwdDdreE5TSm94Z0FTZDktRHRLOEU0LVBTTHpOZ1lYYmFCZ041UWUtTEh6VEFhczZFd2xlSjNLRlNNMHhDd2tFcDl2N1BIMndRY1VaN09HeHowT0hVblhkd1ZpUGxTakdwVFk4cjFWTzlTRnJQeWNGUW92YUxWUG9XR3BzM0hrZDdaWU5vUHJyMVdRcDktdWNMSUlkLS1Nek1SZjYxQQ?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://www.reuters.com/business/retail-consumer/nvidias-share-slide-knocks-it-below-alphabet-valuation-2026-11-20/",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T15:31:27+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -5053,23 +5208,6 @@
    "gtried": 0,
    "itried": 0,
    "published": "2026-11-20T15:26:16+00:00",
-   "first_seen": "2026-11-20T15:30:30+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "הפרמייר ליג",
-   "keywords": [
-    "ליברפול"
-   ],
-   "title": "Filming training by drones should be illegal - Iraola",
-   "summary": "Liverpool head coach Andoni Iraola says filming with drones around training grounds should be illegal.",
-   "link": "https://sports.yahoo.com/articles/filming-training-drones-illegal-iraola-151755391.html",
-   "image": "https://media.zenfs.com/en/bbc_us_articles_995/800c28b7b1f7b46d5805baa414fdf98c.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T15:25:59+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
   {
@@ -5313,7 +5451,7 @@
    "image": "",
    "url": "https://talksport.com/football/4722694/man-united-omar-berrada-man-city-guilty-verdict/",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:21:26+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -5330,7 +5468,7 @@
    "image": "",
    "url": "https://talksport.com/football/4722409/arsenal-mikel-arteta-ban-fantasy-premier-league-tzolis/",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:21:15+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -5736,7 +5874,7 @@
    "image": "",
    "url": "https://www.reuters.com/world/middle-east/yemens-houthis-threaten-strike-saudi-red-sea-ports-2026-11-20/",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:12:59+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -5802,9 +5940,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQS01BaHhQeWx1aGNmUVUtSlhobG1RRnl1UjFtNDhRdlNxOXQ1WEJRMDUwYmdXMHhlX0NsLTJfN2YwdkszNENkdTY4Tlc4dTF2OWFteWlFeW1sM2wxZDAyZE11VmFjRHJUb1VDQWwtUWVGUjRvN0hqN0c4dExIU2ZxM2xmaWdGT3RRckNNT2dtTGIxNzhBZVc1Z0dOTmtLZW5NNmYxdVdlOA?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://www.reuters.com/sports/soccer/liverpools-iraola-wary-unknown-united-under-pochettino-2026-11-20/",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T15:10:48+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -5960,7 +6098,7 @@
    "image": "",
    "url": "https://www.uefa.com/womenschampionsleague/news/02ab-221ddab4a294-e71bc01b5132-1000--women-s-champions-league-team-of-the-week-matchday-5/",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:06:41+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -6029,7 +6167,7 @@
    "image": "",
    "url": "https://www.israelhayom.co.il/sport/world-basketball/article/21897539",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:05:19+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -6063,7 +6201,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:05:04+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -6271,7 +6409,7 @@
    "image": "",
    "url": "https://www.zman.co.il/743740/",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:00:02+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -6343,7 +6481,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:00:00+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -6361,7 +6499,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:00:00+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -6378,7 +6516,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T15:00:00+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -6513,9 +6651,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE81NjhEVVc3WDc3Z2RqZXdJX2RFa2s4eDNCTUpFdl9KbllQTE5CUE1nZ3pGRDBCMW8xd2FkRDF2Zzc2WTkzUzJuTi1fcEdGblRRTGlhTQ?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://apnews.com/hub/us-republican-party",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T14:56:50+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -8546,7 +8684,7 @@
    "image": "",
    "url": "https://www.uefa.com/uefanationsleague/match/2050907--serbia-vs-hungary/",
    "gtried": 2,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T14:10:24+00:00",
    "first_seen": "2026-11-20T14:30:28+00:00"
   },
@@ -8702,7 +8840,7 @@
    "image": "",
    "url": "https://www.calcalist.co.il/market/article/ryr2dtpagx",
    "gtried": 1,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T14:05:00+00:00",
    "first_seen": "2026-11-20T15:00:34+00:00"
   },
@@ -9222,7 +9360,7 @@
    "image": "",
    "url": "https://www.timesofisrael.com/liveblog_entry/moroccan-officers-arrive-at-base-in-southern-israel-to-work-on-medical-operations-in-gaza/",
    "gtried": 1,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T13:59:34+00:00",
    "first_seen": "2026-11-20T15:00:34+00:00"
   },
@@ -9242,6 +9380,23 @@
    "itried": 0,
    "published": "2026-11-20T13:59:17+00:00",
    "first_seen": "2026-11-20T14:30:28+00:00"
+  },
+  {
+   "site": "EuroLeague",
+   "category": "ספורט",
+   "subcategory": "יורוליג",
+   "keywords": [
+    "יורוליג"
+   ],
+   "title": "CHRISTOFOROS STEFANIDIS Profile | EuroLeague",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQmJKTmx0dGo4Tm5WSDF3LVNlNzU5X0ZuS014akRkZ21xaFFfalM1MDBkRVZfU3lDU29obHVHUWhzdFhSckpWTk83N0ZGanktbW9uTXJtWl9obXBSVEhSc3pfXzFmMl92UHhyVXNwcDZPM3ZySXlPOF96OWd3OUpVRnBUNER5RUdwaUlJcjZjT01mQ1l5ZjdjX3lB?oc=5",
+   "image": "",
+   "url": "https://www.euroleaguebasketball.net/lt/euroleague/players/christoforos-stefanidis/jut/profile",
+   "gtried": 0,
+   "itried": 1,
+   "published": "2026-11-20T13:59:01+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
   },
   {
    "site": "N12",
@@ -9429,7 +9584,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T13:56:09+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -9499,7 +9654,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T13:53:40+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -9603,7 +9758,7 @@
    "image": "",
    "url": "https://www.zman.co.il/live/743833/",
    "gtried": 1,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T13:52:41+00:00",
    "first_seen": "2026-11-20T15:00:34+00:00"
   },
@@ -9686,9 +9841,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQX3puWGdiODd1QzNqU01VS3JXbFJRN09HYlJIU0hjc3V0VmJwLVllMG5ZZGMtVnJ4d19raWVuRDJxczUzd3NxX0RNMzhBRi1QQTdhckNpQ1dCQVhua0R4WU05SXYtRjVDX2JoQmdWc2FQcU9DNjNCdUtucTJCNVhIUk1nY3huZ0gxM3JZSEVrUUc0bEs3R09Na0p1VDlJWjMxTWhqazZhWWlGMWNwX1E?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://apnews.com/article/lauren-boebert-republican-midterms-election-trump-de36ea30274756d7c4f90868011602ad",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T13:52:00+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -10704,7 +10859,7 @@
    "image": "",
    "url": "https://www.espn.com/soccer/story/_/id/50520411/liverpool-manchester-united-anfield-premier-league",
    "gtried": 1,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T13:39:00+00:00",
    "first_seen": "2026-11-20T15:00:34+00:00"
   },
@@ -11058,7 +11213,7 @@
    "image": "",
    "url": "https://13tv.co.il/item/news/politics/politics/g5v6w-905473863/?pid=62&refc=902992443",
    "gtried": 1,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-20T13:31:25+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -12212,9 +12367,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1GdUdDaWZ4MWZCeWlWMlVSVmQ4S0ZuM2hNZE1zeXkyR1JPRmM2QWJmX3pXWUJyS2hmQmIwWk5VcHhlb3hyN1hqUHFaaHVvWjFRZC1SMmFpc3N4OHo2Mzhnb2RqQ0lmLVFMWGJaU2xiTEI?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://main.knesset.gov.il/apps/legislation/main/bills/2245850",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T13:14:51+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -12229,9 +12384,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbUs4SkpaNHZTQzJ4THAtQ09CcW9VU2VzNmhua1hsREFGRHN4NnhlazctUUFtVjAwNngwM3pma1JaanVsMkdlcGxPOWtSQnBnME9Fc0c5Wk50dzc1UTBPa01sWXpwejhycm1DbFZBVkpQT2dxOHpJSXJ6b2ZMcU9MR0Y3V2xTWERvQ25XZzc0M190TDlMWEdxMXdQaFl6dXBzQVV3YjFtaU82bjBVZzZBR0k0bG1aUWhKZWNB?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://www.gov.il/he/services/department/bbdbfb50-7ef3-4e3b-9718-f40f011283c6?unitId=&targetAudienceId=&rnd=1571981306",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T13:14:46+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -14185,9 +14340,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcEJJbFR6Q2x3cE1hMURjY05hbnlUMXZsSU84dVZZSG10QkMyaVFDTVI4d0NCNWVyWk55QjBWaEVEUk9uTWZKbmxWVTVXWEtBOHd6TXh3dlFWWkZCZS1ZR0ZwMWFHTHhLZ05WdHd2UWJzd2FkYUhrRzdENDBfWVRJcXFXeld1d3BWMThyaWMxS3FPY2pmVEIwU1dJVXl4UFFJVHVIOV9iX0NhWUw0dFE?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://apnews.com/article/france-le-pen-investigation-presidential-election-c040b4538005f0004c4c6ab93f3b3ad7",
    "gtried": 2,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T12:45:00+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -16040,7 +16195,7 @@
    "image": "",
    "url": "https://www.reuters.com/world/france-seeks-un-security-council-meeting-after-strikes-kyiv-2026-11-20/",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T12:12:48+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -16492,7 +16647,7 @@
    "image": "",
    "url": "https://www.espn.com/soccer/story/_/id/50540215/arsenal-saka-saliba-arteta-injury",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T12:05:00+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -16595,7 +16750,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 2,
+   "itried": 3,
    "published": "2026-11-20T12:04:16+00:00",
    "first_seen": "2026-11-20T15:30:30+00:00"
   },
@@ -18627,7 +18782,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-20T11:37:35+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -18645,7 +18800,7 @@
    "image": "",
    "url": "",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-20T11:37:35+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -19807,23 +19962,6 @@
    "first_seen": "2026-11-20T11:30:25+00:00"
   },
   {
-   "site": "Newsweek",
-   "category": "פוליטיקה",
-   "subcategory": "ארצות הברית",
-   "keywords": [
-    "טראמפ"
-   ],
-   "title": "Poll of the Day: Do You Think Elon Musk Is MAGA?",
-   "summary": "Vote in today's poll: Donald Trump supporter and donor Elon Musk has told the world he is not MAGA—do you believe him?",
-   "link": "https://www.newsweek.com/poll-think-elon-musk-maga-12745754",
-   "image": "https://assets.newsweek.com/wp-content/uploads/2026/11/GettyImages-2217854935.jpg?w=1200&crop=1",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T11:19:30+00:00",
-   "first_seen": "2026-11-20T12:00:32+00:00"
-  },
-  {
    "site": "חדשות 13",
    "category": "פוליטיקה",
    "subcategory": "פוליטיקאים",
@@ -20701,6 +20839,23 @@
    "first_seen": "2026-11-20T11:30:25+00:00"
   },
   {
+   "site": "ישראל היום",
+   "category": "פוליטיקה",
+   "subcategory": "מדיניות חוץ וביטחון",
+   "keywords": [
+    "עזה"
+   ],
+   "title": "נפצע פעמיים בעזה - ורץ חצי מרתון בחיפה לצד חבריו הלוחמים | היום",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9uSmNNSnNjTG1jdmRqRXh0cllOZmhEWmN6MUlJengtVUQzMXcwbjRReUpRRXZmdldsZ0ZxMFZINW1tbnpnX1h2VG5tSTg5Zkx2cjFySGF1UGFaSlc5cV93RldGTkpZdXZm?oc=5",
+   "image": "",
+   "url": "https://www.israelhayom.co.il/news/local/article/21896466",
+   "gtried": 0,
+   "itried": 3,
+   "published": "2026-11-20T11:01:24+00:00",
+   "first_seen": "2026-11-20T11:30:25+00:00"
+  },
+  {
    "site": "Fox News",
    "category": "פוליטיקה",
    "subcategory": "המזרח התיכון והעולם",
@@ -21426,57 +21581,6 @@
    "first_seen": "2026-11-20T14:30:28+00:00"
   },
   {
-   "site": "Goal.com",
-   "category": "ספורט",
-   "subcategory": "הפרמייר ליג",
-   "keywords": [
-    "ליברפול"
-   ],
-   "title": "Drone pilot apologises to Man Utd and deletes 'unethical' footage of Mauricio Pochettino's first training session ahead of Liverpool showdown",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeXhaQ193QjhqRGwycVd1eExiLWl4ZHJCVXRGWjd6OWZfUEQyWmRodC0xR2thOGxjT0JmelpKVTZHQ2JOLWJ3djc3enJ2ZTVROE1ZR1Q5UnJuTDBkQTM2YnhkbnBBVklNWXVWSWNxM3dBNXVkcFE4VVJDVkVScnlseDU4dmlEM0ZqeTF0bnhYYkxvVkdPajNwRzBOTXFWNk5laUtmM09NRlloQ1VfZ3EyTy1FbmVVQWtMVUxKR1I5LVQzZFcxVXozSVRyOFo?oc=5",
-   "image": "https://assets.goal.com/images/v3/getty-2303110783/crop/MM5DIOBSGQ5DENZRGQ5G433XMU5DAORTG42A====/GettyImages-2303110783.jpg",
-   "url": "https://www.goal.com/en-us/news/drone-operator-apologises-man-utd-mauricio-pochettino-training-session-liverpool/blt95e0197de4c78854",
-   "gtried": 1,
-   "itried": 0,
-   "published": "2026-11-20T10:54:59+00:00",
-   "first_seen": "2026-11-20T11:00:32+00:00"
-  },
-  {
-   "site": "Goal.com",
-   "category": "ספורט",
-   "subcategory": "הפרמייר ליג",
-   "keywords": [
-    "ליברפול"
-   ],
-   "title": "Drone pilot apologises to Man Utd and deletes 'unethical' footage of Mauricio Pochettino's first training session ahead of Liverpool showdown",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSVAyRTZ1RkxwYTlJRHUtYXhKVmc1a3huNXZ5LTBpVnJaWXFKcU1Ocm1GSXByeDI1dzctSU9wUDB1cFI2LUtyN2sybG1MazRudjFQaEdjVF9FbzdKNmNJTEl4UGdDUWR4RmhnTnlXMWRBdWFoSVZzQjF5TkNDY1hQalZIMjJBeVQ2MU1BbURGcE1FVUttbXp0NXVqa0l4LVEwUklXTVhkdE1mMGdNU1NuSmNXQ2ZzM01DTjllNWh6NkwzUk5iMDZpeWJsbHg?oc=5",
-   "image": "https://assets.goal.com/images/v3/getty-2303110783/crop/MM5DIOBSGQ5DENZRGQ5G433XMU5DAORTG42A====/GettyImages-2303110783.jpg",
-   "url": "https://www.goal.com/en-qa/news/drone-operator-apologises-man-utd-mauricio-pochettino-training-session-liverpool/blt95e0197de4c78854",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T10:54:59+00:00",
-   "first_seen": "2026-11-20T11:30:25+00:00"
-  },
-  {
-   "site": "Goal.com",
-   "category": "ספורט",
-   "subcategory": "הפרמייר ליג",
-   "keywords": [
-    "ליברפול"
-   ],
-   "title": "Drone pilot apologises to Man Utd and deletes 'unethical' footage of Mauricio Pochettino's first training session ahead of Liverpool showdown",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQ2RpSzJxU2ZKaFpkYXAzV1Itam1DMGdZRUM2ZEtQSVgxN2p6SjNGeG1mbnJEc0hwdE1QYUZWR1hBOExFRThTUVVibFBrYUpYZVNYNWhnemFJTC1xcUEyaURFR19CenZzbHh4N1RCOEpNMENiZDhld0VWR2oteE9BQUx1aWVnVVJ4OVluNTJHMjVRZ0kwa2kxRjQ5OTVmYUlIZDVKNTRvckZtRkpDczhXQ3pIWGpvY1o2LTJNQ0p5XzB4VVAyNDkwQQ?oc=5",
-   "image": "https://assets.goal.com/images/v3/getty-2303110783/crop/MM5DIOBSGQ5DENZRGQ5G433XMU5DAORTG42A====/GettyImages-2303110783.jpg",
-   "url": "https://www.goal.com/en/news/drone-operator-apologises-man-utd-mauricio-pochettino-training-session-liverpool/blt95e0197de4c78854",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T10:54:59+00:00",
-   "first_seen": "2026-11-20T14:30:28+00:00"
-  },
-  {
    "site": "כיכר השבת",
    "category": "פוליטיקה",
    "subcategory": "פוליטיקאים",
@@ -21543,23 +21647,6 @@
    "itried": 0,
    "published": "2026-11-20T10:52:15+00:00",
    "first_seen": "2026-11-20T12:00:32+00:00"
-  },
-  {
-   "site": "ישראל היום",
-   "category": "פוליטיקה",
-   "subcategory": "מדיניות חוץ וביטחון",
-   "keywords": [
-    "עזה"
-   ],
-   "title": "נפצע פעמיים בעזה - ורץ חצי מרתון בחיפה לצד חבריו הלוחמים | היום",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9uSmNNSnNjTG1jdmRqRXh0cllOZmhEWmN6MUlJengtVUQzMXcwbjRReUpRRXZmdldsZ0ZxMFZINW1tbnpnX1h2VG5tSTg5Zkx2cjFySGF1UGFaSlc5cV93RldGTkpZdXZm?oc=5",
-   "image": "",
-   "url": "https://www.israelhayom.co.il/news/local/article/21896466",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-20T10:50:16+00:00",
-   "first_seen": "2026-11-20T11:30:25+00:00"
   },
   {
    "site": "Bloomberg",
@@ -22736,9 +22823,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSTFPVnN6eUZPRWVmUDVGRXFDQ3NtdWVCbTJlU1lZQ3drZmxYNFNiTnJ0UTZoMWh5Qk1oOVF1TkxTR3RCYXZPYzIwVHVYT3JzbkotM0huNEJzRF9LVml0dkItSHV0amNsTktwVkkwRXZlRTBJeld2VkJtR1VkMWluMmE4cXpEWWpOeVl4SnhtWkN4VkRj?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://13tv.co.il/item/news/politics/security/kela-david-905473602/?pid=62&refc=902992443",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T10:21:56+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -23124,6 +23211,24 @@
    "first_seen": "2026-11-20T10:30:26+00:00"
   },
   {
+   "site": "כאן",
+   "category": "פוליטיקה",
+   "subcategory": "פוליטיקאים",
+   "keywords": [
+    "איזנקוט",
+    "נתניהו"
+   ],
+   "title": "איזנקוט: אם לא יבשילו הניסיונות להקמת ממשלה רחבה - אקים ממשלת חירום",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51T01zRUhHeXFIM3FVbEVTSktQUHhQMm45UEdCU3FmWFVXZ21fSFloSnFNekFJbHd2UThzV2pJbE5BNk4xUVQ2a3h4Rno1TTUza3NJVmJnWEExYWcxVVQ5THJtVkxsOEQtUGhoSTV3?oc=5",
+   "image": "https://www.kan.org.il/media/gaipdpng/screenshot-2026-11-20-132017.png?rmode=pad&width=1200&height=630",
+   "url": "https://www.kan.org.il/content/kan-news/politic/live-1121383/",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-20T10:09:24+00:00",
+   "first_seen": "2026-11-20T12:00:32+00:00"
+  },
+  {
    "site": "ספורט 1",
    "category": "ספורט",
    "subcategory": "NBA",
@@ -23226,24 +23331,6 @@
    "itried": 0,
    "published": "2026-11-20T10:08:00+00:00",
    "first_seen": "2026-11-20T10:30:26+00:00"
-  },
-  {
-   "site": "כאן",
-   "category": "פוליטיקה",
-   "subcategory": "פוליטיקאים",
-   "keywords": [
-    "איזנקוט",
-    "נתניהו"
-   ],
-   "title": "איזנקוט: אם לא יבשילו הניסיונות להקמת ממשלה רחבה - אקים ממשלת חירום",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51T01zRUhHeXFIM3FVbEVTSktQUHhQMm45UEdCU3FmWFVXZ21fSFloSnFNekFJbHd2UThzV2pJbE5BNk4xUVQ2a3h4Rno1TTUza3NJVmJnWEExYWcxVVQ5THJtVkxsOEQtUGhoSTV3?oc=5",
-   "image": "https://www.kan.org.il/media/gaipdpng/screenshot-2026-11-20-132017.png?rmode=pad&width=1200&height=630",
-   "url": "https://www.kan.org.il/content/kan-news/politic/live-1121383/",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T10:07:42+00:00",
-   "first_seen": "2026-11-20T12:00:32+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -25139,23 +25226,6 @@
   {
    "site": "וואלה",
    "category": "ספורט",
-   "subcategory": "ליגת האלופות",
-   "keywords": [
-    "ריאל מדריד"
-   ],
-   "title": "הביקורת נמשכת: \"ריאל מדריד הרבה יותר טובה בלי ויניסיוס\"",
-   "summary": "כדורגלן העבר אלברו בניטו טוען שהבלאנקוס מציגים יכולת טובה יותר ללא הברזילאי, בעיקר מבחינה הגנתית. הוא גם הזהיר שמוריניו עשוי להשאיר אותו מחוץ להרכב במשחקים הגדולים: \"אם הוא לא ישתנה, הוא יישאר בחוץ\"",
-   "link": "https://sports.walla.co.il/item/3876975",
-   "image": "https://images.wcdn.co.il/f_auto,q_auto,w_300/4/1/1/6/4116869-46.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T09:16:00+00:00",
-   "first_seen": "2026-11-20T06:30:26+00:00"
-  },
-  {
-   "site": "וואלה",
-   "category": "ספורט",
    "subcategory": "לה ליגה",
    "keywords": [
     "ויניסיוס",
@@ -25481,7 +25551,7 @@
    "image": "",
    "url": "https://13tv.co.il/item/news/domestic/internal/rally-905471532/?pid=62&refc=902992476",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-20T09:02:23+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -26608,7 +26678,7 @@
    "first_seen": "2026-11-20T09:30:32+00:00"
   },
   {
-   "site": "gov.il",
+   "site": "הכנסת",
    "category": "פוליטיקה",
    "subcategory": "חקיקה ומשפט",
    "keywords": [
@@ -26625,7 +26695,7 @@
    "first_seen": "2026-11-20T10:00:34+00:00"
   },
   {
-   "site": "gov.il",
+   "site": "הכנסת",
    "category": "פוליטיקה",
    "subcategory": "תקציב",
    "keywords": [
@@ -27355,23 +27425,6 @@
    "first_seen": "2026-11-20T08:00:35+00:00"
   },
   {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "לה ליגה",
-   "keywords": [
-    "ריאל מדריד"
-   ],
-   "title": "Real Madrid have decided to bring back Como star next summer – report",
-   "summary": "If Nico Paz’s numbers last season were not impressive enough, the Real Madrid academy graduate has taken his performances to a whole new level this season — both for club and country.Under Cesc Fa...",
-   "link": "https://sports.yahoo.com/articles/real-madrid-decided-bring-back-074000841.html",
-   "image": "https://media.zenfs.com/en/madrid_universal_articles_561/07a569b23718cdfd92528a66767c1357.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T07:40:00+00:00",
-   "first_seen": "2026-11-20T08:00:35+00:00"
-  },
-  {
    "site": "מקור ראשון",
    "category": "פוליטיקה",
    "subcategory": "פוליטיקאים",
@@ -27854,23 +27907,6 @@
    "first_seen": "2026-11-20T07:30:25+00:00"
   },
   {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "ויקטור וומבניאמה"
-   ],
-   "title": "How Spurs star Victor Wembanyama's 'painful' blister led to new type of shot",
-   "summary": "The 7-foot-4 center revealed that his right middle finger is \"killing\" him when he dunks.",
-   "link": "https://sports.yahoo.com/articles/spurs-star-victor-wembanyamas-painful-071930786.html",
-   "image": "https://media.zenfs.com/en/san_antonio_express_news_hearst_574/cdb346e64aac242127efba2d7e4b2f1c.jpg",
-   "url": "",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T07:19:30+00:00",
-   "first_seen": "2026-11-20T07:30:25+00:00"
-  },
-  {
    "site": "פאנדר",
    "category": "כלכלה",
    "subcategory": "מאקרו ישראל",
@@ -27886,24 +27922,6 @@
    "itried": 3,
    "published": "2026-11-20T07:18:24+00:00",
    "first_seen": "2026-11-20T09:00:34+00:00"
-  },
-  {
-   "site": "BasketNews",
-   "category": "ספורט",
-   "subcategory": "NBA",
-   "keywords": [
-    "NBA",
-    "אולסטאר"
-   ],
-   "title": "Raptors All-Star calls out NBA over major award snub: 'I'm the best in the world'",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc2poVkFyY3FLSGs5VGI5YklXSjY0NzIwa1dzTEtwYnVDblFXYVVKY19nUGxucllHV1BLeWpvLTZaZ2stVU5pM2huME91NEJYakhYOTJGQWZmRFJZME1SOVhJNGJUczk1OFB3a0JMZERmdVJrMFF0d0RBY3JONFl3bzdXVE9vNHlfbTZhX1h5LXFnbEt6YzdDYXlZMUtrbl82RVlMXzlIYVRibE9WS05PTlk5dGVkSTkw?oc=5",
-   "image": "https://basketnews.com/image-482251-any1200x1200.jpg",
-   "url": "https://basketnews.com/news-259885-raptors-all-star-calls-out-nba-over-major-award-snub-im-the-best-in-the-world.html",
-   "gtried": 0,
-   "itried": 0,
-   "published": "2026-11-20T07:18:00+00:00",
-   "first_seen": "2026-11-20T07:30:25+00:00"
   },
   {
    "site": "ביזפורטל",
@@ -32381,9 +32399,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ET0Z6SHFhZU1JNGFoUHdQbXdSeTFFcDBuQU1YTjhxdmYwTHp4Rjk1ZFBVQlo5d1VrUF9XQTVmaGUzX1RsR2hMTjRfUXNNaWg5RGpreWI3NThOTzF0Xy1EbkdhVV9sTHVaQUx5OGxxMjE?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://main.knesset.gov.il/apps/legislation/main/bills/2247040",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-20T01:24:08+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -34246,9 +34264,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbUtuVThEZDdxbVFmYS03b04tcDVCWXNOeS1LNDYxQjF2RnJMZFc5ZXh1U2l3TXFlUG45NjhyMDhIeDFjaGRZaUFMMExzZkZpWU9FeU15VE1LaXJ4aGphb3I4SDRqazRDS3lGMTZFLW5qS3RlbnJwVlJDeC1XOGhJQVZGZmhScGRZWnpTMjlNVllWWEo3bGlkS2hHOEM4SGF6LUR6TzQtQnBQX0VKbElMOTd1WmxaYkVMNGJV?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://supremedecisions.court.gov.il/Home/Download?path=HebrewVerdicts/08/010/091/k03&fileName=08091010_k03.txt&type=4",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-19T22:54:47+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -34793,8 +34811,8 @@
    "title": "Stock Market Today, Nov. 19: Nvidia Slides as Investors Weigh CEO Transition Fallout Despite Strong Q3 Results",
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVFVtMEJ2TE96Ti1kN2p2NGVIRklKNlFfM0l4akhkeU9fLS1YVXI1OVpBb2Rfb2daQnd3VGhFdFJwRGphbTZDbGlkMy1VQktOSzFPNUFaZTE2R1huUkJ2N1E2c1NyWmh3ZDBlbGdqZWUtVDE5N1ZWc3VRUGJpb3NYNUtqMTBfYVBwaEFmZlhXZkY1a1FP?oc=5",
-   "image": "",
-   "url": "",
+   "image": "https://s.yimg.com/lo/mysterio/api/a193beb484bd4943e6ab6c1034decffff1837eb62319153058b5cda3a550eebb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmotleyfool.com%2Fe80852147d223dba5ae4ea81f3de95fb.jpg",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-19-222025646.html",
    "gtried": 1,
    "itried": 0,
    "published": "2026-11-19T22:20:25+00:00",
@@ -35858,7 +35876,7 @@
    "image": "",
    "url": "https://www.euroleaguebasketball.net/el/videos/zalgiris-vs-panathinaikos-round-13-highlights-2026-27-euroleague/?feedId=60c1a58a5eb4fd8da365da6c&title=Latest%20Videos",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-19T21:36:57+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -35875,7 +35893,7 @@
    "image": "",
    "url": "https://www.euroleaguebasketball.net/es/euroleague/videos/top-10-plays-round-8-2026-27-bkt-eurocup-regular-season/",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-19T21:33:03+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -36046,7 +36064,7 @@
    "image": "",
    "url": "https://main.knesset.gov.il/apps/legislation/main/bills/571184",
    "gtried": 0,
-   "itried": 1,
+   "itried": 2,
    "published": "2026-11-19T21:18:42+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -36184,9 +36202,9 @@
    "summary": "",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaU1kenFzVUZtemVXd3BGM05VNG9SY1E4emplX2E5eWJTa01XWURsQmJtd3NIRDE3bWpzb21CQ25RUE9tV0tSWEZvYkhLZERoTGZfRGN6YmhZRi1CakVGMy10am55cmtLSjZFVXNncnByNUpOWWVlSFpDcUJUOGoxTHBKYkJiS1JQTC1pdzdUSHNoTTZfdzNNSTFpM2NQSWVGZ2ZaVHhPcXRLWU4zYndwWmtHM0lVR2ZlYmc?oc=5",
    "image": "",
-   "url": "",
+   "url": "https://www.euroleaguebasketball.net/euroleague/news/zalgiris-vs-panathinaikos-round-13-highlights-2026-27-euroleague/",
    "gtried": 1,
-   "itried": 0,
+   "itried": 1,
    "published": "2026-11-19T21:02:18+00:00",
    "first_seen": "2026-11-20T16:00:33+00:00"
   },
@@ -36771,6 +36789,23 @@
    "itried": 3,
    "published": "2026-11-19T20:18:58+00:00",
    "first_seen": "2026-11-19T20:30:32+00:00"
+  },
+  {
+   "site": "כיכר השבת",
+   "category": "פוליטיקה",
+   "subcategory": "מפלגות",
+   "keywords": [
+    "ש\"ס"
+   ],
+   "title": "מרידה במועצת? ח\"כי ש\"ס עלו לרגל לרב שלמה עמאר",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Kc3c4Y2h5aDBCb0Vxa0Y0Z2R1Vl8tcWxzRm13Vm5iT1BRWkF6QjZMLTExQUNTN0lRLS1yWTJpdWZFcHAweW9MT2tIalk3ekU0YXV3YVV3?oc=5",
+   "image": "https://i.kikar.co.il/2014/10/12/7bca4120-1908-11ef-81a4-aba8ed63efe6__h350_w600.jpg?width=1200&height=630&quality=80&format=jpeg&aspect_ratio=1200%3A630",
+   "url": "https://www.kikar.co.il/haredim-news/153859",
+   "gtried": 0,
+   "itried": 0,
+   "published": "2026-11-19T20:18:00+00:00",
+   "first_seen": "2026-11-20T16:02:15+00:00"
   },
   {
    "site": "Bleacher Report",
@@ -48432,24 +48467,6 @@
   {
    "site": "ספורט 1",
    "category": "ספורט",
-   "subcategory": "יורוליג",
-   "keywords": [
-    "הפועל תל אביב",
-    "יורוליג"
-   ],
-   "title": "הפועל ת\"א יודעת: פריז \"הקבוצה החמה ביותר ביורוליג\"",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9UQm1UZFZ1akYzZ0xUb1FpWTd4cjJRMzN4VXY5YzRtVjNYV0F5RHlIZFh2a1FUU21rc0JjX3ozTllWejFtaldqcFMwRXFQZUNsbG1fSW5fQnk5ZmNELUNqc2RudVQ3N3VaV0dUdG9B?oc=5",
-   "image": "",
-   "url": "",
-   "gtried": 3,
-   "itried": 0,
-   "published": "2026-11-19T08:13:36+00:00",
-   "first_seen": "2026-11-19T08:30:28+00:00"
-  },
-  {
-   "site": "ספורט 1",
-   "category": "ספורט",
    "subcategory": "ליגת ווינר בכדורסל",
    "keywords": [
     "הפועל תל אביב"
@@ -53843,23 +53860,6 @@
    "itried": 0,
    "published": "2026-11-18T18:43:04+00:00",
    "first_seen": "2026-11-19T04:00:28+00:00"
-  },
-  {
-   "site": "בחדרי חרדים",
-   "category": "פוליטיקה",
-   "subcategory": "מפלגות",
-   "keywords": [
-    "ש\"ס"
-   ],
-   "title": "עד להקמת ממשלה: ש\"ס הגישה חוק להקפאת מעצרי בני הישיבות",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Qc3FfNkZfelhmSG13Z20yZmx3LVRSQTZwblRDWjd6Yk1LM2VCNkljb2VlTnJxc0xzOU56SzBURGhYZWtaczNrMUxTbw?oc=5",
-   "image": "",
-   "url": "https://www.bhol.co.il/news/1744993",
-   "gtried": 0,
-   "itried": 3,
-   "published": "2026-11-18T18:43:00+00:00",
-   "first_seen": "2026-11-18T19:30:27+00:00"
   },
   {
    "site": "Yahoo Sports",
@@ -72749,20 +72749,6 @@
    "itried": 3,
    "published": "2026-11-13T19:10:00+00:00",
    "first_seen": "2026-11-14T11:26:18+00:00"
-  },
-  {
-   "site": "Yahoo Sports",
-   "category": "ספורט",
-   "subcategory": "MLS",
-   "keywords": [
-    "MLS"
-   ],
-   "title": "The 2026 Urban Pitch MLS Awards",
-   "summary": "Forget MVP and Best Young Player, who wore the best boots and had the best goal celebration in MLS this season?The 2026 MLS regular season is in the rearview mirror, and the attention has fully shifte...",
-   "link": "https://sports.yahoo.com/articles/2026-urban-pitch-mls-awards-154700754.html",
-   "image": "https://media.zenfs.com/en/urban_pitch_articles_135/dbe4f3df8f84977aaf6ca3d00265f114.jpg",
-   "published": "2026-11-13T15:47:00+00:00",
-   "first_seen": "2026-11-13T16:00:41+00:00"
   },
   {
    "site": "UEFA.com",
